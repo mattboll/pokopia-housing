@@ -1,0 +1,384 @@
+/* ==========================================================================
+   Layout — Container, Grid, Sections, Header, Planner Layout
+   ========================================================================== */
+
+/* -------------------------------------------------------------------
+   Container
+   ------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+}
+
+.container--narrow {
+  max-width: 800px;
+}
+
+.container--wide {
+  max-width: 1400px;
+}
+
+/* -------------------------------------------------------------------
+   App Header — Pokemon-style gradient bar
+   ------------------------------------------------------------------- */
+.app-header {
+  background: var(--gradient-header);
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(227, 53, 13, 0.2);
+  position: relative;
+  z-index: var(--z-sticky);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: var(--space-3) var(--space-4);
+  min-height: 60px;
+}
+
+.header-inner__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.header-inner__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.header-inner__nav a,
+.header-inner__nav button {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: background-color var(--transition-fast),
+              color var(--transition-fast);
+}
+
+.header-inner__nav a:hover,
+.header-inner__nav button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.header-inner__nav a[aria-current="page"],
+.header-inner__nav a.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    padding: var(--space-4) var(--space-6);
+  }
+
+  .header-inner__title {
+    font-size: var(--text-3xl);
+  }
+}
+
+/* -------------------------------------------------------------------
+   Main Content Area
+   ------------------------------------------------------------------- */
+#app-main {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: var(--space-5) var(--space-4);
+}
+
+@media (min-width: 768px) {
+  #app-main {
+    padding: var(--space-6) var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  #app-main {
+    padding: var(--space-7) var(--space-6);
+  }
+}
+
+/* -------------------------------------------------------------------
+   Responsive Grid
+   ------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: 1fr;
+}
+
+/* Small screens (>=640px) -- 2 columns */
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* Medium screens (>=768px) */
+@media (min-width: 768px) {
+  .grid {
+    gap: var(--space-6);
+  }
+
+  .container {
+    padding-inline: var(--space-6);
+  }
+}
+
+/* Large screens (>=1024px) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* Grid column utilities */
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* -------------------------------------------------------------------
+   Flex Utilities
+   ------------------------------------------------------------------- */
+.flex {
+  display: flex;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--gap-sm {
+  gap: var(--space-2);
+}
+
+.flex--gap-md {
+  gap: var(--space-4);
+}
+
+.flex--gap-lg {
+  gap: var(--space-6);
+}
+
+/* -------------------------------------------------------------------
+   Page Sections
+   ------------------------------------------------------------------- */
+.section {
+  padding-block: var(--space-7);
+}
+
+.section--sm {
+  padding-block: var(--space-5);
+}
+
+.section--lg {
+  padding-block: var(--space-8);
+}
+
+.section + .section {
+  border-top: 1px solid var(--color-border);
+}
+
+/* -------------------------------------------------------------------
+   Stack (vertical spacing)
+   ------------------------------------------------------------------- */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stack--sm {
+  gap: var(--space-2);
+}
+
+.stack--lg {
+  gap: var(--space-6);
+}
+
+/* -------------------------------------------------------------------
+   Two-Panel Layout (used by Planner page)
+   ------------------------------------------------------------------- */
+.two-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .two-panel {
+    flex-direction: row;
+  }
+
+  .two-panel__sidebar {
+    flex: 0 0 320px;
+    position: sticky;
+    top: var(--space-5);
+    align-self: flex-start;
+  }
+
+  .two-panel__main {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .two-panel__sidebar {
+    flex: 0 0 380px;
+  }
+}
+
+/* -------------------------------------------------------------------
+   Planner Layout — Responsive 1-col / 2-col
+   ------------------------------------------------------------------- */
+.planner-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .planner-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .planner-layout__sidebar {
+    flex: 0 0 340px;
+    position: sticky;
+    top: var(--space-5);
+  }
+
+  .planner-layout__content {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .planner-layout__sidebar {
+    flex: 0 0 400px;
+  }
+}
+
+/* -------------------------------------------------------------------
+   Selector Grid Layout (responsive tiles)
+   ------------------------------------------------------------------- */
+.selector-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .selector-grid-layout {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .selector-grid-layout {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+/* -------------------------------------------------------------------
+   Visually Hidden (accessible)
+   ------------------------------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -------------------------------------------------------------------
+   Skip Link
+   ------------------------------------------------------------------- */
+.skip-link:focus {
+  position: fixed;
+  top: var(--space-2);
+  left: var(--space-2);
+  width: auto;
+  height: auto;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-md);
+  z-index: var(--z-toast);
+  clip: auto;
+  margin: 0;
+  overflow: visible;
+  white-space: normal;
+}
