@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mattboll.github.io/pokopia-housing/sitemap.xml
