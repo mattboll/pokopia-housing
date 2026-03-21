@@ -1,5 +1,6 @@
 import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
+import { createPokemonNameButton } from './pokemon-popover.js';
 
 /**
  * Environment color mapping for badges.
@@ -91,19 +92,18 @@ export function createHouseCard(house, index) {
     )
   );
 
-  // Residents as comma-separated list with paw icon
-  const residentNames = house.members.map((member) => {
-    const translated = t(`pokemon.${member.name}`) !== `pokemon.${member.name}`
-      ? t(`pokemon.${member.name}`)
-      : member.name;
-    return translated;
+  // Residents as clickable buttons that open preference popover
+  const residentsList = el('div', { className: 'house-card-residents' });
+  house.members.forEach((member, i) => {
+    if (i > 0) residentsList.appendChild(el('span', { className: 'house-card-sep' }, ', '));
+    residentsList.appendChild(createPokemonNameButton(member, house.sharedPreferences));
   });
 
   const residentsSection = el('div', { className: 'house-card-section' },
     el('h4', { className: 'house-card-section-title' },
       `\uD83D\uDC3E ${t('common.residents')} (${house.members.length})`
     ),
-    el('p', { className: 'house-card-residents' }, residentNames.join(', '))
+    residentsList
   );
 
   // Shared preferences as colorful pills
