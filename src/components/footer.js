@@ -20,7 +20,12 @@ export function renderFooter() {
       el('span', { className: 'footer-separator' }, '\u00B7'),
       el('span', { className: 'footer-author' }, 'Made with \u2764\uFE0F by mbollot'),
       el('span', { className: 'footer-separator' }, '\u00B7'),
-      el('span', { className: 'footer-license' }, 'MIT License')
+      el('a', {
+        href: 'https://github.com/mattboll/pokopia-housing',
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        className: 'footer-github-link',
+      }, 'GitHub')
     )
   );
 
