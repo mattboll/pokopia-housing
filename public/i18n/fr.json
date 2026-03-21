@@ -31,7 +31,14 @@
     "allEnvs": "Tous",
     "selectedCount": "{count} selectionnes",
     "resultsTitle": "Resultats de l'optimisation",
-    "statsTitle": "Statistiques"
+    "statsTitle": "Statistiques",
+    "bridges": "Ponts item",
+    "allLike": "Tous aiment",
+    "noDirectShared": "Pas de preference commune directe",
+    "itemTips": "Astuce meubles",
+    "lookFor": "Un objet",
+    "noDirectButItems": "Compatible via le mobilier !",
+    "itemsToFind": "Objets a trouver"
   },
   "optimal": {
     "title": "Logement optimal pour tous les Pokemon",
@@ -122,5 +129,13 @@
     "Moyens de transport": "Moyens de transport",
     "Recipients": "Recipients"
   },
-  "pokemon": {}
+  "pokemon": {},
+  "rating": {
+    "perfect": "Parfait",
+    "excellent": "Excellent",
+    "veryGood": "Tres bien",
+    "good": "Bien",
+    "okay": "Correct",
+    "low": "Faible"
+  }
 }

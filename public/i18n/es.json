@@ -31,7 +31,14 @@
     "allEnvs": "Todos",
     "selectedCount": "{count} seleccionados",
     "resultsTitle": "Resultados de la optimizacion",
-    "statsTitle": "Estadisticas"
+    "statsTitle": "Estadisticas",
+    "bridges": "Puentes de objeto",
+    "allLike": "A todos les gusta",
+    "noDirectShared": "Sin preferencia directa comun",
+    "itemTips": "Consejos de muebles",
+    "lookFor": "Un objeto",
+    "noDirectButItems": "Compatible a traves de muebles!",
+    "itemsToFind": "Objetos necesarios"
   },
   "optimal": {
     "title": "Vivienda optima para todos los Pokemon",
@@ -420,5 +427,13 @@
     "Ho-Oh": "Ho-Oh",
     "Mewtwo": "Mewtwo",
     "Mew": "Mew"
+  },
+  "rating": {
+    "perfect": "Perfecto",
+    "excellent": "Excelente",
+    "veryGood": "Muy bien",
+    "good": "Bien",
+    "okay": "Aceptable",
+    "low": "Bajo"
   }
 }

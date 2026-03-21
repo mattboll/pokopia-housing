@@ -29,10 +29,41 @@ document.addEventListener('keydown', (e) => {
 
 // Close on click outside
 document.addEventListener('click', (e) => {
-  if (activePopover && !activePopover.contains(e.target) && !e.target.closest('.pokemon-name-btn')) {
+  if (activePopover && !activePopover.contains(e.target)
+      && !e.target.closest('.pokemon-name-btn')
+      && !e.target.closest('.prefs-more-btn')) {
     closePopover();
   }
 });
+
+/**
+ * Positions a popover near an anchor element, keeping it in viewport.
+ * On mobile (<640px), snaps to bottom as a sheet.
+ */
+function positionPopover(popover, anchor) {
+  document.body.appendChild(popover);
+  activePopover = popover;
+
+  const anchorRect = anchor.getBoundingClientRect();
+  const popRect = popover.getBoundingClientRect();
+
+  let top = anchorRect.bottom + 8;
+  let left = anchorRect.left + (anchorRect.width / 2) - (popRect.width / 2);
+
+  if (left < 8) left = 8;
+  if (left + popRect.width > window.innerWidth - 8) left = window.innerWidth - popRect.width - 8;
+  if (top + popRect.height > window.innerHeight - 8) {
+    top = anchorRect.top - popRect.height - 8;
+  }
+
+  popover.style.position = 'fixed';
+  popover.style.top = `${top}px`;
+  popover.style.left = `${left}px`;
+  popover.style.zIndex = '500';
+
+  popover.setAttribute('tabindex', '-1');
+  popover.focus();
+}
 
 /**
  * Shows a popover with a Pokemon's full preference list.
@@ -109,31 +140,64 @@ export function showPokemonPopover(pokemon, anchor, sharedPrefs = []) {
     )
   );
 
-  // Position near the anchor
-  document.body.appendChild(popover);
-  activePopover = popover;
+  positionPopover(popover, anchor);
+}
 
-  const anchorRect = anchor.getBoundingClientRect();
-  const popRect = popover.getBoundingClientRect();
+/**
+ * Shows a popover with a full list of preferences (used for "+N" overflow).
+ *
+ * @param {string[]} allPrefs - complete list of preference keys
+ * @param {string[]} sharedPrefs - preferences shared by all (highlighted green)
+ * @param {string} title - popover title
+ * @param {HTMLElement} anchor - element to position near
+ */
+export function showPrefsListPopover(allPrefs, sharedPrefs, title, anchor) {
+  closePopover();
 
-  let top = anchorRect.bottom + 8;
-  let left = anchorRect.left + (anchorRect.width / 2) - (popRect.width / 2);
+  const sharedSet = new Set(sharedPrefs);
 
-  // Keep within viewport
-  if (left < 8) left = 8;
-  if (left + popRect.width > window.innerWidth - 8) left = window.innerWidth - popRect.width - 8;
-  if (top + popRect.height > window.innerHeight - 8) {
-    top = anchorRect.top - popRect.height - 8;
+  const prefList = el('ul', { className: 'popover__pref-list' });
+  for (const pref of allPrefs) {
+    const isShared = sharedSet.has(pref);
+    const translatedPref = t(`preferences.${pref}`) !== `preferences.${pref}`
+      ? t(`preferences.${pref}`) : pref;
+
+    prefList.appendChild(el('li', {
+      className: 'popover__pref-item' + (isShared ? ' popover__pref-item--shared' : ''),
+    },
+      el('span', { className: 'popover__pref-icon' }, isShared ? '\u2764\uFE0F' : '\uD83D\uDECB\uFE0F'),
+      el('span', null, translatedPref)
+    ));
   }
 
-  popover.style.position = 'fixed';
-  popover.style.top = `${top}px`;
-  popover.style.left = `${left}px`;
-  popover.style.zIndex = '500';
+  const legend = el('p', { className: 'popover__legend' },
+    '\u2764\uFE0F = ',
+    el('span', null, t('common.allLike') !== 'common.allLike' ? t('common.allLike') : 'Tous aiment'),
+    el('span', null, '  \uD83D\uDECB\uFE0F = '),
+    el('span', null, t('common.itemsToFind') !== 'common.itemsToFind' ? t('common.itemsToFind') : 'Objets a trouver')
+  );
 
-  // Focus the popover for accessibility
-  popover.setAttribute('tabindex', '-1');
-  popover.focus();
+  const closeBtn = el('button', {
+    className: 'popover__close',
+    type: 'button',
+    'aria-label': 'Close',
+    onClick: (e) => { e.stopPropagation(); closePopover(); },
+  }, '\u2715');
+
+  const popover = el('div', {
+    className: 'popover pokemon-popover',
+    role: 'dialog',
+    'aria-label': title,
+  },
+    closeBtn,
+    el('div', { className: 'popover__header' },
+      el('span', { className: 'popover__name' }, title),
+      el('span', { className: 'popover__env' }, `${allPrefs.length} total`)
+    ),
+    el('div', { className: 'popover__body' }, prefList, legend)
+  );
+
+  positionPopover(popover, anchor);
 }
 
 /**

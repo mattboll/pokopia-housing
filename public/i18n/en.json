@@ -31,7 +31,14 @@
     "allEnvs": "All",
     "selectedCount": "{count} selected",
     "resultsTitle": "Optimization results",
-    "statsTitle": "Statistics"
+    "statsTitle": "Statistics",
+    "bridges": "Item bridges",
+    "allLike": "All residents like",
+    "noDirectShared": "No direct shared preference",
+    "itemTips": "Furniture tips",
+    "lookFor": "An item that is",
+    "noDirectButItems": "Compatible through shared furniture!",
+    "itemsToFind": "Items to find"
   },
   "optimal": {
     "title": "Optimal housing for all Pokemon",
@@ -420,5 +427,13 @@
     "Ho-Oh": "Ho-Oh",
     "Mewtwo": "Mewtwo",
     "Mew": "Mew"
+  },
+  "rating": {
+    "perfect": "Perfect",
+    "excellent": "Excellent",
+    "veryGood": "Very good",
+    "good": "Good",
+    "okay": "Okay",
+    "low": "Low"
   }
 }

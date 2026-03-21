@@ -31,7 +31,14 @@
     "allEnvs": "すべて",
     "selectedCount": "{count}体選択中",
     "resultsTitle": "最適化の結果",
-    "statsTitle": "統計"
+    "statsTitle": "統計",
+    "bridges": "アイテム共有",
+    "allLike": "全員が好き",
+    "noDirectShared": "直接共通の好みなし",
+    "itemTips": "家具のヒント",
+    "lookFor": "必要なアイテム：",
+    "noDirectButItems": "家具で相性が良い！",
+    "itemsToFind": "必要なアイテム"
   },
   "optimal": {
     "title": "全ポケモンの最適な住居",
@@ -420,5 +427,13 @@
     "Ho-Oh": "ホウオウ",
     "Mewtwo": "ミュウツー",
     "Mew": "ミュウ"
+  },
+  "rating": {
+    "perfect": "完璧",
+    "excellent": "最高",
+    "veryGood": "とても良い",
+    "good": "良い",
+    "okay": "まあまあ",
+    "low": "低い"
   }
 }

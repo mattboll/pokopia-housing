@@ -1,104 +1,70 @@
 import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
-import { createPokemonNameButton } from './pokemon-popover.js';
+import { createPokemonNameButton, showPrefsListPopover } from './pokemon-popover.js';
 
-/**
- * Environment color mapping for badges.
- */
 const ENV_COLORS = {
-  Lumineux: '#f5c518',
-  Sombre: '#6b3fa0',
-  Chaud: '#e85d3a',
-  Frais: '#5cc5e8',
-  Humide: '#3b82d6',
-  Sec: '#c2956a',
+  Lumineux: '#f5c518', Sombre: '#6b3fa0', Chaud: '#e85d3a',
+  Frais: '#5cc5e8', Humide: '#3b82d6', Sec: '#c2956a',
 };
 
-/**
- * Environment emoji mapping.
- */
 const ENV_EMOJI = {
-  Lumineux: '\u2600\uFE0F',
-  Sombre: '\uD83C\uDF19',
-  Chaud: '\uD83D\uDD25',
-  Frais: '\u2744\uFE0F',
-  Humide: '\uD83D\uDCA7',
-  Sec: '\uD83C\uDFDC\uFE0F',
+  Lumineux: '\u2600\uFE0F', Sombre: '\uD83C\uDF19', Chaud: '\uD83D\uDD25',
+  Frais: '\u2744\uFE0F', Humide: '\uD83D\uDCA7', Sec: '\uD83C\uDFDC\uFE0F',
 };
 
 /**
- * Returns a color for the score bar based on score/maxScore ratio.
- *
- * @param {number} ratio - 0 to 1
- * @returns {string} CSS color
+ * Computes a compatibility rating from totalScore.
  */
-function scoreColor(ratio) {
-  if (ratio >= 0.8) return '#2ea858';
-  if (ratio >= 0.5) return '#f5c518';
-  if (ratio >= 0.3) return '#e5a419';
-  return '#e74c3c';
+function compatibilityRating(house) {
+  const total = house.totalScore || house.score || 0;
+  const members = house.members.length;
+  if (members <= 1) return { stars: 5, key: 'rating.perfect', fallback: 'Parfait', color: '#2ea858' };
+  const pairs = (members * (members - 1)) / 2;
+  const perPair = total / pairs;
+  if (perPair >= 8) return { stars: 5, key: 'rating.excellent', fallback: 'Excellent', color: '#2ea858' };
+  if (perPair >= 5) return { stars: 4, key: 'rating.veryGood', fallback: 'Tres bien', color: '#6bba4f' };
+  if (perPair >= 3) return { stars: 3, key: 'rating.good', fallback: 'Bien', color: '#f5c518' };
+  if (perPair >= 1) return { stars: 2, key: 'rating.okay', fallback: 'Correct', color: '#e5a419' };
+  return { stars: 1, key: 'rating.low', fallback: 'Faible', color: '#e74c3c' };
 }
 
 /**
- * Creates a house card DOM element with fun Pokemon styling.
- *
- * @param {{members: Array, sharedPreferences: string[], score: number, uniquePreferences: string[]}} house
- * @param {number} index - 1-based house index
- * @returns {HTMLElement}
+ * Creates a house card DOM element.
  */
 export function createHouseCard(house, index) {
   const env = house.members[0]?.environment || '';
   const envColor = ENV_COLORS[env] || '#95a5a6';
   const envEmoji = ENV_EMOJI[env] || '\uD83C\uDFE0';
   const translatedEnv = t(`environments.${env}`) !== `environments.${env}`
-    ? t(`environments.${env}`)
-    : env;
+    ? t(`environments.${env}`) : env;
   const envSlug = env.toLowerCase();
 
-  const needsDark = luminanceCheck(envColor);
+  const rating = compatibilityRating(house);
+  const ratingLabel = t(rating.key) !== rating.key ? t(rating.key) : rating.fallback;
+  const starsStr = '\u2B50'.repeat(rating.stars) + '\u2606'.repeat(5 - rating.stars);
 
-  const ariaLabel = t('a11y.houseLabel')
-    .replace('{id}', String(index))
-    .replace('{count}', String(house.members.length))
-    .replace('{score}', String(house.score));
-
-  // Maximum possible score (for bar width)
-  const maxScore = 6;
-  const scoreRatio = Math.min(house.score / maxScore, 1);
-
-  // Header: House title + environment badge with emoji
+  // Header
   const header = el('div', { className: 'house-card-header', style: `border-bottom: 3px solid ${envColor}` },
     el('h3', { className: 'house-card-title' },
       `\uD83C\uDFE0 ${t('common.house')} #${index}`
     ),
-    el('span', {
-      className: `badge env-badge badge-env--${envSlug}`,
-    }, `${envEmoji} ${translatedEnv}`)
-  );
-
-  // Score section with emoji and bar
-  const scoreSection = el('div', { className: 'house-card-score' },
-    el('div', { className: 'house-card-score-header' },
-      el('span', { className: 'house-card-score-label' },
-        `\u2B50 ${t('common.score')}`
-      ),
-      el('span', { className: 'house-card-score-value' }, String(house.score))
-    ),
-    el('div', { className: 'score-bar' },
-      el('div', {
-        className: 'score-bar__fill',
-        style: `width: ${Math.round(scoreRatio * 100)}%; background-color: ${scoreColor(scoreRatio)}`,
-      })
+    el('span', { className: `badge env-badge badge-env--${envSlug}` },
+      `${envEmoji} ${translatedEnv}`
     )
   );
 
-  // Residents as clickable buttons that open preference popover
+  // Compatibility rating
+  const ratingSection = el('div', { className: 'house-card-rating' },
+    el('div', { className: 'house-card-rating-stars', style: `color: ${rating.color}` }, starsStr),
+    el('span', { className: 'house-card-rating-label', style: `color: ${rating.color}` }, ratingLabel)
+  );
+
+  // Residents (clickable)
   const residentsList = el('div', { className: 'house-card-residents' });
   house.members.forEach((member, i) => {
     if (i > 0) residentsList.appendChild(el('span', { className: 'house-card-sep' }, ', '));
     residentsList.appendChild(createPokemonNameButton(member, house.sharedPreferences));
   });
-
   const residentsSection = el('div', { className: 'house-card-section' },
     el('h4', { className: 'house-card-section-title' },
       `\uD83D\uDC3E ${t('common.residents')} (${house.members.length})`
@@ -106,60 +72,77 @@ export function createHouseCard(house, index) {
     residentsList
   );
 
-  // Shared preferences as colorful pills
-  const sharedPills = el('div', { className: 'house-card-pills' });
-  const pillColors = [
-    '#e85d3a', '#3b82d6', '#2ea858', '#f5c518', '#6b3fa0', '#5cc5e8', '#c2956a',
-  ];
-  for (let i = 0; i < house.sharedPreferences.length; i++) {
-    const pref = house.sharedPreferences[i];
-    const color = pillColors[i % pillColors.length];
-    sharedPills.appendChild(
-      el('span', {
-        className: 'house-card-pill',
-        style: `background-color: ${color}15; color: ${color}; border: 1px solid ${color}40`,
-      }, pref)
+  // What they ALL like (direct shared preferences)
+  const sharedSection = el('div', { className: 'house-card-section' });
+  sharedSection.appendChild(el('h4', { className: 'house-card-section-title' },
+    `\u2764\uFE0F ${t('common.allLike') !== 'common.allLike' ? t('common.allLike') : 'Tous aiment'}`
+  ));
+  const dedupedShared = [...new Set(house.sharedPreferences)];
+  if (dedupedShared.length > 0) {
+    const pills = el('div', { className: 'house-card-pills' });
+    for (const pref of dedupedShared) {
+      const translated = t(`preferences.${pref}`) !== `preferences.${pref}`
+        ? t(`preferences.${pref}`) : pref;
+      pills.appendChild(el('span', { className: 'house-card-pill house-card-pill--shared' }, translated));
+    }
+    sharedSection.appendChild(pills);
+  } else {
+    sharedSection.appendChild(
+      el('span', { className: 'house-card-none' },
+        house.members.length > 1
+          ? (t('common.noDirectButItems') !== 'common.noDirectButItems'
+              ? t('common.noDirectButItems')
+              : 'Compatible via le mobilier !')
+          : '-'
+      )
     );
   }
 
-  const sharedSection = el('div', { className: 'house-card-section' },
-    el('h4', { className: 'house-card-section-title' },
-      `\u2728 ${t('common.sharedPrefs')}`
-    ),
-    house.sharedPreferences.length > 0
-      ? sharedPills
-      : el('span', { className: 'house-card-none' }, '-')
-  );
+  // "Items to find" section: unique preferences NOT already in shared
+  const sharedSet = new Set(house.sharedPreferences);
+  const nonSharedPrefs = (house.uniquePreferences || []).filter(p => !sharedSet.has(p));
+  let itemsSection = null;
+  if (nonSharedPrefs.length > 0 && house.members.length > 1) {
+    const MAX_SHOWN = 8;
+    const itemsPills = el('div', { className: 'house-card-pills' });
+    const shown = nonSharedPrefs.slice(0, MAX_SHOWN);
+    for (const pref of shown) {
+      const translated = t(`preferences.${pref}`) !== `preferences.${pref}`
+        ? t(`preferences.${pref}`) : pref;
+      itemsPills.appendChild(el('span', { className: 'house-card-pill house-card-pill--unique' }, translated));
+    }
+    if (nonSharedPrefs.length > MAX_SHOWN) {
+      const allPrefs = [...dedupedShared, ...nonSharedPrefs];
+      const moreBtn = el('button', {
+        type: 'button',
+        className: 'house-card-pill house-card-pill--more prefs-more-btn',
+        onClick: (e) => {
+          e.stopPropagation();
+          const title = t('common.itemsToFind') !== 'common.itemsToFind'
+            ? t('common.itemsToFind') : 'Objets a trouver';
+          showPrefsListPopover(allPrefs, dedupedShared, title, moreBtn);
+        },
+      }, `+${nonSharedPrefs.length - MAX_SHOWN}`);
+      itemsPills.appendChild(moreBtn);
+    }
+    itemsSection = el('div', { className: 'house-card-section' },
+      el('h4', { className: 'house-card-section-title' },
+        `\uD83D\uDECB\uFE0F ${t('common.itemsToFind') !== 'common.itemsToFind' ? t('common.itemsToFind') : 'Objets a trouver'} (${nonSharedPrefs.length})`
+      ),
+      itemsPills
+    );
+  }
 
-  // Unique preferences count
-  const uniqueSection = el('div', { className: 'house-card-section house-card-unique' },
-    el('span', null,
-      `\uD83D\uDD0D ${t('common.uniquePrefs')}: ${house.uniquePreferences.length}`
-    )
-  );
-
-  return el('article', {
+  // Assemble
+  const card = el('article', {
     className: `card house-card card--env-${envSlug}`,
     role: 'article',
-    'aria-label': ariaLabel,
-  },
-    header,
-    scoreSection,
-    residentsSection,
-    sharedSection,
-    uniqueSection
-  );
-}
-
-/**
- * Checks if a hex color needs dark text.
- * @param {string} hexColor
- * @returns {boolean}
- */
-function luminanceCheck(hexColor) {
-  const hex = hexColor.replace('#', '');
-  const r = parseInt(hex.substring(0, 2), 16);
-  const g = parseInt(hex.substring(2, 4), 16);
-  const b = parseInt(hex.substring(4, 6), 16);
-  return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.5;
+    'aria-label': `${t('common.house')} #${index} - ${house.members.length} ${t('common.residents')} - ${ratingLabel}`,
+  });
+  card.appendChild(header);
+  card.appendChild(ratingSection);
+  card.appendChild(residentsSection);
+  card.appendChild(sharedSection);
+  if (itemsSection) card.appendChild(itemsSection);
+  return card;
 }

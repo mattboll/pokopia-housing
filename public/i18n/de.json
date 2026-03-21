@@ -31,7 +31,14 @@
     "allEnvs": "Alle",
     "selectedCount": "{count} ausgewaehlt",
     "resultsTitle": "Optimierungsergebnisse",
-    "statsTitle": "Statistiken"
+    "statsTitle": "Statistiken",
+    "bridges": "Item-Brücken",
+    "allLike": "Alle moegen",
+    "noDirectShared": "Keine direkt geteilte Vorliebe",
+    "itemTips": "Moebel-Tipps",
+    "lookFor": "Ein Gegenstand",
+    "noDirectButItems": "Kompatibel durch Moebel!",
+    "itemsToFind": "Benoetigte Gegenstaende"
   },
   "optimal": {
     "title": "Optimale Unterbringung fuer alle Pokemon",
@@ -420,5 +427,13 @@
     "Ho-Oh": "Ho-Oh",
     "Mewtwo": "Mewtu",
     "Mew": "Mew"
+  },
+  "rating": {
+    "perfect": "Perfekt",
+    "excellent": "Ausgezeichnet",
+    "veryGood": "Sehr gut",
+    "good": "Gut",
+    "okay": "Okay",
+    "low": "Niedrig"
   }
 }
