@@ -1,8 +1,10 @@
 # Pokopia Housing
 
+**https://mattboll.github.io/pokopia-housing/**
+
 Optimize Pokemon housing in **Pokemon Pokopia** by grouping Pokemon with shared preferences to minimize the number of houses needed.
 
-**297 Pokemon grouped into just 79 houses** (instead of 297 individual habitats).
+**297 Pokemon grouped into just 77 houses** (instead of 297 individual habitats).
 
 ## Features
 
