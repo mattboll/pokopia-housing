@@ -86,6 +86,14 @@ async function init() {
 
   // Initialize router (renders initial page)
   initRouter(renderPage);
+
+  // Expose re-render for language changes
+  window.__pokopiaRerender = () => {
+    renderHeader();
+    renderFooter();
+    const page = store.getState().currentPage || 'optimal';
+    renderPage(page);
+  };
 }
 
 init();

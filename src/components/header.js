@@ -68,7 +68,11 @@ export function renderHeader() {
 
   langSelect.addEventListener('change', async () => {
     await setLocale(langSelect.value);
-    renderHeader();
+    if (window.__pokopiaRerender) {
+      window.__pokopiaRerender();
+    } else {
+      renderHeader();
+    }
   });
 
   // Theme toggle
