@@ -1,23 +1,11 @@
 {
-  "totalHouses": 79,
+  "totalHouses": 77,
   "totalPokemon": 300,
-  "averageScore": 2.1139240506329116,
+  "averageScore": 1.5194805194805194,
   "environmentGroups": {
     "Lumineux": {
       "environment": "Lumineux",
       "houses": [
-        {
-          "members": [
-            {
-              "name": "Metamorph",
-              "environment": "Lumineux",
-              "preferences": []
-            }
-          ],
-          "sharedPreferences": [],
-          "score": 0,
-          "uniquePreferences": []
-        },
         {
           "members": [
             {
@@ -33,6 +21,11 @@
               ]
             },
             {
+              "name": "Metamorph",
+              "environment": "Lumineux",
+              "preferences": []
+            },
+            {
               "name": "Queulorior",
               "environment": "Lumineux",
               "preferences": [
@@ -45,35 +38,20 @@
               ]
             },
             {
-              "name": "Bleuseille",
+              "name": "Porygon-Z",
               "environment": "Lumineux",
               "preferences": [
                 "Choses acres",
-                "Choses en bois",
-                "Choses fines",
-                "Choses liees au vent",
-                "Choses qui brillent",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Raikou",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acres",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses liees au vent",
-                "Choses luxueuses",
-                "Choses qui brillent"
+                "Choses amusantes a regarder",
+                "Choses colorees",
+                "Choses douces",
+                "Choses en tissu",
+                "Choses etranges"
               ]
             }
           ],
-          "sharedPreferences": [
-            "Choses acres",
-            "Choses qui brillent"
-          ],
-          "score": 2,
+          "sharedPreferences": [],
+          "score": 0,
           "uniquePreferences": [
             "Choses acres",
             "Choses difficiles",
@@ -84,80 +62,7 @@
             "Choses colorees",
             "Choses douces",
             "Choses en tissu",
-            "Choses en bois",
-            "Choses fines",
-            "Choses liees au vent",
-            "Recipients",
-            "Choses electriques",
-            "Choses en verre",
-            "Choses luxueuses"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Charpenti",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses carrees",
-                "Choses en bois",
-                "Choses epicees",
-                "Choses fines",
-                "Choses pour s'entrainer"
-              ]
-            },
-            {
-              "name": "Betochef",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses fines",
-                "Choses pour s'entrainer",
-                "Constructions"
-              ]
-            },
-            {
-              "name": "Ouvrifier",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses en metal",
-                "Choses epicees",
-                "Choses fines",
-                "Choses pour s'entrainer",
-                "Constructions"
-              ]
-            },
-            {
-              "name": "Mackogneur",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses pour s'entrainer"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses epicees",
-            "Choses pour s'entrainer"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses carrees",
-            "Choses en bois",
-            "Choses epicees",
-            "Choses fines",
-            "Choses pour s'entrainer",
-            "Choses a partager",
-            "Choses en pierre",
-            "Constructions",
-            "Choses en metal",
-            "Choses dures"
+            "Choses amusantes a regarder"
           ]
         },
         {
@@ -187,35 +92,32 @@
               ]
             },
             {
-              "name": "Porygon-Z",
+              "name": "Voltorbe",
               "environment": "Lumineux",
               "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
+                "Choses ameres",
                 "Choses colorees",
-                "Choses douces",
-                "Choses en tissu",
-                "Choses etranges"
+                "Choses electriques",
+                "Choses qui brillent",
+                "Choses qui tournent",
+                "Choses rondes"
               ]
             },
             {
-              "name": "Mime Jr.",
+              "name": "Electrode",
               "environment": "Lumineux",
               "preferences": [
-                "Choses colorees",
-                "Choses etranges",
-                "Choses mignonnes",
-                "Choses sucrees",
-                "Lieux pour jouer",
-                "Moyens de transport"
+                "Choses acidulees",
+                "Choses electriques",
+                "Choses qui brillent",
+                "Choses qui tournent",
+                "Choses rondes",
+                "Lieux pour jouer"
               ]
             }
           ],
-          "sharedPreferences": [
-            "Choses colorees",
-            "Choses etranges"
-          ],
-          "score": 2,
+          "sharedPreferences": [],
+          "score": 0,
           "uniquePreferences": [
             "Choses ameres",
             "Choses carrees",
@@ -225,13 +127,10 @@
             "Constructions",
             "Choses acidulees",
             "Choses rondes",
-            "Choses acres",
-            "Choses amusantes a regarder",
-            "Choses en tissu",
-            "Choses mignonnes",
-            "Choses sucrees",
-            "Lieux pour jouer",
-            "Moyens de transport"
+            "Choses electriques",
+            "Choses qui brillent",
+            "Choses qui tournent",
+            "Lieux pour jouer"
           ]
         },
         {
@@ -261,15 +160,15 @@
               ]
             },
             {
-              "name": "Cizayox",
+              "name": "Magneton",
               "environment": "Lumineux",
               "preferences": [
+                "Choses a partager",
                 "Choses ameres",
-                "Choses dures",
-                "Choses en bois",
+                "Choses electriques",
                 "Choses en metal",
-                "Choses liees a la nature",
-                "Choses pour s'entrainer"
+                "Choses groupees",
+                "Choses qui brillent"
               ]
             },
             {
@@ -300,10 +199,77 @@
             "Choses a partager",
             "Choses qui brillent",
             "Choses en bois",
-            "Choses liees a la nature",
-            "Choses pour s'entrainer",
             "Choses liees au vent",
             "Recipients"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Bleuseille",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acres",
+                "Choses en bois",
+                "Choses fines",
+                "Choses liees au vent",
+                "Choses qui brillent",
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Minisange",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acidulees",
+                "Choses en bois",
+                "Choses fines",
+                "Choses liees au vent",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Fulgulairo",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acres",
+                "Choses electriques",
+                "Choses fines",
+                "Choses groupees",
+                "Choses liees a la mer",
+                "Choses liees au vent"
+              ]
+            },
+            {
+              "name": "Zapetrel",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses difficiles",
+                "Choses electriques",
+                "Choses epicees",
+                "Choses groupees",
+                "Choses liees a la mer",
+                "Choses liees au vent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees au vent"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses en bois",
+            "Choses fines",
+            "Choses liees au vent",
+            "Choses qui brillent",
+            "Recipients",
+            "Choses acidulees",
+            "Choses electriques",
+            "Choses groupees",
+            "Choses liees a la mer",
+            "Choses difficiles",
+            "Choses epicees"
           ]
         },
         {
@@ -333,32 +299,32 @@
               ]
             },
             {
-              "name": "Noadkoko",
+              "name": "Apireine",
               "environment": "Lumineux",
               "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
+                "Choses difficiles",
                 "Choses en bois",
-                "Choses etranges",
                 "Choses groupees",
-                "Choses liees a la nature"
+                "Choses liees a la nature",
+                "Choses liees au vent",
+                "Choses sucrees"
               ]
             },
             {
-              "name": "Larvibule",
+              "name": "Apitrini",
               "environment": "Lumineux",
               "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses electriques",
+                "Choses a partager",
+                "Choses en bois",
+                "Choses groupees",
                 "Choses liees a la nature",
-                "Choses liees a la terre",
-                "Recipients"
+                "Choses liees au vent",
+                "Choses sucrees"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses amusantes a regarder",
+            "Choses en bois",
             "Choses liees a la nature"
           ],
           "score": 2,
@@ -371,12 +337,9 @@
             "Choses liees a la nature",
             "Choses liees au vent",
             "Fleurs epanouies",
-            "Choses acres",
-            "Choses etranges",
             "Choses groupees",
-            "Choses electriques",
-            "Choses liees a la terre",
-            "Recipients"
+            "Choses sucrees",
+            "Choses a partager"
           ]
         },
         {
@@ -418,13 +381,13 @@
               ]
             },
             {
-              "name": "Florizarre",
+              "name": "Herbizarre",
               "environment": "Lumineux",
               "preferences": [
                 "Choses acidulees",
+                "Choses colorees",
                 "Choses douces",
                 "Choses liees a la nature",
-                "Choses luxueuses",
                 "Choses mignonnes",
                 "Fleurs epanouies"
               ]
@@ -448,8 +411,7 @@
             "Lieux pour jouer",
             "Choses colorees",
             "Choses pointues",
-            "Choses douces",
-            "Choses luxueuses"
+            "Choses douces"
           ]
         },
         {
@@ -491,15 +453,15 @@
               ]
             },
             {
-              "name": "M. Mime",
+              "name": "Mentali",
               "environment": "Lumineux",
               "preferences": [
-                "Choses ameres",
                 "Choses amusantes a regarder",
+                "Choses difficiles",
                 "Choses etranges",
+                "Choses liees au vent",
                 "Choses mignonnes",
-                "Choses ondoyantes",
-                "Moyens de transport"
+                "Choses sucrees"
               ]
             }
           ],
@@ -517,148 +479,150 @@
             "Choses qui guerissent",
             "Choses mignonnes",
             "Choses sucrees",
-            "Choses ameres",
-            "Choses ondoyantes",
-            "Moyens de transport"
+            "Choses difficiles",
+            "Choses liees au vent"
           ]
         },
         {
           "members": [
             {
-              "name": "Fulgulairo",
+              "name": "M. Mime",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses ameres",
+                "Choses amusantes a regarder",
+                "Choses etranges",
+                "Choses mignonnes",
+                "Choses ondoyantes",
+                "Moyens de transport"
+              ]
+            },
+            {
+              "name": "Mime Jr.",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses colorees",
+                "Choses etranges",
+                "Choses mignonnes",
+                "Choses sucrees",
+                "Lieux pour jouer",
+                "Moyens de transport"
+              ]
+            },
+            {
+              "name": "Rondoudou",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses douces",
+                "Choses mignonnes",
+                "Choses ondoyantes",
+                "Choses qui guerissent",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Chinchidou",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses douces",
+                "Choses en tissu",
+                "Choses mignonnes",
+                "Choses propres",
+                "Choses sucrees",
+                "Moyens de transport"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses mignonnes"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses ameres",
+            "Choses amusantes a regarder",
+            "Choses etranges",
+            "Choses mignonnes",
+            "Choses ondoyantes",
+            "Moyens de transport",
+            "Choses colorees",
+            "Choses sucrees",
+            "Lieux pour jouer",
+            "Choses douces",
+            "Choses qui guerissent",
+            "Choses en tissu",
+            "Choses propres"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Larvibule",
               "environment": "Lumineux",
               "preferences": [
                 "Choses acres",
+                "Choses amusantes a regarder",
                 "Choses electriques",
-                "Choses fines",
-                "Choses groupees",
-                "Choses liees a la mer",
-                "Choses liees au vent"
-              ]
-            },
-            {
-              "name": "Zapetrel",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses difficiles",
-                "Choses electriques",
-                "Choses epicees",
-                "Choses groupees",
-                "Choses liees a la mer",
-                "Choses liees au vent"
-              ]
-            },
-            {
-              "name": "Apireine",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses difficiles",
-                "Choses en bois",
-                "Choses groupees",
                 "Choses liees a la nature",
-                "Choses liees au vent",
-                "Choses sucrees"
+                "Choses liees a la terre",
+                "Recipients"
               ]
             },
             {
-              "name": "Apitrini",
+              "name": "Noadkoko",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses en bois",
+                "Choses etranges",
+                "Choses groupees",
+                "Choses liees a la nature"
+              ]
+            },
+            {
+              "name": "Noeunoeuf",
               "environment": "Lumineux",
               "preferences": [
                 "Choses a partager",
-                "Choses en bois",
+                "Choses amusantes a regarder",
+                "Choses epicees",
+                "Choses etranges",
                 "Choses groupees",
+                "Choses liees a la nature"
+              ]
+            },
+            {
+              "name": "Scarabrute",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses en bois",
+                "Choses epicees",
                 "Choses liees a la nature",
-                "Choses liees au vent",
-                "Choses sucrees"
+                "Choses pointues",
+                "Choses pour s'entrainer",
+                "Fleurs epanouies"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses groupees",
-            "Choses liees au vent"
+            "Choses liees a la nature"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses acres",
-            "Choses electriques",
-            "Choses fines",
-            "Choses groupees",
-            "Choses liees a la mer",
-            "Choses liees au vent",
-            "Choses difficiles",
-            "Choses epicees",
-            "Choses en bois",
-            "Choses liees a la nature",
-            "Choses sucrees",
-            "Choses a partager"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Minisange",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses en bois",
-                "Choses fines",
-                "Choses liees au vent",
-                "Choses qui brillent"
-              ]
-            },
-            {
-              "name": "Roucarnage",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses douces",
-                "Choses en bois",
-                "Choses liees a la nature",
-                "Choses liees au vent",
-                "Choses luxueuses"
-              ]
-            },
-            {
-              "name": "Roucool",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses liees a la nature",
-                "Choses liees au vent"
-              ]
-            },
-            {
-              "name": "Altaria",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses liees au vent",
-                "Choses mignonnes",
-                "Choses qui font du bruit"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses acidulees",
-            "Choses liees au vent"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses acidulees",
-            "Choses en bois",
-            "Choses fines",
-            "Choses liees au vent",
-            "Choses qui brillent",
-            "Choses douces",
-            "Choses liees a la nature",
-            "Choses luxueuses",
             "Choses amusantes a regarder",
-            "Choses mignonnes",
-            "Choses qui font du bruit"
+            "Choses electriques",
+            "Choses liees a la nature",
+            "Choses liees a la terre",
+            "Recipients",
+            "Choses en bois",
+            "Choses etranges",
+            "Choses groupees",
+            "Choses a partager",
+            "Choses epicees",
+            "Choses pointues",
+            "Choses pour s'entrainer",
+            "Fleurs epanouies"
           ]
         },
         {
@@ -700,20 +664,20 @@
               ]
             },
             {
-              "name": "Voltorbe",
+              "name": "Pohm",
               "environment": "Lumineux",
               "preferences": [
-                "Choses ameres",
-                "Choses colorees",
+                "Choses a partager",
                 "Choses electriques",
+                "Choses en verre",
+                "Choses mignonnes",
                 "Choses qui brillent",
-                "Choses qui tournent",
-                "Choses rondes"
+                "Choses sucrees"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses ameres"
+            "Choses en verre"
           ],
           "score": 1,
           "uniquePreferences": [
@@ -728,215 +692,7 @@
             "Choses liees a la nature",
             "Choses mignonnes",
             "Moyens de transport",
-            "Choses colorees",
-            "Choses qui tournent",
-            "Choses rondes"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Machopeur",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses pour s'entrainer"
-              ]
-            },
-            {
-              "name": "Machoc",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses pour s'entrainer",
-                "Constructions"
-              ]
-            },
-            {
-              "name": "Debugant",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses en pierre",
-                "Choses en tissu",
-                "Choses epicees",
-                "Choses pour s'entrainer",
-                "Choses rondes"
-              ]
-            },
-            {
-              "name": "Kicklee",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses en pierre",
-                "Choses en tissu",
-                "Choses epicees",
-                "Choses pour s'entrainer",
-                "Choses rondes"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses a partager",
-            "Choses en pierre",
-            "Choses pour s'entrainer"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses acidulees",
-            "Choses dures",
-            "Choses en pierre",
-            "Choses pour s'entrainer",
-            "Choses epicees",
-            "Constructions",
-            "Choses en tissu",
-            "Choses rondes"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Electrode",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses electriques",
-                "Choses qui brillent",
-                "Choses qui tournent",
-                "Choses rondes",
-                "Lieux pour jouer"
-              ]
-            },
-            {
-              "name": "Raichu",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses rondes",
-                "Lieux pour jouer"
-              ]
-            },
-            {
-              "name": "Pikachu",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses rondes"
-              ]
-            },
-            {
-              "name": "Elekable",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses dures",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses liees au feu",
-                "Choses pour s'entrainer"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses acidulees",
-            "Choses electriques"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses acidulees",
-            "Choses electriques",
-            "Choses qui brillent",
-            "Choses qui tournent",
-            "Choses rondes",
-            "Lieux pour jouer",
-            "Choses a partager",
-            "Choses en verre",
-            "Choses dures",
-            "Choses liees au feu",
-            "Choses pour s'entrainer"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Rondoudou",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses douces",
-                "Choses mignonnes",
-                "Choses ondoyantes",
-                "Choses qui guerissent",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Ptiravi",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses douces",
-                "Choses en tissu",
-                "Choses qui guerissent",
-                "Choses rondes",
-                "Choses sucrees",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Leveinard",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses douces",
-                "Choses en tissu",
-                "Choses qui guerissent",
-                "Choses rondes",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Chinchidou",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses douces",
-                "Choses en tissu",
-                "Choses mignonnes",
-                "Choses propres",
-                "Choses sucrees",
-                "Moyens de transport"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses douces",
             "Choses sucrees"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses douces",
-            "Choses mignonnes",
-            "Choses ondoyantes",
-            "Choses qui guerissent",
-            "Choses sucrees",
-            "Choses en tissu",
-            "Choses rondes",
-            "Recipients",
-            "Choses a partager",
-            "Choses propres",
-            "Moyens de transport"
           ]
         },
         {
@@ -966,35 +722,34 @@
               ]
             },
             {
-              "name": "Forgelina",
+              "name": "Makuhita",
               "environment": "Lumineux",
               "preferences": [
-                "Choses mignonnes",
-                "Choses en metal",
-                "Constructions",
-                "Choses carrees",
+                "Choses en bois",
+                "Choses en tissu",
                 "Choses pour s'entrainer",
-                "Choses epicees"
+                "Choses rondes",
+                "Choses sucrees",
+                "Constructions"
               ]
             },
             {
-              "name": "Elektek",
+              "name": "Ptiravi",
               "environment": "Lumineux",
               "preferences": [
-                "Choses electriques",
-                "Choses en verre",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses pointues",
-                "Choses pour s'entrainer"
+                "Choses douces",
+                "Choses en tissu",
+                "Choses qui guerissent",
+                "Choses rondes",
+                "Choses sucrees",
+                "Recipients"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses epicees",
-            "Choses pour s'entrainer"
+            "Choses en tissu"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses en tissu",
             "Choses epicees",
@@ -1004,13 +759,82 @@
             "Moyens de transport",
             "Choses etranges",
             "Choses qui guerissent",
-            "Choses mignonnes",
+            "Choses en bois",
+            "Choses sucrees",
+            "Choses douces",
+            "Recipients"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Cizayox",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses ameres",
+                "Choses dures",
+                "Choses en bois",
+                "Choses en metal",
+                "Choses liees a la nature",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Scarhino",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses en bois",
+                "Choses imitant des aliments",
+                "Choses liees a la nature",
+                "Choses pour s'entrainer",
+                "Choses sucrees",
+                "Fleurs epanouies"
+              ]
+            },
+            {
+              "name": "Insecateur",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses en bois",
+                "Choses epicees",
+                "Choses liees a la nature",
+                "Choses liees au vent",
+                "Choses pointues",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Roucoups",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses epicees",
+                "Choses imitant des aliments",
+                "Choses liees a la nature",
+                "Choses liees au vent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a la nature"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses ameres",
+            "Choses dures",
+            "Choses en bois",
             "Choses en metal",
-            "Choses carrees",
-            "Choses electriques",
-            "Choses en verre",
-            "Choses liees au feu",
-            "Choses pointues"
+            "Choses liees a la nature",
+            "Choses pour s'entrainer",
+            "Choses imitant des aliments",
+            "Choses sucrees",
+            "Fleurs epanouies",
+            "Choses epicees",
+            "Choses liees au vent",
+            "Choses pointues",
+            "Choses amusantes a regarder",
+            "Choses douces"
           ]
         },
         {
@@ -1040,27 +864,27 @@
               ]
             },
             {
-              "name": "Magneton",
+              "name": "Ouvrifier",
               "environment": "Lumineux",
               "preferences": [
                 "Choses a partager",
-                "Choses ameres",
-                "Choses electriques",
                 "Choses en metal",
-                "Choses groupees",
-                "Choses qui brillent"
+                "Choses epicees",
+                "Choses fines",
+                "Choses pour s'entrainer",
+                "Constructions"
               ]
             },
             {
-              "name": "Noeunoeuf",
+              "name": "Betochef",
               "environment": "Lumineux",
               "preferences": [
                 "Choses a partager",
-                "Choses amusantes a regarder",
+                "Choses en pierre",
                 "Choses epicees",
-                "Choses etranges",
-                "Choses groupees",
-                "Choses liees a la nature"
+                "Choses fines",
+                "Choses pour s'entrainer",
+                "Constructions"
               ]
             }
           ],
@@ -1078,14 +902,9 @@
             "Choses acidulees",
             "Choses pour s'entrainer",
             "Constructions",
-            "Choses ameres",
-            "Choses electriques",
-            "Choses groupees",
-            "Choses qui brillent",
-            "Choses amusantes a regarder",
             "Choses epicees",
-            "Choses etranges",
-            "Choses liees a la nature"
+            "Choses fines",
+            "Choses en pierre"
           ]
         },
         {
@@ -1103,6 +922,18 @@
               ]
             },
             {
+              "name": "Raikou",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acres",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses liees au vent",
+                "Choses luxueuses",
+                "Choses qui brillent"
+              ]
+            },
+            {
               "name": "Voltali",
               "environment": "Lumineux",
               "preferences": [
@@ -1115,27 +946,15 @@
               ]
             },
             {
-              "name": "Negapi",
+              "name": "Elektek",
               "environment": "Lumineux",
               "preferences": [
-                "Choses a partager",
-                "Choses douces",
                 "Choses electriques",
                 "Choses en verre",
                 "Choses epicees",
-                "Choses mignonnes"
-              ]
-            },
-            {
-              "name": "Elekid",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses electriques",
-                "Choses en verre",
-                "Choses mignonnes",
-                "Choses qui tournent",
-                "Choses rondes",
-                "Choses sucrees"
+                "Choses liees au feu",
+                "Choses pointues",
+                "Choses pour s'entrainer"
               ]
             }
           ],
@@ -1151,12 +970,147 @@
             "Choses epicees",
             "Choses liees au vent",
             "Choses luxueuses",
+            "Choses acres",
+            "Choses qui brillent",
             "Choses mignonnes",
             "Choses pointues",
-            "Choses qui brillent",
+            "Choses liees au feu",
+            "Choses pour s'entrainer"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Machoc",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses dures",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses pour s'entrainer",
+                "Constructions"
+              ]
+            },
+            {
+              "name": "Mackogneur",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses dures",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Machopeur",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses dures",
+                "Choses en pierre",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Debugant",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses en pierre",
+                "Choses en tissu",
+                "Choses epicees",
+                "Choses pour s'entrainer",
+                "Choses rondes"
+              ]
+            }
+          ],
+          "sharedPreferences": [
             "Choses a partager",
-            "Choses douces",
-            "Choses qui tournent",
+            "Choses en pierre",
+            "Choses pour s'entrainer"
+          ],
+          "score": 3,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses epicees",
+            "Choses pour s'entrainer",
+            "Constructions",
+            "Choses acidulees",
+            "Choses en tissu",
+            "Choses rondes"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Forgelina",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses mignonnes",
+                "Choses en metal",
+                "Constructions",
+                "Choses carrees",
+                "Choses pour s'entrainer",
+                "Choses epicees"
+              ]
+            },
+            {
+              "name": "Charpenti",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses carrees",
+                "Choses en bois",
+                "Choses epicees",
+                "Choses fines",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Kicklee",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses en pierre",
+                "Choses en tissu",
+                "Choses epicees",
+                "Choses pour s'entrainer",
+                "Choses rondes"
+              ]
+            },
+            {
+              "name": "Tygnon",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses en pierre",
+                "Choses en tissu",
+                "Choses pour s'entrainer",
+                "Choses rondes",
+                "Choses sucrees"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses pour s'entrainer"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses mignonnes",
+            "Choses en metal",
+            "Constructions",
+            "Choses carrees",
+            "Choses pour s'entrainer",
+            "Choses epicees",
+            "Choses en bois",
+            "Choses fines",
+            "Choses a partager",
+            "Choses en pierre",
+            "Choses en tissu",
             "Choses rondes",
             "Choses sucrees"
           ]
@@ -1164,72 +1118,70 @@
         {
           "members": [
             {
-              "name": "Scarabrute",
+              "name": "Elekable",
               "environment": "Lumineux",
               "preferences": [
-                "Choses en bois",
-                "Choses epicees",
-                "Choses liees a la nature",
-                "Choses pointues",
-                "Choses pour s'entrainer",
-                "Fleurs epanouies"
-              ]
-            },
-            {
-              "name": "Insecateur",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses en bois",
-                "Choses epicees",
-                "Choses liees a la nature",
-                "Choses liees au vent",
-                "Choses pointues",
+                "Choses acidulees",
+                "Choses dures",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses liees au feu",
                 "Choses pour s'entrainer"
               ]
             },
             {
-              "name": "Scarhino",
+              "name": "Pikachu",
               "environment": "Lumineux",
               "preferences": [
-                "Choses en bois",
-                "Choses imitant des aliments",
-                "Choses liees a la nature",
-                "Choses pour s'entrainer",
-                "Choses sucrees",
-                "Fleurs epanouies"
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses rondes"
               ]
             },
             {
-              "name": "Makuhita",
+              "name": "Raichu",
               "environment": "Lumineux",
               "preferences": [
-                "Choses en bois",
-                "Choses en tissu",
-                "Choses pour s'entrainer",
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses electriques",
+                "Choses en verre",
                 "Choses rondes",
-                "Choses sucrees",
-                "Constructions"
+                "Lieux pour jouer"
+              ]
+            },
+            {
+              "name": "Pohmotte",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses pour s'entrainer",
+                "Choses qui brillent",
+                "Choses sucrees"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses en bois",
-            "Choses pour s'entrainer"
+            "Choses electriques",
+            "Choses en verre"
           ],
           "score": 2,
           "uniquePreferences": [
-            "Choses en bois",
-            "Choses epicees",
-            "Choses liees a la nature",
-            "Choses pointues",
+            "Choses acidulees",
+            "Choses dures",
+            "Choses electriques",
+            "Choses en verre",
+            "Choses liees au feu",
             "Choses pour s'entrainer",
-            "Fleurs epanouies",
-            "Choses liees au vent",
-            "Choses imitant des aliments",
-            "Choses sucrees",
-            "Choses en tissu",
+            "Choses a partager",
             "Choses rondes",
-            "Constructions"
+            "Lieux pour jouer",
+            "Choses qui brillent",
+            "Choses sucrees"
           ]
         },
         {
@@ -1247,6 +1199,29 @@
               ]
             },
             {
+              "name": "Grodoudou",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses douces",
+                "Choses mignonnes",
+                "Choses qui guerissent"
+              ]
+            },
+            {
+              "name": "Leuphorie",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses douces",
+                "Choses en tissu",
+                "Choses qui guerissent",
+                "Choses rondes"
+              ]
+            },
+            {
               "name": "Nanmeouie",
               "environment": "Lumineux",
               "preferences": [
@@ -1257,36 +1232,12 @@
                 "Choses qui guerissent",
                 "Choses rondes"
               ]
-            },
-            {
-              "name": "Tylton",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses liees au vent",
-                "Choses mignonnes",
-                "Choses propres",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Grodoudou",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses douces",
-                "Choses mignonnes",
-                "Choses qui guerissent"
-              ]
             }
           ],
           "sharedPreferences": [
-            "Choses douces",
-            "Choses mignonnes"
+            "Choses douces"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses acidulees",
             "Choses douces",
@@ -1294,73 +1245,10 @@
             "Choses mignonnes",
             "Choses propres",
             "Moyens de transport",
-            "Choses ameres",
+            "Choses a partager",
             "Choses qui guerissent",
             "Choses rondes",
-            "Choses amusantes a regarder",
-            "Choses liees au vent",
-            "Choses sucrees",
-            "Choses a partager"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Roucoups",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses epicees",
-                "Choses imitant des aliments",
-                "Choses liees a la nature",
-                "Choses liees au vent"
-              ]
-            },
-            {
-              "name": "Mentali",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses difficiles",
-                "Choses etranges",
-                "Choses liees au vent",
-                "Choses mignonnes",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Lucanon",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acres",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses liees a la nature",
-                "Choses liees au vent",
-                "Choses pour s'entrainer"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses liees au vent"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses amusantes a regarder",
-            "Choses douces",
-            "Choses epicees",
-            "Choses imitant des aliments",
-            "Choses liees a la nature",
-            "Choses liees au vent",
-            "Choses difficiles",
-            "Choses etranges",
-            "Choses mignonnes",
-            "Choses sucrees",
-            "Choses acres",
-            "Choses electriques",
-            "Choses en verre",
-            "Choses pour s'entrainer"
+            "Choses ameres"
           ]
         },
         {
@@ -1378,27 +1266,83 @@
               ]
             },
             {
-              "name": "Phyllali",
+              "name": "Florizarre",
               "environment": "Lumineux",
               "preferences": [
                 "Choses acidulees",
-                "Choses en tissu",
+                "Choses douces",
                 "Choses liees a la nature",
+                "Choses luxueuses",
                 "Choses mignonnes",
-                "Choses qui guerissent",
                 "Fleurs epanouies"
               ]
             },
             {
-              "name": "Herbizarre",
+              "name": "Roucarnage",
               "environment": "Lumineux",
               "preferences": [
                 "Choses acidulees",
-                "Choses colorees",
+                "Choses douces",
+                "Choses en bois",
+                "Choses liees a la nature",
+                "Choses liees au vent",
+                "Choses luxueuses"
+              ]
+            },
+            {
+              "name": "Roucool",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acidulees",
+                "Choses amusantes a regarder",
                 "Choses douces",
                 "Choses liees a la nature",
+                "Choses liees au vent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a la nature"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses liees a la nature",
+            "Choses luxueuses",
+            "Choses mignonnes",
+            "Choses qui brillent",
+            "Fleurs epanouies",
+            "Choses acidulees",
+            "Choses douces",
+            "Choses en bois",
+            "Choses liees au vent",
+            "Choses amusantes a regarder"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Altaria",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acidulees",
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses liees au vent",
                 "Choses mignonnes",
-                "Fleurs epanouies"
+                "Choses qui font du bruit"
+              ]
+            },
+            {
+              "name": "Tylton",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses liees au vent",
+                "Choses mignonnes",
+                "Choses propres",
+                "Choses sucrees"
               ]
             },
             {
@@ -1410,195 +1354,6 @@
                 "Choses liees a l'eau",
                 "Choses liees a la nature",
                 "Choses mignonnes",
-                "Choses sucrees"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses liees a la nature",
-            "Choses mignonnes"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses acres",
-            "Choses liees a la nature",
-            "Choses luxueuses",
-            "Choses mignonnes",
-            "Choses qui brillent",
-            "Fleurs epanouies",
-            "Choses acidulees",
-            "Choses en tissu",
-            "Choses qui guerissent",
-            "Choses colorees",
-            "Choses douces",
-            "Choses a partager",
-            "Choses liees a l'eau",
-            "Choses sucrees"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Tygnon",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses en pierre",
-                "Choses en tissu",
-                "Choses pour s'entrainer",
-                "Choses rondes",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Kapoera",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses en pierre",
-                "Choses en tissu",
-                "Choses pour s'entrainer",
-                "Choses rondes",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Leuphorie",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses douces",
-                "Choses en tissu",
-                "Choses qui guerissent",
-                "Choses rondes"
-              ]
-            },
-            {
-              "name": "Pohmarmotte",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses acres",
-                "Choses electriques",
-                "Choses pour s'entrainer",
-                "Choses qui brillent",
-                "Choses qui guerissent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses a partager"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses en pierre",
-            "Choses en tissu",
-            "Choses pour s'entrainer",
-            "Choses rondes",
-            "Choses sucrees",
-            "Choses acidulees",
-            "Choses douces",
-            "Choses qui guerissent",
-            "Choses acres",
-            "Choses electriques",
-            "Choses qui brillent"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Pichu",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses electriques",
-                "Choses en tissu",
-                "Choses en verre",
-                "Choses mignonnes",
-                "Choses sucrees",
-                "Fleurs epanouies"
-              ]
-            },
-            {
-              "name": "Wattouat",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses electriques",
-                "Choses en tissu",
-                "Choses en verre",
-                "Choses mignonnes",
-                "Choses qui brillent",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Pohm",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses mignonnes",
-                "Choses qui brillent",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Posipi",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses douces",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses mignonnes",
-                "Choses sucrees"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses electriques",
-            "Choses en verre",
-            "Choses mignonnes",
-            "Choses sucrees"
-          ],
-          "score": 4,
-          "uniquePreferences": [
-            "Choses electriques",
-            "Choses en tissu",
-            "Choses en verre",
-            "Choses mignonnes",
-            "Choses sucrees",
-            "Fleurs epanouies",
-            "Choses qui brillent",
-            "Choses a partager",
-            "Choses douces"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Pharamp",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses acidulees",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses mignonnes",
-                "Choses qui brillent",
-                "Fleurs epanouies"
-              ]
-            },
-            {
-              "name": "Pohmotte",
-              "environment": "Lumineux",
-              "preferences": [
-                "Choses a partager",
-                "Choses electriques",
-                "Choses en verre",
-                "Choses pour s'entrainer",
-                "Choses qui brillent",
                 "Choses sucrees"
               ]
             },
@@ -1616,95 +1371,229 @@
             }
           ],
           "sharedPreferences": [
-            "Choses electriques"
+            "Choses mignonnes"
           ],
           "score": 1,
           "uniquePreferences": [
             "Choses acidulees",
-            "Choses electriques",
-            "Choses en verre",
-            "Choses mignonnes",
-            "Choses qui brillent",
-            "Fleurs epanouies",
-            "Choses a partager",
-            "Choses pour s'entrainer",
-            "Choses sucrees",
             "Choses amusantes a regarder",
+            "Choses douces",
+            "Choses liees au vent",
+            "Choses mignonnes",
+            "Choses qui font du bruit",
+            "Choses propres",
+            "Choses sucrees",
+            "Choses a partager",
+            "Choses liees a l'eau",
+            "Choses liees a la nature",
+            "Choses electriques",
             "Choses imitant des aliments"
           ]
-        }
-      ],
-      "pokemonCount": 91,
-      "houseCount": 24
-    },
-    "Sombre": {
-      "environment": "Sombre",
-      "houses": [
+        },
         {
           "members": [
             {
-              "name": "Melo",
-              "environment": "Sombre",
+              "name": "Kapoera",
+              "environment": "Lumineux",
               "preferences": [
-                "Choses colorees",
-                "Choses mignonnes",
+                "Choses a partager",
+                "Choses en pierre",
+                "Choses en tissu",
+                "Choses pour s'entrainer",
+                "Choses rondes",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Leveinard",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses douces",
+                "Choses en tissu",
                 "Choses qui guerissent",
                 "Choses rondes",
                 "Choses sucrees"
               ]
             },
             {
-              "name": "Melofee",
-              "environment": "Sombre",
+              "name": "Pohmarmotte",
+              "environment": "Lumineux",
               "preferences": [
                 "Choses a partager",
-                "Choses mignonnes",
-                "Choses qui guerissent",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Melodelfe",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses mignonnes",
+                "Choses acres",
+                "Choses electriques",
+                "Choses pour s'entrainer",
+                "Choses qui brillent",
                 "Choses qui guerissent"
               ]
             },
             {
-              "name": "Lucario",
-              "environment": "Sombre",
+              "name": "Wattouat",
+              "environment": "Lumineux",
               "preferences": [
-                "Choses acres",
-                "Choses difficiles",
-                "Choses en metal",
-                "Choses pour s'entrainer",
+                "Choses electriques",
+                "Choses en tissu",
+                "Choses en verre",
+                "Choses mignonnes",
+                "Choses qui brillent",
+                "Choses sucrees"
+              ]
+            }
+          ],
+          "sharedPreferences": [],
+          "score": 0,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses en pierre",
+            "Choses en tissu",
+            "Choses pour s'entrainer",
+            "Choses rondes",
+            "Choses sucrees",
+            "Choses douces",
+            "Choses qui guerissent",
+            "Choses acres",
+            "Choses electriques",
+            "Choses qui brillent",
+            "Choses en verre",
+            "Choses mignonnes"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Phyllali",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acidulees",
+                "Choses en tissu",
+                "Choses liees a la nature",
+                "Choses mignonnes",
                 "Choses qui guerissent",
-                "Constructions"
+                "Fleurs epanouies"
+              ]
+            },
+            {
+              "name": "Pichu",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses electriques",
+                "Choses en tissu",
+                "Choses en verre",
+                "Choses mignonnes",
+                "Choses sucrees",
+                "Fleurs epanouies"
+              ]
+            },
+            {
+              "name": "Pharamp",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acidulees",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses mignonnes",
+                "Choses qui brillent",
+                "Fleurs epanouies"
+              ]
+            },
+            {
+              "name": "Elekid",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses electriques",
+                "Choses en verre",
+                "Choses mignonnes",
+                "Choses qui tournent",
+                "Choses rondes",
+                "Choses sucrees"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses qui guerissent"
+            "Choses mignonnes"
           ],
           "score": 1,
           "uniquePreferences": [
-            "Choses colorees",
+            "Choses acidulees",
+            "Choses en tissu",
+            "Choses liees a la nature",
             "Choses mignonnes",
             "Choses qui guerissent",
-            "Choses rondes",
+            "Fleurs epanouies",
+            "Choses electriques",
+            "Choses en verre",
             "Choses sucrees",
-            "Choses a partager",
-            "Choses acidulees",
-            "Choses acres",
-            "Choses difficiles",
-            "Choses en metal",
-            "Choses pour s'entrainer",
-            "Constructions"
+            "Choses qui brillent",
+            "Choses qui tournent",
+            "Choses rondes"
           ]
         },
+        {
+          "members": [
+            {
+              "name": "Lucanon",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses acres",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses liees a la nature",
+                "Choses liees au vent",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Negapi",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses douces",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses epicees",
+                "Choses mignonnes"
+              ]
+            },
+            {
+              "name": "Posipi",
+              "environment": "Lumineux",
+              "preferences": [
+                "Choses a partager",
+                "Choses douces",
+                "Choses electriques",
+                "Choses en verre",
+                "Choses mignonnes",
+                "Choses sucrees"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses electriques",
+            "Choses en verre"
+          ],
+          "score": 2,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses electriques",
+            "Choses en verre",
+            "Choses liees a la nature",
+            "Choses liees au vent",
+            "Choses pour s'entrainer",
+            "Choses a partager",
+            "Choses douces",
+            "Choses epicees",
+            "Choses mignonnes",
+            "Choses sucrees"
+          ]
+        }
+      ],
+      "pokemonCount": 91,
+      "houseCount": 23
+    },
+    "Sombre": {
+      "environment": "Sombre",
+      "houses": [
         {
           "members": [
             {
@@ -1744,21 +1633,21 @@
               ]
             },
             {
-              "name": "Embrylex",
+              "name": "Minotaupe",
               "environment": "Sombre",
               "preferences": [
-                "Choses en pierre",
-                "Choses imitant des aliments",
+                "Choses acidulees",
+                "Choses amusantes a regarder",
+                "Choses en metal",
                 "Choses liees a la terre",
-                "Choses luxueuses",
-                "Choses qui brillent",
-                "Choses sucrees"
+                "Choses pointues",
+                "Choses pour s'entrainer"
               ]
             }
           ],
           "sharedPreferences": [
             "Choses liees a la terre",
-            "Choses luxueuses"
+            "Choses pointues"
           ],
           "score": 2,
           "uniquePreferences": [
@@ -1771,9 +1660,77 @@
             "Choses acidulees",
             "Choses pour s'entrainer",
             "Choses epicees",
-            "Choses en pierre",
-            "Choses imitant des aliments",
-            "Choses qui brillent"
+            "Choses amusantes a regarder",
+            "Choses en metal"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Lucario",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses difficiles",
+                "Choses en metal",
+                "Choses pour s'entrainer",
+                "Choses qui guerissent",
+                "Constructions"
+              ]
+            },
+            {
+              "name": "Absol",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses avec du texte",
+                "Choses difficiles",
+                "Choses douces",
+                "Choses liees au vent",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Noarfang",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses avec du texte",
+                "Choses douces",
+                "Choses liees au vent"
+              ]
+            },
+            {
+              "name": "Hoothoot",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses en tissu",
+                "Choses liees au vent",
+                "Choses ondoyantes"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses acres"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses difficiles",
+            "Choses en metal",
+            "Choses pour s'entrainer",
+            "Choses qui guerissent",
+            "Constructions",
+            "Choses avec du texte",
+            "Choses douces",
+            "Choses liees au vent",
+            "Choses amusantes a regarder",
+            "Choses en tissu",
+            "Choses ondoyantes"
           ]
         },
         {
@@ -1885,21 +1842,21 @@
               ]
             },
             {
-              "name": "Melokrik",
+              "name": "Nostenfer",
               "environment": "Sombre",
               "preferences": [
+                "Choses acres",
                 "Choses amusantes a regarder",
-                "Choses colorees",
                 "Choses en bois",
-                "Choses epicees",
-                "Choses liees a la nature",
-                "Choses qui font du bruit"
+                "Choses inquietantes",
+                "Choses liees au vent",
+                "Dechets"
               ]
             }
           ],
           "sharedPreferences": [
             "Choses en bois",
-            "Choses liees a la nature"
+            "Choses liees au vent"
           ],
           "score": 2,
           "uniquePreferences": [
@@ -1914,9 +1871,7 @@
             "Choses avec du texte",
             "Choses inquietantes",
             "Choses amusantes a regarder",
-            "Choses colorees",
-            "Choses epicees",
-            "Choses qui font du bruit"
+            "Dechets"
           ]
         },
         {
@@ -1945,6 +1900,128 @@
               ]
             },
             {
+              "name": "Melofee",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses mignonnes",
+                "Choses qui guerissent",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Melodelfe",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses mignonnes",
+                "Choses qui guerissent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses a partager"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses epicees",
+            "Choses fines",
+            "Choses groupees",
+            "Choses liees a la terre",
+            "Lieux pour jouer",
+            "Choses ameres",
+            "Choses mignonnes",
+            "Choses qui guerissent",
+            "Choses sucrees",
+            "Choses acidulees"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Embrylex",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses en pierre",
+                "Choses imitant des aliments",
+                "Choses liees a la terre",
+                "Choses luxueuses",
+                "Choses qui brillent",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Ymphect",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses dures",
+                "Choses en pierre",
+                "Choses luxueuses",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Bruyverne",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses imitant des aliments",
+                "Choses liees au feu",
+                "Choses liees au vent",
+                "Lieux pour jouer"
+              ]
+            },
+            {
+              "name": "Sonistrelle",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses epicees",
+                "Choses imitant des aliments",
+                "Choses liees au feu",
+                "Choses liees au vent",
+                "Choses luxueuses"
+              ]
+            }
+          ],
+          "sharedPreferences": [],
+          "score": 0,
+          "uniquePreferences": [
+            "Choses en pierre",
+            "Choses imitant des aliments",
+            "Choses liees a la terre",
+            "Choses luxueuses",
+            "Choses qui brillent",
+            "Choses sucrees",
+            "Choses acres",
+            "Choses amusantes a regarder",
+            "Choses dures",
+            "Choses liees au feu",
+            "Choses liees au vent",
+            "Lieux pour jouer",
+            "Choses epicees"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Riolu",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses en tissu",
+                "Choses epicees",
+                "Choses groupees",
+                "Choses pour s'entrainer",
+                "Constructions"
+              ]
+            },
+            {
               "name": "Abo",
               "environment": "Sombre",
               "preferences": [
@@ -1965,80 +2042,25 @@
                 "Choses liees a la nature",
                 "Choses qui tournent"
               ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses fines"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses epicees",
-            "Choses fines",
-            "Choses groupees",
-            "Choses liees a la terre",
-            "Lieux pour jouer",
-            "Choses ameres",
-            "Choses mignonnes",
-            "Choses amusantes a regarder",
-            "Choses liees a la nature",
-            "Choses qui tournent"
-          ]
-        },
-        {
-          "members": [
+            },
             {
-              "name": "Riolu",
+              "name": "Melokrik",
               "environment": "Sombre",
               "preferences": [
                 "Choses amusantes a regarder",
-                "Choses en tissu",
+                "Choses colorees",
+                "Choses en bois",
                 "Choses epicees",
-                "Choses groupees",
-                "Choses pour s'entrainer",
-                "Constructions"
-              ]
-            },
-            {
-              "name": "Minotaupe",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acidulees",
-                "Choses amusantes a regarder",
-                "Choses en metal",
-                "Choses liees a la terre",
-                "Choses pointues",
-                "Choses pour s'entrainer"
-              ]
-            },
-            {
-              "name": "Bruyverne",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses imitant des aliments",
-                "Choses liees au feu",
-                "Choses liees au vent",
-                "Lieux pour jouer"
-              ]
-            },
-            {
-              "name": "Noarfang",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses avec du texte",
-                "Choses douces",
-                "Choses liees au vent"
+                "Choses liees a la nature",
+                "Choses qui font du bruit"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses amusantes a regarder"
+            "Choses amusantes a regarder",
+            "Choses epicees"
           ],
-          "score": 1,
+          "score": 2,
           "uniquePreferences": [
             "Choses amusantes a regarder",
             "Choses en tissu",
@@ -2046,17 +2068,12 @@
             "Choses groupees",
             "Choses pour s'entrainer",
             "Constructions",
-            "Choses acidulees",
-            "Choses en metal",
-            "Choses liees a la terre",
-            "Choses pointues",
-            "Choses acres",
-            "Choses imitant des aliments",
-            "Choses liees au feu",
-            "Choses liees au vent",
-            "Lieux pour jouer",
-            "Choses avec du texte",
-            "Choses douces"
+            "Choses fines",
+            "Choses liees a la nature",
+            "Choses qui tournent",
+            "Choses colorees",
+            "Choses en bois",
+            "Choses qui font du bruit"
           ]
         },
         {
@@ -2098,24 +2115,22 @@
               ]
             },
             {
-              "name": "Ectoplasma",
+              "name": "Mimiqui",
               "environment": "Sombre",
               "preferences": [
                 "Choses a partager",
-                "Choses etranges",
+                "Choses ameres",
+                "Choses electriques",
+                "Choses en tissu",
                 "Choses inquietantes",
-                "Choses sucrees",
-                "Dechets",
-                "Moyens de transport"
+                "Choses mignonnes"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses etranges",
-            "Choses inquietantes",
-            "Moyens de transport"
+            "Choses inquietantes"
           ],
-          "score": 3,
+          "score": 1,
           "uniquePreferences": [
             "Choses acidulees",
             "Choses douces",
@@ -2127,8 +2142,8 @@
             "Choses ameres",
             "Choses en tissu",
             "Choses en verre",
-            "Choses sucrees",
-            "Dechets"
+            "Choses electriques",
+            "Choses mignonnes"
           ]
         },
         {
@@ -2228,141 +2243,6 @@
               ]
             },
             {
-              "name": "Sonistrelle",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses epicees",
-                "Choses imitant des aliments",
-                "Choses liees au feu",
-                "Choses liees au vent",
-                "Choses luxueuses"
-              ]
-            },
-            {
-              "name": "Hoothoot",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses en tissu",
-                "Choses liees au vent",
-                "Choses ondoyantes"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses amusantes a regarder"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses acidulees",
-            "Choses amusantes a regarder",
-            "Choses en pierre",
-            "Choses liees a la nature",
-            "Choses liees a la terre",
-            "Choses pointues",
-            "Choses ameres",
-            "Choses colorees",
-            "Choses en bois",
-            "Choses qui font du bruit",
-            "Choses epicees",
-            "Choses imitant des aliments",
-            "Choses liees au feu",
-            "Choses liees au vent",
-            "Choses luxueuses",
-            "Choses acres",
-            "Choses douces",
-            "Choses en tissu",
-            "Choses ondoyantes"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Absol",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses avec du texte",
-                "Choses difficiles",
-                "Choses douces",
-                "Choses liees au vent",
-                "Choses pour s'entrainer"
-              ]
-            },
-            {
-              "name": "Mewtwo",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses avec du texte",
-                "Choses difficiles",
-                "Choses en pierre",
-                "Choses etranges"
-              ]
-            },
-            {
-              "name": "Kadabra",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses en metal",
-                "Choses etranges",
-                "Choses ondoyantes",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Abra",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses en metal",
-                "Choses etranges",
-                "Choses ondoyantes"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses acres"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses acres",
-            "Choses avec du texte",
-            "Choses difficiles",
-            "Choses douces",
-            "Choses liees au vent",
-            "Choses pour s'entrainer",
-            "Choses amusantes a regarder",
-            "Choses en pierre",
-            "Choses etranges",
-            "Choses en metal",
-            "Choses ondoyantes",
-            "Recipients"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Zorua",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses en verre",
-                "Choses luxueuses",
-                "Choses mignonnes",
-                "Choses qui brillent"
-              ]
-            },
-            {
               "name": "Lumivole",
               "environment": "Sombre",
               "preferences": [
@@ -2385,25 +2265,84 @@
                 "Choses qui brillent",
                 "Choses sucrees"
               ]
-            },
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a la nature"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses acidulees",
+            "Choses amusantes a regarder",
+            "Choses en pierre",
+            "Choses liees a la nature",
+            "Choses liees a la terre",
+            "Choses pointues",
+            "Choses ameres",
+            "Choses colorees",
+            "Choses en bois",
+            "Choses qui font du bruit",
+            "Choses a partager",
+            "Choses mignonnes",
+            "Choses qui brillent",
+            "Choses sucrees"
+          ]
+        },
+        {
+          "members": [
             {
-              "name": "Mimiqui",
+              "name": "Zorua",
               "environment": "Sombre",
               "preferences": [
                 "Choses a partager",
-                "Choses ameres",
-                "Choses electriques",
-                "Choses en tissu",
+                "Choses acidulees",
+                "Choses en verre",
+                "Choses luxueuses",
+                "Choses mignonnes",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Zoroark",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses en verre",
+                "Choses epicees",
+                "Choses etranges",
+                "Choses luxueuses",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Fantominus",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses epicees",
+                "Choses etranges",
                 "Choses inquietantes",
-                "Choses mignonnes"
+                "Dechets",
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Spectrum",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses epicees",
+                "Choses etranges",
+                "Choses inquietantes",
+                "Choses ondoyantes",
+                "Dechets"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses a partager",
-            "Choses mignonnes"
+            "Choses a partager"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses a partager",
             "Choses acidulees",
@@ -2411,13 +2350,84 @@
             "Choses luxueuses",
             "Choses mignonnes",
             "Choses qui brillent",
-            "Choses en bois",
-            "Choses liees a la nature",
+            "Choses epicees",
+            "Choses etranges",
+            "Choses inquietantes",
+            "Dechets",
+            "Recipients",
+            "Choses ondoyantes"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Ectoplasma",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses etranges",
+                "Choses inquietantes",
+                "Choses sucrees",
+                "Dechets",
+                "Moyens de transport"
+              ]
+            },
+            {
+              "name": "Magireve",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses a partager",
+                "Choses ameres",
+                "Choses etranges",
+                "Choses inquietantes",
+                "Choses ondoyantes",
+                "Choses qui font du bruit"
+              ]
+            },
+            {
+              "name": "Alakazam",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses ameres",
+                "Choses amusantes a regarder",
+                "Choses avec du texte",
+                "Choses en metal",
+                "Choses etranges",
+                "Choses ondoyantes"
+              ]
+            },
+            {
+              "name": "Kadabra",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses en metal",
+                "Choses etranges",
+                "Choses ondoyantes",
+                "Recipients"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses etranges"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses etranges",
+            "Choses inquietantes",
             "Choses sucrees",
+            "Dechets",
+            "Moyens de transport",
             "Choses ameres",
-            "Choses electriques",
-            "Choses en tissu",
-            "Choses inquietantes"
+            "Choses ondoyantes",
+            "Choses qui font du bruit",
+            "Choses amusantes a regarder",
+            "Choses avec du texte",
+            "Choses en metal",
+            "Choses acres",
+            "Recipients"
           ]
         },
         {
@@ -2447,18 +2457,6 @@
               ]
             },
             {
-              "name": "Nostenfer",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses en bois",
-                "Choses inquietantes",
-                "Choses liees au vent",
-                "Dechets"
-              ]
-            },
-            {
               "name": "Corboss",
               "environment": "Sombre",
               "preferences": [
@@ -2469,13 +2467,24 @@
                 "Choses liees au vent",
                 "Choses qui brillent"
               ]
+            },
+            {
+              "name": "Mordudor",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses ameres",
+                "Choses difficiles",
+                "Choses en metal",
+                "Choses etranges",
+                "Choses inquietantes",
+                "Choses qui brillent"
+              ]
             }
           ],
           "sharedPreferences": [
-            "Choses inquietantes",
-            "Choses liees au vent"
+            "Choses inquietantes"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses difficiles",
             "Choses en bois",
@@ -2483,17 +2492,52 @@
             "Choses inquietantes",
             "Choses liees au vent",
             "Choses qui font du bruit",
-            "Choses acres",
-            "Choses amusantes a regarder",
-            "Dechets",
             "Choses ameres",
             "Choses avec du texte",
             "Choses en verre",
-            "Choses qui brillent"
+            "Choses qui brillent",
+            "Choses en metal",
+            "Choses etranges"
           ]
         },
         {
           "members": [
+            {
+              "name": "Abra",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses en metal",
+                "Choses etranges",
+                "Choses ondoyantes"
+              ]
+            },
+            {
+              "name": "Mewtwo",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses avec du texte",
+                "Choses difficiles",
+                "Choses en pierre",
+                "Choses etranges"
+              ]
+            },
+            {
+              "name": "Feuforeve",
+              "environment": "Sombre",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses colorees",
+                "Choses etranges",
+                "Choses inquietantes",
+                "Choses qui brillent"
+              ]
+            },
             {
               "name": "Germeclat",
               "environment": "Sombre",
@@ -2505,7 +2549,30 @@
                 "Choses qui brillent",
                 "Dechets"
               ]
-            },
+            }
+          ],
+          "sharedPreferences": [],
+          "score": 0,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses amusantes a regarder",
+            "Choses douces",
+            "Choses en metal",
+            "Choses etranges",
+            "Choses ondoyantes",
+            "Choses avec du texte",
+            "Choses difficiles",
+            "Choses en pierre",
+            "Choses colorees",
+            "Choses inquietantes",
+            "Choses qui brillent",
+            "Choses ameres",
+            "Choses dures",
+            "Dechets"
+          ]
+        },
+        {
+          "members": [
             {
               "name": "Floreclat",
               "environment": "Sombre",
@@ -2518,123 +2585,6 @@
                 "Dechets"
               ]
             },
-            {
-              "name": "Ymphect",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses luxueuses",
-                "Choses qui brillent"
-              ]
-            },
-            {
-              "name": "Zoroark",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses a partager",
-                "Choses en verre",
-                "Choses epicees",
-                "Choses etranges",
-                "Choses luxueuses",
-                "Choses qui brillent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses qui brillent"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses ameres",
-            "Choses difficiles",
-            "Choses dures",
-            "Choses en pierre",
-            "Choses qui brillent",
-            "Dechets",
-            "Choses acres",
-            "Choses amusantes a regarder",
-            "Choses luxueuses",
-            "Choses a partager",
-            "Choses en verre",
-            "Choses epicees",
-            "Choses etranges"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Alakazam",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses ameres",
-                "Choses amusantes a regarder",
-                "Choses avec du texte",
-                "Choses en metal",
-                "Choses etranges",
-                "Choses ondoyantes"
-              ]
-            },
-            {
-              "name": "Magireve",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses a partager",
-                "Choses ameres",
-                "Choses etranges",
-                "Choses inquietantes",
-                "Choses ondoyantes",
-                "Choses qui font du bruit"
-              ]
-            },
-            {
-              "name": "Spectrum",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses a partager",
-                "Choses epicees",
-                "Choses etranges",
-                "Choses inquietantes",
-                "Choses ondoyantes",
-                "Dechets"
-              ]
-            },
-            {
-              "name": "Fantominus",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses a partager",
-                "Choses epicees",
-                "Choses etranges",
-                "Choses inquietantes",
-                "Dechets",
-                "Recipients"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses etranges"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses ameres",
-            "Choses amusantes a regarder",
-            "Choses avec du texte",
-            "Choses en metal",
-            "Choses etranges",
-            "Choses ondoyantes",
-            "Choses a partager",
-            "Choses inquietantes",
-            "Choses qui font du bruit",
-            "Choses epicees",
-            "Dechets",
-            "Recipients"
-          ]
-        },
-        {
-          "members": [
             {
               "name": "Cornebre",
               "environment": "Sombre",
@@ -2660,50 +2610,37 @@
               ]
             },
             {
-              "name": "Mordudor",
+              "name": "Melo",
               "environment": "Sombre",
               "preferences": [
-                "Choses ameres",
-                "Choses difficiles",
-                "Choses en metal",
-                "Choses etranges",
-                "Choses inquietantes",
-                "Choses qui brillent"
-              ]
-            },
-            {
-              "name": "Feuforeve",
-              "environment": "Sombre",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
                 "Choses colorees",
-                "Choses etranges",
-                "Choses inquietantes",
-                "Choses qui brillent"
+                "Choses mignonnes",
+                "Choses qui guerissent",
+                "Choses rondes",
+                "Choses sucrees"
               ]
             }
           ],
-          "sharedPreferences": [
-            "Choses qui brillent"
-          ],
-          "score": 1,
+          "sharedPreferences": [],
+          "score": 0,
           "uniquePreferences": [
-            "Choses a partager",
             "Choses ameres",
+            "Choses difficiles",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses qui brillent",
+            "Dechets",
+            "Choses a partager",
             "Choses en tissu",
             "Choses liees au vent",
             "Choses luxueuses",
-            "Choses qui brillent",
             "Choses amusantes a regarder",
             "Choses avec du texte",
             "Choses mignonnes",
-            "Choses difficiles",
-            "Choses en metal",
-            "Choses etranges",
-            "Choses inquietantes",
-            "Choses acres",
-            "Choses colorees"
+            "Choses colorees",
+            "Choses qui guerissent",
+            "Choses rondes",
+            "Choses sucrees"
           ]
         }
       ],
@@ -2739,32 +2676,31 @@
               ]
             },
             {
-              "name": "Pijako",
+              "name": "Goupix",
               "environment": "Chaud",
               "preferences": [
-                "Choses en tissu",
-                "Choses fines",
-                "Choses liees au vent",
-                "Choses qui font du bruit",
-                "Choses sucrees",
-                "Lieux pour jouer"
+                "Choses ameres",
+                "Choses douces",
+                "Choses liees au feu",
+                "Choses mignonnes",
+                "Choses rondes"
               ]
             },
             {
-              "name": "Mew",
+              "name": "Patachiot",
               "environment": "Chaud",
               "preferences": [
                 "Choses amusantes a regarder",
-                "Choses difficiles",
-                "Choses etranges",
-                "Choses luxueuses",
-                "Choses sucrees",
-                "Lieux pour jouer"
+                "Choses avec du texte",
+                "Choses douces",
+                "Choses liees au feu",
+                "Choses mignonnes",
+                "Choses sucrees"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses sucrees"
+            "Choses mignonnes"
           ],
           "score": 1,
           "uniquePreferences": [
@@ -2776,13 +2712,10 @@
             "Choses sucrees",
             "Choses douces",
             "Choses qui guerissent",
-            "Choses fines",
-            "Choses liees au vent",
-            "Lieux pour jouer",
+            "Choses ameres",
+            "Choses liees au feu",
             "Choses amusantes a regarder",
-            "Choses difficiles",
-            "Choses etranges",
-            "Choses luxueuses"
+            "Choses avec du texte"
           ]
         },
         {
@@ -2859,6 +2792,75 @@
         {
           "members": [
             {
+              "name": "Pijako",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses en tissu",
+                "Choses fines",
+                "Choses liees au vent",
+                "Choses qui font du bruit",
+                "Choses sucrees",
+                "Lieux pour jouer"
+              ]
+            },
+            {
+              "name": "Hericendre",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses en metal",
+                "Choses en tissu",
+                "Choses fines",
+                "Choses liees au feu",
+                "Choses sucrees",
+                "Moyens de transport"
+              ]
+            },
+            {
+              "name": "Feurisson",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses en metal",
+                "Choses en tissu",
+                "Choses fines",
+                "Choses liees au feu",
+                "Choses sucrees",
+                "Moyens de transport"
+              ]
+            },
+            {
+              "name": "Typhlosion",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses acres",
+                "Choses en metal",
+                "Choses en tissu",
+                "Choses fines",
+                "Choses liees au feu",
+                "Moyens de transport"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses en tissu",
+            "Choses fines"
+          ],
+          "score": 2,
+          "uniquePreferences": [
+            "Choses en tissu",
+            "Choses fines",
+            "Choses liees au vent",
+            "Choses qui font du bruit",
+            "Choses sucrees",
+            "Lieux pour jouer",
+            "Choses en metal",
+            "Choses liees au feu",
+            "Moyens de transport",
+            "Choses acres"
+          ]
+        },
+        {
+          "members": [
+            {
               "name": "Goinfrex",
               "environment": "Chaud",
               "preferences": [
@@ -2883,6 +2885,119 @@
               ]
             },
             {
+              "name": "Lapyro",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses a partager",
+                "Choses acres",
+                "Choses en pierre",
+                "Choses liees au feu"
+              ]
+            },
+            {
+              "name": "Flambino",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses a partager",
+                "Choses acres",
+                "Choses douces",
+                "Choses en pierre",
+                "Choses liees au feu",
+                "Choses pointues"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses acres"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses acres",
+            "Choses douces",
+            "Choses imitant des aliments",
+            "Choses liees a la nature",
+            "Choses ondoyantes",
+            "Choses en tissu",
+            "Moyens de transport",
+            "Choses en pierre",
+            "Choses liees au feu",
+            "Choses pointues"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Mew",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses difficiles",
+                "Choses etranges",
+                "Choses luxueuses",
+                "Choses sucrees",
+                "Lieux pour jouer"
+              ]
+            },
+            {
+              "name": "Charbambin",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses en pierre",
+                "Choses etranges",
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Choses pour s'entrainer",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Carmadura",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses etranges",
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Brasegali",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Choses pour s'entrainer",
+                "Constructions",
+                "Recipients"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses luxueuses"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses amusantes a regarder",
+            "Choses difficiles",
+            "Choses etranges",
+            "Choses luxueuses",
+            "Choses sucrees",
+            "Lieux pour jouer",
+            "Choses en pierre",
+            "Choses liees au feu",
+            "Choses pour s'entrainer",
+            "Choses epicees",
+            "Constructions",
+            "Recipients"
+          ]
+        },
+        {
+          "members": [
+            {
               "name": "Rongourmand",
               "environment": "Chaud",
               "preferences": [
@@ -2892,6 +3007,18 @@
                 "Choses en bois",
                 "Choses imitant des aliments",
                 "Choses rondes"
+              ]
+            },
+            {
+              "name": "Feunard",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Fleurs epanouies"
               ]
             },
             {
@@ -2905,28 +3032,37 @@
                 "Choses luxueuses",
                 "Choses sucrees"
               ]
+            },
+            {
+              "name": "Briochien",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses amusantes a regarder",
+                "Choses imitant des aliments",
+                "Choses liees au feu",
+                "Choses mignonnes"
+              ]
             }
           ],
-          "sharedPreferences": [
-            "Choses douces",
-            "Choses imitant des aliments"
-          ],
-          "score": 2,
+          "sharedPreferences": [],
+          "score": 0,
           "uniquePreferences": [
-            "Choses a partager",
             "Choses acres",
-            "Choses douces",
-            "Choses imitant des aliments",
-            "Choses liees a la nature",
-            "Choses ondoyantes",
-            "Choses en tissu",
-            "Moyens de transport",
             "Choses amusantes a regarder",
+            "Choses douces",
             "Choses en bois",
+            "Choses imitant des aliments",
             "Choses rondes",
-            "Choses en metal",
+            "Choses liees au feu",
             "Choses luxueuses",
-            "Choses sucrees"
+            "Fleurs epanouies",
+            "Choses a partager",
+            "Choses en metal",
+            "Choses sucrees",
+            "Choses acidulees",
+            "Choses mignonnes"
           ]
         },
         {
@@ -2968,22 +3104,20 @@
               ]
             },
             {
-              "name": "Evoli",
+              "name": "Reptincel",
               "environment": "Chaud",
               "preferences": [
-                "Choses a partager",
-                "Choses avec du texte",
-                "Choses douces",
-                "Choses en pierre",
-                "Choses mignonnes",
-                "Choses sucrees"
+                "Choses dures",
+                "Choses en bois",
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses pour s'entrainer",
+                "Moyens de transport"
               ]
             }
           ],
-          "sharedPreferences": [
-            "Choses douces"
-          ],
-          "score": 1,
+          "sharedPreferences": [],
+          "score": 0,
           "uniquePreferences": [
             "Choses acidulees",
             "Choses amusantes a regarder",
@@ -2995,219 +3129,79 @@
             "Choses epicees",
             "Choses liees au vent",
             "Choses pour s'entrainer",
-            "Choses a partager",
-            "Choses avec du texte",
-            "Choses en pierre",
-            "Choses mignonnes",
-            "Choses sucrees"
+            "Choses dures",
+            "Choses liees au feu"
           ]
         },
         {
           "members": [
             {
-              "name": "Goupix",
+              "name": "Evoli",
               "environment": "Chaud",
               "preferences": [
-                "Choses ameres",
-                "Choses douces",
-                "Choses liees au feu",
-                "Choses mignonnes",
-                "Choses rondes"
-              ]
-            },
-            {
-              "name": "Patachiot",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses amusantes a regarder",
+                "Choses a partager",
                 "Choses avec du texte",
                 "Choses douces",
-                "Choses liees au feu",
+                "Choses en pierre",
                 "Choses mignonnes",
                 "Choses sucrees"
               ]
             },
             {
-              "name": "Briochien",
+              "name": "Caninos",
               "environment": "Chaud",
               "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses amusantes a regarder",
-                "Choses imitant des aliments",
+                "Choses avec du texte",
+                "Choses en pierre",
                 "Choses liees au feu",
-                "Choses mignonnes"
+                "Choses liees au vent",
+                "Choses sucrees",
+                "Fleurs epanouies"
               ]
             },
             {
-              "name": "Pyroli",
+              "name": "Poussifeu",
               "environment": "Chaud",
               "preferences": [
-                "Choses en bois",
-                "Choses en metal",
-                "Choses epicees",
+                "Choses en pierre",
                 "Choses liees au feu",
                 "Choses mignonnes",
-                "Moyens de transport"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses liees au feu",
-            "Choses mignonnes"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses ameres",
-            "Choses douces",
-            "Choses liees au feu",
-            "Choses mignonnes",
-            "Choses rondes",
-            "Choses amusantes a regarder",
-            "Choses avec du texte",
-            "Choses sucrees",
-            "Choses a partager",
-            "Choses acidulees",
-            "Choses imitant des aliments",
-            "Choses en bois",
-            "Choses en metal",
-            "Choses epicees",
-            "Moyens de transport"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Typhlosion",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses acres",
-                "Choses en metal",
-                "Choses en tissu",
-                "Choses fines",
-                "Choses liees au feu",
-                "Moyens de transport"
-              ]
-            },
-            {
-              "name": "Hericendre",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses en metal",
-                "Choses en tissu",
-                "Choses fines",
-                "Choses liees au feu",
                 "Choses sucrees",
-                "Moyens de transport"
+                "Fleurs epanouies",
+                "Recipients"
               ]
             },
             {
-              "name": "Feurisson",
+              "name": "Magby",
               "environment": "Chaud",
               "preferences": [
-                "Choses en metal",
-                "Choses en tissu",
-                "Choses fines",
-                "Choses liees au feu",
-                "Choses sucrees",
-                "Moyens de transport"
-              ]
-            },
-            {
-              "name": "Charbi",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses acidulees",
-                "Choses dures",
-                "Choses en metal",
+                "Choses amusantes a regarder",
                 "Choses en pierre",
-                "Choses liees au feu"
+                "Choses liees au feu",
+                "Choses mignonnes",
+                "Choses ondoyantes",
+                "Choses sucrees"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses en metal",
-            "Choses liees au feu"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses acres",
-            "Choses en metal",
-            "Choses en tissu",
-            "Choses fines",
-            "Choses liees au feu",
-            "Moyens de transport",
-            "Choses sucrees",
-            "Choses acidulees",
-            "Choses dures",
-            "Choses en pierre"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Lapyro",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses a partager",
-                "Choses acres",
-                "Choses en pierre",
-                "Choses liees au feu"
-              ]
-            },
-            {
-              "name": "Flambino",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses a partager",
-                "Choses acres",
-                "Choses douces",
-                "Choses en pierre",
-                "Choses liees au feu",
-                "Choses pointues"
-              ]
-            },
-            {
-              "name": "Pyrobut",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses a partager",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses rondes"
-              ]
-            },
-            {
-              "name": "Salameche",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses a partager",
-                "Choses dures",
-                "Choses en bois",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses pour s'entrainer"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses a partager",
-            "Choses liees au feu"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses acres",
             "Choses en pierre",
-            "Choses liees au feu",
+            "Choses sucrees"
+          ],
+          "score": 2,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses avec du texte",
             "Choses douces",
-            "Choses pointues",
-            "Choses epicees",
-            "Choses rondes",
-            "Choses dures",
-            "Choses en bois",
-            "Choses pour s'entrainer"
+            "Choses en pierre",
+            "Choses mignonnes",
+            "Choses sucrees",
+            "Choses liees au feu",
+            "Choses liees au vent",
+            "Fleurs epanouies",
+            "Recipients",
+            "Choses amusantes a regarder",
+            "Choses ondoyantes"
           ]
         },
         {
@@ -3237,35 +3231,36 @@
               ]
             },
             {
-              "name": "Reptincel",
+              "name": "Poussacha",
               "environment": "Chaud",
               "preferences": [
-                "Choses dures",
-                "Choses en bois",
+                "Choses avec des symboles",
+                "Choses en pierre",
                 "Choses epicees",
                 "Choses liees au feu",
-                "Choses pour s'entrainer",
-                "Moyens de transport"
+                "Choses liees au vent",
+                "Choses luxueuses"
               ]
             },
             {
-              "name": "Brasegali",
+              "name": "Sulfura",
               "environment": "Chaud",
               "preferences": [
+                "Choses avec des symboles",
+                "Choses en pierre",
                 "Choses epicees",
                 "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses pour s'entrainer",
-                "Constructions",
-                "Recipients"
+                "Choses liees au vent",
+                "Choses luxueuses"
               ]
             }
           ],
           "sharedPreferences": [
             "Choses epicees",
-            "Choses liees au feu"
+            "Choses liees au feu",
+            "Choses liees au vent"
           ],
-          "score": 2,
+          "score": 3,
           "uniquePreferences": [
             "Choses avec des symboles",
             "Choses en bois",
@@ -3275,10 +3270,7 @@
             "Choses liees au vent",
             "Choses luxueuses",
             "Choses pour s'entrainer",
-            "Choses dures",
-            "Moyens de transport",
-            "Constructions",
-            "Recipients"
+            "Choses en pierre"
           ]
         },
         {
@@ -3296,27 +3288,27 @@
               ]
             },
             {
-              "name": "Feunard",
+              "name": "Malvalame",
               "environment": "Chaud",
               "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses douces",
+                "Choses ameres",
+                "Choses en pierre",
+                "Choses etranges",
+                "Choses inquietantes",
                 "Choses liees au feu",
-                "Choses luxueuses",
-                "Fleurs epanouies"
+                "Choses luxueuses"
               ]
             },
             {
-              "name": "Chartor",
+              "name": "Entei",
               "environment": "Chaud",
               "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses dures",
-                "Choses en metal",
+                "Choses ameres",
+                "Choses avec des symboles",
                 "Choses en pierre",
-                "Choses liees au feu"
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Choses pour s'entrainer"
               ]
             },
             {
@@ -3333,10 +3325,9 @@
             }
           ],
           "sharedPreferences": [
-            "Choses acres",
             "Choses liees au feu"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses acres",
             "Choses amusantes a regarder",
@@ -3344,14 +3335,148 @@
             "Choses inquietantes",
             "Choses liees au feu",
             "Choses ondoyantes",
-            "Choses douces",
-            "Choses luxueuses",
-            "Fleurs epanouies",
-            "Choses dures",
-            "Choses en metal",
+            "Choses ameres",
             "Choses en pierre",
-            "Choses electriques",
-            "Choses pour s'entrainer"
+            "Choses luxueuses",
+            "Choses avec des symboles",
+            "Choses pour s'entrainer",
+            "Choses dures",
+            "Choses electriques"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Salameche",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses a partager",
+                "Choses dures",
+                "Choses en bois",
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Pyrobut",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses a partager",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses rondes"
+              ]
+            },
+            {
+              "name": "Wagomine",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses liees au feu"
+              ]
+            },
+            {
+              "name": "Monthracite",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses liees au feu"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses epicees",
+            "Choses liees au feu"
+          ],
+          "score": 2,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses dures",
+            "Choses en bois",
+            "Choses epicees",
+            "Choses liees au feu",
+            "Choses pour s'entrainer",
+            "Choses en pierre",
+            "Choses rondes",
+            "Choses en metal"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Pyroli",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses en bois",
+                "Choses en metal",
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses mignonnes",
+                "Moyens de transport"
+              ]
+            },
+            {
+              "name": "Charbi",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses acidulees",
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses liees au feu"
+              ]
+            },
+            {
+              "name": "Chartor",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses liees au feu"
+              ]
+            },
+            {
+              "name": "Arcanin",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses avec des symboles",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses liees au vent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees au feu"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses en bois",
+            "Choses en metal",
+            "Choses epicees",
+            "Choses liees au feu",
+            "Choses mignonnes",
+            "Moyens de transport",
+            "Choses acidulees",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses acres",
+            "Choses amusantes a regarder",
+            "Choses avec des symboles",
+            "Choses liees au vent"
           ]
         },
         {
@@ -3381,27 +3506,15 @@
               ]
             },
             {
-              "name": "Poussifeu",
+              "name": "Magmar",
               "environment": "Chaud",
               "preferences": [
-                "Choses en pierre",
                 "Choses liees au feu",
-                "Choses mignonnes",
-                "Choses sucrees",
-                "Fleurs epanouies",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Caninos",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses avec du texte",
                 "Choses en pierre",
-                "Choses liees au feu",
-                "Choses liees au vent",
-                "Choses sucrees",
-                "Fleurs epanouies"
+                "Choses electriques",
+                "Choses dures",
+                "Choses pour s'entrainer",
+                "Choses sucrees"
               ]
             }
           ],
@@ -3419,206 +3532,9 @@
             "Recipients",
             "Choses pour s'entrainer",
             "Constructions",
-            "Choses mignonnes",
-            "Choses sucrees",
-            "Fleurs epanouies",
-            "Choses avec du texte",
-            "Choses liees au vent"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Wagomine",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses dures",
-                "Choses en metal",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu"
-              ]
-            },
-            {
-              "name": "Monthracite",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses dures",
-                "Choses en metal",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu"
-              ]
-            },
-            {
-              "name": "Magmar",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses liees au feu",
-                "Choses en pierre",
-                "Choses electriques",
-                "Choses dures",
-                "Choses pour s'entrainer",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Malvalame",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses ameres",
-                "Choses en pierre",
-                "Choses etranges",
-                "Choses inquietantes",
-                "Choses liees au feu",
-                "Choses luxueuses"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses en pierre",
-            "Choses liees au feu"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses dures",
-            "Choses en metal",
-            "Choses en pierre",
-            "Choses epicees",
-            "Choses liees au feu",
             "Choses electriques",
-            "Choses pour s'entrainer",
-            "Choses sucrees",
-            "Choses ameres",
-            "Choses etranges",
-            "Choses inquietantes",
-            "Choses luxueuses"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Entei",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses ameres",
-                "Choses avec des symboles",
-                "Choses en pierre",
-                "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses pour s'entrainer"
-              ]
-            },
-            {
-              "name": "Poussacha",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses avec des symboles",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses liees au vent",
-                "Choses luxueuses"
-              ]
-            },
-            {
-              "name": "Sulfura",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses avec des symboles",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses liees au vent",
-                "Choses luxueuses"
-              ]
-            },
-            {
-              "name": "Arcanin",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses avec des symboles",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses liees au vent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses avec des symboles",
-            "Choses en pierre",
-            "Choses liees au feu"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses ameres",
-            "Choses avec des symboles",
-            "Choses en pierre",
-            "Choses liees au feu",
-            "Choses luxueuses",
-            "Choses pour s'entrainer",
-            "Choses epicees",
-            "Choses liees au vent",
-            "Choses amusantes a regarder"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Magby",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses en pierre",
-                "Choses liees au feu",
-                "Choses mignonnes",
-                "Choses ondoyantes",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Charbambin",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses en pierre",
-                "Choses etranges",
-                "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses pour s'entrainer",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Carmadura",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses etranges",
-                "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses pour s'entrainer"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses en pierre",
-            "Choses liees au feu"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses amusantes a regarder",
-            "Choses en pierre",
-            "Choses liees au feu",
-            "Choses mignonnes",
-            "Choses ondoyantes",
-            "Choses sucrees",
-            "Choses etranges",
-            "Choses luxueuses",
-            "Choses pour s'entrainer",
-            "Choses epicees"
+            "Choses dures",
+            "Choses sucrees"
           ]
         }
       ],
@@ -3667,23 +3583,22 @@
               ]
             },
             {
-              "name": "Amagara",
+              "name": "Artikodin",
               "environment": "Frais",
               "preferences": [
-                "Choses a partager",
-                "Choses acres",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses qui brillent",
-                "Recipients"
+                "Choses acidulees",
+                "Choses avec des symboles",
+                "Choses liees a l'eau",
+                "Choses liees au vent",
+                "Choses luxueuses",
+                "Choses qui brillent"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses a partager",
             "Choses qui brillent"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses a partager",
             "Choses en verre",
@@ -3696,9 +3611,8 @@
             "Recipients",
             "Choses acidulees",
             "Choses amusantes a regarder",
-            "Choses acres",
-            "Choses dures",
-            "Choses en pierre"
+            "Choses avec des symboles",
+            "Choses liees au vent"
           ]
         },
         {
@@ -3775,34 +3689,34 @@
         {
           "members": [
             {
-              "name": "Artikodin",
+              "name": "Amagara",
               "environment": "Frais",
               "preferences": [
-                "Choses acidulees",
-                "Choses avec des symboles",
-                "Choses liees a l'eau",
-                "Choses liees au vent",
-                "Choses luxueuses",
-                "Choses qui brillent"
+                "Choses a partager",
+                "Choses acres",
+                "Choses dures",
+                "Choses en pierre",
+                "Choses qui brillent",
+                "Recipients"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses acidulees",
-            "Choses avec des symboles",
-            "Choses liees a l'eau",
-            "Choses liees au vent",
-            "Choses luxueuses",
-            "Choses qui brillent"
+            "Choses a partager",
+            "Choses acres",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses qui brillent",
+            "Recipients"
           ],
           "score": 6,
           "uniquePreferences": [
-            "Choses acidulees",
-            "Choses avec des symboles",
-            "Choses liees a l'eau",
-            "Choses liees au vent",
-            "Choses luxueuses",
-            "Choses qui brillent"
+            "Choses a partager",
+            "Choses acres",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses qui brillent",
+            "Recipients"
           ]
         }
       ],
@@ -3812,145 +3726,6 @@
     "Humide": {
       "environment": "Humide",
       "houses": [
-        {
-          "members": [
-            {
-              "name": "Toxizap",
-              "environment": "Humide",
-              "preferences": [
-                "Choses electriques",
-                "Choses en verre",
-                "Choses qui brillent",
-                "Choses qui font du bruit",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Salarsen",
-              "environment": "Humide",
-              "preferences": [
-                "Choses ameres",
-                "Choses electriques",
-                "Choses fines",
-                "Choses pointues",
-                "Choses qui font du bruit"
-              ]
-            },
-            {
-              "name": "Tarpaud",
-              "environment": "Humide",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses groupees",
-                "Choses liees a l'eau",
-                "Choses qui font du bruit",
-                "Lieux pour jouer"
-              ]
-            },
-            {
-              "name": "Ludicolo",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Choses qui font du bruit",
-                "Lieux pour jouer",
-                "Recipients"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses qui font du bruit"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses electriques",
-            "Choses en verre",
-            "Choses qui brillent",
-            "Choses qui font du bruit",
-            "Choses sucrees",
-            "Choses ameres",
-            "Choses fines",
-            "Choses pointues",
-            "Choses a partager",
-            "Choses acidulees",
-            "Choses groupees",
-            "Choses liees a l'eau",
-            "Lieux pour jouer",
-            "Choses acres",
-            "Choses liees a la nature",
-            "Recipients"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Miasmax",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acidulees",
-                "Choses difficiles",
-                "Choses groupees",
-                "Choses qui brillent"
-              ]
-            },
-            {
-              "name": "Miamiasme",
-              "environment": "Humide",
-              "preferences": [
-                "Choses ameres",
-                "Choses difficiles",
-                "Choses groupees",
-                "Choses qui brillent"
-              ]
-            },
-            {
-              "name": "Kyogre",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses en verre",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses luxueuses",
-                "Choses qui brillent"
-              ]
-            },
-            {
-              "name": "Vipelierre",
-              "environment": "Humide",
-              "preferences": [
-                "Choses liees a la nature",
-                "Choses en bois",
-                "Choses liees a l'eau",
-                "Choses ondoyantes",
-                "Choses qui brillent",
-                "Choses acidulees"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses qui brillent"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses acidulees",
-            "Choses difficiles",
-            "Choses groupees",
-            "Choses qui brillent",
-            "Choses ameres",
-            "Choses acres",
-            "Choses en verre",
-            "Choses liees a l'eau",
-            "Choses liees a la mer",
-            "Choses luxueuses",
-            "Choses liees a la nature",
-            "Choses en bois",
-            "Choses ondoyantes"
-          ]
-        },
         {
           "members": [
             {
@@ -3978,15 +3753,15 @@
               ]
             },
             {
-              "name": "Sancoki",
+              "name": "Mimigal",
               "environment": "Humide",
               "preferences": [
-                "Choses acidulees",
+                "Choses ameres",
                 "Choses colorees",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses propres",
-                "Recipients"
+                "Choses en bois",
+                "Choses liees a la nature",
+                "Dechets",
+                "Moyens de transport"
               ]
             },
             {
@@ -4015,13 +3790,10 @@
             "Recipients",
             "Choses ameres",
             "Dechets",
-            "Choses acidulees",
-            "Choses liees a l'eau",
-            "Choses liees a la mer",
-            "Choses propres",
             "Choses en bois",
             "Choses liees a la nature",
-            "Moyens de transport"
+            "Moyens de transport",
+            "Choses acidulees"
           ]
         },
         {
@@ -4165,18 +3937,6 @@
         {
           "members": [
             {
-              "name": "Mimigal",
-              "environment": "Humide",
-              "preferences": [
-                "Choses ameres",
-                "Choses colorees",
-                "Choses en bois",
-                "Choses liees a la nature",
-                "Dechets",
-                "Moyens de transport"
-              ]
-            },
-            {
               "name": "Paras",
               "environment": "Humide",
               "preferences": [
@@ -4201,38 +3961,46 @@
               ]
             },
             {
-              "name": "Lianaja",
+              "name": "Mystherbe",
               "environment": "Humide",
               "preferences": [
                 "Choses ameres",
-                "Choses en bois",
+                "Choses douces",
                 "Choses liees a l'eau",
                 "Choses liees a la nature",
-                "Choses propres",
-                "Choses qui brillent"
+                "Choses liees a la terre"
+              ]
+            },
+            {
+              "name": "Bouldeneu",
+              "environment": "Humide",
+              "preferences": [
+                "Choses ameres",
+                "Choses amusantes a regarder",
+                "Choses groupees",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Fleurs epanouies"
               ]
             }
           ],
           "sharedPreferences": [
             "Choses ameres",
-            "Choses en bois",
             "Choses liees a la nature"
           ],
-          "score": 3,
+          "score": 2,
           "uniquePreferences": [
             "Choses ameres",
-            "Choses colorees",
-            "Choses en bois",
-            "Choses liees a la nature",
-            "Dechets",
-            "Moyens de transport",
             "Choses amusantes a regarder",
+            "Choses en bois",
             "Choses imitant des aliments",
+            "Choses liees a la nature",
             "Choses liees a la terre",
             "Choses etranges",
+            "Choses douces",
             "Choses liees a l'eau",
-            "Choses propres",
-            "Choses qui brillent"
+            "Choses groupees",
+            "Fleurs epanouies"
           ]
         },
         {
@@ -4262,68 +4030,6 @@
               ]
             },
             {
-              "name": "Tritosor",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acidulees",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses liees a la terre",
-                "Choses propres",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Dracolosse",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses avec des symboles",
-                "Choses liees au feu",
-                "Choses liees au vent",
-                "Choses propres",
-                "Fleurs epanouies"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses propres"
-          ],
-          "score": 1,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses acidulees",
-            "Choses en pierre",
-            "Choses liees a la terre",
-            "Choses propres",
-            "Dechets",
-            "Choses ameres",
-            "Choses liees a l'eau",
-            "Choses rondes",
-            "Choses liees a la mer",
-            "Recipients",
-            "Choses acres",
-            "Choses avec des symboles",
-            "Choses liees au feu",
-            "Choses liees au vent",
-            "Fleurs epanouies"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Azumarill",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acidulees",
-                "Choses avec des symboles",
-                "Choses liees a l'eau",
-                "Choses mignonnes",
-                "Choses ondoyantes",
-                "Constructions"
-              ]
-            },
-            {
               "name": "Marill",
               "environment": "Humide",
               "preferences": [
@@ -4336,146 +4042,48 @@
               ]
             },
             {
-              "name": "Azurill",
+              "name": "Azumarill",
               "environment": "Humide",
               "preferences": [
                 "Choses acidulees",
+                "Choses avec des symboles",
                 "Choses liees a l'eau",
                 "Choses mignonnes",
-                "Choses propres",
-                "Choses qui guerissent",
-                "Moyens de transport"
-              ]
-            },
-            {
-              "name": "Nigirigon",
-              "environment": "Humide",
-              "preferences": [
-                "Choses a partager",
-                "Choses acidulees",
-                "Choses fines",
-                "Choses groupees",
-                "Choses liees a l'eau",
-                "Choses liees a la mer"
+                "Choses ondoyantes",
+                "Constructions"
               ]
             }
           ],
-          "sharedPreferences": [
-            "Choses acidulees",
-            "Choses liees a l'eau"
-          ],
-          "score": 2,
+          "sharedPreferences": [],
+          "score": 0,
           "uniquePreferences": [
+            "Choses a partager",
             "Choses acidulees",
-            "Choses avec des symboles",
+            "Choses en pierre",
+            "Choses liees a la terre",
+            "Choses propres",
+            "Dechets",
+            "Choses ameres",
             "Choses liees a l'eau",
+            "Choses rondes",
+            "Choses avec des symboles",
             "Choses mignonnes",
             "Choses ondoyantes",
-            "Constructions",
-            "Choses propres",
-            "Choses rondes",
-            "Choses qui guerissent",
-            "Moyens de transport",
-            "Choses a partager",
-            "Choses fines",
-            "Choses groupees",
-            "Choses liees a la mer"
+            "Constructions"
           ]
         },
         {
           "members": [
             {
-              "name": "Mystherbe",
+              "name": "Dracolosse",
               "environment": "Humide",
               "preferences": [
-                "Choses ameres",
-                "Choses douces",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Choses liees a la terre"
-              ]
-            },
-            {
-              "name": "Bouldeneu",
-              "environment": "Humide",
-              "preferences": [
-                "Choses ameres",
-                "Choses amusantes a regarder",
-                "Choses groupees",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
+                "Choses acres",
+                "Choses avec des symboles",
+                "Choses liees au feu",
+                "Choses liees au vent",
+                "Choses propres",
                 "Fleurs epanouies"
-              ]
-            },
-            {
-              "name": "Lombre",
-              "environment": "Humide",
-              "preferences": [
-                "Choses ameres",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Choses propres",
-                "Choses qui font du bruit"
-              ]
-            },
-            {
-              "name": "Tetarte",
-              "environment": "Humide",
-              "preferences": [
-                "Choses ameres",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Choses pour s'entrainer",
-                "Choses propres",
-                "Choses qui tournent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses ameres",
-            "Choses liees a l'eau",
-            "Choses liees a la nature"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses ameres",
-            "Choses douces",
-            "Choses liees a l'eau",
-            "Choses liees a la nature",
-            "Choses liees a la terre",
-            "Choses amusantes a regarder",
-            "Choses groupees",
-            "Fleurs epanouies",
-            "Choses propres",
-            "Choses qui font du bruit",
-            "Choses pour s'entrainer",
-            "Choses qui tournent"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Akwakwak",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses difficiles",
-                "Choses etranges",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses pointues"
-              ]
-            },
-            {
-              "name": "Psykokwak",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses difficiles",
-                "Choses etranges",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses qui guerissent"
               ]
             },
             {
@@ -4501,25 +4109,376 @@
                 "Choses liees a la mer",
                 "Choses liees au vent"
               ]
+            },
+            {
+              "name": "Lugia",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses avec des symboles",
+                "Choses etranges",
+                "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses liees au vent"
+              ]
             }
           ],
           "sharedPreferences": [
             "Choses acres",
+            "Choses avec des symboles",
+            "Choses liees au vent"
+          ],
+          "score": 3,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses avec des symboles",
+            "Choses liees au feu",
+            "Choses liees au vent",
+            "Choses propres",
+            "Fleurs epanouies",
             "Choses etranges",
             "Choses liees a l'eau",
             "Choses liees a la mer"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Tarpaud",
+              "environment": "Humide",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses groupees",
+                "Choses liees a l'eau",
+                "Choses qui font du bruit",
+                "Lieux pour jouer"
+              ]
+            },
+            {
+              "name": "Nigirigon",
+              "environment": "Humide",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses fines",
+                "Choses groupees",
+                "Choses liees a l'eau",
+                "Choses liees a la mer"
+              ]
+            },
+            {
+              "name": "Miasmax",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acidulees",
+                "Choses difficiles",
+                "Choses groupees",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Miamiasme",
+              "environment": "Humide",
+              "preferences": [
+                "Choses ameres",
+                "Choses difficiles",
+                "Choses groupees",
+                "Choses qui brillent"
+              ]
+            }
           ],
-          "score": 4,
+          "sharedPreferences": [
+            "Choses groupees"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses acidulees",
+            "Choses groupees",
+            "Choses liees a l'eau",
+            "Choses qui font du bruit",
+            "Lieux pour jouer",
+            "Choses fines",
+            "Choses liees a la mer",
+            "Choses difficiles",
+            "Choses qui brillent",
+            "Choses ameres"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Toxizap",
+              "environment": "Humide",
+              "preferences": [
+                "Choses electriques",
+                "Choses en verre",
+                "Choses qui brillent",
+                "Choses qui font du bruit",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Salarsen",
+              "environment": "Humide",
+              "preferences": [
+                "Choses ameres",
+                "Choses electriques",
+                "Choses fines",
+                "Choses pointues",
+                "Choses qui font du bruit"
+              ]
+            },
+            {
+              "name": "Draco",
+              "environment": "Humide",
+              "preferences": [
+                "Choses en verre",
+                "Choses fines",
+                "Choses liees a l'eau",
+                "Choses liees au feu",
+                "Choses propres",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Minidraco",
+              "environment": "Humide",
+              "preferences": [
+                "Choses fines",
+                "Choses liees a l'eau",
+                "Choses liees au feu",
+                "Choses mignonnes",
+                "Choses propres",
+                "Choses sucrees"
+              ]
+            }
+          ],
+          "sharedPreferences": [],
+          "score": 0,
+          "uniquePreferences": [
+            "Choses electriques",
+            "Choses en verre",
+            "Choses qui brillent",
+            "Choses qui font du bruit",
+            "Choses sucrees",
+            "Choses ameres",
+            "Choses fines",
+            "Choses pointues",
+            "Choses liees a l'eau",
+            "Choses liees au feu",
+            "Choses propres",
+            "Choses mignonnes"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Kyogre",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses en verre",
+                "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses luxueuses",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Akwakwak",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses difficiles",
+                "Choses etranges",
+                "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses pointues"
+              ]
+            },
+            {
+              "name": "Psykokwak",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses difficiles",
+                "Choses etranges",
+                "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses qui guerissent"
+              ]
+            },
+            {
+              "name": "Ramoloss",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses douces",
+                "Choses etranges",
+                "Choses liees a l'eau",
+                "Choses propres",
+                "Choses qui guerissent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses acres",
+            "Choses liees a l'eau"
+          ],
+          "score": 2,
           "uniquePreferences": [
             "Choses acres",
-            "Choses difficiles",
-            "Choses etranges",
+            "Choses en verre",
             "Choses liees a l'eau",
             "Choses liees a la mer",
+            "Choses luxueuses",
+            "Choses qui brillent",
+            "Choses difficiles",
+            "Choses etranges",
             "Choses pointues",
             "Choses qui guerissent",
-            "Choses avec des symboles",
-            "Choses liees au vent"
+            "Choses douces",
+            "Choses propres"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Ludicolo",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Choses qui font du bruit",
+                "Lieux pour jouer",
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Nenupiot",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Choses propres",
+                "Choses qui font du bruit",
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Lombre",
+              "environment": "Humide",
+              "preferences": [
+                "Choses ameres",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Choses propres",
+                "Choses qui font du bruit"
+              ]
+            },
+            {
+              "name": "Majaspic",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses en bois",
+                "Choses fines",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Recipients"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a l'eau",
+            "Choses liees a la nature"
+          ],
+          "score": 2,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses liees a l'eau",
+            "Choses liees a la nature",
+            "Choses qui font du bruit",
+            "Lieux pour jouer",
+            "Recipients",
+            "Choses propres",
+            "Choses ameres",
+            "Choses en bois",
+            "Choses fines"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Vipelierre",
+              "environment": "Humide",
+              "preferences": [
+                "Choses liees a la nature",
+                "Choses en bois",
+                "Choses liees a l'eau",
+                "Choses ondoyantes",
+                "Choses qui brillent",
+                "Choses acidulees"
+              ]
+            },
+            {
+              "name": "Lianaja",
+              "environment": "Humide",
+              "preferences": [
+                "Choses ameres",
+                "Choses en bois",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Choses propres",
+                "Choses qui brillent"
+              ]
+            },
+            {
+              "name": "Tetarte",
+              "environment": "Humide",
+              "preferences": [
+                "Choses ameres",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Choses pour s'entrainer",
+                "Choses propres",
+                "Choses qui tournent"
+              ]
+            },
+            {
+              "name": "Tortank",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acidulees",
+                "Choses liees a l'eau",
+                "Choses luxueuses",
+                "Choses pour s'entrainer",
+                "Choses propres",
+                "Choses qui guerissent"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a l'eau"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses liees a la nature",
+            "Choses en bois",
+            "Choses liees a l'eau",
+            "Choses ondoyantes",
+            "Choses qui brillent",
+            "Choses acidulees",
+            "Choses ameres",
+            "Choses propres",
+            "Choses pour s'entrainer",
+            "Choses qui tournent",
+            "Choses luxueuses",
+            "Choses qui guerissent"
           ]
         },
         {
@@ -4549,36 +4508,35 @@
               ]
             },
             {
-              "name": "Lugia",
+              "name": "Pingoleon",
               "environment": "Humide",
               "preferences": [
-                "Choses acres",
-                "Choses avec des symboles",
-                "Choses etranges",
+                "Choses ameres",
+                "Choses avec du texte",
+                "Choses en metal",
                 "Choses liees a l'eau",
                 "Choses liees a la mer",
-                "Choses liees au vent"
+                "Choses propres"
               ]
             },
             {
-              "name": "Tiplouf",
+              "name": "Croaporal",
               "environment": "Humide",
               "preferences": [
+                "Choses amusantes a regarder",
+                "Choses epicees",
                 "Choses liees a l'eau",
                 "Choses liees a la mer",
-                "Choses liees au vent",
-                "Choses propres",
-                "Choses sucrees",
-                "Recipients"
+                "Choses pour s'entrainer",
+                "Choses propres"
               ]
             }
           ],
           "sharedPreferences": [
             "Choses liees a l'eau",
-            "Choses liees a la mer",
-            "Choses liees au vent"
+            "Choses liees a la mer"
           ],
-          "score": 3,
+          "score": 2,
           "uniquePreferences": [
             "Choses ameres",
             "Choses fines",
@@ -4588,11 +4546,10 @@
             "Choses liees au vent",
             "Choses epicees",
             "Choses propres",
-            "Choses acres",
-            "Choses avec des symboles",
-            "Choses etranges",
-            "Choses sucrees",
-            "Recipients"
+            "Choses avec du texte",
+            "Choses en metal",
+            "Choses amusantes a regarder",
+            "Choses pour s'entrainer"
           ]
         },
         {
@@ -4610,229 +4567,12 @@
               ]
             },
             {
-              "name": "Draco",
-              "environment": "Humide",
-              "preferences": [
-                "Choses en verre",
-                "Choses fines",
-                "Choses liees a l'eau",
-                "Choses liees au feu",
-                "Choses propres",
-                "Choses sucrees"
-              ]
-            },
-            {
-              "name": "Minidraco",
-              "environment": "Humide",
-              "preferences": [
-                "Choses fines",
-                "Choses liees a l'eau",
-                "Choses liees au feu",
-                "Choses mignonnes",
-                "Choses propres",
-                "Choses sucrees"
-              ]
-            },
-            {
               "name": "Colimucus",
               "environment": "Humide",
               "preferences": [
                 "Choses douces",
                 "Choses liees a l'eau",
                 "Choses luxueuses",
-                "Choses propres",
-                "Choses qui guerissent",
-                "Choses sucrees"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses liees a l'eau",
-            "Choses propres",
-            "Choses sucrees"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses liees a l'eau",
-            "Choses propres",
-            "Choses qui tournent",
-            "Choses rondes",
-            "Choses sucrees",
-            "Moyens de transport",
-            "Choses en verre",
-            "Choses fines",
-            "Choses liees au feu",
-            "Choses mignonnes",
-            "Choses douces",
-            "Choses luxueuses",
-            "Choses qui guerissent"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Tartard",
-              "environment": "Humide",
-              "preferences": [
-                "Choses a partager",
-                "Choses epicees",
-                "Choses liees a l'eau",
-                "Choses pour s'entrainer",
-                "Choses propres",
-                "Constructions"
-              ]
-            },
-            {
-              "name": "Carabaffe",
-              "environment": "Humide",
-              "preferences": [
-                "Choses dures",
-                "Choses epicees",
-                "Choses liees a l'eau",
-                "Choses pour s'entrainer",
-                "Choses propres",
-                "Choses qui guerissent"
-              ]
-            },
-            {
-              "name": "Croaporal",
-              "environment": "Humide",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses epicees",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses pour s'entrainer",
-                "Choses propres"
-              ]
-            },
-            {
-              "name": "Tortank",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acidulees",
-                "Choses liees a l'eau",
-                "Choses luxueuses",
-                "Choses pour s'entrainer",
-                "Choses propres",
-                "Choses qui guerissent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses liees a l'eau",
-            "Choses pour s'entrainer",
-            "Choses propres"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses epicees",
-            "Choses liees a l'eau",
-            "Choses pour s'entrainer",
-            "Choses propres",
-            "Constructions",
-            "Choses dures",
-            "Choses qui guerissent",
-            "Choses amusantes a regarder",
-            "Choses liees a la mer",
-            "Choses acidulees",
-            "Choses luxueuses"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Majaspic",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses en bois",
-                "Choses fines",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Chetiflor",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses en bois",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Choses liees a la terre",
-                "Fleurs epanouies"
-              ]
-            },
-            {
-              "name": "Nenupiot",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses liees a l'eau",
-                "Choses liees a la nature",
-                "Choses propres",
-                "Choses qui font du bruit",
-                "Recipients"
-              ]
-            },
-            {
-              "name": "Ramoloss",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses douces",
-                "Choses etranges",
-                "Choses liees a l'eau",
-                "Choses propres",
-                "Choses qui guerissent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses acres",
-            "Choses liees a l'eau"
-          ],
-          "score": 2,
-          "uniquePreferences": [
-            "Choses acres",
-            "Choses en bois",
-            "Choses fines",
-            "Choses liees a l'eau",
-            "Choses liees a la nature",
-            "Recipients",
-            "Choses liees a la terre",
-            "Fleurs epanouies",
-            "Choses propres",
-            "Choses qui font du bruit",
-            "Choses douces",
-            "Choses etranges",
-            "Choses qui guerissent"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Aquali",
-              "environment": "Humide",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses liees a l'eau",
-                "Choses mignonnes",
-                "Choses propres",
-                "Choses sucrees",
-                "Fleurs epanouies"
-              ]
-            },
-            {
-              "name": "Carapuce",
-              "environment": "Humide",
-              "preferences": [
-                "Choses a partager",
-                "Choses liees a l'eau",
-                "Choses mignonnes",
                 "Choses propres",
                 "Choses qui guerissent",
                 "Choses sucrees"
@@ -4869,16 +4609,16 @@
           ],
           "score": 2,
           "uniquePreferences": [
-            "Choses amusantes a regarder",
             "Choses liees a l'eau",
-            "Choses mignonnes",
             "Choses propres",
+            "Choses qui tournent",
+            "Choses rondes",
             "Choses sucrees",
-            "Fleurs epanouies",
-            "Choses a partager",
+            "Moyens de transport",
+            "Choses douces",
+            "Choses luxueuses",
             "Choses qui guerissent",
             "Choses liees a la nature",
-            "Choses luxueuses",
             "Choses acidulees",
             "Choses pour s'entrainer"
           ]
@@ -4886,17 +4626,147 @@
         {
           "members": [
             {
-              "name": "Pingoleon",
+              "name": "Tartard",
               "environment": "Humide",
               "preferences": [
-                "Choses ameres",
-                "Choses avec du texte",
-                "Choses en metal",
+                "Choses a partager",
+                "Choses epicees",
                 "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses propres"
+                "Choses pour s'entrainer",
+                "Choses propres",
+                "Constructions"
               ]
             },
+            {
+              "name": "Carabaffe",
+              "environment": "Humide",
+              "preferences": [
+                "Choses dures",
+                "Choses epicees",
+                "Choses liees a l'eau",
+                "Choses pour s'entrainer",
+                "Choses propres",
+                "Choses qui guerissent"
+              ]
+            },
+            {
+              "name": "Carapuce",
+              "environment": "Humide",
+              "preferences": [
+                "Choses a partager",
+                "Choses liees a l'eau",
+                "Choses mignonnes",
+                "Choses propres",
+                "Choses qui guerissent",
+                "Choses sucrees"
+              ]
+            },
+            {
+              "name": "Aquali",
+              "environment": "Humide",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses liees a l'eau",
+                "Choses mignonnes",
+                "Choses propres",
+                "Choses sucrees",
+                "Fleurs epanouies"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a l'eau",
+            "Choses propres"
+          ],
+          "score": 2,
+          "uniquePreferences": [
+            "Choses a partager",
+            "Choses epicees",
+            "Choses liees a l'eau",
+            "Choses pour s'entrainer",
+            "Choses propres",
+            "Constructions",
+            "Choses dures",
+            "Choses qui guerissent",
+            "Choses mignonnes",
+            "Choses sucrees",
+            "Choses amusantes a regarder",
+            "Fleurs epanouies"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Chetiflor",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses en bois",
+                "Choses liees a l'eau",
+                "Choses liees a la nature",
+                "Choses liees a la terre",
+                "Fleurs epanouies"
+              ]
+            },
+            {
+              "name": "Flagadoss",
+              "environment": "Humide",
+              "preferences": [
+                "Choses a partager",
+                "Choses acres",
+                "Choses etranges",
+                "Choses liees a l'eau",
+                "Choses propres",
+                "Choses qui guerissent"
+              ]
+            },
+            {
+              "name": "Roigada",
+              "environment": "Humide",
+              "preferences": [
+                "Choses a partager",
+                "Choses acidulees",
+                "Choses etranges",
+                "Choses liees a l'eau",
+                "Choses propres",
+                "Choses qui guerissent"
+              ]
+            },
+            {
+              "name": "Azurill",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acidulees",
+                "Choses liees a l'eau",
+                "Choses mignonnes",
+                "Choses propres",
+                "Choses qui guerissent",
+                "Moyens de transport"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a l'eau"
+          ],
+          "score": 1,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses en bois",
+            "Choses liees a l'eau",
+            "Choses liees a la nature",
+            "Choses liees a la terre",
+            "Fleurs epanouies",
+            "Choses a partager",
+            "Choses etranges",
+            "Choses propres",
+            "Choses qui guerissent",
+            "Choses acidulees",
+            "Choses mignonnes",
+            "Moyens de transport"
+          ]
+        },
+        {
+          "members": [
             {
               "name": "Grenousse",
               "environment": "Humide",
@@ -4906,6 +4776,18 @@
                 "Choses liees a l'eau",
                 "Choses liees a la mer",
                 "Choses propres",
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Tiplouf",
+              "environment": "Humide",
+              "preferences": [
+                "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses liees au vent",
+                "Choses propres",
+                "Choses sucrees",
                 "Recipients"
               ]
             },
@@ -4941,43 +4823,53 @@
           ],
           "score": 3,
           "uniquePreferences": [
-            "Choses ameres",
-            "Choses avec du texte",
-            "Choses en metal",
+            "Choses amusantes a regarder",
+            "Choses epicees",
             "Choses liees a l'eau",
             "Choses liees a la mer",
             "Choses propres",
-            "Choses amusantes a regarder",
-            "Choses epicees",
             "Recipients",
-            "Choses acres",
-            "Choses liees au vent"
+            "Choses liees au vent",
+            "Choses sucrees",
+            "Choses acres"
           ]
         },
         {
           "members": [
             {
-              "name": "Roigada",
+              "name": "Sancoki",
               "environment": "Humide",
               "preferences": [
-                "Choses a partager",
                 "Choses acidulees",
-                "Choses etranges",
+                "Choses colorees",
                 "Choses liees a l'eau",
+                "Choses liees a la mer",
                 "Choses propres",
-                "Choses qui guerissent"
+                "Recipients"
               ]
             },
             {
-              "name": "Flagadoss",
+              "name": "Tritosor",
               "environment": "Humide",
               "preferences": [
-                "Choses a partager",
-                "Choses acres",
-                "Choses etranges",
+                "Choses acidulees",
                 "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses liees a la terre",
                 "Choses propres",
-                "Choses qui guerissent"
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Prinplouf",
+              "environment": "Humide",
+              "preferences": [
+                "Choses acres",
+                "Choses liees a l'eau",
+                "Choses liees a la mer",
+                "Choses liees au vent",
+                "Choses propres",
+                "Recipients"
               ]
             },
             {
@@ -4991,7 +4883,30 @@
                 "Choses propres",
                 "Choses qui guerissent"
               ]
-            },
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees a l'eau",
+            "Choses liees a la mer",
+            "Choses propres"
+          ],
+          "score": 3,
+          "uniquePreferences": [
+            "Choses acidulees",
+            "Choses colorees",
+            "Choses liees a l'eau",
+            "Choses liees a la mer",
+            "Choses propres",
+            "Recipients",
+            "Choses liees a la terre",
+            "Choses acres",
+            "Choses liees au vent",
+            "Choses amusantes a regarder",
+            "Choses qui guerissent"
+          ]
+        },
+        {
+          "members": [
             {
               "name": "Suicune",
               "environment": "Humide",
@@ -5006,54 +4921,21 @@
             }
           ],
           "sharedPreferences": [
+            "Choses acidulees",
+            "Choses amusantes a regarder",
             "Choses liees a l'eau",
+            "Choses liees a la mer",
             "Choses propres",
             "Choses qui guerissent"
           ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses acidulees",
-            "Choses etranges",
-            "Choses liees a l'eau",
-            "Choses propres",
-            "Choses qui guerissent",
-            "Choses acres",
-            "Choses amusantes a regarder",
-            "Choses liees a la mer"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Prinplouf",
-              "environment": "Humide",
-              "preferences": [
-                "Choses acres",
-                "Choses liees a l'eau",
-                "Choses liees a la mer",
-                "Choses liees au vent",
-                "Choses propres",
-                "Recipients"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses acres",
-            "Choses liees a l'eau",
-            "Choses liees a la mer",
-            "Choses liees au vent",
-            "Choses propres",
-            "Recipients"
-          ],
           "score": 6,
           "uniquePreferences": [
-            "Choses acres",
+            "Choses acidulees",
+            "Choses amusantes a regarder",
             "Choses liees a l'eau",
             "Choses liees a la mer",
-            "Choses liees au vent",
             "Choses propres",
-            "Recipients"
+            "Choses qui guerissent"
           ]
         }
       ],
@@ -5090,18 +4972,6 @@
               ]
             },
             {
-              "name": "Cacturne",
-              "environment": "Sec",
-              "preferences": [
-                "Choses acres",
-                "Choses liees a la nature",
-                "Choses liees au vent",
-                "Choses luxueuses",
-                "Choses pointues",
-                "Choses qui brillent"
-              ]
-            },
-            {
               "name": "Pyrax",
               "environment": "Sec",
               "preferences": [
@@ -5111,6 +4981,18 @@
                 "Choses en bois",
                 "Choses liees a la nature",
                 "Choses liees au feu"
+              ]
+            },
+            {
+              "name": "Cacturne",
+              "environment": "Sec",
+              "preferences": [
+                "Choses acres",
+                "Choses liees a la nature",
+                "Choses liees au vent",
+                "Choses luxueuses",
+                "Choses pointues",
+                "Choses qui brillent"
               ]
             }
           ],
@@ -5130,10 +5012,10 @@
             "Choses en bois",
             "Choses liees au feu",
             "Choses acres",
+            "Choses avec du texte",
             "Choses liees au vent",
             "Choses luxueuses",
-            "Choses qui brillent",
-            "Choses avec du texte"
+            "Choses qui brillent"
           ]
         },
         {
@@ -5175,23 +5057,22 @@
               ]
             },
             {
-              "name": "Kraknoix",
+              "name": "Bastiodon",
               "environment": "Sec",
               "preferences": [
-                "Choses amusantes a regarder",
+                "Choses ameres",
                 "Choses dures",
-                "Choses epicees",
-                "Choses etranges",
-                "Choses liees a la terre",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses luxueuses",
                 "Choses pour s'entrainer"
               ]
             }
           ],
           "sharedPreferences": [
-            "Choses liees a la terre",
             "Choses pour s'entrainer"
           ],
-          "score": 2,
+          "score": 1,
           "uniquePreferences": [
             "Choses a partager",
             "Choses ameres",
@@ -5203,10 +5084,80 @@
             "Choses luxueuses",
             "Choses carrees",
             "Choses en pierre",
+            "Choses dures",
+            "Choses en metal"
+          ]
+        },
+        {
+          "members": [
+            {
+              "name": "Kraknoix",
+              "environment": "Sec",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses dures",
+                "Choses epicees",
+                "Choses etranges",
+                "Choses liees a la terre",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Kranidos",
+              "environment": "Sec",
+              "preferences": [
+                "Choses a partager",
+                "Choses dures",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses ondoyantes",
+                "Choses pour s'entrainer"
+              ]
+            },
+            {
+              "name": "Steelix",
+              "environment": "Sec",
+              "preferences": [
+                "Choses acidulees",
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses fines",
+                "Choses liees a la terre"
+              ]
+            },
+            {
+              "name": "Charkos",
+              "environment": "Sec",
+              "preferences": [
+                "Choses acres",
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses luxueuses",
+                "Choses pour s'entrainer"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses dures"
+          ],
+          "score": 1,
+          "uniquePreferences": [
             "Choses amusantes a regarder",
             "Choses dures",
             "Choses epicees",
-            "Choses etranges"
+            "Choses etranges",
+            "Choses liees a la terre",
+            "Choses pour s'entrainer",
+            "Choses a partager",
+            "Choses en pierre",
+            "Choses ondoyantes",
+            "Choses acidulees",
+            "Choses en metal",
+            "Choses fines",
+            "Choses acres",
+            "Choses luxueuses"
           ]
         },
         {
@@ -5224,18 +5175,6 @@
               ]
             },
             {
-              "name": "Steelix",
-              "environment": "Sec",
-              "preferences": [
-                "Choses acidulees",
-                "Choses dures",
-                "Choses en metal",
-                "Choses en pierre",
-                "Choses fines",
-                "Choses liees a la terre"
-              ]
-            },
-            {
               "name": "Manzai",
               "environment": "Sec",
               "preferences": [
@@ -5245,57 +5184,6 @@
                 "Choses en pierre",
                 "Choses liees a la nature",
                 "Choses rondes"
-              ]
-            },
-            {
-              "name": "Rexillius",
-              "environment": "Sec",
-              "preferences": [
-                "Choses acidulees",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses pour s'entrainer"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses acidulees",
-            "Choses dures",
-            "Choses en pierre"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses acidulees",
-            "Choses dures",
-            "Choses en pierre",
-            "Choses liees au vent",
-            "Choses qui brillent",
-            "Choses qui tournent",
-            "Choses en metal",
-            "Choses fines",
-            "Choses liees a la terre",
-            "Choses en bois",
-            "Choses liees a la nature",
-            "Choses rondes",
-            "Choses liees au feu",
-            "Choses luxueuses",
-            "Choses pour s'entrainer"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Vibraninf",
-              "environment": "Sec",
-              "preferences": [
-                "Choses ameres",
-                "Choses liees a la nature",
-                "Choses liees a la terre",
-                "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses qui font du bruit"
               ]
             },
             {
@@ -5324,48 +5212,37 @@
             }
           ],
           "sharedPreferences": [
-            "Choses liees a la nature"
+            "Choses en pierre"
           ],
           "score": 1,
           "uniquePreferences": [
-            "Choses ameres",
+            "Choses acidulees",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses liees au vent",
+            "Choses qui brillent",
+            "Choses qui tournent",
+            "Choses en bois",
             "Choses liees a la nature",
+            "Choses rondes",
             "Choses liees a la terre",
             "Choses liees au feu",
-            "Choses luxueuses",
-            "Choses qui font du bruit",
-            "Choses acidulees",
-            "Choses en bois",
-            "Choses en pierre",
             "Choses acres",
-            "Choses amusantes a regarder",
-            "Choses dures"
+            "Choses amusantes a regarder"
           ]
         },
         {
           "members": [
             {
-              "name": "Kranidos",
-              "environment": "Sec",
-              "preferences": [
-                "Choses a partager",
-                "Choses dures",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses ondoyantes",
-                "Choses pour s'entrainer"
-              ]
-            },
-            {
-              "name": "Bastiodon",
+              "name": "Vibraninf",
               "environment": "Sec",
               "preferences": [
                 "Choses ameres",
-                "Choses dures",
-                "Choses en metal",
-                "Choses en pierre",
+                "Choses liees a la nature",
+                "Choses liees a la terre",
+                "Choses liees au feu",
                 "Choses luxueuses",
-                "Choses pour s'entrainer"
+                "Choses qui font du bruit"
               ]
             },
             {
@@ -5381,41 +5258,17 @@
               ]
             },
             {
-              "name": "Charkos",
+              "name": "Rexillius",
               "environment": "Sec",
               "preferences": [
-                "Choses acres",
+                "Choses acidulees",
                 "Choses dures",
-                "Choses en metal",
                 "Choses en pierre",
+                "Choses liees au feu",
                 "Choses luxueuses",
                 "Choses pour s'entrainer"
               ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses dures",
-            "Choses en pierre",
-            "Choses pour s'entrainer"
-          ],
-          "score": 3,
-          "uniquePreferences": [
-            "Choses a partager",
-            "Choses dures",
-            "Choses en pierre",
-            "Choses epicees",
-            "Choses ondoyantes",
-            "Choses pour s'entrainer",
-            "Choses ameres",
-            "Choses en metal",
-            "Choses luxueuses",
-            "Choses liees au feu",
-            "Choses sucrees",
-            "Choses acres"
-          ]
-        },
-        {
-          "members": [
+            },
             {
               "name": "Dinoclier",
               "environment": "Sec",
@@ -5430,26 +5283,28 @@
             }
           ],
           "sharedPreferences": [
-            "Choses dures",
-            "Choses en metal",
-            "Choses en pierre",
-            "Choses luxueuses",
-            "Choses rondes",
-            "Choses sucrees"
+            "Choses luxueuses"
           ],
-          "score": 6,
+          "score": 1,
           "uniquePreferences": [
-            "Choses dures",
-            "Choses en metal",
-            "Choses en pierre",
+            "Choses ameres",
+            "Choses liees a la nature",
+            "Choses liees a la terre",
+            "Choses liees au feu",
             "Choses luxueuses",
-            "Choses rondes",
-            "Choses sucrees"
+            "Choses qui font du bruit",
+            "Choses dures",
+            "Choses en pierre",
+            "Choses pour s'entrainer",
+            "Choses sucrees",
+            "Choses acidulees",
+            "Choses en metal",
+            "Choses rondes"
           ]
         }
       ],
       "pokemonCount": 20,
-      "houseCount": 6
+      "houseCount": 5
     }
   }
 }

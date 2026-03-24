@@ -91,14 +91,42 @@ function partitionByEnvironment(pokemonList) {
 }
 
 // ---------------------------------------------------------------------------
-// Clustering
+// Clustering — minimize unique preferences per house
 // ---------------------------------------------------------------------------
+
+function newPrefsCount(house, candidate) {
+  const existing = new Set();
+  for (const m of house) {
+    for (const p of m.preferences) existing.add(p);
+  }
+  let added = 0;
+  for (const p of candidate.preferences) {
+    if (!existing.has(p)) added++;
+  }
+  return added;
+}
+
+function averageNewPrefs(pokemon, group) {
+  const others = group.filter((p) => p !== pokemon);
+  if (others.length === 0) return 0;
+  const myPrefs = new Set(pokemon.preferences);
+  let total = 0;
+  for (const other of others) {
+    const otherPrefs = new Set(other.preferences);
+    let unique = 0;
+    for (const p of myPrefs) {
+      if (!otherPrefs.has(p)) unique++;
+    }
+    total += unique;
+  }
+  return total / others.length;
+}
 
 function clusterByPreferences(pokemonGroup, maxSize = 4) {
   if (pokemonGroup.length === 0) return [];
 
   const sorted = [...pokemonGroup].sort(
-    (a, b) => averageSimilarity(a, pokemonGroup) - averageSimilarity(b, pokemonGroup),
+    (a, b) => averageNewPrefs(b, pokemonGroup) - averageNewPrefs(a, pokemonGroup),
   );
 
   const assigned = new Set();
@@ -112,18 +140,19 @@ function clusterByPreferences(pokemonGroup, maxSize = 4) {
 
     while (house.length < maxSize) {
       let bestCandidate = null;
-      let bestScore = -1;
+      let bestNewCount = Infinity;
 
       for (const candidate of sorted) {
         if (assigned.has(candidate)) continue;
-        const candidateScore = houseScore([...house, candidate]);
-        if (candidateScore > bestScore) {
-          bestScore = candidateScore;
+        const added = newPrefsCount(house, candidate);
+        if (added < bestNewCount) {
+          bestNewCount = added;
           bestCandidate = candidate;
         }
       }
 
-      if (bestScore < 1 || bestCandidate === null) break;
+      if (bestCandidate === null) break;
+
       house.push(bestCandidate);
       assigned.add(bestCandidate);
     }

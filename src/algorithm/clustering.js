@@ -1,12 +1,58 @@
 import {
-  averageSimilarity,
-  houseScore,
   intersectAll,
   uniquePreferences,
 } from './scoring.js';
 
 /**
- * Greedy agglomerative clustering of Pokemon by preference similarity.
+ * Counts how many NEW preferences a candidate would add to a house.
+ * Lower = better (the candidate's preferences overlap more with existing ones).
+ *
+ * @param {Array<{preferences: string[]}>} house - current members
+ * @param {{preferences: string[]}} candidate
+ * @returns {number} number of new unique preferences the candidate would add
+ */
+function newPrefsCount(house, candidate) {
+  const existing = new Set();
+  for (const m of house) {
+    for (const p of m.preferences) existing.add(p);
+  }
+  let added = 0;
+  for (const p of candidate.preferences) {
+    if (!existing.has(p)) added++;
+  }
+  return added;
+}
+
+/**
+ * Average number of new preferences a pokemon would add to each other
+ * pokemon's set. Lower = more overlap = easier to place.
+ *
+ * @param {{preferences: string[]}} pokemon
+ * @param {Array<{preferences: string[]}>} group
+ * @returns {number}
+ */
+function averageNewPrefs(pokemon, group) {
+  const others = group.filter((p) => p !== pokemon);
+  if (others.length === 0) return 0;
+
+  const myPrefs = new Set(pokemon.preferences);
+  let total = 0;
+  for (const other of others) {
+    const otherPrefs = new Set(other.preferences);
+    // How many of my prefs are NOT in other's prefs?
+    let unique = 0;
+    for (const p of myPrefs) {
+      if (!otherPrefs.has(p)) unique++;
+    }
+    total += unique;
+  }
+  return total / others.length;
+}
+
+/**
+ * Greedy agglomerative clustering that minimizes the total number of
+ * unique preferences per house (= fewer different items to find).
+ *
  * All Pokemon in the input should share the same environment.
  *
  * @param {Array<{name: string, environment: string, preferences: string[]}>} pokemonGroup
@@ -16,11 +62,12 @@ import {
 export function clusterByPreferences(pokemonGroup, maxSize = 4) {
   if (pokemonGroup.length === 0) return [];
 
-  // Sort by averageSimilarity ascending (least similar first = hardest to place)
+  // Sort by averageNewPrefs descending: Pokemon that add the most new
+  // preferences to others are hardest to place, so we seed them first
   const sorted = [...pokemonGroup].sort(
     (a, b) =>
-      averageSimilarity(a, pokemonGroup) -
-      averageSimilarity(b, pokemonGroup),
+      averageNewPrefs(b, pokemonGroup) -
+      averageNewPrefs(a, pokemonGroup),
   );
 
   const assigned = new Set();
@@ -32,23 +79,22 @@ export function clusterByPreferences(pokemonGroup, maxSize = 4) {
     const house = [seed];
     assigned.add(seed);
 
-    // Greedily add best candidate
+    // Greedily add the candidate that adds the FEWEST new preferences
     while (house.length < maxSize) {
       let bestCandidate = null;
-      let bestScore = -1;
+      let bestNewCount = Infinity;
 
       for (const candidate of sorted) {
         if (assigned.has(candidate)) continue;
 
-        const candidateScore = houseScore([...house, candidate]);
-        if (candidateScore > bestScore) {
-          bestScore = candidateScore;
+        const added = newPrefsCount(house, candidate);
+        if (added < bestNewCount) {
+          bestNewCount = added;
           bestCandidate = candidate;
         }
       }
 
-      // Stop if no candidate shares at least 1 preference with the whole house
-      if (bestScore < 1 || bestCandidate === null) break;
+      if (bestCandidate === null) break;
 
       house.push(bestCandidate);
       assigned.add(bestCandidate);
