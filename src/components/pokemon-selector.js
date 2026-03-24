@@ -4,46 +4,66 @@ import { createSearchBar } from './search-bar.js';
 import { createEnvironmentFilter } from './environment-filter.js';
 
 const ENV_COLORS = {
-  Lumineux: '#f5c518',
-  Sombre: '#6b3fa0',
-  Chaud: '#e85d3a',
-  Frais: '#5cc5e8',
-  Humide: '#3b82d6',
-  Sec: '#c2956a',
+  Lumineux: '#f5c518', Sombre: '#6b3fa0', Chaud: '#e85d3a',
+  Frais: '#5cc5e8', Humide: '#3b82d6', Sec: '#c2956a',
 };
 
+const SPRITE_BASE = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
+const STORAGE_KEY = 'pokopia-housing-selected';
+
+/** @type {Record<string, number> | null} */
+let pokemonIds = null;
+
 /**
- * Slugifies a Pokemon name to produce a safe HTML id.
- * Handles accented chars, dots, spaces, apostrophes, etc.
- *
- * @param {string} name
- * @returns {string}
+ * Loads the pokemon name → national dex ID mapping.
  */
-function slugify(name) {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+async function loadPokemonIds() {
+  if (pokemonIds) return;
+  try {
+    const base = import.meta.env.BASE_URL ?? '/pokopia-housing/';
+    const resp = await fetch(`${base}data/pokemon-ids.json`);
+    pokemonIds = await resp.json();
+  } catch (e) {
+    console.warn('Could not load pokemon IDs for sprites', e);
+    pokemonIds = {};
+  }
 }
 
 /**
- * Normalizes a string for search comparison:
- * lowercases and strips diacritics.
- *
- * @param {string} str
- * @returns {string}
+ * Returns the sprite URL for a pokemon name.
  */
+function spriteUrl(name) {
+  const id = pokemonIds?.[name];
+  if (!id) return null;
+  return `${SPRITE_BASE}${id}.png`;
+}
+
+/**
+ * Loads saved selection from localStorage.
+ */
+function loadSavedSelection() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) return new Set(JSON.parse(saved));
+  } catch (e) { /* ignore */ }
+  return new Set();
+}
+
+/**
+ * Saves selection to localStorage.
+ */
+function saveSelection(selected) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify([...selected]));
+  } catch (e) { /* ignore */ }
+}
+
 function normalize(str) {
-  return str
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
+  return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 /**
- * Creates a Pokemon selector section with search, filter, and styled tiles.
+ * Creates a Pokedex-style Pokemon selector with sprite icons.
  *
  * @param {Array<{name: string, environment: string, preferences: string[]}>} allPokemon
  * @param {import('../core/store.js').store} store
@@ -52,6 +72,12 @@ function normalize(str) {
 export function createPokemonSelector(allPokemon, store) {
   let searchQuery = '';
   let envFilter = [];
+
+  // Restore saved selection
+  const saved = loadSavedSelection();
+  if (saved.size > 0) {
+    store.setState({ selectedPokemon: saved });
+  }
 
   const section = el('section', { className: 'pokemon-selector' });
 
@@ -81,14 +107,12 @@ export function createPokemonSelector(allPokemon, store) {
   const selectAllBtn = el('button', {
     type: 'button',
     className: 'btn btn-secondary btn--sm',
-    'data-i18n': 'common.selectAll',
     onClick: () => {
       const visible = getVisiblePokemon();
       const current = new Set(store.getState().selectedPokemon);
-      for (const p of visible) {
-        current.add(p.name);
-      }
+      for (const p of visible) current.add(p.name);
       store.setState({ selectedPokemon: current });
+      saveSelection(current);
       renderGrid();
       updateCount();
     },
@@ -97,30 +121,27 @@ export function createPokemonSelector(allPokemon, store) {
   const clearBtn = el('button', {
     type: 'button',
     className: 'btn btn-ghost btn--sm',
-    'data-i18n': 'common.clear',
     onClick: () => {
-      store.setState({ selectedPokemon: new Set() });
+      const empty = new Set();
+      store.setState({ selectedPokemon: empty });
+      saveSelection(empty);
       renderGrid();
       updateCount();
     },
   }, t('common.clear'));
 
   const actions = el('div', { className: 'selector-actions' },
-    selectAllBtn,
-    clearBtn,
-    countDisplay
+    selectAllBtn, clearBtn, countDisplay
   );
 
-  // Grid container
-  const grid = el('div', { className: 'selector-grid' });
+  // Grid container — Pokedex style
+  const grid = el('div', { className: 'dex-grid', role: 'grid', 'aria-label': 'Pokemon selector' });
 
   function getVisiblePokemon() {
     const normalizedQuery = normalize(searchQuery);
     return allPokemon.filter((p) => {
-      const nameMatch = normalizedQuery === '' ||
-        normalize(p.name).includes(normalizedQuery);
-      const envMatch = envFilter.length === 0 ||
-        envFilter.includes(p.environment);
+      const nameMatch = normalizedQuery === '' || normalize(p.name).includes(normalizedQuery);
+      const envMatch = envFilter.length === 0 || envFilter.includes(p.environment);
       return nameMatch && envMatch;
     });
   }
@@ -131,59 +152,54 @@ export function createPokemonSelector(allPokemon, store) {
     const selected = store.getState().selectedPokemon;
 
     for (const pokemon of visible) {
-      const isChecked = selected instanceof Set
-        ? selected.has(pokemon.name)
-        : false;
-
-      const safeId = `sel-${slugify(pokemon.name)}`;
+      const isChecked = selected instanceof Set ? selected.has(pokemon.name) : false;
       const envColor = ENV_COLORS[pokemon.environment] || '#95a5a6';
-      const translatedEnv = t(`environments.${pokemon.environment}`) !== `environments.${pokemon.environment}`
-        ? t(`environments.${pokemon.environment}`)
-        : pokemon.environment;
+      const url = spriteUrl(pokemon.name);
+      const translatedName = t(`pokemon.${pokemon.name}`) !== `pokemon.${pokemon.name}`
+        ? t(`pokemon.${pokemon.name}`) : pokemon.name;
 
-      const checkbox = el('input', {
-        type: 'checkbox',
-        id: safeId,
-        className: 'selector-tile-checkbox',
-        'data-pokemon': pokemon.name,
-      });
-      if (isChecked) {
-        checkbox.checked = true;
-      }
+      // Sprite image or fallback text
+      const spriteEl = url
+        ? el('img', {
+            src: url,
+            alt: translatedName,
+            className: 'dex-cell__sprite',
+            loading: 'lazy',
+            width: '48',
+            height: '48',
+          })
+        : el('span', { className: 'dex-cell__fallback' }, pokemon.name.substring(0, 3));
 
-      const tile = el('div', {
-        className: `selector-tile${isChecked ? ' selected' : ''}`,
-      },
-        checkbox,
-        el('span', { className: 'selector-tile-name' }, pokemon.name),
-        el('span', {
-          className: 'selector-tile-env',
-          style: `background-color: ${envColor}`,
-          title: translatedEnv,
-        })
-      );
-
-      checkbox.addEventListener('change', () => {
-        const current = new Set(store.getState().selectedPokemon);
-        if (checkbox.checked) {
-          current.add(pokemon.name);
-          tile.classList.add('selected');
-        } else {
-          current.delete(pokemon.name);
-          tile.classList.remove('selected');
-        }
-        store.setState({ selectedPokemon: current });
-        updateCount();
+      // Environment dot
+      const envDot = el('span', {
+        className: 'dex-cell__env',
+        style: `background-color: ${envColor}`,
       });
 
-      // Clicking tile also toggles
-      tile.addEventListener('click', (e) => {
-        if (e.target === checkbox) return;
-        checkbox.checked = !checkbox.checked;
-        checkbox.dispatchEvent(new Event('change'));
-      });
+      const cell = el('button', {
+        type: 'button',
+        className: 'dex-cell' + (isChecked ? ' dex-cell--selected' : ''),
+        title: translatedName,
+        'aria-pressed': String(isChecked),
+        'aria-label': translatedName,
+        onClick: () => {
+          const current = new Set(store.getState().selectedPokemon);
+          if (current.has(pokemon.name)) {
+            current.delete(pokemon.name);
+            cell.classList.remove('dex-cell--selected');
+            cell.setAttribute('aria-pressed', 'false');
+          } else {
+            current.add(pokemon.name);
+            cell.classList.add('dex-cell--selected');
+            cell.setAttribute('aria-pressed', 'true');
+          }
+          store.setState({ selectedPokemon: current });
+          saveSelection(current);
+          updateCount();
+        },
+      }, spriteEl, envDot);
 
-      grid.appendChild(tile);
+      grid.appendChild(cell);
     }
   }
 
@@ -193,9 +209,11 @@ export function createPokemonSelector(allPokemon, store) {
   section.appendChild(actions);
   section.appendChild(grid);
 
-  // Initial render
-  renderGrid();
-  updateCount();
+  // Load sprites mapping then render
+  loadPokemonIds().then(() => {
+    renderGrid();
+    updateCount();
+  });
 
   return section;
 }

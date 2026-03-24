@@ -693,7 +693,7 @@ html[data-theme="dark"] .planner-selector__pokemon-item[aria-selected="true"] {
 
 @media (min-width: 768px) {
   .planner-panel-left {
-    flex: 0 0 360px;
+    flex: 0 0 420px;
     position: sticky;
     top: 80px;
   }
@@ -701,7 +701,7 @@ html[data-theme="dark"] .planner-selector__pokemon-item[aria-selected="true"] {
 
 @media (min-width: 1024px) {
   .planner-panel-left {
-    flex: 0 0 400px;
+    flex: 0 0 500px;
   }
 }
 

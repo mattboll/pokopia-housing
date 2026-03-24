@@ -1131,85 +1131,101 @@ html[data-theme="dark"] #app-header {
   white-space: nowrap;
 }
 
-.selector-tile {
+/* Pokedex-style sprite grid */
+.dex-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2px;
+  background: var(--color-border);
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+@media (max-width: 639px) {
+  .dex-grid { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media (max-width: 400px) {
+  .dex-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+.dex-grid::-webkit-scrollbar { width: 6px; }
+.dex-grid::-webkit-scrollbar-track { background: var(--color-surface-raised); }
+.dex-grid::-webkit-scrollbar-thumb { background: var(--color-border-strong); border-radius: var(--radius-full); }
+
+.dex-cell {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-3);
-  background-color: var(--color-surface);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-md);
+  justify-content: center;
+  aspect-ratio: 1;
+  background: var(--color-surface);
+  border: none;
+  padding: 4px;
   cursor: pointer;
-  transition: border-color var(--transition-fast),
-              background-color var(--transition-fast),
-              box-shadow var(--transition-fast),
-              transform var(--transition-fast);
-  user-select: none;
-}
-
-.selector-tile:hover {
-  border-color: var(--color-border-strong);
-  background-color: var(--color-surface-raised);
-  transform: translateY(-1px);
-}
-
-.selector-tile.selected {
-  border-color: var(--color-primary);
-  background-color: #FFF0EB;
-  box-shadow: 0 0 0 2px rgba(232, 93, 58, 0.15);
-}
-
-html[data-theme="dark"] .selector-tile.selected {
-  background-color: rgba(240, 122, 94, 0.12);
-}
-
-.selector-tile-checkbox {
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--color-border-strong);
-  border-radius: var(--radius-sm);
-  appearance: none;
-  cursor: pointer;
-  flex-shrink: 0;
-  position: relative;
   transition: background-color var(--transition-fast),
-              border-color var(--transition-fast);
+              transform var(--transition-fast);
 }
 
-.selector-tile-checkbox:checked {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+.dex-cell:hover {
+  background: var(--color-surface-sunken);
+  transform: scale(1.1);
+  z-index: 2;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-sm);
 }
 
-.selector-tile-checkbox:checked::after {
-  content: "";
+.dex-cell--selected {
+  background: #FFF0EB;
+  box-shadow: inset 0 0 0 2px var(--color-primary);
+}
+
+.dex-cell--selected:hover {
+  background: #FFE0D6;
+}
+
+html[data-theme="dark"] .dex-cell--selected {
+  background: rgba(255, 107, 74, 0.15);
+}
+
+html[data-theme="dark"] .dex-cell--selected:hover {
+  background: rgba(255, 107, 74, 0.25);
+}
+
+.dex-cell__sprite {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+  pointer-events: none;
+  transition: filter var(--transition-fast);
+}
+
+.dex-cell:not(.dex-cell--selected) .dex-cell__sprite {
+  filter: saturate(0.6);
+}
+
+.dex-cell--selected .dex-cell__sprite {
+  filter: saturate(1) drop-shadow(0 1px 2px rgba(227, 53, 13, 0.3));
+}
+
+.dex-cell__env {
   position: absolute;
-  top: 2px;
-  left: 5px;
-  width: 4px;
+  bottom: 2px;
+  right: 2px;
+  width: 8px;
   height: 8px;
-  border: solid #ffffff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.selector-tile-name {
-  font-size: var(--text-sm);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text);
-  line-height: 1.2;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.selector-tile-env {
-  width: 10px;
-  height: 10px;
   border-radius: var(--radius-full);
-  flex-shrink: 0;
+  border: 1px solid var(--color-surface);
+}
+
+.dex-cell__fallback {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-muted);
+  text-transform: uppercase;
 }
 
 /* ===================================================================
