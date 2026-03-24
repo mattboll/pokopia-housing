@@ -15,16 +15,36 @@ const ENV_EMOJI = {
 /**
  * Computes a compatibility rating from totalScore.
  */
+/**
+ * Rates a house based on what the player actually sees:
+ * - How many preferences ALL residents share (fewer unique items needed)
+ * - How many different items you need to find in total
+ * A house where everyone likes the same things = excellent.
+ * A house with many different preferences to cover = lower rating.
+ */
 function compatibilityRating(house) {
-  const total = house.totalScore || house.score || 0;
   const members = house.members.length;
   if (members <= 1) return { stars: 5, key: 'rating.perfect', fallback: 'Parfait', color: '#2ea858' };
-  const pairs = (members * (members - 1)) / 2;
-  const perPair = total / pairs;
-  if (perPair >= 8) return { stars: 5, key: 'rating.excellent', fallback: 'Excellent', color: '#2ea858' };
-  if (perPair >= 5) return { stars: 4, key: 'rating.veryGood', fallback: 'Tres bien', color: '#6bba4f' };
-  if (perPair >= 3) return { stars: 3, key: 'rating.good', fallback: 'Bien', color: '#f5c518' };
-  if (perPair >= 1) return { stars: 2, key: 'rating.okay', fallback: 'Correct', color: '#e5a419' };
+
+  const shared = (house.sharedPreferences || []).length;
+  const uniqueAll = (house.uniquePreferences || []).length;
+  const toFind = uniqueAll - shared; // items to find beyond shared ones
+
+  // Ratio: what fraction of all preferences are shared by everyone?
+  // Higher = residents are more aligned = less furniture work
+  const ratio = uniqueAll > 0 ? shared / uniqueAll : 0;
+
+  // Also factor in absolute count of items to find (fewer = better)
+  // A house with 3 shared + 2 to find is better than 3 shared + 15 to find
+  const efficiency = toFind <= 4 ? 2 : toFind <= 8 ? 1 : toFind <= 12 ? 0 : -1;
+
+  const score = ratio * 4 + efficiency;
+
+  // Thresholds calibrated on actual data (median ~-0.5, max ~2.8)
+  if (score >= 2.2) return { stars: 5, key: 'rating.excellent', fallback: 'Excellent', color: '#2ea858' };
+  if (score >= 1.5) return { stars: 4, key: 'rating.veryGood', fallback: 'Tres bien', color: '#6bba4f' };
+  if (score >= 0.5) return { stars: 3, key: 'rating.good', fallback: 'Bien', color: '#f5c518' };
+  if (score >= -0.5) return { stars: 2, key: 'rating.okay', fallback: 'Correct', color: '#e5a419' };
   return { stars: 1, key: 'rating.low', fallback: 'Faible', color: '#e74c3c' };
 }
 
