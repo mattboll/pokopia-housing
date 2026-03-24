@@ -11,7 +11,6 @@ import { initI18n, t } from './core/i18n.js';
 import { initRouter } from './core/router.js';
 import { store } from './core/store.js';
 import { loadPokemonData } from './core/data-loader.js';
-import { loadPreferenceLinks } from './algorithm/scoring.js';
 import { announce } from './utils/a11y.js';
 import { renderHeader } from './components/header.js';
 import { renderFooter } from './components/footer.js';
@@ -68,15 +67,12 @@ async function init() {
   // Initialize i18n (async, loads locale file)
   await initI18n();
 
-  // Load Pokemon data and preference links in parallel
+  // Load Pokemon data
   try {
-    const [allPokemon] = await Promise.all([
-      loadPokemonData(),
-      loadPreferenceLinks(),
-    ]);
+    const allPokemon = await loadPokemonData();
     store.setState({ allPokemon });
   } catch (err) {
-    console.error('Failed to load data:', err);
+    console.error('Failed to load Pokemon data:', err);
     store.setState({ allPokemon: [] });
   }
 

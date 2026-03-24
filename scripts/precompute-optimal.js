@@ -32,33 +32,6 @@ function parseCsv(csvText) {
 }
 
 // ---------------------------------------------------------------------------
-// Preference Links (loaded from JSON)
-// ---------------------------------------------------------------------------
-
-let prefGraph = null;
-
-function loadLinks() {
-  try {
-    const linksPath = join(projectRoot, 'public', 'data', 'preference-links.json');
-    const data = JSON.parse(readFileSync(linksPath, 'utf-8'));
-    prefGraph = new Map();
-    for (const [pref, linked] of Object.entries(data.links)) {
-      prefGraph.set(pref, new Set(linked));
-    }
-    console.log(`Loaded ${prefGraph.size} preference link entries`);
-  } catch (e) {
-    console.warn('Could not load preference links:', e.message);
-    prefGraph = new Map();
-  }
-}
-
-function arePrefsLinked(prefA, prefB) {
-  if (prefA === prefB) return true;
-  if (!prefGraph) return false;
-  return prefGraph.get(prefA)?.has(prefB) || prefGraph.get(prefB)?.has(prefA) || false;
-}
-
-// ---------------------------------------------------------------------------
 // Scoring helpers
 // ---------------------------------------------------------------------------
 
@@ -79,49 +52,9 @@ function intersectAll(arrays) {
   return [...result];
 }
 
-function pairCompatibility(pokemonA, pokemonB) {
-  const directMatches = intersect(pokemonA.preferences, pokemonB.preferences);
-  const directSet = new Set(directMatches);
-
-  const bridges = [];
-  if (prefGraph) {
-    for (const prefA of pokemonA.preferences) {
-      if (directSet.has(prefA)) continue;
-      for (const prefB of pokemonB.preferences) {
-        if (directSet.has(prefB)) continue;
-        if (prefA === prefB) continue;
-        if (arePrefsLinked(prefA, prefB)) {
-          bridges.push({ from: prefA, to: prefB });
-        }
-      }
-    }
-  }
-
-  return { directMatches, bridges, totalScore: directMatches.length * 5 + bridges.length };
-}
-
-function enhancedHouseScore(members) {
-  if (members.length === 0) return { directScore: 0, bridgeScore: 0, totalScore: 0, sharedPreferences: [], bridges: [] };
-
-  const sharedPreferences = intersectAll(members.map((m) => m.preferences));
-  const directScore = sharedPreferences.length;
-
-  const bridgeSet = new Set();
-  const bridges = [];
-  for (let i = 0; i < members.length; i++) {
-    for (let j = i + 1; j < members.length; j++) {
-      const compat = pairCompatibility(members[i], members[j]);
-      for (const b of compat.bridges) {
-        const key = [b.from, b.to].sort().join('\u2194');
-        if (!bridgeSet.has(key)) {
-          bridgeSet.add(key);
-          bridges.push(b);
-        }
-      }
-    }
-  }
-
-  return { directScore, bridgeScore: bridges.length, totalScore: directScore * 5 + bridges.length, sharedPreferences, bridges };
+function houseScore(members) {
+  if (members.length === 0) return 0;
+  return intersectAll(members.map((m) => m.preferences)).length;
 }
 
 function averageSimilarity(pokemon, group) {
@@ -130,7 +63,7 @@ function averageSimilarity(pokemon, group) {
 
   let total = 0;
   for (const other of others) {
-    total += pairCompatibility(pokemon, other).totalScore;
+    total += intersect(pokemon.preferences, other.preferences).length;
   }
   return total / others.length;
 }
@@ -158,7 +91,7 @@ function partitionByEnvironment(pokemonList) {
 }
 
 // ---------------------------------------------------------------------------
-// Clustering (enhanced with bridges)
+// Clustering
 // ---------------------------------------------------------------------------
 
 function clusterByPreferences(pokemonGroup, maxSize = 4) {
@@ -183,9 +116,9 @@ function clusterByPreferences(pokemonGroup, maxSize = 4) {
 
       for (const candidate of sorted) {
         if (assigned.has(candidate)) continue;
-        const result = enhancedHouseScore([...house, candidate]);
-        if (result.totalScore > bestScore) {
-          bestScore = result.totalScore;
+        const candidateScore = houseScore([...house, candidate]);
+        if (candidateScore > bestScore) {
+          bestScore = candidateScore;
           bestCandidate = candidate;
         }
       }
@@ -195,14 +128,11 @@ function clusterByPreferences(pokemonGroup, maxSize = 4) {
       assigned.add(bestCandidate);
     }
 
-    const result = enhancedHouseScore(house);
+    const shared = intersectAll(house.map((m) => m.preferences));
     houses.push({
       members: house,
-      sharedPreferences: result.sharedPreferences,
-      bridges: result.bridges,
-      score: result.directScore,
-      bridgeScore: result.bridgeScore,
-      totalScore: result.totalScore,
+      sharedPreferences: shared,
+      score: shared.length,
       uniquePreferences: uniquePreferences(house),
     });
   }
@@ -220,8 +150,7 @@ function optimize(pokemonList) {
   const environmentGroups = {};
   let totalHouses = 0;
   let totalPokemon = 0;
-  let totalDirectScore = 0;
-  let totalCombinedScore = 0;
+  let totalScore = 0;
 
   for (const [env, pokemons] of Object.entries(groups)) {
     if (pokemons.length === 0) continue;
@@ -233,16 +162,14 @@ function optimize(pokemonList) {
     totalHouses += houses.length;
     totalPokemon += pokemons.length;
     for (const house of houses) {
-      totalDirectScore += house.score;
-      totalCombinedScore += house.totalScore;
+      totalScore += house.score;
     }
   }
 
   return {
     totalHouses,
     totalPokemon,
-    averageScore: totalHouses > 0 ? totalDirectScore / totalHouses : 0,
-    averageTotalScore: totalHouses > 0 ? totalCombinedScore / totalHouses : 0,
+    averageScore: totalHouses > 0 ? totalScore / totalHouses : 0,
     environmentGroups,
   };
 }
@@ -259,9 +186,6 @@ const csvText = readFileSync(csvPath, 'utf-8');
 const pokemonList = parseCsv(csvText);
 console.log(`Parsed ${pokemonList.length} Pokemon`);
 
-// Load preference links for enhanced scoring
-loadLinks();
-
 const result = optimize(pokemonList);
 
 mkdirSync(dirname(outputPath), { recursive: true });
@@ -271,8 +195,7 @@ console.log(`Result written to ${outputPath}`);
 console.log('\n--- Stats ---');
 console.log(`Total Pokemon: ${result.totalPokemon}`);
 console.log(`Total Houses:  ${result.totalHouses}`);
-console.log(`Average Direct Score: ${result.averageScore.toFixed(2)}`);
-console.log(`Average Total Score (direct + bridges): ${result.averageTotalScore.toFixed(2)}`);
+console.log(`Average Score: ${result.averageScore.toFixed(2)}`);
 
 for (const [env, group] of Object.entries(result.environmentGroups)) {
   console.log(`  ${env}: ${group.pokemonCount} Pokemon -> ${group.houseCount} houses`);
