@@ -16,6 +16,32 @@ const ENV_EMOJI = {
  * Computes a compatibility rating from totalScore.
  */
 /**
+ * Counts how many members like each preference.
+ * Returns a Map<number, string[]> : count → list of preferences.
+ *
+ * @param {Array<{preferences: string[]}>} members
+ * @returns {Map<number, string[]>}
+ */
+function buildPrefCounts(members) {
+  // Count occurrences of each preference
+  const counts = new Map();
+  for (const m of members) {
+    for (const pref of m.preferences) {
+      counts.set(pref, (counts.get(pref) || 0) + 1);
+    }
+  }
+
+  // Group by count
+  const tiers = new Map();
+  for (const [pref, count] of counts) {
+    if (!tiers.has(count)) tiers.set(count, []);
+    tiers.get(count).push(pref);
+  }
+
+  return tiers;
+}
+
+/**
  * Rates a house based on what the player actually sees:
  * - How many preferences ALL residents share (fewer unique items needed)
  * - How many different items you need to find in total
@@ -92,65 +118,44 @@ export function createHouseCard(house, index) {
     residentsList
   );
 
-  // What they ALL like (direct shared preferences)
-  const sharedSection = el('div', { className: 'house-card-section' });
-  sharedSection.appendChild(el('h4', { className: 'house-card-section-title' },
-    `\u2764\uFE0F ${t('common.allLike') !== 'common.allLike' ? t('common.allLike') : 'Tous aiment'}`
-  ));
-  const dedupedShared = [...new Set(house.sharedPreferences)];
-  if (dedupedShared.length > 0) {
-    const pills = el('div', { className: 'house-card-pills' });
-    for (const pref of dedupedShared) {
-      const translated = t(`preferences.${pref}`) !== `preferences.${pref}`
-        ? t(`preferences.${pref}`) : pref;
-      pills.appendChild(el('span', { className: 'house-card-pill house-card-pill--shared' }, translated));
-    }
-    sharedSection.appendChild(pills);
-  } else {
-    sharedSection.appendChild(
-      el('span', { className: 'house-card-none' },
-        house.members.length > 1
-          ? (t('common.noDirectButItems') !== 'common.noDirectButItems'
-              ? t('common.noDirectButItems')
-              : 'Compatible via le mobilier !')
-          : '-'
-      )
-    );
-  }
+  // Preferences grouped by how many residents like them
+  const prefCounts = buildPrefCounts(house.members);
+  const prefsSection = el('div', { className: 'house-card-section house-card-prefs' });
+  const memberCount = house.members.length;
 
-  // "Items to find" section: unique preferences NOT already in shared
-  const sharedSet = new Set(house.sharedPreferences);
-  const nonSharedPrefs = (house.uniquePreferences || []).filter(p => !sharedSet.has(p));
-  let itemsSection = null;
-  if (nonSharedPrefs.length > 0 && house.members.length > 1) {
-    const MAX_SHOWN = 8;
-    const itemsPills = el('div', { className: 'house-card-pills' });
-    const shown = nonSharedPrefs.slice(0, MAX_SHOWN);
-    for (const pref of shown) {
+  // Sort tiers from most residents to fewest
+  const tiers = [...prefCounts.entries()]
+    .sort((a, b) => b[0] - a[0]);
+
+  for (const [count, prefs] of tiers) {
+    const tierEl = el('div', { className: 'house-card-tier' });
+
+    // Label: "4/4", "3/4", etc. with paw prints
+    const paws = '\uD83D\uDC3E'.repeat(count);
+    const tierLabel = memberCount > 1
+      ? `${count}/${memberCount} ${paws}`
+      : paws;
+
+    const tierClass = count === memberCount ? 'house-card-tier-label--all' :
+                      count >= memberCount * 0.5 ? 'house-card-tier-label--most' :
+                      'house-card-tier-label--few';
+
+    tierEl.appendChild(el('span', {
+      className: `house-card-tier-label ${tierClass}`,
+    }, tierLabel));
+
+    const pills = el('div', { className: 'house-card-pills' });
+    const pillClass = count === memberCount ? 'house-card-pill--shared' :
+                      count >= memberCount * 0.5 ? 'house-card-pill--most' :
+                      'house-card-pill--unique';
+
+    for (const pref of prefs) {
       const translated = t(`preferences.${pref}`) !== `preferences.${pref}`
         ? t(`preferences.${pref}`) : pref;
-      itemsPills.appendChild(el('span', { className: 'house-card-pill house-card-pill--unique' }, translated));
+      pills.appendChild(el('span', { className: `house-card-pill ${pillClass}` }, translated));
     }
-    if (nonSharedPrefs.length > MAX_SHOWN) {
-      const allPrefs = [...dedupedShared, ...nonSharedPrefs];
-      const moreBtn = el('button', {
-        type: 'button',
-        className: 'house-card-pill house-card-pill--more prefs-more-btn',
-        onClick: (e) => {
-          e.stopPropagation();
-          const title = t('common.itemsToFind') !== 'common.itemsToFind'
-            ? t('common.itemsToFind') : 'Objets a trouver';
-          showPrefsListPopover(allPrefs, dedupedShared, title, moreBtn);
-        },
-      }, `+${nonSharedPrefs.length - MAX_SHOWN}`);
-      itemsPills.appendChild(moreBtn);
-    }
-    itemsSection = el('div', { className: 'house-card-section' },
-      el('h4', { className: 'house-card-section-title' },
-        `\uD83D\uDECB\uFE0F ${t('common.itemsToFind') !== 'common.itemsToFind' ? t('common.itemsToFind') : 'Objets a trouver'} (${nonSharedPrefs.length})`
-      ),
-      itemsPills
-    );
+    tierEl.appendChild(pills);
+    prefsSection.appendChild(tierEl);
   }
 
   // Assemble
@@ -162,7 +167,6 @@ export function createHouseCard(house, index) {
   card.appendChild(header);
   card.appendChild(ratingSection);
   card.appendChild(residentsSection);
-  card.appendChild(sharedSection);
-  if (itemsSection) card.appendChild(itemsSection);
+  card.appendChild(prefsSection);
   return card;
 }
