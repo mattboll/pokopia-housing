@@ -129,7 +129,10 @@
     "Moyens de transport": "Moyens de transport",
     "Recipients": "Recipients"
   },
-  "pokemon": {},
+  "pokemon": {
+    "Forgelina": "Forgelina",
+    "Vipelierre": "Vipelierre"
+  },
   "rating": {
     "perfect": "Parfait",
     "excellent": "Excellent",
