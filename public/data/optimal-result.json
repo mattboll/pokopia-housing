@@ -1,8 +1,8 @@
 {
   "totalHouses": 78,
-  "totalPokemon": 299,
-  "averageScore": 1.705128205128205,
-  "averageTotalScore": 15.794871794871796,
+  "totalPokemon": 300,
+  "averageScore": 1.6666666666666667,
+  "averageTotalScore": 15.705128205128204,
   "environmentGroups": {
     "Lumineux": {
       "environment": "Lumineux",
@@ -37,7 +37,7 @@
               ]
             },
             {
-              "name": "Queulorior Artiste",
+              "name": "Queulorior",
               "environment": "Lumineux",
               "preferences": [
                 "Choses acres",
@@ -5286,6 +5286,114 @@
         {
           "members": [
             {
+              "name": "Feunard",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses acres",
+                "Choses amusantes a regarder",
+                "Choses douces",
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Fleurs epanouies"
+              ]
+            },
+            {
+              "name": "Arcanin",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses amusantes a regarder",
+                "Choses avec des symboles",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses liees au vent"
+              ]
+            },
+            {
+              "name": "Brasegali",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses epicees",
+                "Choses liees au feu",
+                "Choses luxueuses",
+                "Choses pour s'entrainer",
+                "Constructions",
+                "Recipients"
+              ]
+            },
+            {
+              "name": "Monthracite",
+              "environment": "Chaud",
+              "preferences": [
+                "Choses dures",
+                "Choses en metal",
+                "Choses en pierre",
+                "Choses epicees",
+                "Choses liees au feu"
+              ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses liees au feu"
+          ],
+          "bridges": [
+            {
+              "from": "Choses luxueuses",
+              "to": "Choses avec des symboles"
+            },
+            {
+              "from": "Choses luxueuses",
+              "to": "Choses en metal"
+            },
+            {
+              "from": "Choses en pierre",
+              "to": "Choses pour s'entrainer"
+            },
+            {
+              "from": "Choses en pierre",
+              "to": "Constructions"
+            },
+            {
+              "from": "Choses pour s'entrainer",
+              "to": "Choses dures"
+            },
+            {
+              "from": "Choses pour s'entrainer",
+              "to": "Choses en metal"
+            },
+            {
+              "from": "Constructions",
+              "to": "Choses dures"
+            },
+            {
+              "from": "Recipients",
+              "to": "Choses en metal"
+            }
+          ],
+          "score": 1,
+          "bridgeScore": 8,
+          "totalScore": 13,
+          "uniquePreferences": [
+            "Choses acres",
+            "Choses amusantes a regarder",
+            "Choses douces",
+            "Choses liees au feu",
+            "Choses luxueuses",
+            "Fleurs epanouies",
+            "Choses avec des symboles",
+            "Choses en pierre",
+            "Choses epicees",
+            "Choses liees au vent",
+            "Choses pour s'entrainer",
+            "Constructions",
+            "Recipients",
+            "Choses dures",
+            "Choses en metal"
+          ]
+        },
+        {
+          "members": [
+            {
               "name": "Volcanion",
               "environment": "Chaud",
               "preferences": [
@@ -5322,55 +5430,6 @@
               ]
             },
             {
-              "name": "Arcanin",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses amusantes a regarder",
-                "Choses avec des symboles",
-                "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu",
-                "Choses liees au vent"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses avec des symboles",
-            "Choses en pierre",
-            "Choses epicees",
-            "Choses liees au feu"
-          ],
-          "bridges": [],
-          "score": 4,
-          "bridgeScore": 0,
-          "totalScore": 20,
-          "uniquePreferences": [
-            "Choses avec des symboles",
-            "Choses en pierre",
-            "Choses epicees",
-            "Choses liees a l'eau",
-            "Choses liees au feu",
-            "Recipients",
-            "Choses liees au vent",
-            "Choses luxueuses",
-            "Choses amusantes a regarder"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Feunard",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses acres",
-                "Choses amusantes a regarder",
-                "Choses douces",
-                "Choses liees au feu",
-                "Choses luxueuses",
-                "Fleurs epanouies"
-              ]
-            },
-            {
               "name": "Carmadura",
               "environment": "Chaud",
               "preferences": [
@@ -5381,7 +5440,41 @@
                 "Choses luxueuses",
                 "Choses pour s'entrainer"
               ]
+            }
+          ],
+          "sharedPreferences": [
+            "Choses en pierre",
+            "Choses epicees",
+            "Choses liees au feu"
+          ],
+          "bridges": [
+            {
+              "from": "Choses avec des symboles",
+              "to": "Choses etranges"
             },
+            {
+              "from": "Choses avec des symboles",
+              "to": "Choses luxueuses"
+            }
+          ],
+          "score": 3,
+          "bridgeScore": 2,
+          "totalScore": 17,
+          "uniquePreferences": [
+            "Choses avec des symboles",
+            "Choses en pierre",
+            "Choses epicees",
+            "Choses liees a l'eau",
+            "Choses liees au feu",
+            "Recipients",
+            "Choses liees au vent",
+            "Choses luxueuses",
+            "Choses etranges",
+            "Choses pour s'entrainer"
+          ]
+        },
+        {
+          "members": [
             {
               "name": "Entei",
               "environment": "Chaud",
@@ -5395,71 +5488,15 @@
               ]
             },
             {
-              "name": "Brasegali",
+              "name": "Magmar",
               "environment": "Chaud",
               "preferences": [
-                "Choses epicees",
                 "Choses liees au feu",
-                "Choses luxueuses",
-                "Choses pour s'entrainer",
-                "Constructions",
-                "Recipients"
-              ]
-            }
-          ],
-          "sharedPreferences": [
-            "Choses liees au feu",
-            "Choses luxueuses"
-          ],
-          "bridges": [
-            {
-              "from": "Choses acres",
-              "to": "Choses etranges"
-            },
-            {
-              "from": "Choses etranges",
-              "to": "Choses ameres"
-            },
-            {
-              "from": "Choses etranges",
-              "to": "Choses avec des symboles"
-            },
-            {
-              "from": "Choses en pierre",
-              "to": "Constructions"
-            }
-          ],
-          "score": 2,
-          "bridgeScore": 4,
-          "totalScore": 14,
-          "uniquePreferences": [
-            "Choses acres",
-            "Choses amusantes a regarder",
-            "Choses douces",
-            "Choses liees au feu",
-            "Choses luxueuses",
-            "Fleurs epanouies",
-            "Choses en pierre",
-            "Choses epicees",
-            "Choses etranges",
-            "Choses pour s'entrainer",
-            "Choses ameres",
-            "Choses avec des symboles",
-            "Constructions",
-            "Recipients"
-          ]
-        },
-        {
-          "members": [
-            {
-              "name": "Monthracite",
-              "environment": "Chaud",
-              "preferences": [
-                "Choses dures",
-                "Choses en metal",
                 "Choses en pierre",
-                "Choses epicees",
-                "Choses liees au feu"
+                "Choses electriques",
+                "Choses dures",
+                "Choses pour s'entrainer",
+                "Choses sucrees"
               ]
             },
             {
@@ -5476,25 +5513,38 @@
           ],
           "sharedPreferences": [
             "Choses en pierre",
-            "Choses epicees",
             "Choses liees au feu"
           ],
-          "bridges": [],
-          "score": 3,
-          "bridgeScore": 0,
-          "totalScore": 15,
+          "bridges": [
+            {
+              "from": "Choses pour s'entrainer",
+              "to": "Choses rondes"
+            },
+            {
+              "from": "Choses sucrees",
+              "to": "Choses a partager"
+            }
+          ],
+          "score": 2,
+          "bridgeScore": 2,
+          "totalScore": 12,
           "uniquePreferences": [
-            "Choses dures",
-            "Choses en metal",
+            "Choses ameres",
+            "Choses avec des symboles",
             "Choses en pierre",
-            "Choses epicees",
             "Choses liees au feu",
+            "Choses luxueuses",
+            "Choses pour s'entrainer",
+            "Choses electriques",
+            "Choses dures",
+            "Choses sucrees",
             "Choses a partager",
+            "Choses epicees",
             "Choses rondes"
           ]
         }
       ],
-      "pokemonCount": 50,
+      "pokemonCount": 51,
       "houseCount": 13
     },
     "Frais": {
@@ -6566,7 +6616,7 @@
         {
           "members": [
             {
-              "name": "Axoloto de Paldea",
+              "name": "Axoloto",
               "environment": "Humide",
               "preferences": [
                 "Choses a partager",

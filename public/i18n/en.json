@@ -260,9 +260,7 @@
     "Azurill": "Azurill",
     "Manzai": "Bonsly",
     "Simularbre": "Sudowoodo",
-    "Axoloto de Paldea": "Paldean Wooper",
     "Terraiste": "Clodsire",
-    "Queulorior Artiste": "Smeargle",
     "Melofee": "Clefairy",
     "Melo": "Cleffa",
     "Melodelfe": "Clefable",
@@ -428,7 +426,10 @@
     "Mewtwo": "Mewtwo",
     "Mew": "Mew",
     "Forgelina": "Tinkaton",
-    "Vipelierre": "Snivy"
+    "Vipelierre": "Snivy",
+    "Axoloto": "Paldean Wooper",
+    "Queulorior": "Smeargle",
+    "Magmar": "Magmar"
   },
   "rating": {
     "perfect": "Perfect",

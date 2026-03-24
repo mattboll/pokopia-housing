@@ -129,9 +129,7 @@
   "Azurill": 298,
   "Manzai": 438,
   "Simularbre": 185,
-  "Axoloto de Paldea": 194,
   "Terraiste": 980,
-  "Queulorior Artiste": 235,
   "Melofee": 35,
   "Melo": 173,
   "Melodelfe": 36,
@@ -297,5 +295,8 @@
   "Mewtwo": 150,
   "Mew": 151,
   "Forgelina": 959,
-  "Vipelierre": 495
+  "Vipelierre": 495,
+  "Axoloto": 194,
+  "Queulorior": 235,
+  "Magmar": 126
 }

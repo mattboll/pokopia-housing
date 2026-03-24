@@ -260,9 +260,7 @@
     "Azurill": "ルリリ",
     "Manzai": "ウソハチ",
     "Simularbre": "ウソッキー",
-    "Axoloto de Paldea": "パルデアウパー",
     "Terraiste": "ドオー",
-    "Queulorior Artiste": "ドーブル",
     "Melofee": "ピッピ",
     "Melo": "ピィ",
     "Melodelfe": "ピクシー",
@@ -428,7 +426,10 @@
     "Mewtwo": "ミュウツー",
     "Mew": "ミュウ",
     "Forgelina": "デカヌチャン",
-    "Vipelierre": "ツタージャ"
+    "Vipelierre": "ツタージャ",
+    "Axoloto": "パルデアウパー",
+    "Queulorior": "ドーブル",
+    "Magmar": "ブーバー"
   },
   "rating": {
     "perfect": "完璧",

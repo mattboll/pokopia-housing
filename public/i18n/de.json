@@ -260,9 +260,7 @@
     "Azurill": "Azurill",
     "Manzai": "Mobai",
     "Simularbre": "Mogelbaum",
-    "Axoloto de Paldea": "Paldea-Felino",
     "Terraiste": "Sumpfell",
-    "Queulorior Artiste": "Farbeagle",
     "Melofee": "Piepi",
     "Melo": "Pii",
     "Melodelfe": "Pixi",
@@ -428,7 +426,10 @@
     "Mewtwo": "Mewtu",
     "Mew": "Mew",
     "Forgelina": "Granforgus",
-    "Vipelierre": "Serpifeu"
+    "Vipelierre": "Serpifeu",
+    "Axoloto": "Paldea-Felino",
+    "Queulorior": "Farbeagle",
+    "Magmar": "Magmar"
   },
   "rating": {
     "perfect": "Perfekt",
