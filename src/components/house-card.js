@@ -1,6 +1,14 @@
 import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
-import { createPokemonNameButton, showPrefsListPopover } from './pokemon-popover.js';
+import { createPokemonNameButton } from './pokemon-popover.js';
+
+/** Currently dragged resident (module-level so dragover can read it). */
+let dragging = null;
+
+/** @returns {{name: string, fromId: string, environment: string} | null} */
+export function getDragging() {
+  return dragging;
+}
 
 const ENV_COLORS = {
   Lumineux: '#f5c518', Sombre: '#6b3fa0', Chaud: '#e85d3a',
@@ -75,9 +83,21 @@ function compatibilityRating(house) {
 }
 
 /**
- * Creates a house card DOM element.
+ * @typedef {Object} HouseCardOptions
+ * @property {boolean} [editable=false] - show lock / move controls and accept drops
+ * @property {(house: Object) => void} [onToggleLock]
+ * @property {(memberName: string, house: Object, anchor: HTMLElement) => void} [onMove]
+ * @property {(memberName: string, fromId: string, house: Object) => void} [onDrop]
  */
-export function createHouseCard(house, index) {
+
+/**
+ * Creates a house card DOM element.
+ *
+ * @param {Object} house - { members, sharedPreferences, uniquePreferences, compatibility, locked?, id? }
+ * @param {number} index - display number
+ * @param {HouseCardOptions} [opts]
+ */
+export function createHouseCard(house, index, opts = {}) {
   const env = house.members[0]?.environment || '';
   const envColor = ENV_COLORS[env] || '#95a5a6';
   const envEmoji = ENV_EMOJI[env] || '\uD83C\uDFE0';
@@ -90,26 +110,73 @@ export function createHouseCard(house, index) {
   const starsStr = '\u2B50'.repeat(rating.stars) + '\u2606'.repeat(5 - rating.stars);
 
   // Header
+  const editable = Boolean(opts.editable);
   const header = el('div', { className: 'house-card-header', style: `border-bottom: 3px solid ${envColor}` },
     el('h3', { className: 'house-card-title' },
-      `\uD83C\uDFE0 ${t('common.house')} #${index}`
+      `\uD83C\uDFE0 ${t('common.house')} #${index}`,
+      house.locked ? el('span', { className: 'house-card-locked-badge', title: t('planner.locked') }, ' 🔒') : null
     ),
     el('span', { className: `badge env-badge badge-env--${envSlug}` },
       `${envEmoji} ${translatedEnv}`
     )
   );
+  if (editable && opts.onToggleLock) {
+    header.appendChild(el('button', {
+      type: 'button',
+      className: 'btn btn-ghost btn--sm house-card-lock-btn',
+      'aria-pressed': String(Boolean(house.locked)),
+      'aria-label': house.locked ? t('planner.unlock') : t('planner.lock'),
+      title: house.locked ? t('planner.unlock') : t('planner.lock'),
+      onClick: () => opts.onToggleLock(house),
+    }, house.locked ? '🔓' : '🔒'));
+  }
 
   // Compatibility rating
+  const compat = typeof house.compatibility === 'number'
+    ? house.compatibility
+    : ((house.uniquePreferences || []).length > 0
+      ? (house.sharedPreferences || []).length / house.uniquePreferences.length : 1);
   const ratingSection = el('div', { className: 'house-card-rating' },
     el('div', { className: 'house-card-rating-stars', style: `color: ${rating.color}` }, starsStr),
-    el('span', { className: 'house-card-rating-label', style: `color: ${rating.color}` }, ratingLabel)
+    el('span', { className: 'house-card-rating-label', style: `color: ${rating.color}` }, ratingLabel),
+    el('span', {
+      className: 'house-card-compat',
+      title: t('common.compatibility'),
+      'aria-label': `${t('common.compatibility')} ${Math.round(compat * 100)}%`,
+    }, `🤝 ${Math.round(compat * 100)}%`)
   );
 
   // Residents (clickable)
   const residentsList = el('div', { className: 'house-card-residents' });
   house.members.forEach((member, i) => {
     if (i > 0) residentsList.appendChild(el('span', { className: 'house-card-sep' }, ', '));
-    residentsList.appendChild(createPokemonNameButton(member, house.sharedPreferences));
+    const nameBtn = createPokemonNameButton(member, house.sharedPreferences);
+    if (!editable) {
+      residentsList.appendChild(nameBtn);
+      return;
+    }
+    const resident = el('span', { className: 'house-card-resident', draggable: 'true' }, nameBtn);
+    resident.addEventListener('dragstart', (e) => {
+      dragging = { name: member.name, fromId: house.id, environment: member.environment };
+      resident.classList.add('house-card-resident--dragging');
+      e.dataTransfer.effectAllowed = 'move';
+      e.dataTransfer.setData('text/plain', member.name);
+    });
+    resident.addEventListener('dragend', () => {
+      dragging = null;
+      resident.classList.remove('house-card-resident--dragging');
+    });
+    if (opts.onMove) {
+      const moveBtn = el('button', {
+        type: 'button',
+        className: 'house-card-move-btn',
+        'aria-label': `${t('planner.move')} ${nameBtn.textContent}`,
+        title: t('planner.move'),
+        onClick: (e) => { e.stopPropagation(); opts.onMove(member.name, house, moveBtn); },
+      }, '⇄');
+      resident.appendChild(moveBtn);
+    }
+    residentsList.appendChild(resident);
   });
   const residentsSection = el('div', { className: 'house-card-section' },
     el('h4', { className: 'house-card-section-title' },
@@ -168,5 +235,29 @@ export function createHouseCard(house, index) {
   card.appendChild(ratingSection);
   card.appendChild(residentsSection);
   card.appendChild(prefsSection);
+
+  if (editable && opts.onDrop) {
+    const canAccept = () => dragging
+      && dragging.fromId !== house.id
+      && dragging.environment === env
+      && !house.locked
+      && house.members.length < 4;
+    card.addEventListener('dragover', (e) => {
+      if (!canAccept()) return;
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      card.classList.add('house-card--drop-target');
+    });
+    card.addEventListener('dragleave', () => card.classList.remove('house-card--drop-target'));
+    card.addEventListener('drop', (e) => {
+      card.classList.remove('house-card--drop-target');
+      if (!canAccept()) return;
+      e.preventDefault();
+      const info = dragging;
+      dragging = null;
+      opts.onDrop(info.name, info.fromId, house);
+    });
+  }
+  if (house.locked) card.classList.add('house-card--locked');
   return card;
 }

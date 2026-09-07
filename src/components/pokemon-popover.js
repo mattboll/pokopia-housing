@@ -31,7 +31,8 @@ document.addEventListener('keydown', (e) => {
 document.addEventListener('click', (e) => {
   if (activePopover && !activePopover.contains(e.target)
       && !e.target.closest('.pokemon-name-btn')
-      && !e.target.closest('.prefs-more-btn')) {
+      && !e.target.closest('.prefs-more-btn')
+      && !e.target.closest('.house-card-move-btn')) {
     closePopover();
   }
 });
@@ -198,6 +199,44 @@ export function showPrefsListPopover(allPrefs, sharedPrefs, title, anchor) {
   );
 
   positionPopover(popover, anchor);
+}
+
+/**
+ * Shows a small menu popover with a list of actions.
+ *
+ * @param {HTMLElement} anchor
+ * @param {string} title
+ * @param {Array<{label: string, onSelect: () => void, disabled?: boolean}>} items
+ */
+export function showMenuPopover(anchor, title, items) {
+  closePopover();
+
+  const list = el('div', { className: 'popover__menu', role: 'menu' });
+  for (const item of items) {
+    const btn = el('button', {
+      type: 'button',
+      role: 'menuitem',
+      className: 'popover__menu-item',
+      onClick: (e) => { e.stopPropagation(); closePopover(); item.onSelect(); },
+    }, item.label);
+    if (item.disabled) btn.disabled = true;
+    list.appendChild(btn);
+  }
+
+  const closeBtn = el('button', {
+    className: 'popover__close', type: 'button', 'aria-label': 'Close',
+    onClick: (e) => { e.stopPropagation(); closePopover(); },
+  }, '\u2715');
+
+  const popover = el('div', { className: 'popover pokemon-popover', role: 'dialog', 'aria-label': title },
+    closeBtn,
+    el('div', { className: 'popover__header' }, el('span', { className: 'popover__name' }, title)),
+    el('div', { className: 'popover__body' }, list)
+  );
+
+  positionPopover(popover, anchor);
+  const first = list.querySelector('button:not(:disabled)');
+  if (first) first.focus();
 }
 
 /**

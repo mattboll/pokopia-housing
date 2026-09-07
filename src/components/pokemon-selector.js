@@ -52,7 +52,7 @@ function loadSavedSelection() {
 /**
  * Saves selection to localStorage.
  */
-function saveSelection(selected) {
+export function saveSelection(selected) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...selected]));
   } catch (e) { /* ignore */ }
@@ -179,6 +179,7 @@ export function createPokemonSelector(allPokemon, store) {
       const cell = el('button', {
         type: 'button',
         className: 'dex-cell' + (isChecked ? ' dex-cell--selected' : ''),
+        'data-name': pokemon.name,
         title: translatedName,
         'aria-pressed': String(isChecked),
         'aria-label': translatedName,
@@ -208,6 +209,17 @@ export function createPokemonSelector(allPokemon, store) {
   section.appendChild(envFilterEl);
   section.appendChild(actions);
   section.appendChild(grid);
+
+  // Keep cells in sync when the selection is changed elsewhere (share link, import, reset)
+  store.subscribe('selectedPokemon', (selected) => {
+    const set = selected instanceof Set ? selected : new Set();
+    for (const cell of grid.querySelectorAll('.dex-cell')) {
+      const on = set.has(cell.getAttribute('data-name'));
+      cell.classList.toggle('dex-cell--selected', on);
+      cell.setAttribute('aria-pressed', String(on));
+    }
+    updateCount();
+  });
 
   // Load sprites mapping then render
   loadPokemonIds().then(() => {

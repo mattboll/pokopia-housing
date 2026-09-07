@@ -10,8 +10,26 @@ let renderCallback = null;
  * @returns {string} Page name
  */
 function getPageFromHash() {
-  const hash = location.hash.replace('#/', '').trim();
+  const hash = location.hash.replace('#/', '').split('?')[0].trim();
   return ROUTES.includes(hash) ? hash : DEFAULT_ROUTE;
+}
+
+/**
+ * Returns the query parameters carried by the hash, e.g. `#/planner?p=abc`.
+ *
+ * @returns {URLSearchParams}
+ */
+export function getHashQuery() {
+  const idx = location.hash.indexOf('?');
+  return new URLSearchParams(idx === -1 ? '' : location.hash.slice(idx + 1));
+}
+
+/**
+ * Removes the query part of the hash without triggering a re-render.
+ */
+export function clearHashQuery() {
+  const page = getPageFromHash();
+  history.replaceState(null, '', `${location.pathname}${location.search}#/${page}`);
 }
 
 /**
