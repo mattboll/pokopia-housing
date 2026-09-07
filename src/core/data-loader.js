@@ -4,12 +4,39 @@ import { parseCSV } from '../utils/csv-parser.js';
  * @typedef {Object} Pokemon
  * @property {string} name
  * @property {string} environment
+ * @property {'base'|'basin'|'event'} source - base game, Bubbly Basin DLC, or event
  * @property {string[]} preferences
  */
 
 /**
+ * Converts parsed CSV rows into Pokemon objects.
+ * CSV columns: Nom, Environnement, Source, Preference 1..6
+ *
+ * @param {Object[]} rows
+ * @returns {Pokemon[]}
+ */
+export function rowsToPokemon(rows) {
+  return rows
+    .map((row) => ({
+      name: (row['Nom'] ?? '').trim(),
+      environment: (row['Environnement'] ?? '').trim(),
+      source: (row['Source'] ?? 'base').trim() || 'base',
+      preferences: [
+        row['Preference 1'],
+        row['Preference 2'],
+        row['Preference 3'],
+        row['Preference 4'],
+        row['Preference 5'],
+        row['Preference 6'],
+      ]
+        .map((p) => (p ?? '').trim())
+        .filter((p) => p.length > 0),
+    }))
+    .filter((p) => p.name.length > 0);
+}
+
+/**
  * Fetches and parses the Pokemon CSV data file.
- * CSV columns: Nom, Environnement, Preference 1..6
  *
  * @returns {Promise<Pokemon[]>} Parsed array of Pokemon objects
  */
@@ -23,22 +50,26 @@ export async function loadPokemonData() {
   }
 
   const csvText = await response.text();
-  const rows = parseCSV(csvText);
+  return rowsToPokemon(parseCSV(csvText));
+}
 
-  return rows
-    .map((row) => ({
-      name: (row['Nom'] ?? '').trim(),
-      environment: (row['Environnement'] ?? '').trim(),
-      preferences: [
-        row['Preference 1'],
-        row['Preference 2'],
-        row['Preference 3'],
-        row['Preference 4'],
-        row['Preference 5'],
-        row['Preference 6'],
-      ]
-        .map((p) => (p ?? '').trim())
-        .filter((p) => p.length > 0),
-    }))
-    .filter((p) => p.name.length > 0);
+/** @type {Record<string, {region: string, specialties: string[], underwater: boolean}> | null} */
+let metaCache = null;
+
+/**
+ * Loads extra per-Pokemon game info (region, specialties, underwater).
+ * Missing file = empty object, never throws.
+ *
+ * @returns {Promise<Record<string, {region: string, specialties: string[], underwater: boolean}>>}
+ */
+export async function loadPokemonMeta() {
+  if (metaCache) return metaCache;
+  try {
+    const base = import.meta.env.BASE_URL ?? '/pokopia-housing/';
+    const response = await fetch(`${base}data/pokemon-meta.json`);
+    metaCache = response.ok ? await response.json() : {};
+  } catch {
+    metaCache = {};
+  }
+  return metaCache;
 }

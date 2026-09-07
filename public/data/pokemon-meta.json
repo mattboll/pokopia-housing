@@ -1,0 +1,2689 @@
+{
+ "Bulbizarre": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Herbizarre": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Florizarre": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Salameche": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Reptincel": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Dracaufeu": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Carapuce": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Carabaffe": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Tortank": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Roucool": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Fly",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Roucoups": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Fly",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Roucarnage": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Fly",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Mystherbe": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Ortide": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Rafflesia": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Joliflor": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Paras": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Parasect": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Mimitoss": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Aeromite": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Chetiflor": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Boustiflor": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Empiflor": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Ramoloss": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Yawn"
+  ],
+  "underwater": true
+ },
+ "Flagadoss": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Roigada": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Teleport"
+  ],
+  "underwater": true
+ },
+ "Magneti": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Magneton": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Magnezone": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Onix": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Crush",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Steelix": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Osselait": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Ossatueur": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Debugant": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Kicklee": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Tygnon": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Kapoera": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Smogo": {
+  "region": "palette-town",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Smogogo": {
+  "region": "palette-town",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Saquedeneu": {
+  "region": "palette-town",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Bouldeneu": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Insecateur": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Cizayox": {
+  "region": "palette-town",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Scarabrute": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Chop",
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Magicarpe": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "???"
+  ],
+  "underwater": true
+ },
+ "Leviator": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Hoothoot": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Trade",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Noarfang": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Trade",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Scarhino": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Chop",
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Muciole": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Lumivole": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Gloupti": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Storage"
+  ],
+  "underwater": false
+ },
+ "Avaltout": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Storage"
+  ],
+  "underwater": false
+ },
+ "Cacnea": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Cacturne": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Apitrini": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Apireine": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Gather Honey",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Sancoki": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Sancoki Orient": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Tritosor": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Tritosor Orient": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Baudrive": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Dream Island"
+  ],
+  "underwater": false
+ },
+ "Grodrive": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Fly",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Rototaupe": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Minotaupe": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Search",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Charpenti": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Ouvrifier": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Betochef": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Build",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Funecire": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Melancolux": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Lugulabre": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Coupenotte": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Incisache": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Tranchodon": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Chop",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Mucuscule": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": false
+ },
+ "Colimucus": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": false
+ },
+ "Muplodocus": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Nigosier": {
+  "region": "palette-town",
+  "specialties": [
+   "Fly",
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Pichu": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Pikachu": {
+  "region": "palette-town",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Raichu": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Generate",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Nosferapti": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Nosferalto": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Nostenfer": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Search",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Miaouss": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Persian": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Trade",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Psykokwak": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": true
+ },
+ "Akwakwak": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": true
+ },
+ "Caninos": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Burn",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Arcanin": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Tadmorv": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Grotadmorv": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Fantominus": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Gather",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Spectrum": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Gather",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Ectoplasma": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Gather",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Voltorbe": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Explode"
+  ],
+  "underwater": false
+ },
+ "Electrode": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Explode"
+  ],
+  "underwater": false
+ },
+ "Noeunoeuf": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Grow",
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Noadkoko": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Grow",
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Ptiravi": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Leveinard": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Leuphorie": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Elekid": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Elektek": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Elekable": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Lokhlass": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Goinfrex": {
+  "region": "palette-town",
+  "specialties": [
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Ronflex": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Mimigal": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Migalos": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Wattouat": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Lainergie": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Pharamp": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Azurill": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Marill": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Azumarill": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Build"
+  ],
+  "underwater": true
+ },
+ "Axoloto": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": true
+ },
+ "Terraiste": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Litter",
+   "Bulldoze"
+  ],
+  "underwater": true
+ },
+ "Queulorior": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Paint"
+  ],
+  "underwater": true
+ },
+ "Poussifeu": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Galifeu": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Burn",
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Brasegali": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Burn",
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Goelise": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Bekipan": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Makuhita": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Build",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Hariyama": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Build",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Absol": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Tiplouf": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Prinplouf": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Pingoleon": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Water",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Nanmeouie": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Miamiasme": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Miasmax": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Recycle",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Zorua": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Zoroark": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Chinchidou": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Pashmilla": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Gather",
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Larvibule": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Chrysapile": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Lucanon": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Generate",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Mimiqui": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Pohm": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Pohmotte": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Pohmarmotte": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Generate",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Nigirigon Incurvee": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Nigirigon Affaissee": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Nigirigon Allongee": {
+  "region": "bleak-beach",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Abo": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Arbok": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Melo": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Melofee": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Melodelfe": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Toudoudou": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Rondoudou": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Grodoudou": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Taupiqueur": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Triopikeur": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Machoc": {
+  "region": "palette-town",
+  "specialties": [
+   "Build",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Machopeur": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Build",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Mackogneur": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Build",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Racaillou": {
+  "region": "palette-town",
+  "specialties": [
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Gravalanch": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Grolem": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Magby": {
+  "region": "withered-wastelands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Magmar": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Maganon": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Manzai": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Simularbre": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Cornebre": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Trade",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Corboss": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Trade",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Embrylex": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Ymphect": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Crush",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Tyranocif": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Bulldoze"
+  ],
+  "underwater": false
+ },
+ "Nenupiot": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Lombre": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Ludicolo": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Water",
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Mysdibule": {
+  "region": "palette-town",
+  "specialties": [
+   "Trade",
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Chartor": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Crikzik": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Melokrik": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Pijako": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Hype",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Riolu": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Lucario": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Motisma": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "DJ"
+  ],
+  "underwater": false
+ },
+ "Pyronille": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Pyrax": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Brindibou": {
+  "region": "palette-town",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Effleche": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Grow",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Archeduc": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Grow",
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Flambino": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Lapyro": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Pyrobut": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Rongourmand": {
+  "region": "palette-town",
+  "specialties": [
+   "Search",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Rongrigou": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Party"
+  ],
+  "underwater": false
+ },
+ "Charbi": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Wagomine": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Monthracite": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Toxizap": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Salarsen Aigue": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Generate",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Salarsen Grave": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Generate",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Patachiot": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Briochien": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Search",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Charbambin": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Carmadura": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Malvalame": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Burn",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Germeclat": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Floreclat": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Mordudor": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Collect"
+  ],
+  "underwater": false
+ },
+ "Gromago": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Collect"
+  ],
+  "underwater": false
+ },
+ "Goupix": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Feunard": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Ptitard": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Tetarte": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Tartard": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water",
+   "Build"
+  ],
+  "underwater": true
+ },
+ "Tarpaud": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Water",
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Abra": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Kadabra": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Alakazam": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Porygon": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Porygon2": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Porygon-Z": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Rarify"
+  ],
+  "underwater": false
+ },
+ "Minidraco": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Draco": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Dracolosse": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Hericendre": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Feurisson": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Typhlosion": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Burn",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Feuforeve": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Magireve": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Girafarig": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Farigiraf": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Tarsal": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Kirlia": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Gardevoir": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Gallame": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Teleport",
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Posipi": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Negapi": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Kraknoix": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Bulldoze",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Vibraninf": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Bulldoze",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Libegon": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Bulldoze",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Tylton": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Altaria": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Litter",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Skelenox": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Teraclope": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Noctunoir": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Terhal": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Metang": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": false
+ },
+ "Metalosse": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Recycle",
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Vipelierre": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Lianaja": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Majaspic": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Grenousse": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Croaporal": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Amphinobi": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Water",
+   "Chop"
+  ],
+  "underwater": true
+ },
+ "Dedenne": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Sonistrelle": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Bruyverne": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Search",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Minisange": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Bleuseille": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": false
+ },
+ "Corvaillus": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Chop",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Fantyrm": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Dispareptil": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather",
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Lanssorien": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Gather",
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Poussacha": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Matourgeon": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Miascarade": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Grow",
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Zapetrel": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Fulgulairo": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Generate",
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Forgerette": {
+  "region": "palette-town",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Forgella": {
+  "region": "palette-town",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": false
+ },
+ "Forgelina": {
+  "region": "sparkling-skylands",
+  "specialties": [
+   "Engineer"
+  ],
+  "underwater": true
+ },
+ "Ptera": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Kranidos": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Charkos": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Dinoclier": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Bastiodon": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Ptyranidur": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Rexillius": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Amagara": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush"
+  ],
+  "underwater": false
+ },
+ "Dragmara": {
+  "region": "rocky-ridges",
+  "specialties": [
+   "Crush",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Evoli": {
+  "region": "palette-town",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Aquali": {
+  "region": "palette-town",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Voltali": {
+  "region": "palette-town",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Pyroli": {
+  "region": "palette-town",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Mentali": {
+  "region": "palette-town",
+  "specialties": [
+   "Gather"
+  ],
+  "underwater": false
+ },
+ "Noctali": {
+  "region": "palette-town",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Phyllali": {
+  "region": "palette-town",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Givrali": {
+  "region": "palette-town",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": false
+ },
+ "Nymphali": {
+  "region": "palette-town",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": false
+ },
+ "Kyogre": {
+  "region": "dream-island",
+  "specialties": [
+   "???"
+  ],
+  "underwater": false
+ },
+ "Raikou": {
+  "region": "dream-island",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": false
+ },
+ "Entei": {
+  "region": "dream-island",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Suicune": {
+  "region": "dream-island",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": false
+ },
+ "Volcanion": {
+  "region": "dream-island",
+  "specialties": [
+   "Burn"
+  ],
+  "underwater": false
+ },
+ "Artikodin": {
+  "region": "dream-island",
+  "specialties": [
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Electhor": {
+  "region": "dream-island",
+  "specialties": [
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Sulfura": {
+  "region": "dream-island",
+  "specialties": [
+   "Fly"
+  ],
+  "underwater": false
+ },
+ "Ho-Oh": {
+  "region": "dream-island",
+  "specialties": [
+   "???"
+  ],
+  "underwater": false
+ },
+ "Lugia": {
+  "region": "dream-island",
+  "specialties": [
+   "???"
+  ],
+  "underwater": false
+ },
+ "Mewtwo": {
+  "region": "dream-island",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Mew": {
+  "region": "dream-island",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": false
+ },
+ "Granivol": {
+  "region": "event",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Floravol": {
+  "region": "event",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": false
+ },
+ "Cotovol": {
+  "region": "event",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Tenefix": {
+  "region": "event",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": false
+ },
+ "Jirachi": {
+  "region": "event",
+  "specialties": [
+   "Litter"
+  ],
+  "underwater": false
+ },
+ "Barpau": {
+  "region": "event",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Milobellus": {
+  "region": "event",
+  "specialties": [
+   "Water",
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Kokiyas": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Scrub",
+   "Litter"
+  ],
+  "underwater": true
+ },
+ "Crustabri": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Scrub",
+   "Litter"
+  ],
+  "underwater": true
+ },
+ "Hypotrempe": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Hypocean": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Water",
+   "Litter"
+  ],
+  "underwater": true
+ },
+ "Hyporoi": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Water",
+   "Litter"
+  ],
+  "underwater": true
+ },
+ "Stari": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Teleport"
+  ],
+  "underwater": true
+ },
+ "Staross": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Teleport",
+   "Gather"
+  ],
+  "underwater": true
+ },
+ "Kaiminus": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": true
+ },
+ "Crocrodil": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop",
+   "Crush"
+  ],
+  "underwater": true
+ },
+ "Aligatueur": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop",
+   "Crush"
+  ],
+  "underwater": true
+ },
+ "Loupio": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": true
+ },
+ "Lanturn": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Generate",
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Corayon": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Grow"
+  ],
+  "underwater": true
+ },
+ "Gobou": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Flobio": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Water",
+   "Build"
+  ],
+  "underwater": true
+ },
+ "Laggron": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Build",
+   "Bulldoze"
+  ],
+  "underwater": true
+ },
+ "Carvanha": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": true
+ },
+ "Sharpedo": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Crush",
+   "Scrub"
+  ],
+  "underwater": true
+ },
+ "Barloche": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Search"
+  ],
+  "underwater": true
+ },
+ "Barbicha": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Search",
+   "Bulldoze"
+  ],
+  "underwater": true
+ },
+ "Ecrapince": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Build"
+  ],
+  "underwater": true
+ },
+ "Colhomard": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Build",
+   "Crush"
+  ],
+  "underwater": true
+ },
+ "Lovdisc": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Mustebouee": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Musteflott": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Trade",
+   "Build"
+  ],
+  "underwater": true
+ },
+ "Ecayon": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Hype"
+  ],
+  "underwater": true
+ },
+ "Lumineon": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Hype",
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Viskuse Male": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Search",
+   "Burn"
+  ],
+  "underwater": true
+ },
+ "Viskuse Femelle": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Search",
+   "Burn"
+  ],
+  "underwater": true
+ },
+ "Moyade Male": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Search",
+   "Burn"
+  ],
+  "underwater": true
+ },
+ "Moyade Femelle": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Search",
+   "Burn"
+  ],
+  "underwater": true
+ },
+ "Mamanbo": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Water",
+   "Scrub"
+  ],
+  "underwater": true
+ },
+ "Limonde": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Generate",
+   "Bulldoze"
+  ],
+  "underwater": true
+ },
+ "Sepiatop": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Gather",
+   "Teleport"
+  ],
+  "underwater": true
+ },
+ "Sepiatroce": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Gather",
+   "Teleport"
+  ],
+  "underwater": true
+ },
+ "Otaquin": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Hype",
+   "Water"
+  ],
+  "underwater": true
+ },
+ "Otarlette": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Hype",
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Oratoria": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Hype",
+   "Scrub"
+  ],
+  "underwater": true
+ },
+ "Vorasterie": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": true
+ },
+ "Predasterie": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Recycle",
+   "Build"
+  ],
+  "underwater": true
+ },
+ "Sovkipou": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Recycle"
+  ],
+  "underwater": true
+ },
+ "Sarmurai": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Recycle",
+   "Chop"
+  ],
+  "underwater": true
+ },
+ "Denticrisse": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Gather",
+   "Teleport"
+  ],
+  "underwater": true
+ },
+ "Sinistrail": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Grow",
+   "Litter"
+  ],
+  "underwater": true
+ },
+ "Khelocrok": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop"
+  ],
+  "underwater": true
+ },
+ "Torgamord": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Chop",
+   "Bulldoze"
+  ],
+  "underwater": true
+ },
+ "Wattapik": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Generate"
+  ],
+  "underwater": true
+ },
+ "Taupikeau": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Bulldoze"
+  ],
+  "underwater": true
+ },
+ "Triopikeau": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Bulldoze",
+   "Search"
+  ],
+  "underwater": true
+ },
+ "Delestin": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Gather",
+   "Teleport"
+  ],
+  "underwater": true
+ },
+ "Phione": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Trade"
+  ],
+  "underwater": true
+ },
+ "Manaphy": {
+  "region": "bubbly-basin",
+  "specialties": [
+   "Trade",
+   "Hype"
+  ],
+  "underwater": true
+ }
+}

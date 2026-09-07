@@ -5,11 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "precompute": "node scripts/precompute-optimal.js",
-    "build": "node scripts/precompute-optimal.js && vite build",
-    "preview": "vite preview"
+    "build": "vite build && node scripts/build-sw.js",
+    "preview": "vite preview",
+    "stats": "node scripts/precompute-optimal.js",
+    "sync": "node scripts/sync-serebii.js"
   },
-  "keywords": ["pokemon", "pokopia", "housing", "optimizer"],
+  "keywords": [
+    "pokemon",
+    "pokopia",
+    "housing",
+    "optimizer"
+  ],
   "author": "mbollot",
   "license": "MIT",
   "devDependencies": {
