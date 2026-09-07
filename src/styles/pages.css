@@ -783,3 +783,313 @@ html[data-theme="dark"] .planner-selector__pokemon-item[aria-selected="true"] {
   color: var(--color-muted);
   font-size: var(--text-lg);
 }
+
+/* -------------------------------------------------------------------
+   Options panel (DLC / event toggles + min shared slider)
+   ------------------------------------------------------------------- */
+.options-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  margin: var(--space-4) 0;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.options-panel__toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.options-panel__slider-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.options-panel__label {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.options-panel__slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1 1 220px;
+}
+
+.options-panel__slider {
+  flex: 1;
+  accent-color: var(--color-primary);
+  min-width: 140px;
+}
+
+.options-panel__value {
+  min-width: 2ch;
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.options-panel__hint {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* -------------------------------------------------------------------
+   House card: compatibility, editing, drag & drop
+   ------------------------------------------------------------------- */
+.house-card-compat {
+  margin-left: auto;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.house-card-lock-btn {
+  margin-left: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-base);
+  line-height: 1;
+}
+
+.house-card--locked {
+  outline: 2px dashed var(--color-warning);
+  outline-offset: 2px;
+}
+
+.house-card-resident {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  cursor: grab;
+}
+
+.house-card-resident--dragging {
+  opacity: 0.4;
+}
+
+.house-card-move-btn {
+  padding: 0 var(--space-1);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  color: var(--color-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.house-card-move-btn:hover,
+.house-card-move-btn:focus-visible {
+  color: var(--color-primary);
+  border-color: var(--color-border-strong);
+  background-color: var(--color-surface-raised);
+}
+
+.house-card--drop-target {
+  outline: 3px solid var(--color-success);
+  outline-offset: 2px;
+  background-color: var(--color-success-light);
+}
+
+.new-house-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  padding: var(--space-4);
+  border: 2px dashed var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  color: var(--color-muted);
+  font-weight: var(--font-weight-semibold);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.new-house-zone--active {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.popover__menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 200px;
+}
+
+.popover__menu-item {
+  padding: var(--space-2) var(--space-3);
+  text-align: left;
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.popover__menu-item:hover:not(:disabled),
+.popover__menu-item:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.popover__menu-item:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* -------------------------------------------------------------------
+   Village toolbar, notices, toasts
+   ------------------------------------------------------------------- */
+.village-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.village-toolbar__title {
+  margin: 0;
+  font-size: var(--text-xl);
+}
+
+.village-toolbar__saved {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.village-toolbar__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-left: auto;
+}
+
+.village-hint {
+  margin: var(--space-2) 0 var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.village-notice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-4);
+  background-color: var(--color-warning-light);
+  border: 1px solid var(--color-warning);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+}
+
+html[data-theme="dark"] .village-notice {
+  background-color: rgba(243, 156, 18, 0.15);
+}
+
+html[data-theme="dark"] .house-card--drop-target,
+html[data-theme="dark"] .new-house-zone--active {
+  background-color: rgba(39, 174, 96, 0.2);
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: var(--space-6, 2rem);
+  transform: translate(-50%, 20px);
+  padding: var(--space-3) var(--space-5);
+  background-color: var(--color-text);
+  color: var(--color-surface);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.toast--visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.toast--error {
+  background-color: var(--color-error);
+  color: #fff;
+}
+
+.toast .btn {
+  padding: var(--space-1) var(--space-3);
+}
+
+/* -------------------------------------------------------------------
+   Advanced filters (selector)
+   ------------------------------------------------------------------- */
+.advanced-filters {
+  margin: var(--space-2) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.advanced-filters > summary {
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+}
+
+.advanced-filters__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0 var(--space-3) var(--space-3);
+}
+
+.advanced-filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.advanced-filters__row > label {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  min-width: 5rem;
+}
+
+.advanced-filters__select {
+  padding: var(--space-1) var(--space-2);
+  font: inherit;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+}
+
+.dex-cell__badge {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 10px;
+  line-height: 1;
+  pointer-events: none;
+}

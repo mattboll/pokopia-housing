@@ -1,170 +1,124 @@
 import { el, $ } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
+import { store } from '../core/store.js';
+import { optimize } from '../algorithm/optimizer.js';
 import { createHouseCard } from '../components/house-card.js';
 import { createEnvironmentFilter } from '../components/environment-filter.js';
+import { createOptionsPanel, loadOptions, applySourceFilter } from '../components/optimize-options.js';
+import { createStatsSummary } from '../components/stats-summary.js';
+import { announce } from '../utils/a11y.js';
 
-/**
- * Environment emoji mapping for section headers.
- */
 const ENV_EMOJI = {
-  Lumineux: '\u2600\uFE0F',
-  Sombre: '\uD83C\uDF19',
-  Chaud: '\uD83D\uDD25',
-  Frais: '\u2744\uFE0F',
-  Humide: '\uD83D\uDCA7',
-  Sec: '\uD83C\uDFDC\uFE0F',
+  Lumineux: '☀️', Sombre: '🌙', Chaud: '🔥',
+  Frais: '❄️', Humide: '💧', Sec: '🏜️',
 };
 
 const ENV_COLORS = {
-  Lumineux: '#f5c518',
-  Sombre: '#6b3fa0',
-  Chaud: '#e85d3a',
-  Frais: '#5cc5e8',
-  Humide: '#3b82d6',
-  Sec: '#c2956a',
+  Lumineux: '#f5c518', Sombre: '#6b3fa0', Chaud: '#e85d3a',
+  Frais: '#5cc5e8', Humide: '#3b82d6', Sec: '#c2956a',
 };
 
 /**
  * Renders the Optimal Housing page into #app-main.
- * Fetches pre-computed optimal results and displays them grouped by environment.
+ * The result is computed in the browser from the full dataset so that the
+ * DLC / event toggles and the minimum-shared-preferences setting apply.
  */
-export async function renderOptimalPage() {
+export function renderOptimalPage() {
   const main = $('#app-main');
   if (!main) return;
 
   main.innerHTML = '';
 
-  // Page header
-  const pageHeader = el('div', { className: 'page-header' },
+  main.appendChild(el('div', { className: 'page-header' },
     el('h1', { 'data-i18n': 'optimal.title' }, t('optimal.title')),
     el('p', { 'data-i18n': 'optimal.description' }, t('optimal.description'))
-  );
-  main.appendChild(pageHeader);
+  ));
 
-  // Loading state with spinner
-  const loading = el('div', { className: 'loading-state' },
-    el('span', { className: 'loading-spinner' }),
-    el('p', null, '...')
-  );
-  main.appendChild(loading);
-
-  try {
-    const base = import.meta.env.BASE_URL ?? '/pokopia-housing/';
-    const response = await fetch(`${base}data/optimal-result.json`);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-
-    // Remove loading
-    loading.remove();
-
-    // CTA banner to planner
-    const ctaBanner = el('div', { className: 'cta-banner' },
-      el('div', { className: 'cta-banner__content' },
-        el('span', { className: 'cta-banner__icon' }, '\uD83D\uDDD3\uFE0F'),
-        el('div', { className: 'cta-banner__text' },
-          el('strong', null,
-            t('optimal.ctaTitle') !== 'optimal.ctaTitle'
-              ? t('optimal.ctaTitle')
-              : 'Vous n\u2019avez pas tous les Pok\u00E9mon ?'
-          ),
-          el('span', null,
-            t('optimal.ctaDescription') !== 'optimal.ctaDescription'
-              ? t('optimal.ctaDescription')
-              : 'Utilisez le planificateur pour optimiser uniquement ceux que vous poss\u00E9dez.'
-          )
-        )
-      ),
-      el('a', {
-        href: '#/planner',
-        className: 'btn btn-primary cta-banner__btn',
-      },
-        t('nav.planner') !== 'nav.planner'
-          ? t('nav.planner')
-          : 'Planificateur'
+  // CTA banner to planner
+  main.appendChild(el('div', { className: 'cta-banner' },
+    el('div', { className: 'cta-banner__content' },
+      el('span', { className: 'cta-banner__icon' }, '🗓️'),
+      el('div', { className: 'cta-banner__text' },
+        el('strong', null, t('optimal.ctaTitle')),
+        el('span', null, t('optimal.ctaDescription'))
       )
-    );
-    main.appendChild(ctaBanner);
+    ),
+    el('a', { href: '#/planner', className: 'btn btn-primary cta-banner__btn' }, t('nav.planner'))
+  ));
 
-    // Stats summary with emoji icons
-    const stats = el('div', { className: 'stats-summary' },
-      el('div', { className: 'stat-card' },
-        el('span', { className: 'stat-icon' }, '\uD83C\uDFE0'),
-        el('span', { className: 'stat-value' }, String(data.totalHouses)),
-        el('span', { className: 'stat-label', 'data-i18n': 'common.totalHouses' }, t('common.totalHouses'))
-      ),
-      el('div', { className: 'stat-card' },
-        el('span', { className: 'stat-icon' }, '\uD83D\uDC3E'),
-        el('span', { className: 'stat-value' }, String(data.totalPokemon)),
-        el('span', { className: 'stat-label', 'data-i18n': 'common.totalPokemon' }, t('common.totalPokemon'))
-      ),
-      el('div', { className: 'stat-card' },
-        el('span', { className: 'stat-icon' }, '\u2B50'),
-        el('span', { className: 'stat-value' }, data.averageScore.toFixed(2)),
-        el('span', { className: 'stat-label', 'data-i18n': 'common.avgScore' }, t('common.avgScore'))
-      )
-    );
-    main.appendChild(stats);
+  const options = loadOptions();
+  const allPokemon = store.getState().allPokemon || [];
 
-    // Environment filter
-    const resultsContainer = el('div', { className: 'results-container' });
+  const statsSlot = el('div');
+  const resultsContainer = el('div', { className: 'results-container' });
+  let selectedEnvs = [];
+  let currentResult = null;
 
-    const envFilter = createEnvironmentFilter((selectedEnvs) => {
-      renderEnvironmentSections(data.environmentGroups, selectedEnvs, resultsContainer);
-    });
-    main.appendChild(envFilter);
-    main.appendChild(resultsContainer);
+  const optionsPanel = createOptionsPanel(options, () => compute());
+  main.appendChild(optionsPanel);
+  main.appendChild(statsSlot);
 
-    // Initial render of all environments
-    renderEnvironmentSections(data.environmentGroups, [], resultsContainer);
+  const envFilter = createEnvironmentFilter((envs) => {
+    selectedEnvs = envs;
+    if (currentResult) renderEnvironmentSections(currentResult.environmentGroups, selectedEnvs, resultsContainer);
+  });
+  main.appendChild(envFilter);
+  main.appendChild(resultsContainer);
 
-  } catch (err) {
-    loading.innerHTML = '';
-    loading.className = 'empty-state';
-    loading.appendChild(el('p', null, t('common.noResults')));
-    console.error('Failed to load optimal results:', err);
+  function compute() {
+    statsSlot.innerHTML = '';
+    resultsContainer.innerHTML = '';
+    resultsContainer.appendChild(el('div', { className: 'loading-state' },
+      el('span', { className: 'loading-spinner' }),
+      el('p', null, t('common.computing'))
+    ));
+
+    // Let the spinner paint before the (synchronous) computation
+    setTimeout(() => {
+      const list = applySourceFilter(allPokemon, options);
+      currentResult = optimize(list, { minShared: options.minShared });
+      statsSlot.innerHTML = '';
+      statsSlot.appendChild(createStatsSummary(currentResult));
+      renderEnvironmentSections(currentResult.environmentGroups, selectedEnvs, resultsContainer);
+      announce(t('a11y.resultsUpdated').replace('{count}', String(currentResult.totalHouses)));
+    }, 30);
   }
+
+  compute();
 }
 
 /**
- * Renders house cards grouped by environment sections with colored headers.
+ * Renders environment sections with house cards, filtered by selected environments.
  *
- * @param {Record<string, {environment: string, houses: Array, pokemonCount: number, houseCount: number}>} environmentGroups
- * @param {string[]} selectedEnvs - Empty array means show all
+ * @param {Object} environmentGroups
+ * @param {string[]} selectedEnvs - empty = all
  * @param {HTMLElement} container
  */
 function renderEnvironmentSections(environmentGroups, selectedEnvs, container) {
   container.innerHTML = '';
 
   let houseIndex = 1;
-
   for (const [envName, group] of Object.entries(environmentGroups)) {
-    if (selectedEnvs.length > 0 && !selectedEnvs.includes(envName)) {
-      houseIndex += group.houses.length;
-      continue;
-    }
+    const startIndex = houseIndex;
+    houseIndex += group.houses.length;
+    if (selectedEnvs.length > 0 && !selectedEnvs.includes(envName)) continue;
 
     const translatedEnv = t(`environments.${envName}`) !== `environments.${envName}`
-      ? t(`environments.${envName}`)
-      : envName;
-
-    const emoji = ENV_EMOJI[envName] || '\uD83C\uDFE0';
+      ? t(`environments.${envName}`) : envName;
+    const emoji = ENV_EMOJI[envName] || '🏠';
     const color = ENV_COLORS[envName] || '#95a5a6';
 
-    const sectionHeading = el('h2', {
-      className: 'env-section-heading',
-      style: `border-left: 4px solid ${color}; padding-left: var(--space-3); color: ${color}`,
-    },
-      `${emoji} ${translatedEnv} (${group.houseCount} ${t('common.houses')}, ${group.pokemonCount} Pok\u00E9mon)`
+    const section = el('section', { className: 'env-section' },
+      el('h2', {
+        className: 'env-section-heading',
+        style: `border-left: 4px solid ${color}; padding-left: var(--space-3); color: ${color}`,
+      }, `${emoji} ${translatedEnv} (${group.houseCount} ${t('common.houses')})`)
     );
 
-    const section = el('section', { className: 'env-section' }, sectionHeading);
-
     const grid = el('div', { className: 'houses-grid' });
-    for (const house of group.houses) {
-      grid.appendChild(createHouseCard(house, houseIndex));
-      houseIndex++;
-    }
-
+    group.houses.forEach((house, i) => {
+      grid.appendChild(createHouseCard(house, startIndex + i));
+    });
     section.appendChild(grid);
     container.appendChild(section);
   }

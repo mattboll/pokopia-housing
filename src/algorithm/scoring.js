@@ -33,8 +33,7 @@ export function intersectAll(arrays) {
  */
 export function houseScore(members) {
   if (members.length === 0) return 0;
-  const shared = intersectAll(members.map((m) => m.preferences));
-  return shared.length;
+  return intersectAll(members.map((m) => m.preferences)).length;
 }
 
 /**
@@ -68,4 +67,37 @@ export function uniquePreferences(members) {
     }
   }
   return [...set];
+}
+
+/**
+ * Builds a full house record from its members.
+ *
+ * @param {Array<{name: string, environment: string, preferences: string[]}>} members
+ * @param {boolean} [locked=false]
+ * @returns {{members: Array, sharedPreferences: string[], score: number, uniquePreferences: string[], compatibility: number, locked: boolean}}
+ */
+export function buildHouse(members, locked = false) {
+  const shared = intersectAll(members.map((m) => m.preferences));
+  const unique = uniquePreferences(members);
+  return {
+    members,
+    sharedPreferences: shared,
+    score: shared.length,
+    uniquePreferences: unique,
+    // "Decoration efficiency": share of the distinct items that please everyone.
+    compatibility: unique.length > 0 ? shared.length / unique.length : 1,
+    locked,
+  };
+}
+
+/**
+ * Cost of a house for the optimizer: distinct items to find that do NOT
+ * please every resident. Lower is better. Empty houses cost nothing.
+ *
+ * @param {Array<{preferences: string[]}>} members
+ * @returns {number}
+ */
+export function houseCost(members) {
+  if (members.length === 0) return 0;
+  return uniquePreferences(members).length - houseScore(members);
 }
