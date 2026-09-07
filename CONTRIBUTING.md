@@ -33,7 +33,7 @@ src/
   styles/             # CSS (tokens, theme, layout, components, pages)
   utils/              # Small helpers (DOM, debounce, a11y, CSV parser)
 public/
-  data/pokemon.csv    # Source data: 297 Pokemon with environment + preferences
+  data/pokemon.csv    # Source data: 360 Pokemon (base + DLC + event) with environment + preferences
   data/optimal-result.json  # Pre-computed optimal grouping (generated at build)
   i18n/*.json         # Locale files (ja, en, fr, de, es)
 scripts/
@@ -61,7 +61,7 @@ Maximize the number of shared preferences per house (= fewer unique furniture it
    - Stop when no candidate shares at least 1 preference with the group, or house is full (4)
 4. Return all houses with shared/unique preference counts
 
-**Current result:** 79 houses for 297 Pokemon, average score 2.19
+**Current result:** 92 houses for 360 Pokemon, average score 1.64
 
 ### Known Limitations & Improvement Ideas
 

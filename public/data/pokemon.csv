@@ -8,10 +8,10 @@ Dracaufeu,Chaud,Choses en bois,Choses epicees,Choses liees au feu,Choses liees a
 Carapuce,Humide,Choses a partager,Choses liees a l'eau,Choses mignonnes,Choses propres,Choses qui guerissent,Choses sucrees
 Carabaffe,Humide,Choses dures,Choses epicees,Choses liees a l'eau,Choses pour s'entrainer,Choses propres,Choses qui guerissent
 Tortank,Humide,Choses acidulees,Choses liees a l'eau,Choses luxueuses,Choses pour s'entrainer,Choses propres,Choses qui guerissent
-Roucool,Lumineux,Choses acidulees,Choses amusantes a regarder,Choses douces,Choses liees a la nature,Choses liees au vent,
+Roucool,Lumineux,Choses acidulees,Choses amusantes a regarder,Choses douces,Choses liees a la nature,Choses liees au vent,Lieux pour jouer
 Roucoups,Lumineux,Choses amusantes a regarder,Choses douces,Choses epicees,Choses imitant des aliments,Choses liees a la nature,Choses liees au vent
 Roucarnage,Lumineux,Choses acidulees,Choses douces,Choses en bois,Choses liees a la nature,Choses liees au vent,Choses luxueuses
-Mystherbe,Humide,Choses ameres,Choses douces,Choses liees a l'eau,Choses liees a la nature,Choses liees a la terre,
+Mystherbe,Humide,Choses ameres,Choses douces,Choses liees a l'eau,Choses liees a la nature,Choses liees a la terre,Fleurs epanouies
 Ortide,Humide,Choses acres,Choses douces,Choses liees a la nature,Choses liees a la terre,Dechets,Fleurs epanouies
 Rafflesia,Humide,Choses ameres,Choses colorees,Choses douces,Choses liees a la nature,Choses liees a la terre,Fleurs epanouies
 Joliflor,Lumineux,Choses acidulees,Choses liees a la nature,Choses mignonnes,Choses qui font du bruit,Fleurs epanouies,Lieux pour jouer
@@ -45,9 +45,8 @@ Cizayox,Lumineux,Choses ameres,Choses dures,Choses en bois,Choses en metal,Chose
 Scarabrute,Lumineux,Choses en bois,Choses epicees,Choses liees a la nature,Choses pointues,Choses pour s'entrainer,Fleurs epanouies
 Magicarpe,Humide,Choses a partager,Choses liees a l'eau,Choses liees a la mer,Choses ondoyantes,Choses sucrees,Moyens de transport
 Leviator,Humide,Choses epicees,Choses fines,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent,Choses propres
-Metamorph,Lumineux,,,,,
 Hoothoot,Sombre,Choses acres,Choses amusantes a regarder,Choses douces,Choses en tissu,Choses liees au vent,Choses ondoyantes
-Noarfang,Sombre,Choses acres,Choses amusantes a regarder,Choses avec du texte,Choses douces,Choses liees au vent,
+Noarfang,Sombre,Choses acres,Choses amusantes a regarder,Choses avec du texte,Choses douces,Choses liees au vent,Recipients
 Scarhino,Lumineux,Choses en bois,Choses imitant des aliments,Choses liees a la nature,Choses pour s'entrainer,Choses sucrees,Fleurs epanouies
 Muciole,Sombre,Choses a partager,Choses en bois,Choses liees a la nature,Choses mignonnes,Choses qui brillent,Choses sucrees
 Lumivole,Sombre,Choses a partager,Choses acidulees,Choses en bois,Choses liees a la nature,Choses mignonnes,Choses qui brillent
@@ -58,12 +57,14 @@ Cacturne,Sec,Choses acres,Choses liees a la nature,Choses liees au vent,Choses l
 Apitrini,Lumineux,Choses a partager,Choses en bois,Choses groupees,Choses liees a la nature,Choses liees au vent,Choses sucrees
 Apireine,Lumineux,Choses difficiles,Choses en bois,Choses groupees,Choses liees a la nature,Choses liees au vent,Choses sucrees
 Sancoki,Humide,Choses acidulees,Choses colorees,Choses liees a l'eau,Choses liees a la mer,Choses propres,Recipients
+Sancoki Orient,Humide,Choses acres,Choses colorees,Choses liees a l'eau,Choses liees a la mer,Choses propres,Recipients
 Tritosor,Humide,Choses acidulees,Choses liees a l'eau,Choses liees a la mer,Choses liees a la terre,Choses propres,Recipients
+Tritosor Orient,Humide,Choses acres,Choses liees a l'eau,Choses liees a la mer,Choses liees a la terre,Choses propres,Recipients
 Baudrive,Chaud,Choses ameres,Choses etranges,Choses inquietantes,Choses liees au vent,Choses mignonnes,Choses rondes
 Grodrive,Chaud,Choses ameres,Choses etranges,Choses inquietantes,Choses liees au vent,Choses ondoyantes,Choses qui tournent
 Rototaupe,Sombre,Choses acidulees,Choses amusantes a regarder,Choses en pierre,Choses liees a la nature,Choses liees a la terre,Choses pointues
 Minotaupe,Sombre,Choses acidulees,Choses amusantes a regarder,Choses en metal,Choses liees a la terre,Choses pointues,Choses pour s'entrainer
-Charpenti,Lumineux,Choses carrees,Choses en bois,Choses epicees,Choses fines,Choses pour s'entrainer,
+Charpenti,Lumineux,Choses carrees,Choses en bois,Choses epicees,Choses fines,Choses pour s'entrainer,Constructions
 Ouvrifier,Lumineux,Choses a partager,Choses en metal,Choses epicees,Choses fines,Choses pour s'entrainer,Constructions
 Betochef,Lumineux,Choses a partager,Choses en pierre,Choses epicees,Choses fines,Choses pour s'entrainer,Constructions
 Funecire,Chaud,Choses ameres,Choses carrees,Choses etranges,Choses inquietantes,Choses liees au feu,Choses ondoyantes
@@ -77,7 +78,7 @@ Colimucus,Humide,Choses douces,Choses liees a l'eau,Choses luxueuses,Choses prop
 Muplodocus,Humide,Choses acidulees,Choses liees a l'eau,Choses luxueuses,Choses pour s'entrainer,Choses propres,Choses qui guerissent
 Nigosier,Humide,Choses ameres,Choses fines,Choses imitant des aliments,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent
 Pichu,Lumineux,Choses electriques,Choses en tissu,Choses en verre,Choses mignonnes,Choses sucrees,Fleurs epanouies
-Pikachu,Lumineux,Choses a partager,Choses acidulees,Choses electriques,Choses en verre,Choses rondes,
+Pikachu,Lumineux,Choses a partager,Choses acidulees,Choses electriques,Choses en verre,Choses rondes,Moyens de transport
 Raichu,Lumineux,Choses a partager,Choses acidulees,Choses electriques,Choses en verre,Choses rondes,Lieux pour jouer
 Nosferapti,Sombre,Choses difficiles,Choses en bois,Choses epicees,Choses inquietantes,Choses liees au vent,Choses qui font du bruit
 Nosferalto,Sombre,Choses difficiles,Choses en bois,Choses epicees,Choses inquietantes,Choses liees au vent,Choses qui font du bruit
@@ -88,7 +89,6 @@ Psykokwak,Humide,Choses acres,Choses difficiles,Choses etranges,Choses liees a l
 Akwakwak,Humide,Choses acres,Choses difficiles,Choses etranges,Choses liees a l'eau,Choses liees a la mer,Choses pointues
 Caninos,Chaud,Choses avec du texte,Choses en pierre,Choses liees au feu,Choses liees au vent,Choses sucrees,Fleurs epanouies
 Arcanin,Chaud,Choses amusantes a regarder,Choses avec des symboles,Choses en pierre,Choses epicees,Choses liees au feu,Choses liees au vent
-Canarticho,Chaud,Choses douces,Choses en bois,Choses epicees,Choses fines,Choses liees au vent,Choses pour s'entrainer
 Tadmorv,Sombre,Choses ameres,Choses groupees,Choses inquietantes,Choses qui brillent,Dechets,Recipients
 Grotadmorv,Sombre,Choses ameres,Choses colorees,Choses groupees,Choses inquietantes,Choses qui brillent,Dechets
 Fantominus,Sombre,Choses a partager,Choses epicees,Choses etranges,Choses inquietantes,Dechets,Recipients
@@ -130,8 +130,8 @@ Tiplouf,Humide,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent,C
 Prinplouf,Humide,Choses acres,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent,Choses propres,Recipients
 Pingoleon,Humide,Choses ameres,Choses avec du texte,Choses en metal,Choses liees a l'eau,Choses liees a la mer,Choses propres
 Nanmeouie,Lumineux,Choses ameres,Choses douces,Choses en tissu,Choses mignonnes,Choses qui guerissent,Choses rondes
-Miamiasme,Humide,Choses ameres,Choses difficiles,Choses groupees,Choses qui brillent,,
-Miasmax,Humide,Choses acidulees,Choses difficiles,Choses groupees,Choses qui brillent,,
+Miamiasme,Humide,Choses ameres,Choses difficiles,Choses groupees,Choses qui brillent,Dechets,Recipients
+Miasmax,Humide,Choses acidulees,Choses difficiles,Choses groupees,Choses qui brillent,Dechets,Recipients
 Zorua,Sombre,Choses a partager,Choses acidulees,Choses en verre,Choses luxueuses,Choses mignonnes,Choses qui brillent
 Zoroark,Sombre,Choses a partager,Choses en verre,Choses epicees,Choses etranges,Choses luxueuses,Choses qui brillent
 Chinchidou,Lumineux,Choses douces,Choses en tissu,Choses mignonnes,Choses propres,Choses sucrees,Moyens de transport
@@ -143,25 +143,27 @@ Mimiqui,Sombre,Choses a partager,Choses ameres,Choses electriques,Choses en tiss
 Pohm,Lumineux,Choses a partager,Choses electriques,Choses en verre,Choses mignonnes,Choses qui brillent,Choses sucrees
 Pohmotte,Lumineux,Choses a partager,Choses electriques,Choses en verre,Choses pour s'entrainer,Choses qui brillent,Choses sucrees
 Pohmarmotte,Lumineux,Choses a partager,Choses acres,Choses electriques,Choses pour s'entrainer,Choses qui brillent,Choses qui guerissent
-Nigirigon,Humide,Choses a partager,Choses acidulees,Choses fines,Choses groupees,Choses liees a l'eau,Choses liees a la mer
-Abo,Sombre,Choses amusantes a regarder,Choses epicees,Choses fines,Choses liees a la nature,Choses qui tournent,
-Arbok,Sombre,Choses amusantes a regarder,Choses epicees,Choses fines,Choses liees a la nature,Choses qui tournent,
-Melo,Sombre,Choses colorees,Choses mignonnes,Choses qui guerissent,Choses rondes,Choses sucrees,
-Melofee,Sombre,Choses a partager,Choses mignonnes,Choses qui guerissent,Choses sucrees,,
-Melodelfe,Sombre,Choses a partager,Choses acidulees,Choses mignonnes,Choses qui guerissent,,
-Toudoudou,Chaud,Choses douces,Choses mignonnes,Choses qui font du bruit,Choses qui guerissent,Choses sucrees,
-Rondoudou,Lumineux,Choses douces,Choses mignonnes,Choses ondoyantes,Choses qui guerissent,Choses sucrees,
-Grodoudou,Lumineux,Choses a partager,Choses acidulees,Choses douces,Choses mignonnes,Choses qui guerissent,
-Taupiqueur,Sombre,Choses a partager,Choses ameres,Choses fines,Choses liees a la terre,Choses mignonnes,
+Nigirigon Incurvee,Humide,Choses a partager,Choses acidulees,Choses fines,Choses groupees,Choses liees a l'eau,Choses liees a la mer
+Nigirigon Affaissee,Humide,Choses a partager,Choses carrees,Choses liees a l'eau,Choses liees a la mer,Choses qui tournent,Choses sucrees
+Nigirigon Allongee,Humide,Choses a partager,Choses avec du texte,Choses epicees,Choses liees a l'eau,Choses liees a la mer,Recipients
+Abo,Sombre,Choses amusantes a regarder,Choses epicees,Choses fines,Choses liees a la nature,Choses qui tournent,Dechets
+Arbok,Sombre,Choses amusantes a regarder,Choses epicees,Choses fines,Choses liees a la nature,Choses qui tournent,Dechets
+Melo,Sombre,Choses colorees,Choses mignonnes,Choses qui guerissent,Choses rondes,Choses sucrees,Moyens de transport
+Melofee,Sombre,Choses a partager,Choses mignonnes,Choses qui guerissent,Choses sucrees,Fleurs epanouies,Lieux pour jouer
+Melodelfe,Sombre,Choses a partager,Choses acidulees,Choses mignonnes,Choses qui guerissent,Fleurs epanouies,Lieux pour jouer
+Toudoudou,Chaud,Choses douces,Choses mignonnes,Choses qui font du bruit,Choses qui guerissent,Choses sucrees,Lieux pour jouer
+Rondoudou,Lumineux,Choses douces,Choses mignonnes,Choses ondoyantes,Choses qui guerissent,Choses sucrees,Lieux pour jouer
+Grodoudou,Lumineux,Choses a partager,Choses acidulees,Choses douces,Choses mignonnes,Choses qui guerissent,Lieux pour jouer
+Taupiqueur,Sombre,Choses a partager,Choses ameres,Choses fines,Choses liees a la terre,Choses mignonnes,Lieux pour jouer
 Triopikeur,Sombre,Choses a partager,Choses epicees,Choses fines,Choses groupees,Choses liees a la terre,Lieux pour jouer
 Machoc,Lumineux,Choses a partager,Choses dures,Choses en pierre,Choses epicees,Choses pour s'entrainer,Constructions
-Machopeur,Lumineux,Choses a partager,Choses acidulees,Choses dures,Choses en pierre,Choses pour s'entrainer,
-Mackogneur,Lumineux,Choses a partager,Choses dures,Choses en pierre,Choses epicees,Choses pour s'entrainer,
+Machopeur,Lumineux,Choses a partager,Choses acidulees,Choses dures,Choses en pierre,Choses pour s'entrainer,Constructions
+Mackogneur,Lumineux,Choses a partager,Choses dures,Choses en pierre,Choses epicees,Choses pour s'entrainer,Constructions
 Racaillou,Sombre,Choses acres,Choses dures,Choses en pierre,Choses pour s'entrainer,Choses qui tournent,Choses rondes
 Gravalanch,Sombre,Choses ameres,Choses dures,Choses en pierre,Choses pour s'entrainer,Choses qui tournent,Choses rondes
 Grolem,Sombre,Choses acidulees,Choses dures,Choses en pierre,Choses pour s'entrainer,Choses qui tournent,Choses rondes
 Magby,Chaud,Choses amusantes a regarder,Choses en pierre,Choses liees au feu,Choses mignonnes,Choses ondoyantes,Choses sucrees
-Magmar,Chaud,Choses liees au feu,Choses en pierre,Choses electriques,Choses dures,Choses pour s'entrainer,Choses sucrees
+Magmar,Chaud,Choses dures,Choses electriques,Choses en pierre,Choses liees au feu,Choses pour s'entrainer,Choses sucrees
 Maganon,Chaud,Choses acres,Choses dures,Choses electriques,Choses en pierre,Choses liees au feu,Choses pour s'entrainer
 Manzai,Sec,Choses acidulees,Choses dures,Choses en bois,Choses en pierre,Choses liees a la nature,Choses rondes
 Simularbre,Sec,Choses acres,Choses amusantes a regarder,Choses dures,Choses en bois,Choses en pierre,Choses liees a la nature
@@ -171,7 +173,7 @@ Embrylex,Sombre,Choses en pierre,Choses imitant des aliments,Choses liees a la t
 Ymphect,Sombre,Choses acres,Choses amusantes a regarder,Choses dures,Choses en pierre,Choses luxueuses,Choses qui brillent
 Tyranocif,Sombre,Choses dures,Choses en pierre,Choses epicees,Choses luxueuses,Choses pour s'entrainer,Choses qui brillent
 Nenupiot,Humide,Choses acres,Choses liees a l'eau,Choses liees a la nature,Choses propres,Choses qui font du bruit,Recipients
-Lombre,Humide,Choses ameres,Choses liees a l'eau,Choses liees a la nature,Choses propres,Choses qui font du bruit,
+Lombre,Humide,Choses ameres,Choses liees a l'eau,Choses liees a la nature,Choses propres,Choses qui font du bruit,Recipients
 Ludicolo,Humide,Choses acres,Choses liees a l'eau,Choses liees a la nature,Choses qui font du bruit,Lieux pour jouer,Recipients
 Mysdibule,Lumineux,Choses a partager,Choses acres,Choses colorees,Choses en metal,Choses imitant des aliments,Choses mignonnes
 Chartor,Chaud,Choses acres,Choses amusantes a regarder,Choses dures,Choses en metal,Choses en pierre,Choses liees au feu
@@ -183,19 +185,20 @@ Lucario,Sombre,Choses acres,Choses difficiles,Choses en metal,Choses pour s'entr
 Motisma,Lumineux,Choses a partager,Choses ameres,Choses carrees,Choses en verre,Choses qui brillent,Choses qui font du bruit
 Pyronille,Sec,Choses ameres,Choses avec des symboles,Choses en bois,Choses liees a la nature,Choses liees au feu,Choses pointues
 Pyrax,Sec,Choses acres,Choses avec des symboles,Choses avec du texte,Choses en bois,Choses liees a la nature,Choses liees au feu
-Brindibou,Sombre,Choses acres,Choses en bois,Choses liees a la nature,Choses liees au vent,Choses qui tournent,
+Brindibou,Sombre,Choses acres,Choses en bois,Choses liees a la nature,Choses liees au vent,Choses qui tournent,Recipients
 Effleche,Sombre,Choses acidulees,Choses en bois,Choses fines,Choses liees a la nature,Choses liees au vent,Choses propres
 Archeduc,Sombre,Choses acres,Choses avec du texte,Choses en bois,Choses inquietantes,Choses liees a la nature,Choses liees au vent
 Flambino,Chaud,Choses a partager,Choses acres,Choses douces,Choses en pierre,Choses liees au feu,Choses pointues
-Lapyro,Chaud,Choses a partager,Choses acres,Choses en pierre,Choses liees au feu,,
-Pyrobut,Chaud,Choses a partager,Choses en pierre,Choses epicees,Choses liees au feu,Choses rondes,
+Lapyro,Chaud,Choses a partager,Choses acres,Choses en pierre,Choses liees au feu,Lieux pour jouer,Recipients
+Pyrobut,Chaud,Choses a partager,Choses en pierre,Choses epicees,Choses liees au feu,Choses rondes,Lieux pour jouer
 Rongourmand,Chaud,Choses acres,Choses amusantes a regarder,Choses douces,Choses en bois,Choses imitant des aliments,Choses rondes
 Rongrigou,Chaud,Choses a partager,Choses douces,Choses en metal,Choses imitant des aliments,Choses luxueuses,Choses sucrees
-Charbi,Chaud,Choses acidulees,Choses dures,Choses en metal,Choses en pierre,Choses liees au feu,
-Wagomine,Chaud,Choses dures,Choses en metal,Choses en pierre,Choses epicees,Choses liees au feu,
-Monthracite,Chaud,Choses dures,Choses en metal,Choses en pierre,Choses epicees,Choses liees au feu,
-Toxizap,Humide,Choses electriques,Choses en verre,Choses qui brillent,Choses qui font du bruit,Choses sucrees,
-Salarsen,Humide,Choses ameres,Choses electriques,Choses fines,Choses pointues,Choses qui font du bruit,
+Charbi,Chaud,Choses acidulees,Choses dures,Choses en metal,Choses en pierre,Choses liees au feu,Moyens de transport
+Wagomine,Chaud,Choses dures,Choses en metal,Choses en pierre,Choses epicees,Choses liees au feu,Moyens de transport
+Monthracite,Chaud,Choses dures,Choses en metal,Choses en pierre,Choses epicees,Choses liees au feu,Moyens de transport
+Toxizap,Humide,Choses electriques,Choses en verre,Choses qui brillent,Choses qui font du bruit,Choses sucrees,Dechets
+Salarsen Aigue,Humide,Choses electriques,Choses epicees,Choses fines,Choses pointues,Choses qui font du bruit,Lieux pour jouer
+Salarsen Grave,Humide,Choses ameres,Choses electriques,Choses fines,Choses pointues,Choses qui font du bruit,Lieux pour jouer
 Patachiot,Chaud,Choses amusantes a regarder,Choses avec du texte,Choses douces,Choses liees au feu,Choses mignonnes,Choses sucrees
 Briochien,Chaud,Choses a partager,Choses acidulees,Choses amusantes a regarder,Choses imitant des aliments,Choses liees au feu,Choses mignonnes
 Charbambin,Chaud,Choses en pierre,Choses etranges,Choses liees au feu,Choses luxueuses,Choses pour s'entrainer,Choses sucrees
@@ -205,7 +208,7 @@ Germeclat,Sombre,Choses ameres,Choses difficiles,Choses dures,Choses en pierre,C
 Floreclat,Sombre,Choses ameres,Choses difficiles,Choses dures,Choses en pierre,Choses qui brillent,Dechets
 Mordudor,Sombre,Choses ameres,Choses difficiles,Choses en metal,Choses etranges,Choses inquietantes,Choses qui brillent
 Gromago,Lumineux,Choses acres,Choses difficiles,Choses en metal,Choses etranges,Choses inquietantes,Choses qui brillent
-Goupix,Chaud,Choses ameres,Choses douces,Choses liees au feu,Choses mignonnes,Choses rondes,
+Goupix,Chaud,Choses ameres,Choses douces,Choses liees au feu,Choses mignonnes,Choses rondes,Fleurs epanouies
 Feunard,Chaud,Choses acres,Choses amusantes a regarder,Choses douces,Choses liees au feu,Choses luxueuses,Fleurs epanouies
 Ptitard,Humide,Choses liees a l'eau,Choses propres,Choses qui tournent,Choses rondes,Choses sucrees,Moyens de transport
 Tetarte,Humide,Choses ameres,Choses liees a l'eau,Choses liees a la nature,Choses pour s'entrainer,Choses propres,Choses qui tournent
@@ -214,8 +217,6 @@ Tarpaud,Humide,Choses a partager,Choses acidulees,Choses groupees,Choses liees a
 Abra,Sombre,Choses acres,Choses amusantes a regarder,Choses douces,Choses en metal,Choses etranges,Choses ondoyantes
 Kadabra,Sombre,Choses acres,Choses amusantes a regarder,Choses en metal,Choses etranges,Choses ondoyantes,Recipients
 Alakazam,Sombre,Choses ameres,Choses amusantes a regarder,Choses avec du texte,Choses en metal,Choses etranges,Choses ondoyantes
-Mime Jr.,Lumineux,Choses colorees,Choses etranges,Choses mignonnes,Choses sucrees,Lieux pour jouer,Moyens de transport
-M. Mime,Lumineux,Choses ameres,Choses amusantes a regarder,Choses etranges,Choses mignonnes,Choses ondoyantes,Moyens de transport
 Porygon,Lumineux,Choses ameres,Choses carrees,Choses colorees,Choses douces,Choses etranges,Constructions
 Porygon2,Lumineux,Choses acidulees,Choses colorees,Choses douces,Choses etranges,Choses rondes,Constructions
 Porygon-Z,Lumineux,Choses acres,Choses amusantes a regarder,Choses colorees,Choses douces,Choses en tissu,Choses etranges
@@ -246,29 +247,29 @@ Noctunoir,Sombre,Choses a partager,Choses ameres,Choses etranges,Choses inquieta
 Terhal,Frais,Choses acidulees,Choses difficiles,Choses dures,Choses en metal,Choses en pierre,Choses etranges
 Metang,Frais,Choses ameres,Choses difficiles,Choses dures,Choses en metal,Choses en pierre,Choses etranges
 Metalosse,Frais,Choses acres,Choses dures,Choses en metal,Choses etranges,Choses luxueuses,Choses pour s'entrainer
-Vipelierre,Humide,Choses liees a la nature,Choses en bois,Choses liees a l'eau,Choses ondoyantes,Choses qui brillent,Choses acidulees
+Vipelierre,Humide,Choses acidulees,Choses en bois,Choses liees a l'eau,Choses liees a la nature,Choses ondoyantes,Choses qui brillent
 Lianaja,Humide,Choses ameres,Choses en bois,Choses liees a l'eau,Choses liees a la nature,Choses propres,Choses qui brillent
 Majaspic,Humide,Choses acres,Choses en bois,Choses fines,Choses liees a l'eau,Choses liees a la nature,Recipients
 Grenousse,Humide,Choses amusantes a regarder,Choses epicees,Choses liees a l'eau,Choses liees a la mer,Choses propres,Recipients
 Croaporal,Humide,Choses amusantes a regarder,Choses epicees,Choses liees a l'eau,Choses liees a la mer,Choses pour s'entrainer,Choses propres
-Amphinobi,Humide,Choses acres,Choses avec des symboles,Choses etranges,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent
+Amphinobi,Humide,Choses ameres,Choses liees a l'eau,Choses liees a la mer,Choses pour s'entrainer,Choses propres,Choses qui brillent
 Dedenne,Lumineux,Choses a partager,Choses amusantes a regarder,Choses electriques,Choses imitant des aliments,Choses mignonnes,Choses sucrees
 Sonistrelle,Sombre,Choses amusantes a regarder,Choses epicees,Choses imitant des aliments,Choses liees au feu,Choses liees au vent,Choses luxueuses
 Bruyverne,Sombre,Choses acres,Choses amusantes a regarder,Choses imitant des aliments,Choses liees au feu,Choses liees au vent,Lieux pour jouer
-Minisange,Lumineux,Choses acidulees,Choses en bois,Choses fines,Choses liees au vent,Choses qui brillent,
+Minisange,Lumineux,Choses acidulees,Choses en bois,Choses fines,Choses liees au vent,Choses qui brillent,Recipients
 Bleuseille,Lumineux,Choses acres,Choses en bois,Choses fines,Choses liees au vent,Choses qui brillent,Recipients
 Corvaillus,Lumineux,Choses ameres,Choses en bois,Choses en metal,Choses liees au vent,Choses qui brillent,Recipients
 Fantyrm,Humide,Choses a partager,Choses epicees,Choses etranges,Choses inquietantes,Choses liees au feu,Moyens de transport
 Dispareptil,Humide,Choses a partager,Choses etranges,Choses inquietantes,Choses liees au feu,Choses sucrees,Moyens de transport
 Lanssorien,Humide,Choses a partager,Choses epicees,Choses etranges,Choses inquietantes,Choses liees au feu,Moyens de transport
-Poussacha,Chaud,Choses avec des symboles,Choses en pierre,Choses epicees,Choses liees au feu,Choses liees au vent,Choses luxueuses
+Poussacha,Lumineux,Choses colorees,Choses liees a la nature,Choses mignonnes,Choses sucrees,Fleurs epanouies,Recipients
 Matourgeon,Lumineux,Choses acidulees,Choses colorees,Choses liees a la nature,Choses mignonnes,Choses pointues,Fleurs epanouies
 Miascarade,Lumineux,Choses acres,Choses liees a la nature,Choses luxueuses,Choses mignonnes,Choses qui brillent,Fleurs epanouies
 Zapetrel,Lumineux,Choses difficiles,Choses electriques,Choses epicees,Choses groupees,Choses liees a la mer,Choses liees au vent
 Fulgulairo,Lumineux,Choses acres,Choses electriques,Choses fines,Choses groupees,Choses liees a la mer,Choses liees au vent
-Forgerette,Humide,Choses acres,Choses avec des symboles,Choses etranges,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent
+Forgerette,Lumineux,Choses en metal,Choses imitant des aliments,Choses mignonnes,Choses pour s'entrainer,Choses sucrees,Constructions
 Forgella,Lumineux,Choses a partager,Choses acidulees,Choses en metal,Choses mignonnes,Choses pour s'entrainer,Constructions
-Forgelina,Lumineux,Choses mignonnes,Choses en metal,Constructions,Choses carrees,Choses pour s'entrainer,Choses epicees
+Forgelina,Lumineux,Choses carrees,Choses en metal,Choses epicees,Choses mignonnes,Choses pour s'entrainer,Constructions
 Ptera,Sec,Choses acidulees,Choses dures,Choses en pierre,Choses liees au vent,Choses qui brillent,Choses qui tournent
 Kranidos,Sec,Choses a partager,Choses dures,Choses en pierre,Choses epicees,Choses ondoyantes,Choses pour s'entrainer
 Charkos,Sec,Choses acres,Choses dures,Choses en metal,Choses en pierre,Choses luxueuses,Choses pour s'entrainer
@@ -299,3 +300,62 @@ Ho-Oh,Chaud,Choses avec des symboles,Choses en bois,Choses epicees,Choses liees 
 Lugia,Humide,Choses acres,Choses avec des symboles,Choses etranges,Choses liees a l'eau,Choses liees a la mer,Choses liees au vent
 Mewtwo,Sombre,Choses acres,Choses amusantes a regarder,Choses avec du texte,Choses difficiles,Choses en pierre,Choses etranges
 Mew,Chaud,Choses amusantes a regarder,Choses difficiles,Choses etranges,Choses luxueuses,Choses sucrees,Lieux pour jouer
+Granivol,Lumineux,Choses douces,Choses liees a la nature,Choses liees au vent,Choses ondoyantes,Choses sucrees,Fleurs epanouies
+Floravol,Lumineux,Choses acres,Choses douces,Choses liees a la nature,Choses liees au vent,Choses qui tournent,Fleurs epanouies
+Cotovol,Lumineux,Choses acidulees,Choses douces,Choses liees a la nature,Choses liees au vent,Choses rondes,Fleurs epanouies
+Tenefix,Sombre,Choses acidulees,Choses amusantes a regarder,Choses imitant des aliments,Choses inquietantes,Choses luxueuses,Choses qui brillent
+Jirachi,Lumineux,Choses amusantes a regarder,Choses en metal,Choses etranges,Choses ondoyantes,Choses qui brillent,Choses sucrees
+Barpau,Humide,Choses a partager,Choses en verre,Choses liees a l'eau,Choses liees a la nature,Choses qui brillent,Choses sucrees
+Milobellus,Humide,Choses acidulees,Choses en verre,Choses liees a l'eau,Choses luxueuses,Choses propres,Choses qui brillent
+Kokiyas,Sombre,Choses ameres,Choses dures,Choses liees a l'eau,Choses qui brillent,Choses rondes,Recipients
+Crustabri,Frais,Choses acidulees,Choses liees a l'eau,Choses pointues,Choses qui brillent,Choses rondes,Recipients
+Hypotrempe,Humide,Choses a partager,Choses fines,Choses liees a l'eau,Choses qui tournent,Choses sucrees,Lieux pour jouer
+Hypocean,Humide,Choses epicees,Choses fines,Choses liees a l'eau,Choses liees a la mer,Choses pointues,Choses qui tournent
+Hyporoi,Sombre,Choses acres,Choses fines,Choses liees a l'eau,Choses liees au vent,Choses luxueuses,Choses pour s'entrainer
+Stari,Lumineux,Choses ameres,Choses colorees,Choses etranges,Choses liees a l'eau,Choses pointues,Choses qui tournent
+Staross,Lumineux,Choses ameres,Choses colorees,Choses difficiles,Choses etranges,Choses liees a l'eau,Choses qui tournent
+Kaiminus,Lumineux,Choses a partager,Choses epicees,Choses liees a l'eau,Choses ondoyantes,Choses pointues,Lieux pour jouer
+Crocrodil,Lumineux,Choses en tissu,Choses epicees,Choses fines,Choses liees a l'eau,Choses pointues,Choses pour s'entrainer
+Aligatueur,Lumineux,Choses acidulees,Choses liees a l'eau,Choses liees au vent,Choses luxueuses,Choses pointues,Choses pour s'entrainer
+Loupio,Humide,Choses acres,Choses electriques,Choses en verre,Choses liees a l'eau,Choses ondoyantes,Choses qui brillent
+Lanturn,Sombre,Choses electriques,Choses en verre,Choses epicees,Choses liees a l'eau,Choses ondoyantes,Choses propres
+Corayon,Chaud,Choses en pierre,Choses en verre,Choses liees a l'eau,Choses liees a la nature,Choses propres,Choses sucrees
+Gobou,Lumineux,Choses acres,Choses douces,Choses en pierre,Choses liees a l'eau,Choses liees a la terre,Lieux pour jouer
+Flobio,Lumineux,Choses acres,Choses amusantes a regarder,Choses douces,Choses liees a l'eau,Choses liees a la terre,Constructions
+Laggron,Lumineux,Choses acres,Choses douces,Choses liees a l'eau,Choses liees a la terre,Choses pour s'entrainer,Constructions
+Carvanha,Chaud,Choses a partager,Choses epicees,Choses liees a l'eau,Choses liees a la mer,Choses pointues,Choses pour s'entrainer
+Sharpedo,Humide,Choses avec des symboles,Choses epicees,Choses liees a l'eau,Choses liees a la mer,Choses pointues,Choses pour s'entrainer
+Barloche,Humide,Choses ameres,Choses amusantes a regarder,Choses douces,Choses fines,Choses liees a l'eau,Choses liees a la terre
+Barbicha,Humide,Choses acres,Choses amusantes a regarder,Choses douces,Choses liees a l'eau,Choses liees a la terre,Choses ondoyantes
+Ecrapince,Humide,Choses ameres,Choses liees a l'eau,Choses liees a la nature,Choses pour s'entrainer,Constructions,Lieux pour jouer
+Colhomard,Humide,Choses epicees,Choses liees a l'eau,Choses luxueuses,Choses pour s'entrainer,Choses qui guerissent,Constructions
+Lovdisc,Chaud,Choses a partager,Choses liees a l'eau,Choses mignonnes,Choses qui guerissent,Choses sucrees,Lieux pour jouer
+Mustebouee,Lumineux,Choses a partager,Choses acres,Choses douces,Choses liees a l'eau,Choses qui tournent,Lieux pour jouer
+Musteflott,Lumineux,Choses douces,Choses epicees,Choses liees a l'eau,Choses propres,Choses qui guerissent,Choses qui tournent
+Ecayon,Lumineux,Choses acidulees,Choses colorees,Choses en tissu,Choses en verre,Choses liees a l'eau,Choses qui brillent
+Lumineon,Sombre,Choses a partager,Choses acres,Choses colorees,Choses en verre,Choses liees a l'eau,Choses qui brillent
+Viskuse Male,Sombre,Choses amusantes a regarder,Choses en tissu,Choses inquietantes,Choses liees a l'eau,Choses liees a la mer,Choses sucrees
+Viskuse Femelle,Sombre,Choses acidulees,Choses amusantes a regarder,Choses en tissu,Choses inquietantes,Choses liees a l'eau,Choses liees a la mer
+Moyade Male,Sombre,Choses acidulees,Choses inquietantes,Choses liees a l'eau,Choses liees a la mer,Choses luxueuses,Moyens de transport
+Moyade Femelle,Sombre,Choses epicees,Choses inquietantes,Choses liees a l'eau,Choses liees a la mer,Choses luxueuses,Moyens de transport
+Mamanbo,Chaud,Choses acidulees,Choses colorees,Choses liees a l'eau,Choses mignonnes,Choses propres,Choses qui guerissent
+Limonde,Humide,Choses acres,Choses amusantes a regarder,Choses carrees,Choses douces,Choses electriques,Choses liees a la terre
+Sepiatop,Sombre,Choses colorees,Choses difficiles,Choses etranges,Choses qui font du bruit,Choses qui tournent,Choses sucrees
+Sepiatroce,Lumineux,Choses acidulees,Choses avec du texte,Choses colorees,Choses difficiles,Choses etranges,Choses inquietantes
+Otaquin,Lumineux,Choses liees a l'eau,Choses mignonnes,Choses qui brillent,Choses rondes,Choses sucrees,Lieux pour jouer
+Otarlette,Lumineux,Choses a partager,Choses liees a l'eau,Choses propres,Choses qui font du bruit,Choses sucrees,Lieux pour jouer
+Oratoria,Lumineux,Choses acidulees,Choses liees a l'eau,Choses mignonnes,Choses propres,Choses qui font du bruit,Lieux pour jouer
+Vorasterie,Chaud,Choses ameres,Choses colorees,Choses liees a l'eau,Choses pointues,Choses qui brillent,Dechets
+Predasterie,Chaud,Choses acres,Choses colorees,Choses liees a l'eau,Choses pointues,Dechets,Recipients
+Sovkipou,Sombre,Choses a partager,Choses ameres,Choses liees a l'eau,Choses liees a la mer,Choses liees a la nature,Dechets
+Sarmurai,Sombre,Choses acres,Choses liees a l'eau,Choses liees a la nature,Choses luxueuses,Choses pour s'entrainer,Choses qui guerissent
+Denticrisse,Chaud,Choses acidulees,Choses amusantes a regarder,Choses colorees,Choses dures,Choses etranges,Choses liees a l'eau
+Sinistrail,Sombre,Choses ameres,Choses avec des symboles,Choses inquietantes,Choses liees a la mer,Choses liees a la nature,Choses ondoyantes
+Khelocrok,Lumineux,Choses dures,Choses en tissu,Choses liees a l'eau,Choses liees a la nature,Choses rondes,Choses sucrees
+Torgamord,Lumineux,Choses acidulees,Choses dures,Choses en pierre,Choses liees a l'eau,Choses pour s'entrainer,Choses rondes
+Wattapik,Humide,Choses ameres,Choses amusantes a regarder,Choses electriques,Choses liees a la mer,Choses pointues,Choses rondes
+Taupikeau,Humide,Choses a partager,Choses acres,Choses fines,Choses groupees,Choses liees a l'eau,Choses liees a la terre
+Triopikeau,Humide,Choses a partager,Choses en pierre,Choses fines,Choses groupees,Choses liees a l'eau,Choses sucrees
+Delestin,Frais,Choses douces,Choses liees a l'eau,Choses pointues,Choses pour s'entrainer,Choses sucrees,Moyens de transport
+Phione,Chaud,Choses acidulees,Choses douces,Choses liees a l'eau,Choses liees a la mer,Choses mignonnes,Choses rondes
+Manaphy,Frais,Choses ameres,Choses liees a l'eau,Choses liees a la mer,Choses mignonnes,Choses qui font du bruit,Choses qui guerissent

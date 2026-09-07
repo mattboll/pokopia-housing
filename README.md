@@ -4,7 +4,7 @@
 
 Optimize Pokemon housing in **Pokemon Pokopia** by grouping Pokemon with shared preferences to minimize the number of houses needed.
 
-**300 Pokemon grouped into just 79 houses** (instead of 300 individual habitats).
+**360 Pokemon (base game + Bubbly Basin DLC + event Pokemon) grouped into just 92 houses** (instead of 360 individual habitats).
 
 ## Features
 
@@ -30,7 +30,7 @@ Houses can hold up to 4 Pokemon, but they must all share the **same environment*
 2. **Cluster** each group by maximizing shared preferences (greedy agglomerative)
 3. Respect the **4-per-house limit**
 
-Current result: **79 houses, average score 2.19 shared preferences per house**.
+Current result: **92 houses, average score 1.64 shared preferences per house**.
 
 The algorithm is intentionally simple (greedy) — there's room for improvement! See [CONTRIBUTING.md](CONTRIBUTING.md) for ideas like simulated annealing, genetic algorithms, or ILP.
 
