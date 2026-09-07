@@ -69,6 +69,7 @@ export const store = createStore({
   selectedPokemon: new Set(),
   allPokemon: [],
   pokemonMeta: {},
+  items: [],
   results: null,
   currentPage: 'optimal',
 });

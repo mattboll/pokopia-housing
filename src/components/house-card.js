@@ -1,6 +1,7 @@
 import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
-import { createPokemonNameButton } from './pokemon-popover.js';
+import { createPokemonNameButton, showListPopover } from './pokemon-popover.js';
+import { suggestItems, itemsForCategory, isFlavor } from '../algorithm/items.js';
 
 /** Currently dragged resident (module-level so dragover can read it). */
 let dragging = null;
@@ -74,6 +75,8 @@ function compatibilityRating(house) {
  * @property {(house: Object) => void} [onToggleLock]
  * @property {(memberName: string, house: Object, anchor: HTMLElement) => void} [onMove]
  * @property {(memberName: string, fromId: string, house: Object) => void} [onDrop]
+ * @property {import('../algorithm/items.js').Item[]} [items] - item catalog for suggestions
+ * @property {Set<string> | null} [owned] - owned item slugs (null = everything)
  */
 
 /**
@@ -179,6 +182,16 @@ export function createHouseCard(house, index, opts = {}) {
     residentsList
   );
 
+  const tp = (pref) => (t(`preferences.${pref}`) !== `preferences.${pref}` ? t(`preferences.${pref}`) : pref);
+  const tn = (name) => (t(`pokemon.${name}`) !== `pokemon.${name}` ? t(`pokemon.${name}`) : name);
+  const itemLabel = (item) => {
+    if (item.food) return `🍽️ ${tp(item.categories[0])}`;
+    const key = `items.${item.slug}`;
+    return t(key) !== key ? t(key) : item.name;
+  };
+  const catalog = opts.items || [];
+  const owned = opts.owned ?? null;
+
   // Shopping list: categories to place (minimum cover)
   let shoppingSection = null;
   if (house.items && house.items.length > 0) {
@@ -186,15 +199,62 @@ export function createHouseCard(house, index, opts = {}) {
     const likedBy = (pref) => house.members.filter((m) => m.preferences.includes(pref)).length;
     const sortedItems = [...house.items].sort((a, b) => likedBy(b) - likedBy(a));
     for (const pref of sortedItems) {
-      const translated = t(`preferences.${pref}`) !== `preferences.${pref}` ? t(`preferences.${pref}`) : pref;
       const n = likedBy(pref);
-      pills.appendChild(el('span', {
-        className: 'house-card-pill house-card-pill--item',
-        title: `${n}/${house.members.length}`,
-      }, `${translated} `, el('span', { className: 'house-card-pill__count' }, `×${n}`)));
+      const flavor = isFlavor(pref);
+      const pill = el('button', {
+        type: 'button',
+        className: 'house-card-pill house-card-pill--item house-card-pill--clickable' + (flavor ? ' house-card-pill--flavor' : ''),
+        title: flavor ? t('common.foodHint') : `${t('common.itemsForCategory')} ${tp(pref)}`,
+        onClick: (e) => {
+          e.stopPropagation();
+          if (flavor) {
+            showListPopover(pill, `🍽️ ${tp(pref)}`, [{ label: t('common.foodHint'), icon: '🍳' }]);
+            return;
+          }
+          const entries = itemsForCategory(pref, catalog, house.items, owned).slice(0, 40).map((r) => ({
+            label: itemLabel(r.item),
+            sub: r.overlap.length > 0 ? `+ ${r.overlap.map(tp).join(', ')}` : '',
+            muted: !r.owned,
+            icon: r.owned ? '🛋️' : '🚫',
+          }));
+          showListPopover(pill, `${t('common.itemsForCategory')} ${tp(pref)}`,
+            entries.length ? entries : [{ label: t('common.noItemKnown'), icon: '❔' }],
+            t('common.itemsSortedHint'));
+        },
+      }, `${flavor ? '🍽️ ' : ''}${tp(pref)} `, el('span', { className: 'house-card-pill__count' }, `×${n}`));
+      pills.appendChild(pill);
     }
     shoppingSection = el('div', { className: 'house-card-section house-card-shopping' },
       el('h4', { className: 'house-card-section-title' }, `🛒 ${t('common.shoppingList')} (${house.items.length})`),
+      pills
+    );
+  }
+
+  // Concrete item suggestions (greedy over the item catalog)
+  let suggestionSection = null;
+  if (catalog.length > 0 && house.members.length > 0) {
+    const suggestion = suggestItems(house.members, house.satisfy || 4, catalog, { owned, preferCategories: house.items });
+    const pills = el('div', { className: 'house-card-pills' });
+    for (const { item, covers, residents } of suggestion.items) {
+      const pill = el('button', {
+        type: 'button',
+        className: 'house-card-pill house-card-pill--suggest house-card-pill--clickable' + (item.food ? ' house-card-pill--flavor' : ''),
+        title: covers.map(tp).join(', '),
+        onClick: (e) => {
+          e.stopPropagation();
+          const entries = item.food
+            ? [{ label: t('common.foodHint'), icon: '🍳' }]
+            : item.categories.map((c) => ({ label: tp(c), icon: covers.includes(c) ? '✅' : '○' }));
+          showListPopover(pill, itemLabel(item), entries,
+            `${t('common.pleases')} ${residents.map((i) => tn(house.members[i].name)).join(', ')}`);
+        },
+      }, itemLabel(item), el('span', { className: 'house-card-pill__count' }, ` ×${covers.length}`));
+      pills.appendChild(pill);
+    }
+    const count = suggestion.items.length;
+    suggestionSection = el('div', { className: 'house-card-section house-card-suggest' },
+      el('h4', { className: 'house-card-section-title' },
+        `💡 ${t('common.suggestion')} (${count})` + (suggestion.complete ? '' : ` ⚠️ ${t('common.suggestionIncomplete')}`)),
       pills
     );
   }
@@ -251,6 +311,7 @@ export function createHouseCard(house, index, opts = {}) {
   card.appendChild(header);
   card.appendChild(ratingSection);
   card.appendChild(residentsSection);
+  if (suggestionSection) card.appendChild(suggestionSection);
   if (shoppingSection) card.appendChild(shoppingSection);
   card.appendChild(prefsSection);
 

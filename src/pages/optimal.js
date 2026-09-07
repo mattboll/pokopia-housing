@@ -116,8 +116,9 @@ function renderEnvironmentSections(environmentGroups, selectedEnvs, container) {
     );
 
     const grid = el('div', { className: 'houses-grid' });
+    const items = store.getState().items || [];
     group.houses.forEach((house, i) => {
-      grid.appendChild(createHouseCard(house, startIndex + i));
+      grid.appendChild(createHouseCard(house, startIndex + i, { items, owned: null }));
     });
     section.appendChild(grid);
     container.appendChild(section);

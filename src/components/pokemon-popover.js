@@ -33,7 +33,8 @@ document.addEventListener('click', (e) => {
   if (activePopover && !activePopover.contains(e.target)
       && !e.target.closest('.pokemon-name-btn')
       && !e.target.closest('.prefs-more-btn')
-      && !e.target.closest('.house-card-move-btn')) {
+      && !e.target.closest('.house-card-move-btn')
+      && !e.target.closest('.house-card-pill--clickable')) {
     closePopover();
   }
 });
@@ -255,6 +256,43 @@ export function showMenuPopover(anchor, title, items) {
   positionPopover(popover, anchor);
   const first = list.querySelector('button:not(:disabled)');
   if (first) first.focus();
+}
+
+/**
+ * Shows a read-only list popover (title + entries with an optional
+ * secondary line). Used for "items for this category" and item details.
+ *
+ * @param {HTMLElement} anchor
+ * @param {string} title
+ * @param {Array<{label: string, sub?: string, muted?: boolean, icon?: string}>} entries
+ * @param {string} [footer]
+ */
+export function showListPopover(anchor, title, entries, footer) {
+  closePopover();
+
+  const list = el('ul', { className: 'popover__pref-list popover__list' });
+  for (const e of entries) {
+    list.appendChild(el('li', { className: 'popover__list-item' + (e.muted ? ' popover__list-item--muted' : '') },
+      el('span', { className: 'popover__pref-icon' }, e.icon || '\u2022'),
+      el('span', { className: 'popover__list-text' },
+        el('span', { className: 'popover__list-label' }, e.label),
+        e.sub ? el('span', { className: 'popover__list-sub' }, e.sub) : null
+      )
+    ));
+  }
+
+  const closeBtn = el('button', {
+    className: 'popover__close', type: 'button', 'aria-label': 'Close',
+    onClick: (e) => { e.stopPropagation(); closePopover(); },
+  }, '\u2715');
+
+  const popover = el('div', { className: 'popover pokemon-popover popover--wide', role: 'dialog', 'aria-label': title },
+    closeBtn,
+    el('div', { className: 'popover__header' }, el('span', { className: 'popover__name' }, title)),
+    el('div', { className: 'popover__body' }, list, footer ? el('p', { className: 'popover__legend' }, footer) : null)
+  );
+
+  positionPopover(popover, anchor);
 }
 
 /**

@@ -1,0 +1,4 @@
+{
+  "_comment": "Community corrections merged on top of Serebii data by scripts/sync-items.js. Keys are Serebii item slugs (see items.json). Fields: name, class, categories (replaces), add (appends), remove (true hides the item). Categories use the French keys from pokemon.csv, e.g. \"Choses en bois\".",
+  "_example": { "name": "Example item", "add": ["Choses rondes"] }
+}

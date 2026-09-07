@@ -60,7 +60,19 @@
     "avgShared": "共通の好み（平均）",
     "itemsToFind": "置くアイテム数",
     "searchShortcut": "/ キーで検索",
-    "shownCount": "{shown} / {total} 匹"
+    "shownCount": "{shown} / {total} 匹",
+    "suggestion": "おすすめアイテム",
+    "suggestionIncomplete": "すべてを満たすにはアイテムが足りません",
+    "itemsForCategory": "アイテム：",
+    "itemsSortedHint": "この家の他のカテゴリをいくつ満たすかで並べ替え。🚫 = 未所持。",
+    "noItemKnown": "このカテゴリのアイテムは未登録です",
+    "foodHint": "この味の料理（作るか贈る）",
+    "pleases": "喜ぶポケモン：",
+    "ownedItems": "持っているアイテム",
+    "ownedItemsHint": "最初はすべてチェック済み。まだ持っていないものを外すと、おすすめが変わります。",
+    "searchItem": "アイテムを検索...",
+    "all": "すべて",
+    "none": "なし"
   },
   "optimal": {
     "title": "全ポケモンの最適な住居",
@@ -200,6 +212,7 @@
     "reload": "再読み込み",
     "offline": "オフライン：キャッシュされたデータを表示しています。"
   },
+  "items": {},
   "pokemon": {
     "Bulbizarre": "フシギダネ",
     "Herbizarre": "フシギソウ",

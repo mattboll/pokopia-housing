@@ -60,7 +60,19 @@
     "avgShared": "Préférences communes (moy.)",
     "itemsToFind": "Objets à poser",
     "searchShortcut": "Appuyez sur / pour rechercher",
-    "shownCount": "{shown} / {total} Pokémon"
+    "shownCount": "{shown} / {total} Pokémon",
+    "suggestion": "Objets suggérés",
+    "suggestionIncomplete": "objets manquants pour tout couvrir",
+    "itemsForCategory": "Objets pour",
+    "itemsSortedHint": "Triés par nombre d'autres catégories utiles à cette maison. 🚫 = non possédé.",
+    "noItemKnown": "Aucun objet connu pour cette catégorie",
+    "foodHint": "Un plat de ce goût, à cuisiner ou à offrir",
+    "pleases": "Fait plaisir à",
+    "ownedItems": "Objets possédés",
+    "ownedItemsHint": "Tout est coché par défaut : décochez ce que vous n'avez pas encore, les suggestions s'adaptent.",
+    "searchItem": "Rechercher un objet...",
+    "all": "Tous",
+    "none": "Aucun"
   },
   "optimal": {
     "title": "Logement optimal pour tous les Pokémon",
@@ -200,6 +212,7 @@
     "reload": "Recharger",
     "offline": "Hors ligne : les données affichées sont celles en cache."
   },
+  "items": {},
   "pokemon": {
     "Bulbizarre": "Bulbizarre",
     "Herbizarre": "Herbizarre",

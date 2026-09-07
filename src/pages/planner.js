@@ -7,6 +7,7 @@ import { createHouseCard, getDragging } from '../components/house-card.js';
 import { showMenuPopover } from '../components/pokemon-popover.js';
 import { createOptionsPanel, loadOptions, clampSatisfy } from '../components/optimize-options.js';
 import { createStatsSummary } from '../components/stats-summary.js';
+import { createOwnedItemsPanel, loadUnowned, ownedFrom } from '../components/owned-items.js';
 import { optimize } from '../algorithm/optimizer.js';
 import {
   loadPlan, savePlan, clearPlan, emptyPlan, normalizePlan, newHouseId,
@@ -45,6 +46,8 @@ export function renderPlannerPage() {
   const byName = new Map(allPokemon.map((p) => [p.name, p]));
   const options = loadOptions();
   let plan = loadPlan();
+  const catalog = store.getState().items || [];
+  const unowned = loadUnowned();
 
   const layout = el('div', { className: 'planner-layout' });
 
@@ -52,6 +55,7 @@ export function renderPlannerPage() {
   const leftPanel = el('div', { className: 'planner-panel planner-panel-left' });
   leftPanel.appendChild(createPokemonSelector(allPokemon, store));
   leftPanel.appendChild(createOptionsPanel(options, () => render(), { showSources: false }));
+  if (catalog.length > 0) leftPanel.appendChild(createOwnedItemsPanel(catalog, unowned, () => render()));
 
   const optimizeBtn = el('button', {
     type: 'button',
@@ -331,6 +335,8 @@ export function renderPlannerPage() {
         houseNumbers.set(house.id, index);
         grid.appendChild(createHouseCard(house, index, {
           editable: true,
+          items: catalog,
+          owned: ownedFrom(catalog, unowned),
           onToggleLock: toggleLock,
           onMove: openMoveMenu,
           onDrop: (name, fromId, target) => moveMember(name, fromId, target.id),

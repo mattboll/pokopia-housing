@@ -73,3 +73,19 @@ export async function loadPokemonMeta() {
   }
   return metaCache;
 }
+
+/**
+ * Loads the item catalog (items.json: name, class, favorite categories).
+ * Missing file = empty object, never throws.
+ *
+ * @returns {Promise<Record<string, {name: string, class?: string, categories: string[]}>>}
+ */
+export async function loadItems() {
+  try {
+    const base = import.meta.env.BASE_URL ?? '/pokopia-housing/';
+    const response = await fetch(`${base}data/items.json`);
+    return response.ok ? await response.json() : {};
+  } catch {
+    return {};
+  }
+}

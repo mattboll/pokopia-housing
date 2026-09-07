@@ -8,7 +8,8 @@
     "build": "vite build && node scripts/build-sw.js",
     "preview": "vite preview",
     "stats": "node scripts/precompute-optimal.js",
-    "sync": "node scripts/sync-serebii.js"
+    "sync": "node scripts/sync-serebii.js",
+    "sync-items": "node scripts/sync-items.js"
   },
   "keywords": [
     "pokemon",

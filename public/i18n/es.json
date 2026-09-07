@@ -60,7 +60,19 @@
     "avgShared": "Preferencias comunes (media)",
     "itemsToFind": "Objetos por colocar",
     "searchShortcut": "Pulsa / para buscar",
-    "shownCount": "{shown} / {total} Pokémon"
+    "shownCount": "{shown} / {total} Pokémon",
+    "suggestion": "Objetos sugeridos",
+    "suggestionIncomplete": "faltan objetos para cubrirlo todo",
+    "itemsForCategory": "Objetos para",
+    "itemsSortedHint": "Ordenados por cuántas otras categorías de esta casa cubren. 🚫 = no lo tienes.",
+    "noItemKnown": "Ningún objeto conocido para esta categoría",
+    "foodHint": "Un plato de este sabor, para cocinar o regalar",
+    "pleases": "Le gusta a",
+    "ownedItems": "Objetos que tengo",
+    "ownedItemsHint": "Todo está marcado por defecto: desmarca lo que aún no tienes y las sugerencias se adaptan.",
+    "searchItem": "Buscar un objeto...",
+    "all": "Todos",
+    "none": "Ninguno"
   },
   "optimal": {
     "title": "Vivienda optima para todos los Pokemon",
@@ -200,6 +212,7 @@
     "reload": "Recargar",
     "offline": "Sin conexión: se muestran los datos en caché."
   },
+  "items": {},
   "pokemon": {
     "Bulbizarre": "Bulbasaur",
     "Herbizarre": "Ivysaur",

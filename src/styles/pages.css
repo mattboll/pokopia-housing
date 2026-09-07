@@ -1348,3 +1348,111 @@ details.house-card-prefs > summary {
   background: var(--color-warning);
   border-radius: var(--radius-full);
 }
+
+/* -------------------------------------------------------------------
+   Item suggestions, category popovers, owned items panel
+   ------------------------------------------------------------------- */
+button.house-card-pill {
+  font: inherit;
+  font-size: var(--text-xs);
+  cursor: pointer;
+}
+
+.house-card-pill--clickable:hover,
+.house-card-pill--clickable:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.house-card-pill--suggest {
+  background-color: var(--color-surface-raised);
+  border: 1px solid var(--color-primary);
+  color: var(--color-text);
+  font-weight: var(--font-weight-semibold);
+}
+
+.house-card-pill--flavor {
+  border-style: dashed;
+}
+
+.popover--wide {
+  max-width: min(420px, calc(100vw - 16px));
+}
+
+.popover__list {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.popover__list-item {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  padding: var(--space-1) 0;
+}
+
+.popover__list-item--muted {
+  opacity: 0.5;
+}
+
+.popover__list-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.popover__list-sub {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.owned-items__count {
+  font-weight: var(--font-weight-normal);
+  color: var(--color-muted);
+}
+
+.owned-items__search {
+  margin: var(--space-1) 0;
+}
+
+.owned-items__list {
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.owned-items__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.owned-items__row:last-child {
+  border-bottom: none;
+}
+
+.owned-items__cb {
+  accent-color: var(--color-primary);
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.owned-items__label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: var(--text-sm);
+}
+
+.owned-items__cats {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.owned-items__row:has(.owned-items__cb:not(:checked)) .owned-items__label {
+  opacity: 0.55;
+  text-decoration: line-through;
+}

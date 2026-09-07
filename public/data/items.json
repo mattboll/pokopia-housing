@@ -1,0 +1,6648 @@
+{
+ "adrenalineorb": {
+  "name": "Adrenaline Orb",
+  "class": "",
+  "categories": [
+   "Choses rondes",
+   "Choses inquietantes"
+  ]
+ },
+ "adventurekit": {
+  "name": "Adventure kit",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "aetherparadise": {
+  "name": "Aether Paradise",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "afternoonteaset": {
+  "name": "Afternoon tea set",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses imitant des aliments",
+   "Choses luxueuses"
+  ]
+ },
+ "airconditioner": {
+  "name": "Air conditioner",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en metal",
+   "Choses liees au vent",
+   "Choses etranges"
+  ]
+ },
+ "alarmclock": {
+  "name": "Alarm Clock",
+  "class": "Toy",
+  "categories": [
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses rondes",
+   "Choses etranges"
+  ]
+ },
+ "antiquebed": {
+  "name": "Antique bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces"
+  ]
+ },
+ "antiquechair": {
+  "name": "Antique chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses luxueuses",
+   "Choses douces"
+  ]
+ },
+ "antiquechandelier": {
+  "name": "Antique chandelier",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses en metal"
+  ]
+ },
+ "antiquechest": {
+  "name": "Antique chest",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses luxueuses",
+   "Choses en bois"
+  ]
+ },
+ "antiqueclock": {
+  "name": "Antique clock",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses qui font du bruit",
+   "Choses en bois"
+  ]
+ },
+ "antiquecloset": {
+  "name": "Antique closet",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses luxueuses",
+   "Choses en bois"
+  ]
+ },
+ "antiquedresser": {
+  "name": "Antique dresser",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses en verre",
+   "Choses luxueuses"
+  ]
+ },
+ "antiquesofa": {
+  "name": "Antique sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "antiquetable": {
+  "name": "Antique table",
+  "class": "",
+  "categories": [
+   "Choses luxueuses",
+   "Choses en bois"
+  ]
+ },
+ "arcademachine": {
+  "name": "Arcade machine",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses en metal",
+   "Lieux pour jouer"
+  ]
+ },
+ "arcaninedoll": {
+  "name": "Arcanine doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "areazero": {
+  "name": "Area Zero",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "armorfossil": {
+  "name": "Armor Fossil",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses rondes",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "armorfragment": {
+  "name": "Armor fragment",
+  "class": "",
+  "categories": [
+   "Choses inquietantes",
+   "Choses etranges"
+  ]
+ },
+ "arrowsign": {
+  "name": "Arrow sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses en bois"
+  ]
+ },
+ "arrowsign(left)": {
+  "name": "Arrow sign (left)",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses avec des symboles"
+  ]
+ },
+ "arrowsign(right)": {
+  "name": "Arrow sign (right)",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses avec des symboles"
+  ]
+ },
+ "audiomixer": {
+  "name": "Audio mixer",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "auspiciousarmor": {
+  "name": "Auspicious Armor",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "balloons": {
+  "name": "Balloons",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Lieux pour jouer",
+   "Choses rondes",
+   "Choses ondoyantes"
+  ]
+ },
+ "barrel": {
+  "name": "Barrel",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses en bois"
+  ]
+ },
+ "bathtimeset": {
+  "name": "Bathtime set",
+  "class": "Toy",
+  "categories": [
+   "Choses propres",
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses groupees",
+   "Choses liees a l'eau",
+   "Lieux pour jouer",
+   "Choses qui brillent"
+  ]
+ },
+ "bathtub": {
+  "name": "Bathtub",
+  "class": "Decoration",
+  "categories": [
+   "Choses propres",
+   "Choses liees a l'eau",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "battle!(gymleaderbattle)": {
+  "name": "Battle! (Gym Leader Battle)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "battle!(gymleader)1": {
+  "name": "Battle! (Gym Leader) 1",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "battle!(gymleader)2": {
+  "name": "Battle! (Gym Leader) 2",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "beachchair": {
+  "name": "Beach chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses liees a la mer",
+   "Choses douces"
+  ]
+ },
+ "beachparasol": {
+  "name": "Beach parasol",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses liees a l'eau",
+   "Choses liees a la mer"
+  ]
+ },
+ "beachvolleyballset": {
+  "name": "Beach volleyball set",
+  "class": "Toy",
+  "categories": [
+   "Choses pour s'entrainer",
+   "Choses a partager",
+   "Choses liees a la terre",
+   "Choses liees a la mer",
+   "Lieux pour jouer",
+   "Choses ondoyantes"
+  ]
+ },
+ "beautifulflower": {
+  "name": "Beautiful flower",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "beautifulflower(pink)": {
+  "name": "Beautiful flower (pink)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "beautifulflower(purple)": {
+  "name": "Beautiful flower (purple)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "beautifulflower(white)": {
+  "name": "Beautiful flower (white)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "beautifulflower(yellow)": {
+  "name": "Beautiful flower (yellow)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "bell": {
+  "name": "Bell",
+  "class": "Toy",
+  "categories": [
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses ondoyantes"
+  ]
+ },
+ "belltower": {
+  "name": "Bell Tower",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "berrybasket": {
+  "name": "Berry basket",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Recipients",
+   "Choses imitant des aliments",
+   "Choses liees a la nature"
+  ]
+ },
+ "berrybed": {
+  "name": "Berry bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses imitant des aliments",
+   "Choses liees a la nature",
+   "Choses douces"
+  ]
+ },
+ "berrycase": {
+  "name": "Berry case",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses mignonnes",
+   "Choses imitant des aliments",
+   "Choses liees a la nature"
+  ]
+ },
+ "berrychair": {
+  "name": "Berry chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses imitant des aliments",
+   "Choses liees a la nature",
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "berryclock": {
+  "name": "Berry clock",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en verre",
+   "Choses imitant des aliments",
+   "Choses liees a la nature",
+   "Choses qui font du bruit",
+   "Choses rondes"
+  ]
+ },
+ "berryhanginglamp": {
+  "name": "Berry hanging lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses imitant des aliments",
+   "Choses liees a la nature",
+   "Choses fines"
+  ]
+ },
+ "berryprint": {
+  "name": "Berry print",
+  "class": "",
+  "categories": [
+   "Choses imitant des aliments",
+   "Choses liees a la nature"
+  ]
+ },
+ "berryprint(wallpaper)": {
+  "name": "Berry print (wallpaper)",
+  "class": "",
+  "categories": [
+   "Choses imitant des aliments",
+   "Choses liees a la nature"
+  ]
+ },
+ "berrytable": {
+  "name": "Berry table",
+  "class": "",
+  "categories": [
+   "Choses imitant des aliments",
+   "Choses liees a la nature"
+  ]
+ },
+ "berrytablelamp": {
+  "name": "Berry table lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses imitant des aliments",
+   "Choses liees a la nature"
+  ]
+ },
+ "berrywalldecoration": {
+  "name": "Berry wall decoration",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses imitant des aliments",
+   "Choses liees a la nature",
+   "Choses amusantes a regarder",
+   "Choses ondoyantes"
+  ]
+ },
+ "bigdrum": {
+  "name": "Big drum",
+  "class": "Toy",
+  "categories": [
+   "Choses en tissu",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses rondes"
+  ]
+ },
+ "bignugget": {
+  "name": "Big Nugget",
+  "class": "Toy",
+  "categories": [
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses avec des symboles"
+  ]
+ },
+ "bigroot": {
+  "name": "Big Root",
+  "class": "",
+  "categories": [
+   "Choses liees a la nature"
+  ]
+ },
+ "bigstoragebox": {
+  "name": "Big storage box",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "bigswimring": {
+  "name": "Big swim ring",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses a partager",
+   "Choses liees a la mer",
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "bike": {
+  "name": "Bike",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses pour s'entrainer",
+   "Choses en metal",
+   "Moyens de transport",
+   "Choses etranges"
+  ]
+ },
+ "blackpaint": {
+  "name": "Black paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "blacksludge": {
+  "name": "Black Sludge",
+  "class": "",
+  "categories": [
+   "Dechets"
+  ]
+ },
+ "blankcanvas": {
+  "name": "Blank canvas",
+  "class": "Decoration",
+  "categories": [
+   "Choses en tissu",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "blender": {
+  "name": "Blender",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses en verre",
+   "Choses qui font du bruit",
+   "Choses qui tournent"
+  ]
+ },
+ "bluemeteorlamp": {
+  "name": "Blue meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "bluepaint": {
+  "name": "Blue paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "bonfire": {
+  "name": "Bonfire",
+  "class": "Decoration",
+  "categories": [
+   "Choses a partager",
+   "Choses liees au feu",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "boo-in-the-box": {
+  "name": "Boo-in-the-box",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses a partager",
+   "Lieux pour jouer",
+   "Choses inquietantes",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "book": {
+  "name": "Book",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "bookstack": {
+  "name": "Book stack",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses groupees",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "bookcase": {
+  "name": "Bookcase",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses difficiles",
+   "Recipients",
+   "Choses avec du texte",
+   "Choses amusantes a regarder",
+   "Choses en bois"
+  ]
+ },
+ "bottledship": {
+  "name": "Bottled ship",
+  "class": "Toy",
+  "categories": [
+   "Choses en verre",
+   "Choses liees a l'eau",
+   "Choses liees a la mer",
+   "Moyens de transport",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "bouncybluebathtub": {
+  "name": "Bouncy blue bathtub",
+  "class": "Decoration",
+  "categories": [
+   "Choses propres",
+   "Choses mignonnes",
+   "Choses liees a l'eau",
+   "Choses rondes",
+   "Choses etranges"
+  ]
+ },
+ "boutique": {
+  "name": "Boutique",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "boxsofa": {
+  "name": "Box Sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "brick": {
+  "name": "Brick",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "brokenstreetlight": {
+  "name": "Broken streetlight",
+  "class": "",
+  "categories": [
+   "Choses fines"
+  ]
+ },
+ "bubblemachine": {
+  "name": "Bubble machine",
+  "class": "Toy",
+  "categories": [
+   "Choses electriques",
+   "Choses liees a l'eau",
+   "Choses rondes",
+   "Choses qui tournent",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "cafesign": {
+  "name": "Café sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "campfire": {
+  "name": "Campfire",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses liees au feu",
+   "Choses en pierre"
+  ]
+ },
+ "campingchair": {
+  "name": "Camping chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses en metal",
+   "Choses douces"
+  ]
+ },
+ "canalavecity(night)": {
+  "name": "Canalave City (Night)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "cannon": {
+  "name": "Cannon",
+  "class": "Toy",
+  "categories": [
+   "Choses liees au feu",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "canoe": {
+  "name": "Canoe",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses a partager",
+   "Choses liees a l'eau",
+   "Moyens de transport",
+   "Choses rondes"
+  ]
+ },
+ "cardreader": {
+  "name": "Card reader",
+  "class": "Decoration",
+  "categories": [
+   "Choses difficiles",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "cardboardboxes": {
+  "name": "Cardboard boxes",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses groupees"
+  ]
+ },
+ "cascarrafa": {
+  "name": "Cascarrafa",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "cashregister": {
+  "name": "Cash register",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Recipients",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "castformweathercharm": {
+  "name": "Castform weather charm",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses qui tournent",
+   "Choses etranges"
+  ]
+ },
+ "cavesofmt.moon": {
+  "name": "Caves of Mt. Moon",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "cdplayer": {
+  "name": "CD player",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses electriques",
+   "Choses a partager",
+   "Choses qui font du bruit"
+  ]
+ },
+ "cdrack": {
+  "name": "CD rack",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses difficiles",
+   "Recipients",
+   "Choses groupees",
+   "Choses amusantes a regarder",
+   "Choses en bois"
+  ]
+ },
+ "ceilingfan": {
+  "name": "Ceiling fan",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en metal",
+   "Choses liees au vent",
+   "Choses qui tournent",
+   "Choses etranges"
+  ]
+ },
+ "cellphone": {
+  "name": "Cell phone",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "chainlamp": {
+  "name": "Chain lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses ondoyantes"
+  ]
+ },
+ "chanseyplant": {
+  "name": "Chansey plant",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses mignonnes",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Fleurs epanouies",
+   "Choses rondes",
+   "Choses avec des symboles"
+  ]
+ },
+ "charcoal": {
+  "name": "Charcoal",
+  "class": "",
+  "categories": [
+   "Choses liees au feu"
+  ]
+ },
+ "chicchair": {
+  "name": "Chic chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "chicsofa": {
+  "name": "Chic sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "chicstreetlight": {
+  "name": "Chic streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses fines",
+   "Choses inquietantes"
+  ]
+ },
+ "chictable": {
+  "name": "Chic table",
+  "class": "",
+  "categories": [
+   "Choses luxueuses"
+  ]
+ },
+ "chimechowindchime": {
+  "name": "Chimecho wind chime",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en verre",
+   "Choses liees au vent",
+   "Choses qui font du bruit",
+   "Choses fines",
+   "Choses ondoyantes"
+  ]
+ },
+ "chocolatecookies": {
+  "name": "Chocolate cookies",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses imitant des aliments",
+   "Choses rondes"
+  ]
+ },
+ "cleaningsupplies": {
+  "name": "Cleaning supplies",
+  "class": "Toy",
+  "categories": [
+   "Choses propres",
+   "Recipients",
+   "Choses liees a l'eau",
+   "Choses qui brillent"
+  ]
+ },
+ "clearamulet": {
+  "name": "Clear Amulet",
+  "class": "",
+  "categories": [
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "clearbell": {
+  "name": "Clear Bell",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses liees au feu",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "clefairydoll": {
+  "name": "Clefairy doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "cloudcannon": {
+  "name": "Cloud cannon",
+  "class": "Toy",
+  "categories": [
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses etranges"
+  ]
+ },
+ "computer": {
+  "name": "Computer",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "concrete": {
+  "name": "Concrete",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "concretepipe": {
+  "name": "Concrete pipe",
+  "class": "Decoration",
+  "categories": [
+   "Choses rondes",
+   "Choses en pierre"
+  ]
+ },
+ "constructionsupplies": {
+  "name": "Construction supplies",
+  "class": "Decoration",
+  "categories": [
+   "Constructions",
+   "Recipients",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "contestspectacular": {
+  "name": "Contest Spectacular",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "controlunit": {
+  "name": "Control unit",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses electriques",
+   "Choses en metal"
+  ]
+ },
+ "cookingstove": {
+  "name": "Cooking stove",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses liees au feu",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "coolbassguitar": {
+  "name": "Cool bass guitar",
+  "class": "Toy",
+  "categories": [
+   "Choses electriques",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses etranges"
+  ]
+ },
+ "coolelectricguitar": {
+  "name": "Cool electric guitar",
+  "class": "Toy",
+  "categories": [
+   "Choses electriques",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses etranges"
+  ]
+ },
+ "cooler": {
+  "name": "Cooler",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses propres",
+   "Choses colorees",
+   "Choses a partager"
+  ]
+ },
+ "copperingot": {
+  "name": "Copper ingot",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "copperore": {
+  "name": "Copper ore",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "corkboard": {
+  "name": "Corkboard",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses groupees",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "corrugatedmetal": {
+  "name": "Corrugated metal",
+  "class": "Road",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "cottonspores": {
+  "name": "Cotton Spores",
+  "class": "",
+  "categories": [
+   "Choses douces"
+  ]
+ },
+ "crystalball": {
+  "name": "Crystal ball",
+  "class": "Toy",
+  "categories": [
+   "Choses en tissu",
+   "Choses en verre",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "crystalfragment": {
+  "name": "Crystal fragment",
+  "class": "",
+  "categories": [
+   "Choses qui brillent"
+  ]
+ },
+ "cursolalight": {
+  "name": "Cursola light",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses qui brillent",
+   "Choses inquietantes",
+   "Choses etranges"
+  ]
+ },
+ "cushionbed": {
+  "name": "Cushion bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "cutebed": {
+  "name": "Cute bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces"
+  ]
+ },
+ "cutechair": {
+  "name": "Cute chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "cutedresser": {
+  "name": "Cute dresser",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses en verre",
+   "Choses etranges"
+  ]
+ },
+ "cuteflower": {
+  "name": "Cute flower",
+  "class": "",
+  "categories": [
+   "Choses mignonnes",
+   "Fleurs epanouies"
+  ]
+ },
+ "cuteflower(blue)": {
+  "name": "Cute flower (blue)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "cuteflower(pink)": {
+  "name": "Cute flower (pink)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "cuteflower(white)": {
+  "name": "Cute flower (white)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "cuteflower(yellow)": {
+  "name": "Cute flower (yellow)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "cutelamp": {
+  "name": "Cute lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre"
+  ]
+ },
+ "cutesofa": {
+  "name": "Cute sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "cutetable": {
+  "name": "Cute table",
+  "class": "",
+  "categories": [
+   "Choses mignonnes"
+  ]
+ },
+ "cuttingboard": {
+  "name": "Cutting board",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "cyanpaint": {
+  "name": "Cyan paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "cycleshopsign": {
+  "name": "Cycle shop sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "danglingstreetlight": {
+  "name": "Dangling streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses dures",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses fines"
+  ]
+ },
+ "deckchair": {
+  "name": "Deck chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses liees a la mer"
+  ]
+ },
+ "decorativebookshelf": {
+  "name": "Decorative bookshelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses groupees",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativecloth": {
+  "name": "Decorative cloth",
+  "class": "Decoration",
+  "categories": [
+   "Choses en tissu",
+   "Choses qui brillent"
+  ]
+ },
+ "decorativediveball": {
+  "name": "Decorative Dive Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses liees a la mer",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativegreatball": {
+  "name": "Decorative Great Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativehealball": {
+  "name": "Decorative Heal Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativelureball": {
+  "name": "Decorative Lure Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses liees a la mer",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativenetball": {
+  "name": "Decorative Net Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativeplantshelf": {
+  "name": "Decorative plant shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses groupees",
+   "Fleurs epanouies",
+   "Choses fines"
+  ]
+ },
+ "decorativeplates": {
+  "name": "Decorative plates",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses groupees",
+   "Choses luxueuses",
+   "Choses rondes",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativepokeball": {
+  "name": "Decorative Poké Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses rondes",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativequickball": {
+  "name": "Decorative Quick Ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses en metal",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "decorativeshopshelf": {
+  "name": "Decorative shop shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses en metal"
+  ]
+ },
+ "decorativestorageshelf": {
+  "name": "Decorative storage shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "desklight": {
+  "name": "Desk light",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal",
+   "Choses fines"
+  ]
+ },
+ "despotfossil(body)": {
+  "name": "Despot Fossil (body)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "despotfossil(head)": {
+  "name": "Despot Fossil (head)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "despotfossil(legs)": {
+  "name": "Despot Fossil (legs)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "despotfossil(tail)": {
+  "name": "Despot Fossil (tail)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "destinyknot": {
+  "name": "Destiny Knot",
+  "class": "",
+  "categories": [
+   "Choses fines"
+  ]
+ },
+ "digitalcamera": {
+  "name": "Digital camera",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "diningcabinet": {
+  "name": "Dining cabinet",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses en pierre",
+   "Choses en bois"
+  ]
+ },
+ "dittodoll": {
+  "name": "Ditto doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "dittoflag": {
+  "name": "Ditto Flag",
+  "class": "",
+  "categories": [
+   "Choses en pierre"
+  ]
+ },
+ "dive": {
+  "name": "Dive",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "doublestreetlight": {
+  "name": "Double streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal",
+   "Choses fines"
+  ]
+ },
+ "dragonitedoll": {
+  "name": "Dragonite doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "dressupwithprops": {
+  "name": "Dress Up With Props",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "driftveilcity": {
+  "name": "Driftveil City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "ecruteakcity": {
+  "name": "Ecruteak City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "eeriecandle": {
+  "name": "Eerie candle",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses liees au feu",
+   "Choses luxueuses",
+   "Choses inquietantes",
+   "Choses en pierre"
+  ]
+ },
+ "eeveedoll": {
+  "name": "Eevee doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "elegantflower": {
+  "name": "Elegant flower",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "elegantflower(orange)": {
+  "name": "Elegant flower (orange)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "elegantflower(pink)": {
+  "name": "Elegant flower (pink)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "elegantflower(red)": {
+  "name": "Elegant flower (red)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "elegantflower(yellow)": {
+  "name": "Elegant flower (yellow)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "excavationtools": {
+  "name": "Excavation tools",
+  "class": "Toy",
+  "categories": [
+   "Choses en metal",
+   "Choses pointues",
+   "Choses etranges"
+  ]
+ },
+ "extravagantflowers": {
+  "name": "Extravagant flowers",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Fleurs epanouies",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "fairyfeather": {
+  "name": "Fairy Feather",
+  "class": "",
+  "categories": [
+   "Choses mignonnes"
+  ]
+ },
+ "fan": {
+  "name": "Fan",
+  "class": "Toy",
+  "categories": [
+   "Choses electriques",
+   "Choses en metal",
+   "Choses liees au vent",
+   "Choses rondes",
+   "Choses qui tournent"
+  ]
+ },
+ "fancychair": {
+  "name": "Fancy chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses qui tournent"
+  ]
+ },
+ "fancypen": {
+  "name": "Fancy pen",
+  "class": "Decoration",
+  "categories": [
+   "Choses difficiles",
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses pointues",
+   "Choses fines"
+  ]
+ },
+ "fierymagbystatue": {
+  "name": "Fiery Magby statue",
+  "class": "Toy",
+  "categories": [
+   "Choses liees au feu",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "firehydrant": {
+  "name": "Fire hydrant",
+  "class": "Decoration",
+  "categories": [
+   "Choses liees a l'eau",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses avec des symboles"
+  ]
+ },
+ "firepit": {
+  "name": "Firepit",
+  "class": "Decoration",
+  "categories": [
+   "Choses a partager",
+   "Choses liees au feu",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses en pierre"
+  ]
+ },
+ "firework(blue)": {
+  "name": "Firework (blue)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "firework(green)": {
+  "name": "Firework (green)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "firework(red)": {
+  "name": "Firework (red)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "firework(white)": {
+  "name": "Firework (white)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "firework(yellow)": {
+  "name": "Firework (yellow)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "firstaidkit": {
+  "name": "First aid kit",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses qui guerissent",
+   "Choses en metal"
+  ]
+ },
+ "fishingrod": {
+  "name": "Fishing rod",
+  "class": "Toy",
+  "categories": [
+   "Choses en metal",
+   "Choses liees a la mer",
+   "Choses fines",
+   "Choses ondoyantes"
+  ]
+ },
+ "flameorb": {
+  "name": "Flame Orb",
+  "class": "",
+  "categories": [
+   "Choses liees au feu",
+   "Choses rondes"
+  ]
+ },
+ "flat-leafplant": {
+  "name": "Flat-leaf plant",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses liees a la nature",
+   "Fleurs epanouies",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "floatinglantern": {
+  "name": "Floating lantern",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques"
+  ]
+ },
+ "floorswitch": {
+  "name": "Floor switch",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "flowerbackpack": {
+  "name": "Flower backpack",
+  "class": "",
+  "categories": [
+   "Recipients",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Fleurs epanouies",
+   "Choses douces"
+  ]
+ },
+ "flowercushion": {
+  "name": "Flower cushion",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses a partager",
+   "Fleurs epanouies",
+   "Choses douces"
+  ]
+ },
+ "flowergarland": {
+  "name": "Flower garland",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses groupees",
+   "Fleurs epanouies",
+   "Choses douces",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "flowerytablesetting": {
+  "name": "Flowery table setting",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses groupees",
+   "Choses a partager",
+   "Fleurs epanouies",
+   "Choses douces"
+  ]
+ },
+ "fluff": {
+  "name": "Fluff",
+  "class": "",
+  "categories": [
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "fluorescentlight": {
+  "name": "Fluorescent light",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses qui brillent",
+   "Choses fines"
+  ]
+ },
+ "foldingchair": {
+  "name": "Folding chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses en metal",
+   "Choses ondoyantes"
+  ]
+ },
+ "foodcounter": {
+  "name": "Food counter",
+  "class": "Decoration",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "fortreecity": {
+  "name": "Fortree City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "frame": {
+  "name": "Frame",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses avec du texte",
+   "Choses amusantes a regarder",
+   "Choses en bois"
+  ]
+ },
+ "friedpotatoes": {
+  "name": "Fried potatoes",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses imitant des aliments"
+  ]
+ },
+ "fuchsiacitytheme": {
+  "name": "Fuchsia City Theme",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "funkydiffuser": {
+  "name": "Funky diffuser",
+  "class": "Toy",
+  "categories": [
+   "Choses liees a l'eau",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses etranges"
+  ]
+ },
+ "gameboysystem": {
+  "name": "Game Boy system",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses en metal"
+  ]
+ },
+ "gamecorner": {
+  "name": "Game Corner",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "gamingbed": {
+  "name": "Gaming bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses a partager",
+   "Choses qui brillent",
+   "Choses douces"
+  ]
+ },
+ "gamingchair": {
+  "name": "Gaming chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses en tissu",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses douces",
+   "Choses qui tournent"
+  ]
+ },
+ "gamingfridge": {
+  "name": "Gaming fridge",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent"
+  ]
+ },
+ "gaminglight": {
+  "name": "Gaming light",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses qui brillent",
+   "Choses avec des symboles"
+  ]
+ },
+ "gamingpc": {
+  "name": "Gaming PC",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "garbagebags": {
+  "name": "Garbage bags",
+  "class": "Decoration",
+  "categories": [
+   "Dechets",
+   "Choses groupees"
+  ]
+ },
+ "garbagebin": {
+  "name": "Garbage bin",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Dechets",
+   "Choses en metal"
+  ]
+ },
+ "gardenbench": {
+  "name": "Garden bench",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses liees a la nature",
+   "Choses en metal"
+  ]
+ },
+ "gardenchair": {
+  "name": "Garden chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la nature",
+   "Choses en metal"
+  ]
+ },
+ "gardenflowers": {
+  "name": "Garden flowers",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Fleurs epanouies"
+  ]
+ },
+ "gardenlight": {
+  "name": "Garden light",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal"
+  ]
+ },
+ "gardenornament": {
+  "name": "Garden ornament",
+  "class": "Decoration",
+  "categories": [
+   "Choses groupees",
+   "Choses en pierre"
+  ]
+ },
+ "gardentable": {
+  "name": "Garden table",
+  "class": "",
+  "categories": [
+   "Choses liees a la nature"
+  ]
+ },
+ "giftshopsign": {
+  "name": "Gift shop sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "glass": {
+  "name": "Glass",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "glasswindow": {
+  "name": "Glass window",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "goldbottlecap": {
+  "name": "Gold Bottle Cap",
+  "class": "",
+  "categories": [
+   "Choses rondes",
+   "Choses qui brillent"
+  ]
+ },
+ "goldingot": {
+  "name": "Gold ingot",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "goldore": {
+  "name": "Gold ore",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "goldteeth": {
+  "name": "Gold Teeth",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "gravestone": {
+  "name": "Gravestone",
+  "class": "Decoration",
+  "categories": [
+   "Choses avec du texte",
+   "Choses inquietantes",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "greenmeteorlamp": {
+  "name": "Green meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "greenpaint": {
+  "name": "Green paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "grubbybook": {
+  "name": "Grubby book",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Dechets",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "grubbycellphone": {
+  "name": "Grubby cell phone",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Dechets",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "grubbyletter": {
+  "name": "Grubby letter",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Dechets",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "grubbynewspaper": {
+  "name": "Grubby newspaper",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Dechets",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "grubbynotepad": {
+  "name": "Grubby notepad",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Dechets",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "grubbypapers": {
+  "name": "Grubby papers",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Dechets",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "grubbypearl": {
+  "name": "Grubby pearl",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "grubbytablet": {
+  "name": "Grubby tablet",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Dechets",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "guest-roombed": {
+  "name": "Guest-room bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "gyaradosfountain": {
+  "name": "Gyarados fountain",
+  "class": "Toy",
+  "categories": [
+   "Choses liees a l'eau",
+   "Choses luxueuses",
+   "Lieux pour jouer",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "gymemblemstatue": {
+  "name": "Gym emblem statue",
+  "class": "Decoration",
+  "categories": [
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses avec des symboles"
+  ]
+ },
+ "hangingbanner": {
+  "name": "Hanging banner",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses avec des symboles",
+   "Choses ondoyantes"
+  ]
+ },
+ "hangingscroll": {
+  "name": "Hanging scroll",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses avec du texte",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "hangingsign": {
+  "name": "Hanging sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses ondoyantes"
+  ]
+ },
+ "harborstreetlight": {
+  "name": "Harbor streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses liees a la mer",
+   "Choses rondes",
+   "Choses fines"
+  ]
+ },
+ "hardstone": {
+  "name": "Hard Stone",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "harp": {
+  "name": "Harp",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses en bois"
+  ]
+ },
+ "hau'olicity(day)": {
+  "name": "Hau'oli City (Day)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "headbuttfossil(body)": {
+  "name": "Headbutt Fossil (body)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "headbuttfossil(head)": {
+  "name": "Headbutt Fossil (head)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "headbuttfossil(tail)": {
+  "name": "Headbutt Fossil (tail)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "heartscale": {
+  "name": "Heart Scale",
+  "class": "",
+  "categories": [
+   "Choses mignonnes"
+  ]
+ },
+ "hide-and-sneaktrophy": {
+  "name": "Hide-and-sneak trophy",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "hoppipwaterbottle": {
+  "name": "Hoppip water bottle",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses liees a l'eau",
+   "Choses en metal"
+  ]
+ },
+ "horseafountain": {
+  "name": "Horsea fountain",
+  "class": "Toy",
+  "categories": [
+   "Choses liees a l'eau",
+   "Choses liees a la mer",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "hotelz": {
+  "name": "Hotel Z",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "humidifier": {
+  "name": "Humidifier",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses qui guerissent",
+   "Choses liees a l'eau",
+   "Choses rondes",
+   "Choses etranges"
+  ]
+ },
+ "indigometeorlamp": {
+  "name": "Indigo meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "industrialbed": {
+  "name": "Industrial bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses en metal",
+   "Choses douces"
+  ]
+ },
+ "industrialbench": {
+  "name": "Industrial bench",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses en metal"
+  ]
+ },
+ "industrialchair": {
+  "name": "Industrial chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "industrialdesk": {
+  "name": "Industrial desk",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "inflatableboat": {
+  "name": "Inflatable boat",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses mignonnes",
+   "Choses a partager",
+   "Choses liees a l'eau",
+   "Choses liees a la mer",
+   "Choses douces"
+  ]
+ },
+ "inflatablesudowoodo": {
+  "name": "Inflatable Sudowoodo",
+  "class": "Toy",
+  "categories": [
+   "Choses fines",
+   "Choses etranges",
+   "Choses amusantes a regarder",
+   "Choses ondoyantes"
+  ]
+ },
+ "informationboard": {
+  "name": "Information board",
+  "class": "Decoration",
+  "categories": [
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses avec des symboles"
+  ]
+ },
+ "ironball": {
+  "name": "Iron Ball",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses rondes"
+  ]
+ },
+ "ironbed": {
+  "name": "Iron bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses en metal",
+   "Choses douces"
+  ]
+ },
+ "ironbench": {
+  "name": "Iron bench",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "ironchair": {
+  "name": "Iron chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "irondeposit": {
+  "name": "Iron deposit",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "irondoor": {
+  "name": "Iron door",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "irongate": {
+  "name": "Iron gate",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "ironingot": {
+  "name": "Iron ingot",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "ironladder": {
+  "name": "Iron ladder",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "ironore": {
+  "name": "Iron ore",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "ironpipes": {
+  "name": "Iron pipes",
+  "class": "Decoration",
+  "categories": [
+   "Constructions",
+   "Choses groupees",
+   "Choses dures",
+   "Choses en metal",
+   "Choses fines"
+  ]
+ },
+ "ironrack": {
+  "name": "Iron rack",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "ironscaffold": {
+  "name": "Iron scaffold",
+  "class": "Road",
+  "categories": [
+   "Constructions"
+  ]
+ },
+ "ironstand": {
+  "name": "Iron stand",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "ironsteps": {
+  "name": "Iron steps",
+  "class": "Road",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "irontable": {
+  "name": "Iron table",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "ironwall": {
+  "name": "Iron wall",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "iron-plateflooring": {
+  "name": "Iron-plate flooring",
+  "class": "Road",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "iron-plateflooring(wallpaper)": {
+  "name": "Iron-plate flooring (wallpaper)",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "iron-scaffoldplank": {
+  "name": "Iron-scaffold plank",
+  "class": "Road",
+  "categories": [
+   "Constructions"
+  ]
+ },
+ "jawfossil": {
+  "name": "Jaw Fossil",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "jewelwalldecoration": {
+  "name": "Jewel wall decoration",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses luxueuses",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "jirachilamp": {
+  "name": "Jirachi lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses qui brillent"
+  ]
+ },
+ "jubilifevillage": {
+  "name": "Jubilife Village",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "juicetrio": {
+  "name": "Juice trio",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses imitant des aliments",
+   "Choses liees a l'eau"
+  ]
+ },
+ "jumbledcords": {
+  "name": "Jumbled cords",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Recipients",
+   "Choses electriques",
+   "Dechets",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses en metal"
+  ]
+ },
+ "jumpropetrophy": {
+  "name": "Jump rope trophy",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "knittingsupplies": {
+  "name": "Knitting supplies",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses en tissu",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses rondes",
+   "Choses douces",
+   "Choses ondoyantes"
+  ]
+ },
+ "laggingtail": {
+  "name": "Lagging Tail",
+  "class": "",
+  "categories": [
+   "Choses ondoyantes"
+  ]
+ },
+ "lampion": {
+  "name": "Lampion",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses fines",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "lantern": {
+  "name": "Lantern",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "laptop": {
+  "name": "Laptop",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "largelostrelic": {
+  "name": "Large Lost Relic",
+  "class": "",
+  "categories": [
+   "Choses etranges"
+  ]
+ },
+ "largemirror": {
+  "name": "Large mirror",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses propres",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses etranges"
+  ]
+ },
+ "largeventilationfan": {
+  "name": "Large ventilation fan",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en metal",
+   "Choses liees au vent",
+   "Choses qui tournent",
+   "Choses etranges"
+  ]
+ },
+ "lasersensor": {
+  "name": "Laser sensor",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "leafyplant": {
+  "name": "Leafy plant",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Fleurs epanouies",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "leftovers": {
+  "name": "Leftovers",
+  "class": "",
+  "categories": [
+   "Choses imitant des aliments"
+  ]
+ },
+ "letter": {
+  "name": "Letter",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "lifeorb": {
+  "name": "Life Orb",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "lightclay": {
+  "name": "Light Clay",
+  "class": "",
+  "categories": [
+   "Choses douces",
+   "Choses en pierre"
+  ]
+ },
+ "loadeddice": {
+  "name": "Loaded Dice",
+  "class": "",
+  "categories": [
+   "Choses carrees"
+  ]
+ },
+ "logbed": {
+  "name": "Log Bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses liees a la nature",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "logchair": {
+  "name": "Log chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses liees a la nature",
+   "Choses rondes",
+   "Choses en bois"
+  ]
+ },
+ "logtable": {
+  "name": "Log table",
+  "class": "",
+  "categories": [
+   "Choses liees a la nature",
+   "Choses en bois"
+  ]
+ },
+ "luckyegg": {
+  "name": "Lucky Egg",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "lumber": {
+  "name": "Lumber",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "lumiosecity": {
+  "name": "Lumiose City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "lunchbox": {
+  "name": "Lunch box",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses groupees",
+   "Choses imitant des aliments"
+  ]
+ },
+ "luxurybed": {
+  "name": "Luxury bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses en pierre"
+  ]
+ },
+ "luxurychair": {
+  "name": "Luxury chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses inquietantes",
+   "Choses en pierre"
+  ]
+ },
+ "luxurydresser": {
+  "name": "Luxury dresser",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "luxurylamp": {
+  "name": "Luxury lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en tissu",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses fines",
+   "Choses en pierre"
+  ]
+ },
+ "luxurysofa": {
+  "name": "Luxury sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses douces"
+  ]
+ },
+ "luxurytable": {
+  "name": "Luxury table",
+  "class": "",
+  "categories": [
+   "Choses luxueuses"
+  ]
+ },
+ "magazinerack": {
+  "name": "Magazine rack",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses difficiles",
+   "Recipients",
+   "Choses groupees",
+   "Choses avec du texte",
+   "Choses amusantes a regarder",
+   "Choses en bois"
+  ]
+ },
+ "mailbox": {
+  "name": "Mailbox",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "maliciousarmor": {
+  "name": "Malicious Armor",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses inquietantes",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "mapandcompass": {
+  "name": "Map and compass",
+  "class": "Toy",
+  "categories": [
+   "Choses a partager",
+   "Choses avec du texte",
+   "Choses avec des symboles"
+  ]
+ },
+ "marinechair": {
+  "name": "Marine chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses liees a la mer",
+   "Choses en pierre"
+  ]
+ },
+ "marinechest": {
+  "name": "Marine chest",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Recipients",
+   "Choses liees a la mer",
+   "Choses qui brillent",
+   "Choses en pierre"
+  ]
+ },
+ "marinecloset": {
+  "name": "Marine closet",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Recipients",
+   "Choses liees a la mer",
+   "Choses qui brillent",
+   "Choses en pierre"
+  ]
+ },
+ "marinedresser": {
+  "name": "Marine dresser",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses en verre",
+   "Choses liees a la mer",
+   "Choses etranges"
+  ]
+ },
+ "marinesofa": {
+  "name": "Marine sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses liees a la mer",
+   "Choses douces"
+  ]
+ },
+ "marinetable": {
+  "name": "Marine table",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la mer"
+  ]
+ },
+ "menuboard": {
+  "name": "Menu board",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses en bois"
+  ]
+ },
+ "metalchain": {
+  "name": "Metal chain",
+  "class": "",
+  "categories": [
+   "Choses en metal",
+   "Choses fines"
+  ]
+ },
+ "metalcoat": {
+  "name": "Metal Coat",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "metaldebris": {
+  "name": "Metal Debris",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Choses en pierre"
+  ]
+ },
+ "metaldrum": {
+  "name": "Metal drum",
+  "class": "Decoration",
+  "categories": [
+   "Constructions",
+   "Recipients",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "metalfragments": {
+  "name": "Metal fragments",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "metalpowder": {
+  "name": "Metal Powder",
+  "class": "",
+  "categories": [
+   "Choses qui brillent"
+  ]
+ },
+ "metallicsmeltingfurnace": {
+  "name": "Metallic smelting furnace",
+  "class": "",
+  "categories": [
+   "Choses liees au feu"
+  ]
+ },
+ "metronome": {
+  "name": "Metronome",
+  "class": "Toy",
+  "categories": [
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses etranges",
+   "Choses amusantes a regarder",
+   "Choses ondoyantes"
+  ]
+ },
+ "microscope": {
+  "name": "Microscope",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "microwaveoven": {
+  "name": "Microwave oven",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "minibookcase": {
+  "name": "Mini bookcase",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses difficiles",
+   "Recipients",
+   "Choses avec du texte",
+   "Choses amusantes a regarder",
+   "Choses en bois"
+  ]
+ },
+ "minigenerator": {
+  "name": "Mini generator",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "miniplainbed": {
+  "name": "Mini plain bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "miracleseed": {
+  "name": "Miracle Seed",
+  "class": "",
+  "categories": [
+   "Choses liees a la nature"
+  ]
+ },
+ "mirrorball": {
+  "name": "Mirror ball",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses avec des symboles"
+  ]
+ },
+ "modelplanet": {
+  "name": "Model planet",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses qui tournent",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "modelspaceshuttle": {
+  "name": "Model space shuttle",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Choses liees au vent",
+   "Moyens de transport",
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "moderndoor": {
+  "name": "Modern door",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "modernsink": {
+  "name": "Modern sink",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses propres",
+   "Choses liees a l'eau",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "moonclock": {
+  "name": "Moon clock",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses rondes",
+   "Choses amusantes a regarder",
+   "Choses ondoyantes"
+  ]
+ },
+ "mountainflowers": {
+  "name": "Mountain flowers",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "mountainflowers(pink)": {
+  "name": "Mountain flowers (pink)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "mountainflowers(purple)": {
+  "name": "Mountain flowers (purple)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "mountainflowers(red)": {
+  "name": "Mountain flowers (red)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "mountainflowers(white)": {
+  "name": "Mountain flowers (white)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "mt.coronet": {
+  "name": "Mt. Coronet",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "mud": {
+  "name": "Mud",
+  "class": "",
+  "categories": [
+   "Choses liees a la terre"
+  ]
+ },
+ "mug": {
+  "name": "Mug",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses en pierre",
+   "Choses avec des symboles"
+  ]
+ },
+ "munnabank": {
+  "name": "Munna bank",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses mignonnes",
+   "Choses qui brillent",
+   "Choses inquietantes",
+   "Choses en pierre"
+  ]
+ },
+ "mushroomlamp": {
+  "name": "Mushroom lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses rondes",
+   "Choses en bois"
+  ]
+ },
+ "mushroomstreetlight": {
+  "name": "Mushroom streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses fines",
+   "Choses inquietantes"
+  ]
+ },
+ "musicbox": {
+  "name": "Music box",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses luxueuses",
+   "Choses qui font du bruit",
+   "Choses qui tournent",
+   "Choses etranges",
+   "Choses en bois"
+  ]
+ },
+ "musicmat(fa)": {
+  "name": "Music mat (Fa)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(highdo)": {
+  "name": "Music mat (High do)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(la)": {
+  "name": "Music mat (La)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(lowdo)": {
+  "name": "Music mat (low do)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(mi)": {
+  "name": "Music mat (Mi)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(re)": {
+  "name": "Music mat (Re)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(sol)": {
+  "name": "Music mat (Sol)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "musicmat(ti)": {
+  "name": "Music mat (Ti)",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "mysteriousstatue": {
+  "name": "Mysterious statue",
+  "class": "Decoration",
+  "categories": [
+   "Choses inquietantes",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "mysticwater": {
+  "name": "Mystic Water",
+  "class": "",
+  "categories": [
+   "Choses liees a l'eau"
+  ]
+ },
+ "naptimebed": {
+  "name": "Naptime bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "newspaper": {
+  "name": "Newspaper",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "nonburnablegarbage": {
+  "name": "Nonburnable garbage",
+  "class": "",
+  "categories": [
+   "Dechets"
+  ]
+ },
+ "nonburnablegarbage(outdoor)": {
+  "name": "Nonburnable garbage (outdoor)",
+  "class": "",
+  "categories": [
+   "Dechets"
+  ]
+ },
+ "notepad": {
+  "name": "Notepad",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "nugget": {
+  "name": "Nugget",
+  "class": "",
+  "categories": [
+   "Choses rondes",
+   "Choses qui brillent"
+  ]
+ },
+ "oak'slab": {
+  "name": "Oak's Lab",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "officecabinet": {
+  "name": "Office cabinet",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en metal",
+   "Choses en bois"
+  ]
+ },
+ "officechair": {
+  "name": "Office chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses en metal",
+   "Choses douces",
+   "Choses qui tournent"
+  ]
+ },
+ "officedesk": {
+  "name": "Office desk",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "officelocker": {
+  "name": "Office locker",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en metal"
+  ]
+ },
+ "officeshelf": {
+  "name": "Office shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses avec du texte",
+   "Choses en metal"
+  ]
+ },
+ "oillantern": {
+  "name": "Oil lantern",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses en verre",
+   "Choses dures",
+   "Choses liees au feu",
+   "Choses en metal"
+  ]
+ },
+ "openbook": {
+  "name": "Open Book",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "orangemeteorlamp": {
+  "name": "Orange meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "ornatebed": {
+  "name": "Ornate bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses luxueuses",
+   "Choses douces",
+   "Choses en pierre"
+  ]
+ },
+ "ornatechair": {
+  "name": "Ornate chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses luxueuses",
+   "Choses liees a la mer",
+   "Choses douces",
+   "Choses en pierre"
+  ]
+ },
+ "ornatedecorativeshelf": {
+  "name": "Ornate decorative shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses luxueuses",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "ornatestand": {
+  "name": "Ornate stand",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Recipients",
+   "Choses luxueuses",
+   "Choses liees a la mer",
+   "Choses en pierre"
+  ]
+ },
+ "ornatetable": {
+  "name": "Ornate table",
+  "class": "",
+  "categories": [
+   "Choses luxueuses"
+  ]
+ },
+ "paintballoon(aquamarine)": {
+  "name": "Paint balloon (aquamarine)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(beige)": {
+  "name": "Paint balloon (beige)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(black)": {
+  "name": "Paint balloon (black)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(blue)": {
+  "name": "Paint balloon (blue)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(brown)": {
+  "name": "Paint balloon (brown)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(cyan)": {
+  "name": "Paint balloon (cyan)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(gray)": {
+  "name": "Paint balloon (gray)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(green)": {
+  "name": "Paint balloon (green)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(lime)": {
+  "name": "Paint balloon (lime)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(navy)": {
+  "name": "Paint balloon (navy)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(orange)": {
+  "name": "Paint balloon (orange)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(pink)": {
+  "name": "Paint balloon (pink)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(plum)": {
+  "name": "Paint balloon (plum)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(purple)": {
+  "name": "Paint balloon (purple)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(red)": {
+  "name": "Paint balloon (red)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(rose)": {
+  "name": "Paint balloon (rose)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(white)": {
+  "name": "Paint balloon (white)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "paintballoon(yellow)": {
+  "name": "Paint balloon (yellow)",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses rondes"
+  ]
+ },
+ "painting(landscape)": {
+  "name": "Painting (landscape)",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "painting(portrait)": {
+  "name": "Painting (portrait)",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "painting(stilllife)": {
+  "name": "Painting (still life)",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "pallettown": {
+  "name": "Pallet Town",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "paper": {
+  "name": "Paper",
+  "class": "",
+  "categories": [
+   "Choses carrees"
+  ]
+ },
+ "paperpartycups": {
+  "name": "Paper Party cups",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses liees a l'eau",
+   "Choses fines"
+  ]
+ },
+ "papers": {
+  "name": "Papers",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "partyball": {
+  "name": "Party ball",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses avec du texte",
+   "Choses luxueuses",
+   "Choses rondes",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "partybunting": {
+  "name": "Party bunting",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu"
+  ]
+ },
+ "pearlstreetlight": {
+  "name": "Pearl streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses liees a la mer",
+   "Choses fines"
+  ]
+ },
+ "pencilholder": {
+  "name": "Pencil holder",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Recipients",
+   "Choses groupees",
+   "Choses pointues",
+   "Choses en pierre"
+  ]
+ },
+ "pewtercitytheme": {
+  "name": "Pewter City Theme",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "photocutoutboard": {
+  "name": "Photo cutout board",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "photoframe": {
+  "name": "Photo frame",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en verre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "picnicbasket": {
+  "name": "Picnic basket",
+  "class": "",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en tissu",
+   "Choses a partager"
+  ]
+ },
+ "pikachudoll": {
+  "name": "Pikachu doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "pikachusofa": {
+  "name": "Pikachu sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "pinkpaint": {
+  "name": "Pink paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "pinwheels": {
+  "name": "Pinwheels",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses groupees",
+   "Choses liees au vent",
+   "Lieux pour jouer",
+   "Choses qui tournent",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "pitcher-plantpot": {
+  "name": "Pitcher-plant pot",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses inquietantes",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "pizza": {
+  "name": "Pizza",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses imitant des aliments",
+   "Choses rondes"
+  ]
+ },
+ "plainbed": {
+  "name": "Plain bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "plainchair": {
+  "name": "Plain chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "plainchest": {
+  "name": "Plain chest",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en tissu",
+   "Choses en bois"
+  ]
+ },
+ "plaincloset": {
+  "name": "Plain closet",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en tissu",
+   "Choses en bois"
+  ]
+ },
+ "plainlamp": {
+  "name": "Plain lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en tissu",
+   "Choses en verre"
+  ]
+ },
+ "plainsofa": {
+  "name": "Plain sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "plainstand": {
+  "name": "Plain stand",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en tissu",
+   "Choses en bois"
+  ]
+ },
+ "plainstool": {
+  "name": "Plain stool",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses rondes",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "plaintable": {
+  "name": "Plain table",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "potown": {
+  "name": "Po Town",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "pokeballbed": {
+  "name": "Poké Ball bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "pokeballchest": {
+  "name": "Poké Ball Chest",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "pokeballlamp": {
+  "name": "Poké Ball lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "pokeballlight": {
+  "name": "Poké Ball light",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses rondes",
+   "Choses qui brillent",
+   "Choses avec des symboles"
+  ]
+ },
+ "pokeballsofa": {
+  "name": "Poké Ball Sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "pokemetal": {
+  "name": "Pokémetal",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "pokemetalfragment": {
+  "name": "Pokémetal fragment",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "pokemoncenter": {
+  "name": "Pokémon Center",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "pokemongym": {
+  "name": "Pokémon Gym",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "polygonalshelf": {
+  "name": "Polygonal Shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses dures",
+   "Choses luxueuses",
+   "Choses etranges"
+  ]
+ },
+ "popartbed": {
+  "name": "Pop art bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "popartchair": {
+  "name": "Pop art chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "popartlamp": {
+  "name": "Pop art lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal"
+  ]
+ },
+ "popartsofa": {
+  "name": "Pop art sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses douces"
+  ]
+ },
+ "poparttable": {
+  "name": "Pop art table",
+  "class": "",
+  "categories": [
+   "Choses mignonnes"
+  ]
+ },
+ "primarinastatue": {
+  "name": "Primarina statue",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses luxueuses",
+   "Choses liees a la mer",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "printer": {
+  "name": "Printer",
+  "class": "Decoration",
+  "categories": [
+   "Choses difficiles",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses etranges"
+  ]
+ },
+ "prismscale": {
+  "name": "Prism scale",
+  "class": "",
+  "categories": [
+   "Choses qui brillent"
+  ]
+ },
+ "publicseat": {
+  "name": "Public seat",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "punchingbag": {
+  "name": "Punching bag",
+  "class": "Toy",
+  "categories": [
+   "Choses pour s'entrainer",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses liees a la terre",
+   "Choses en metal",
+   "Choses ondoyantes"
+  ]
+ },
+ "punchinggame": {
+  "name": "Punching game",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses pour s'entrainer",
+   "Lieux pour jouer",
+   "Choses etranges",
+   "Choses ondoyantes"
+  ]
+ },
+ "raichusign": {
+  "name": "Raichu sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "rainbowfeather": {
+  "name": "Rainbow Feather",
+  "class": "",
+  "categories": [
+   "Choses luxueuses",
+   "Choses qui brillent"
+  ]
+ },
+ "rarebone": {
+  "name": "Rare Bone",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "rarepokemetal": {
+  "name": "Rare Pokémetal",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "rarepokemetalfragment": {
+  "name": "Rare Pokémetal fragment",
+  "class": "",
+  "categories": [
+   "Choses en metal"
+  ]
+ },
+ "recyclingbin": {
+  "name": "Recycling bin",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Dechets",
+   "Choses en metal"
+  ]
+ },
+ "redcrystalfragment": {
+  "name": "Red crystal fragment",
+  "class": "",
+  "categories": [
+   "Choses qui brillent"
+  ]
+ },
+ "redmeteorlamp": {
+  "name": "Red meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "redpaint": {
+  "name": "Red paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "refrigerator": {
+  "name": "Refrigerator",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses electriques",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "repel": {
+  "name": "Repel",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "resortbed": {
+  "name": "Resort bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses liees a la mer",
+   "Choses douces"
+  ]
+ },
+ "resortchair": {
+  "name": "Resort chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses liees a la mer",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "resorthammock": {
+  "name": "Resort hammock",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses liees a l'eau",
+   "Choses liees a la mer",
+   "Choses douces",
+   "Choses ondoyantes"
+  ]
+ },
+ "resortlight": {
+  "name": "Resort light",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en tissu",
+   "Choses liees a la mer"
+  ]
+ },
+ "resortsofa": {
+  "name": "Resort sofa",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses liees a la mer",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "resortstool": {
+  "name": "Resort stool",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses liees a la mer",
+   "Choses rondes",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "restaurantsign": {
+  "name": "Restaurant sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses electriques",
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "ribboncake": {
+  "name": "Ribbon cake",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses imitant des aliments",
+   "Choses rondes"
+  ]
+ },
+ "ringtarget": {
+  "name": "Ring Target",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "roadtobill": {
+  "name": "Road to Bill",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "roadtoceruleancity": {
+  "name": "Road to Cerulean City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "roadtoviridiancity": {
+  "name": "Road to Viridian City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "robustflower": {
+  "name": "Robust flower",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "robustflower(blue)": {
+  "name": "Robust flower (blue)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "robustflower(orange)": {
+  "name": "Robust flower (orange)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "robustflower(purple)": {
+  "name": "Robust flower (purple)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "robustflower(white)": {
+  "name": "Robust flower (white)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "rockethideout": {
+  "name": "Rocket Hideout",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "roomservice": {
+  "name": "Room Service",
+  "class": "",
+  "categories": [
+   "Choses en tissu",
+   "Choses imitant des aliments"
+  ]
+ },
+ "rope": {
+  "name": "Rope",
+  "class": "",
+  "categories": [
+   "Choses fines"
+  ]
+ },
+ "rosetower": {
+  "name": "Rose Tower",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "route10(unova)": {
+  "name": "Route 10 (Unova)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "route209(day)": {
+  "name": "Route 209 (Day)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "rowletclock": {
+  "name": "Rowlet clock",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses mignonnes",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "runningshoes": {
+  "name": "Running shoes",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses liees a la terre",
+   "Choses douces"
+  ]
+ },
+ "sailfossil": {
+  "name": "Sail Fossil",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "sandbed": {
+  "name": "Sand bed",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses en tissu",
+   "Choses liees a la terre",
+   "Choses liees a la mer",
+   "Lieux pour jouer",
+   "Choses douces"
+  ]
+ },
+ "sandtoys": {
+  "name": "Sand toys",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses en metal",
+   "Choses liees a la mer",
+   "Lieux pour jouer"
+  ]
+ },
+ "sandbags": {
+  "name": "Sandbags",
+  "class": "Decoration",
+  "categories": [
+   "Constructions",
+   "Choses en tissu",
+   "Choses groupees",
+   "Choses liees a la terre"
+  ]
+ },
+ "sandbox": {
+  "name": "Sandbox",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses a partager",
+   "Choses liees a la terre",
+   "Choses liees a la mer",
+   "Lieux pour jouer"
+  ]
+ },
+ "sandwiches": {
+  "name": "Sandwiches",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses groupees",
+   "Choses imitant des aliments"
+  ]
+ },
+ "sashwindow": {
+  "name": "Sash window",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "scienceexperiment": {
+  "name": "Science experiment",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses avec du texte",
+   "Choses en metal"
+  ]
+ },
+ "seaglassfragments": {
+  "name": "Sea glass fragments",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "seashell": {
+  "name": "Seashell",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "seashellseat": {
+  "name": "Seashell seat",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses rondes",
+   "Choses douces",
+   "Choses en pierre"
+  ]
+ },
+ "seashoreflowers": {
+  "name": "Seashore flowers",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "seashoreflowers(blue)": {
+  "name": "Seashore flowers (blue)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "seashoreflowers(orange)": {
+  "name": "Seashore flowers (orange)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "seashoreflowers(white)": {
+  "name": "Seashore flowers (white)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "seashoreflowers(yellow)": {
+  "name": "Seashore flowers (yellow)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "securitycamera": {
+  "name": "Security camera",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "seedotlamp": {
+  "name": "Seedot Lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses liees a la nature",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "servers": {
+  "name": "Servers",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses dures",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "shavedice": {
+  "name": "Shaved ice",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses imitant des aliments",
+   "Choses liees a l'eau"
+  ]
+ },
+ "shelllamp": {
+  "name": "Shell lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses liees a la mer",
+   "Choses en pierre"
+  ]
+ },
+ "shieldfossil(body)": {
+  "name": "Shield Fossil (body)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "shieldfossil(head)": {
+  "name": "Shield Fossil (Head)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "shieldfossil(tail)": {
+  "name": "Shield Fossil (tail)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "ship'swheel": {
+  "name": "Ship's Wheel",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses en metal",
+   "Choses liees a la mer",
+   "Choses rondes"
+  ]
+ },
+ "shopdisplaycase": {
+  "name": "Shop display case",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses dures",
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "shopfridge": {
+  "name": "Shop fridge",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Recipients",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal"
+  ]
+ },
+ "shopshelf": {
+  "name": "Shop shelf",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Recipients",
+   "Choses qui guerissent",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses avec des symboles"
+  ]
+ },
+ "shower": {
+  "name": "Shower",
+  "class": "Toy",
+  "categories": [
+   "Choses propres",
+   "Choses liees a l'eau",
+   "Choses en metal",
+   "Choses fines",
+   "Choses etranges"
+  ]
+ },
+ "sign": {
+  "name": "Sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses en bois"
+  ]
+ },
+ "signpost": {
+  "name": "Signpost",
+  "class": "Decoration",
+  "categories": [
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses etranges",
+   "Choses avec des symboles"
+  ]
+ },
+ "silkscarf": {
+  "name": "Silk Scarf",
+  "class": "",
+  "categories": [
+   "Choses ondoyantes"
+  ]
+ },
+ "silphco.": {
+  "name": "Silph Co.",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "silverbottlecap": {
+  "name": "Silver Bottle Cap",
+  "class": "",
+  "categories": [
+   "Choses rondes",
+   "Choses qui brillent"
+  ]
+ },
+ "silverfeather": {
+  "name": "Silver Feather",
+  "class": "",
+  "categories": [
+   "Choses luxueuses",
+   "Choses qui brillent"
+  ]
+ },
+ "silverpowder": {
+  "name": "Silver Powder",
+  "class": "",
+  "categories": [
+   "Choses liees a la nature"
+  ]
+ },
+ "simplecushion": {
+  "name": "Simple cushion",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "sink": {
+  "name": "Sink",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses propres",
+   "Choses liees a l'eau",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "skullfossil": {
+  "name": "Skull Fossil",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "skylandflowers": {
+  "name": "Skyland flowers",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "skylandflowers(blue)": {
+  "name": "Skyland flowers (blue)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "skylandflowers(orange)": {
+  "name": "Skyland flowers (orange)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "skylandflowers(pink)": {
+  "name": "Skyland flowers (pink)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "skylandflowers(yellow)": {
+  "name": "Skyland flowers (yellow)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "sleepingbag": {
+  "name": "Sleeping bag",
+  "class": "Relaxation",
+  "categories": [
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "slendercandle": {
+  "name": "Slender candle",
+  "class": "Decoration",
+  "categories": [
+   "Choses liees au feu",
+   "Choses luxueuses",
+   "Choses fines",
+   "Choses inquietantes",
+   "Choses en pierre"
+  ]
+ },
+ "slide": {
+  "name": "Slide",
+  "class": "Toy",
+  "categories": [
+   "Choses a partager",
+   "Lieux pour jouer",
+   "Choses en bois"
+  ]
+ },
+ "sliminformationboard": {
+  "name": "Slim information board",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses dures",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses avec des symboles"
+  ]
+ },
+ "smallgarbagecan": {
+  "name": "Small garbage can",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Dechets",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "smalllog": {
+  "name": "Small log",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "smalllostrelic": {
+  "name": "Small Lost Relic",
+  "class": "",
+  "categories": [
+   "Choses etranges"
+  ]
+ },
+ "smallstage": {
+  "name": "Small stage",
+  "class": "Toy",
+  "categories": [
+   "Choses a partager",
+   "Choses en metal",
+   "Lieux pour jouer",
+   "Choses rondes",
+   "Choses qui tournent",
+   "Choses etranges"
+  ]
+ },
+ "smallvase": {
+  "name": "Small vase",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Fleurs epanouies",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "smeltingfurnace": {
+  "name": "Smelting furnace",
+  "class": "",
+  "categories": [
+   "Choses liees au feu"
+  ]
+ },
+ "snowbellecity": {
+  "name": "Snowbelle City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "sodafloat": {
+  "name": "Soda float",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses imitant des aliments",
+   "Choses liees a l'eau"
+  ]
+ },
+ "softsand": {
+  "name": "Soft Sand",
+  "class": "",
+  "categories": [
+   "Choses douces"
+  ]
+ },
+ "softseat": {
+  "name": "Soft seat",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "sootopoliscity": {
+  "name": "Sootopolis City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "southprovince": {
+  "name": "South Province",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "spaceship": {
+  "name": "Spaceship",
+  "class": "Toy",
+  "categories": [
+   "Choses en verre",
+   "Choses en metal",
+   "Moyens de transport",
+   "Choses rondes",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "spacesuit": {
+  "name": "Spacesuit",
+  "class": "Toy",
+  "categories": [
+   "Choses difficiles",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "sparklingjewelry": {
+  "name": "Sparkling jewelry",
+  "class": "Decoration",
+  "categories": [
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses qui brillent"
+  ]
+ },
+ "speaker": {
+  "name": "Speaker",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en metal",
+   "Choses qui font du bruit"
+  ]
+ },
+ "spectatorchair": {
+  "name": "Spectator chair",
+  "class": "Relaxation",
+  "categories": [
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "spelltag": {
+  "name": "Spell Tag",
+  "class": "",
+  "categories": [
+   "Choses inquietantes"
+  ]
+ },
+ "spotlight": {
+  "name": "Spotlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "sprinkler": {
+  "name": "Sprinkler",
+  "class": "Toy",
+  "categories": [
+   "Choses liees a l'eau",
+   "Choses en metal",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "squishyclay": {
+  "name": "Squishy clay",
+  "class": "",
+  "categories": [
+   "Choses douces"
+  ]
+ },
+ "stained-glasswindow(lower)": {
+  "name": "Stained-glass window (lower)",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "stained-glasswindow(middle)": {
+  "name": "Stained-glass window (middle)",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "stained-glasswindow(upper)": {
+  "name": "Stained-glass window (upper)",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "standingframe": {
+  "name": "Standing frame",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses dures",
+   "Choses amusantes a regarder",
+   "Choses en bois"
+  ]
+ },
+ "standingmic": {
+  "name": "Standing mic",
+  "class": "Toy",
+  "categories": [
+   "Choses electriques",
+   "Choses a partager",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Lieux pour jouer",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "starcloset": {
+  "name": "Star closet",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses mignonnes",
+   "Choses dures",
+   "Choses qui brillent",
+   "Choses en bois"
+  ]
+ },
+ "starpiece": {
+  "name": "Star Piece",
+  "class": "",
+  "categories": [
+   "Choses qui brillent"
+  ]
+ },
+ "starwalldecoration": {
+  "name": "Star wall decoration",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses dures",
+   "Choses qui brillent",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "star-shapeddresser": {
+  "name": "Star-shaped Dresser",
+  "class": "Toy",
+  "categories": [
+   "Recipients",
+   "Choses mignonnes",
+   "Choses en verre",
+   "Choses qui brillent",
+   "Choses etranges"
+  ]
+ },
+ "stardust": {
+  "name": "Stardust",
+  "class": "",
+  "categories": [
+   "Choses qui brillent"
+  ]
+ },
+ "starmiedoll": {
+  "name": "Starmie doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "starry-skybed": {
+  "name": "Starry-sky bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses a partager",
+   "Choses qui brillent",
+   "Choses douces"
+  ]
+ },
+ "stepstool": {
+  "name": "Step stool",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Moyens de transport"
+  ]
+ },
+ "stone": {
+  "name": "Stone",
+  "class": "",
+  "categories": [
+   "Choses en pierre"
+  ]
+ },
+ "stonebench": {
+  "name": "Stone bench",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonebrickwall": {
+  "name": "Stone brick wall",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonebrickwall(wallpaper)": {
+  "name": "Stone brick wall (wallpaper)",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonedebris": {
+  "name": "Stone debris",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonefireplace": {
+  "name": "Stone fireplace",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses colorees",
+   "Choses dures",
+   "Choses liees au feu",
+   "Choses luxueuses",
+   "Choses en pierre"
+  ]
+ },
+ "stoneflooring": {
+  "name": "Stone flooring",
+  "class": "Road",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stoneflooring(wallpaper)": {
+  "name": "Stone flooring (wallpaper)",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonefragments": {
+  "name": "Stone fragments",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "stonehippedroof": {
+  "name": "Stone hipped roof",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonepillar(lower)": {
+  "name": "Stone pillar (lower)",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonepillar(middle)": {
+  "name": "Stone pillar (middle)",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonepillar(upper)": {
+  "name": "Stone pillar (upper)",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stoneroofdecoration": {
+  "name": "Stone roof decoration",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stoneroofvalley": {
+  "name": "Stone roof valley",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonesign": {
+  "name": "Stone sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses avec du texte",
+   "Choses en pierre",
+   "Choses avec des symboles"
+  ]
+ },
+ "stonesteps": {
+  "name": "Stone steps",
+  "class": "Road",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonetable": {
+  "name": "Stone table",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "stonetiling": {
+  "name": "Stone tiling",
+  "class": "Road",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "stonetiling(wallpaper)": {
+  "name": "Stone tiling (wallpaper)",
+  "class": "",
+  "categories": [
+   "Choses dures",
+   "Choses en pierre"
+  ]
+ },
+ "storagebox": {
+  "name": "Storage box",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "stow-on-side": {
+  "name": "Stow-on-Side",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "strawbed": {
+  "name": "Straw bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses liees a la nature",
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "strawstool": {
+  "name": "Straw stool",
+  "class": "Relaxation",
+  "categories": [
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "strawtable": {
+  "name": "Straw table",
+  "class": "",
+  "categories": [
+   "Choses liees a la nature"
+  ]
+ },
+ "strengthrock": {
+  "name": "Strength rock",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "stringlights": {
+  "name": "String lights",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses groupees",
+   "Choses en verre",
+   "Choses rondes",
+   "Choses qui brillent"
+  ]
+ },
+ "studydesk": {
+  "name": "Study desk",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "sturdystick": {
+  "name": "Sturdy stick",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "stylishstool": {
+  "name": "Stylish stool",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses rondes",
+   "Choses douces",
+   "Choses en bois"
+  ]
+ },
+ "substitutedoll": {
+  "name": "Substitute doll",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en tissu",
+   "Choses douces",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "supertraining!": {
+  "name": "Super Training!",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "supermarketsign": {
+  "name": "Supermarket sign",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses avec du texte",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "surfacelight": {
+  "name": "Surface light",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses rondes"
+  ]
+ },
+ "swimring": {
+  "name": "Swim ring",
+  "class": "Relaxation",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la mer",
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "tablesetting": {
+  "name": "Table setting",
+  "class": "Decoration",
+  "categories": [
+   "Choses en tissu",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses imitant des aliments",
+   "Choses liees a l'eau",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses en pierre"
+  ]
+ },
+ "tablet": {
+  "name": "Tablet",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "tabletopmic": {
+  "name": "Tabletop mic",
+  "class": "Toy",
+  "categories": [
+   "Choses electriques",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses qui brillent"
+  ]
+ },
+ "tallpottedplant": {
+  "name": "Tall potted plant",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses liees a la nature",
+   "Fleurs epanouies",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "teaset": {
+  "name": "Tea set",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses groupees",
+   "Choses a partager"
+  ]
+ },
+ "teamrocketwallhanging": {
+  "name": "Team Rocket Wall Hanging",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses en metal",
+   "Choses etranges",
+   "Choses avec des symboles",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "teawareset": {
+  "name": "Teaware set",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Choses imitant des aliments",
+   "Choses liees a l'eau",
+   "Choses luxueuses"
+  ]
+ },
+ "telescope": {
+  "name": "Telescope",
+  "class": "Toy",
+  "categories": [
+   "Choses en verre",
+   "Choses en metal",
+   "Choses fines",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "television": {
+  "name": "Television",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "theacademy": {
+  "name": "The Academy",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "thes.s.anne": {
+  "name": "The S.S. Anne",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "thesea": {
+  "name": "The Sea",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "throatspray": {
+  "name": "Throat Spray",
+  "class": "",
+  "categories": [
+   "Choses qui guerissent"
+  ]
+ },
+ "tidalbell": {
+  "name": "Tidal Bell",
+  "class": "Toy",
+  "categories": [
+   "Choses dures",
+   "Choses en metal",
+   "Choses liees au vent",
+   "Choses qui font du bruit",
+   "Choses rondes",
+   "Choses etranges"
+  ]
+ },
+ "tinkagear": {
+  "name": "Tinkagear",
+  "class": "",
+  "categories": [
+   "Choses dures"
+  ]
+ },
+ "tiretoy": {
+  "name": "Tire toy",
+  "class": "Toy",
+  "categories": [
+   "Choses a partager",
+   "Lieux pour jouer",
+   "Choses rondes",
+   "Choses douces"
+  ]
+ },
+ "tires": {
+  "name": "Tires",
+  "class": "Toy",
+  "categories": [
+   "Choses groupees",
+   "Moyens de transport",
+   "Choses rondes"
+  ]
+ },
+ "titlescreen": {
+  "name": "Title Screen",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "toilet": {
+  "name": "Toilet",
+  "class": "Decoration",
+  "categories": [
+   "Choses propres",
+   "Choses electriques",
+   "Choses liees a l'eau",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "toolbox": {
+  "name": "Toolbox",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses dures",
+   "Choses en metal"
+  ]
+ },
+ "torch": {
+  "name": "Torch",
+  "class": "Relaxation",
+  "categories": [
+   "Choses liees au feu"
+  ]
+ },
+ "towelrack": {
+  "name": "Towel rack",
+  "class": "Decoration",
+  "categories": [
+   "Choses propres",
+   "Choses en tissu",
+   "Choses douces"
+  ]
+ },
+ "townmap": {
+  "name": "Town map",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "townstreetlight": {
+  "name": "Town streetlight",
+  "class": "Decoration",
+  "categories": [
+   "Choses electriques",
+   "Choses en verre",
+   "Choses dures",
+   "Choses en metal",
+   "Choses fines"
+  ]
+ },
+ "toyblocks": {
+  "name": "Toy blocks",
+  "class": "Toy",
+  "categories": [
+   "Choses groupees",
+   "Lieux pour jouer",
+   "Choses en bois"
+  ]
+ },
+ "treasure": {
+  "name": "Treasure",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses a partager",
+   "Choses luxueuses",
+   "Choses en metal",
+   "Choses en pierre"
+  ]
+ },
+ "tundrafossil(body)": {
+  "name": "Tundra Fossil (body)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "tundrafossil(head)": {
+  "name": "Tundra Fossil (head)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "tundrafossil(tail)": {
+  "name": "Tundra Fossil (tail)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "twine": {
+  "name": "Twine",
+  "class": "",
+  "categories": [
+   "Choses fines"
+  ]
+ },
+ "twistedpottedplant": {
+  "name": "Twisted potted plant",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses liees a la nature",
+   "Fleurs epanouies",
+   "Choses fines",
+   "Choses inquietantes",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "twistedspoon": {
+  "name": "Twisted Spoon",
+  "class": "",
+  "categories": [
+   "Choses etranges"
+  ]
+ },
+ "ultraruin": {
+  "name": "Ultra Ruin",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "undellatown(summer)": {
+  "name": "Undella Town (Summer)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "unioncave": {
+  "name": "Union Cave",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "utilitypole": {
+  "name": "Utility pole",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "vendingmachine": {
+  "name": "Vending machine",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses en metal"
+  ]
+ },
+ "vermilioncitytheme": {
+  "name": "Vermilion City Theme",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "vinerope": {
+  "name": "Vine rope",
+  "class": "",
+  "categories": [
+   "Choses fines"
+  ]
+ },
+ "vinewalldecoration": {
+  "name": "Vine wall decoration",
+  "class": "Decoration",
+  "categories": [
+   "Choses liees a la nature",
+   "Choses fines"
+  ]
+ },
+ "violetcity": {
+  "name": "Violet City",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "violetmeteorlamp": {
+  "name": "Violet meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "wallcalendar": {
+  "name": "Wall Calendar",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses avec du texte",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wallclock": {
+  "name": "Wall clock",
+  "class": "Toy",
+  "categories": [
+   "Choses en verre",
+   "Choses en metal",
+   "Choses rondes"
+  ]
+ },
+ "walllight": {
+  "name": "Wall light",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre"
+  ]
+ },
+ "wallmirror": {
+  "name": "Wall mirror",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses en verre",
+   "Choses luxueuses",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wallmonitor": {
+  "name": "Wall monitor",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses a partager",
+   "Choses avec du texte",
+   "Choses en metal",
+   "Choses qui brillent",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wallphotoframe": {
+  "name": "Wall photo frame",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wallplant": {
+  "name": "Wall plant",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses groupees",
+   "Choses imitant des aliments",
+   "Fleurs epanouies",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wallstoragebox": {
+  "name": "Wall storage box",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en bois"
+  ]
+ },
+ "wallswitch": {
+  "name": "Wall switch",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "walltorch": {
+  "name": "Wall torch",
+  "class": "Decoration",
+  "categories": [
+   "Choses liees au feu",
+   "Choses en metal",
+   "Choses en pierre"
+  ]
+ },
+ "wall-mountedflowers": {
+  "name": "Wall-mounted flowers",
+  "class": "Decoration",
+  "categories": [
+   "Choses colorees",
+   "Fleurs epanouies"
+  ]
+ },
+ "wall-mountedtools": {
+  "name": "Wall-mounted tools",
+  "class": "Toy",
+  "categories": [
+   "Choses colorees",
+   "Choses en metal"
+  ]
+ },
+ "washingmachine": {
+  "name": "Washing machine",
+  "class": "Toy",
+  "categories": [
+   "Choses carrees",
+   "Choses propres",
+   "Recipients",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses en metal",
+   "Choses etranges"
+  ]
+ },
+ "wastepaper": {
+  "name": "Wastepaper",
+  "class": "",
+  "categories": [
+   "Dechets"
+  ]
+ },
+ "waterbasin": {
+  "name": "Water basin",
+  "class": "Decoration",
+  "categories": [
+   "Choses propres",
+   "Choses colorees",
+   "Recipients",
+   "Choses liees a l'eau",
+   "Choses rondes",
+   "Choses en bois"
+  ]
+ },
+ "waterpillarquarter": {
+  "name": "Water pillar quarter",
+  "class": "Decoration",
+  "categories": [
+   "Choses en verre",
+   "Choses liees a l'eau",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "waterproofseat": {
+  "name": "Waterproof seat",
+  "class": "Relaxation",
+  "categories": [
+   "Choses propres"
+  ]
+ },
+ "weaknesspolicy": {
+  "name": "Weakness Policy",
+  "class": "",
+  "categories": [
+   "Choses avec du texte"
+  ]
+ },
+ "weathervane": {
+  "name": "Weather vane",
+  "class": "Toy",
+  "categories": [
+   "Choses en metal",
+   "Choses liees au vent",
+   "Choses qui tournent"
+  ]
+ },
+ "wheelbarrow": {
+  "name": "Wheelbarrow",
+  "class": "Decoration",
+  "categories": [
+   "Constructions",
+   "Recipients",
+   "Choses liees a la terre",
+   "Choses en metal",
+   "Choses qui tournent"
+  ]
+ },
+ "whitepaint": {
+  "name": "White paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ },
+ "whiteboard": {
+  "name": "Whiteboard",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Choses difficiles",
+   "Choses groupees",
+   "Choses a partager",
+   "Choses avec du texte"
+  ]
+ },
+ "wigglymirror": {
+  "name": "Wiggly mirror",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en verre",
+   "Choses dures",
+   "Choses etranges",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wildarea(north)": {
+  "name": "Wild Area (North)",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "wildflowers": {
+  "name": "Wildflowers",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "wildflowers(blue)": {
+  "name": "Wildflowers (blue)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "wildflowers(orange)": {
+  "name": "Wildflowers (orange)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "wildflowers(purple)": {
+  "name": "Wildflowers (purple)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "wildflowers(red)": {
+  "name": "Wildflowers (red)",
+  "class": "",
+  "categories": [
+   "Fleurs epanouies"
+  ]
+ },
+ "windowpane": {
+  "name": "Window pane",
+  "class": "",
+  "categories": [
+   "Choses en verre"
+  ]
+ },
+ "windupinkay": {
+  "name": "Windup Inkay",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses en metal",
+   "Choses qui font du bruit",
+   "Choses liees a la mer",
+   "Lieux pour jouer",
+   "Choses amusantes a regarder"
+  ]
+ },
+ "wingfossil(body)": {
+  "name": "Wing fossil (body)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "wingfossil(head)": {
+  "name": "Wing Fossil (head)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "wingfossil(leftwing)": {
+  "name": "Wing Fossil (left wing)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "wingfossil(rightwing)": {
+  "name": "Wing Fossil (right wing)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "wingfossil(tail)": {
+  "name": "Wing Fossil (tail)",
+  "class": "Decoration",
+  "categories": [
+   "Choses dures",
+   "Choses liees a la terre",
+   "Choses fines",
+   "Choses en pierre",
+   "Choses etranges"
+  ]
+ },
+ "wire": {
+  "name": "Wire",
+  "class": "",
+  "categories": [
+   "Choses fines"
+  ]
+ },
+ "wirelesspowertransmitter": {
+  "name": "Wireless power transmitter",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "wirelesspower-transmitterswitch": {
+  "name": "Wireless power-transmitter switch",
+  "class": "",
+  "categories": [
+   "Choses electriques"
+  ]
+ },
+ "wobbuffetwobbler": {
+  "name": "Wobbuffet Wobbler",
+  "class": "Toy",
+  "categories": [
+   "Choses mignonnes",
+   "Choses pour s'entrainer",
+   "Lieux pour jouer",
+   "Choses rondes",
+   "Choses etranges",
+   "Choses amusantes a regarder",
+   "Choses ondoyantes"
+  ]
+ },
+ "woodenbed": {
+  "name": "Wooden Bed",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager",
+   "Choses liees a la nature",
+   "Choses douces"
+  ]
+ },
+ "woodenbench": {
+  "name": "Wooden bench",
+  "class": "Relaxation",
+  "categories": [
+   "Choses a partager"
+  ]
+ },
+ "woodenbirdhouse": {
+  "name": "Wooden birdhouse",
+  "class": "Decoration",
+  "categories": [
+   "Recipients",
+   "Choses fines"
+  ]
+ },
+ "woodencrate": {
+  "name": "Wooden crate",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en bois"
+  ]
+ },
+ "woodenplate": {
+  "name": "Wooden plate",
+  "class": "",
+  "categories": [
+   "Choses en bois"
+  ]
+ },
+ "woodenstool": {
+  "name": "Wooden stool",
+  "class": "Relaxation",
+  "categories": [
+   "Choses carrees",
+   "Choses en bois"
+  ]
+ },
+ "wornwoodencrate": {
+  "name": "Worn wooden crate",
+  "class": "Decoration",
+  "categories": [
+   "Choses carrees",
+   "Recipients",
+   "Choses en bois"
+  ]
+ },
+ "wreath": {
+  "name": "Wreath",
+  "class": "Decoration",
+  "categories": [
+   "Choses rondes",
+   "Choses avec des symboles",
+   "Choses en bois"
+  ]
+ },
+ "wyndon": {
+  "name": "Wyndon",
+  "class": "",
+  "categories": [
+   "Choses rondes"
+  ]
+ },
+ "yellowmeteorlamp": {
+  "name": "Yellow meteor lamp",
+  "class": "Decoration",
+  "categories": [
+   "Choses mignonnes",
+   "Choses electriques",
+   "Choses en verre",
+   "Choses qui brillent"
+  ]
+ },
+ "yellowpaint": {
+  "name": "Yellow paint",
+  "class": "",
+  "categories": [
+   "Choses colorees",
+   "Choses liees a la terre"
+  ]
+ }
+}

@@ -60,7 +60,19 @@
     "avgShared": "Gemeinsame Vorlieben (Ø)",
     "itemsToFind": "Zu platzierende Gegenstände",
     "searchShortcut": "Drücke / zum Suchen",
-    "shownCount": "{shown} / {total} Pokémon"
+    "shownCount": "{shown} / {total} Pokémon",
+    "suggestion": "Vorgeschlagene Gegenstände",
+    "suggestionIncomplete": "Gegenstände fehlen, um alles abzudecken",
+    "itemsForCategory": "Gegenstände für",
+    "itemsSortedHint": "Sortiert nach der Zahl weiterer Kategorien dieses Hauses, die sie abdecken. 🚫 = nicht besessen.",
+    "noItemKnown": "Kein bekannter Gegenstand für diese Kategorie",
+    "foodHint": "Ein Gericht mit diesem Geschmack, zum Kochen oder Verschenken",
+    "pleases": "Gefällt",
+    "ownedItems": "Besessene Gegenstände",
+    "ownedItemsHint": "Standardmäßig ist alles angehakt: entferne den Haken bei allem, was du noch nicht hast, die Vorschläge passen sich an.",
+    "searchItem": "Gegenstand suchen...",
+    "all": "Alle",
+    "none": "Keine"
   },
   "optimal": {
     "title": "Optimale Unterbringung fuer alle Pokemon",
@@ -200,6 +212,7 @@
     "reload": "Neu laden",
     "offline": "Offline: zwischengespeicherte Daten werden angezeigt."
   },
+  "items": {},
   "pokemon": {
     "Bulbizarre": "Bisasam",
     "Herbizarre": "Bisaknosp",

@@ -13,8 +13,10 @@ Optimize Pokemon housing in **Pokemon Pokopia** by grouping Pokemon with shared 
   - **favorites to satisfy per Pokemon** slider (default 4 of 6): the site computes the smallest set of items that gives every resident that many favorites
 - **Custom Planner / my village**: select the Pokemon you own and get personalized houses
   - **shopping list per house**: the exact item categories to place, and how many favorites each resident gets
+  - **suggested items**: 2 to 4 real items (from a catalog of 715 items with their favorite categories) that satisfy every resident; click a category to see every item that carries it
   - **edit the result**: drag & drop residents between houses, move menu, create a house
   - **lock** houses you have already built, then re-optimize the rest
+  - **owned items**: uncheck what you do not have yet, suggestions adapt
   - saved in your browser, **share link**, JSON export / import
 - **Filters**: environment, region, specialty, DLC / event, can dive
 - **Installable (PWA)** and works offline once loaded
@@ -58,12 +60,15 @@ npm run dev         # Start dev server
 npm run build       # Build for production (+ service worker)
 npm run preview     # Preview production build
 npm run stats       # Print optimization statistics for the dataset
-npm run sync        # Sync data from Serebii (see below)
+npm run sync        # Sync Pokemon data from Serebii (see below)
+npm run sync-items  # Rebuild the item catalog from Serebii's favorites pages
 ```
 
 ### Updating the data
 
 `npm run sync -- --dry-run` fetches every Pokemon page of Serebii's Pokopia Pokedex (cached in `.cache/`), compares habitat, favorites, specialties and dive ability with `public/data/pokemon.csv`, and reports differences. Without `--dry-run` it rewrites the CSV and metadata, and adds new Pokemon with names from PokeAPI in the 5 locale files. New alternate forms are reported and must be given a CSV key by hand.
+
+`npm run sync-items` rebuilds `public/data/items.json` (item name, type, favorite categories) from Serebii's 43 favorite-category pages, then merges `public/data/items-overrides.json`. Serebii's catalog is still a work in progress: use the overrides file to add missing items, fix categories, or hide wrong entries. Item names are English only for now; translations can be added under `items` in the locale files (keyed by item slug).
 
 ## Project Structure
 
@@ -81,7 +86,8 @@ public/
   icons/, manifest.webmanifest
 scripts/
   precompute-optimal.js  # statistics (npm run stats)
-  sync-serebii.js        # data sync (npm run sync)
+  sync-serebii.js        # Pokemon data sync (npm run sync)
+  sync-items.js          # item catalog sync (npm run sync-items)
   build-sw.js            # generates dist/sw.js after vite build
 ```
 
