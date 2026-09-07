@@ -72,6 +72,8 @@ function normalize(str) {
 export function createPokemonSelector(allPokemon, store) {
   let searchQuery = '';
   let envFilter = [];
+  const meta = store.getState().pokemonMeta || {};
+  const advanced = { sources: new Set(), region: '', specialty: '', underwater: false };
 
   // Restore saved selection
   const saved = loadSavedSelection();
@@ -140,10 +142,81 @@ export function createPokemonSelector(allPokemon, store) {
   function getVisiblePokemon() {
     const normalizedQuery = normalize(searchQuery);
     return allPokemon.filter((p) => {
-      const nameMatch = normalizedQuery === '' || normalize(p.name).includes(normalizedQuery);
+      const translated = t(`pokemon.${p.name}`);
+      const nameMatch = normalizedQuery === ''
+        || normalize(p.name).includes(normalizedQuery)
+        || normalize(translated).includes(normalizedQuery);
       const envMatch = envFilter.length === 0 || envFilter.includes(p.environment);
-      return nameMatch && envMatch;
+      const m = meta[p.name] || {};
+      const sourceMatch = advanced.sources.size === 0 || advanced.sources.has(p.source);
+      const regionMatch = !advanced.region || m.region === advanced.region;
+      const specialtyMatch = !advanced.specialty || (m.specialties || []).includes(advanced.specialty);
+      const underwaterMatch = !advanced.underwater || Boolean(m.underwater);
+      return nameMatch && envMatch && sourceMatch && regionMatch && specialtyMatch && underwaterMatch;
     });
+  }
+
+  // Advanced filters: source, region, specialty, dive
+  function createAdvancedFilters() {
+    const details = el('details', { className: 'advanced-filters' },
+      el('summary', null, `🔎 ${t('common.advancedFilters')}`)
+    );
+    const body = el('div', { className: 'advanced-filters__body' });
+
+    // Source chips
+    const sourceRow = el('div', { className: 'advanced-filters__row' },
+      el('label', null, t('common.filterBySource')));
+    for (const [src, icon] of [['base', '🎮'], ['basin', '🧜'], ['event', '🎁']]) {
+      const chip = el('button', { type: 'button', className: 'chip', 'aria-pressed': 'false',
+        onClick: () => {
+          if (advanced.sources.has(src)) advanced.sources.delete(src); else advanced.sources.add(src);
+          const on = advanced.sources.has(src);
+          chip.classList.toggle('chip--active', on);
+          chip.setAttribute('aria-pressed', String(on));
+          renderGrid();
+        },
+      }, `${icon} ${t(`sources.${src}`)}`);
+      sourceRow.appendChild(chip);
+    }
+    body.appendChild(sourceRow);
+
+    // Region select
+    const regions = [...new Set(Object.values(meta).map((m) => m.region).filter(Boolean))];
+    if (regions.length > 0) {
+      const regionSelect = el('select', { className: 'advanced-filters__select', 'aria-label': t('common.filterByRegion') },
+        el('option', { value: '' }, t('common.allRegions')));
+      for (const r of regions) {
+        regionSelect.appendChild(el('option', { value: r }, t(`regions.${r}`) !== `regions.${r}` ? t(`regions.${r}`) : r));
+      }
+      regionSelect.addEventListener('change', () => { advanced.region = regionSelect.value; renderGrid(); });
+      body.appendChild(el('div', { className: 'advanced-filters__row' },
+        el('label', null, t('common.region')), regionSelect));
+    }
+
+    // Specialty select
+    const specialties = [...new Set(Object.values(meta).flatMap((m) => m.specialties || []))].sort();
+    if (specialties.length > 0) {
+      const specSelect = el('select', { className: 'advanced-filters__select', 'aria-label': t('common.filterBySpecialty') },
+        el('option', { value: '' }, t('common.allSpecialties')));
+      for (const sp of specialties) specSelect.appendChild(el('option', { value: sp }, sp));
+      specSelect.addEventListener('change', () => { advanced.specialty = specSelect.value; renderGrid(); });
+      body.appendChild(el('div', { className: 'advanced-filters__row' },
+        el('label', null, t('common.specialty')), specSelect));
+    }
+
+    // Underwater toggle
+    const diveChip = el('button', { type: 'button', className: 'chip', 'aria-pressed': 'false',
+      onClick: () => {
+        advanced.underwater = !advanced.underwater;
+        diveChip.classList.toggle('chip--active', advanced.underwater);
+        diveChip.setAttribute('aria-pressed', String(advanced.underwater));
+        renderGrid();
+      },
+    }, `🤿 ${t('common.underwater')}`);
+    body.appendChild(el('div', { className: 'advanced-filters__row' }, diveChip));
+
+    details.appendChild(body);
+    return details;
   }
 
   function renderGrid() {
@@ -199,6 +272,8 @@ export function createPokemonSelector(allPokemon, store) {
           updateCount();
         },
       }, spriteEl, envDot);
+      if (pokemon.source === 'basin') cell.appendChild(el('span', { className: 'dex-cell__badge', 'aria-hidden': 'true' }, '🧜'));
+      else if (pokemon.source === 'event') cell.appendChild(el('span', { className: 'dex-cell__badge', 'aria-hidden': 'true' }, '🎁'));
 
       grid.appendChild(cell);
     }
@@ -207,6 +282,7 @@ export function createPokemonSelector(allPokemon, store) {
   // Assemble
   section.appendChild(searchBar);
   section.appendChild(envFilterEl);
+  section.appendChild(createAdvancedFilters());
   section.appendChild(actions);
   section.appendChild(grid);
 

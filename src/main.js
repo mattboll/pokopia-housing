@@ -10,7 +10,7 @@ import { initTheme } from './core/theme.js';
 import { initI18n, t } from './core/i18n.js';
 import { initRouter } from './core/router.js';
 import { store } from './core/store.js';
-import { loadPokemonData } from './core/data-loader.js';
+import { loadPokemonData, loadPokemonMeta } from './core/data-loader.js';
 import { announce } from './utils/a11y.js';
 import { renderHeader } from './components/header.js';
 import { renderFooter } from './components/footer.js';
@@ -70,8 +70,8 @@ async function init() {
 
   // Load Pokemon data
   try {
-    const allPokemon = await loadPokemonData();
-    store.setState({ allPokemon });
+    const [allPokemon, pokemonMeta] = await Promise.all([loadPokemonData(), loadPokemonMeta()]);
+    store.setState({ allPokemon, pokemonMeta });
   } catch (err) {
     console.error('Failed to load Pokemon data:', err);
     store.setState({ allPokemon: [] });

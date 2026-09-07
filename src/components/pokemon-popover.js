@@ -1,5 +1,6 @@
 import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
+import { store } from '../core/store.js';
 
 const ENV_EMOJI = {
   Lumineux: '\u2600\uFE0F',
@@ -105,6 +106,22 @@ export function showPokemonPopover(pokemon, anchor, sharedPrefs = []) {
     prefList.appendChild(li);
   }
 
+  // Game info (source, region, specialties, dive)
+  const meta = (store.getState().pokemonMeta || {})[pokemon.name] || {};
+  const infoChips = [];
+  if (pokemon.source && pokemon.source !== 'base') {
+    infoChips.push(`${pokemon.source === 'basin' ? '🧜' : '🎁'} ${t(`sources.${pokemon.source}`)}`);
+  }
+  if (meta.region) {
+    const r = t(`regions.${meta.region}`) !== `regions.${meta.region}` ? t(`regions.${meta.region}`) : meta.region;
+    infoChips.push(`📍 ${r}`);
+  }
+  if (meta.specialties && meta.specialties.length > 0) infoChips.push(`🛠️ ${meta.specialties.join(', ')}`);
+  if (meta.underwater) infoChips.push(`🤿 ${t('common.underwater')}`);
+  const infoEl = infoChips.length > 0
+    ? el('p', { className: 'popover__info' }, ...infoChips.map((c) => el('span', { className: 'popover__info-chip' }, c)))
+    : null;
+
   // Legend if we have shared context
   const legend = sharedPrefs.length > 0
     ? el('p', { className: 'popover__legend' },
@@ -133,6 +150,7 @@ export function showPokemonPopover(pokemon, anchor, sharedPrefs = []) {
       el('span', { className: 'popover__env' }, `${envEmoji} ${translatedEnv}`)
     ),
     el('div', { className: 'popover__body' },
+      infoEl,
       el('h4', { className: 'popover__section-title' },
         `\uD83C\uDFAF ${t('common.uniquePrefs') !== 'common.uniquePrefs' ? t('common.uniquePrefs') : 'Preferences'} (${pokemon.preferences.length})`
       ),

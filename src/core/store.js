@@ -68,6 +68,7 @@ export const store = createStore({
   theme: 'light',
   selectedPokemon: new Set(),
   allPokemon: [],
+  pokemonMeta: {},
   results: null,
   currentPage: 'optimal',
 });
