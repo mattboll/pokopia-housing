@@ -1,3 +1,8 @@
+import { minCover, coverCost } from './cover.js';
+
+/** Default number of favorites to satisfy per resident. */
+export const DEFAULT_SATISFY = 4;
+
 /**
  * Returns the intersection of two arrays.
  * @param {string[]} arrA
@@ -74,30 +79,35 @@ export function uniquePreferences(members) {
  *
  * @param {Array<{name: string, environment: string, preferences: string[]}>} members
  * @param {boolean} [locked=false]
- * @returns {{members: Array, sharedPreferences: string[], score: number, uniquePreferences: string[], compatibility: number, locked: boolean}}
+ * @param {number} [satisfy=DEFAULT_SATISFY] - favorites to satisfy per resident
+ * @returns {{members: Array, sharedPreferences: string[], score: number, uniquePreferences: string[], items: string[], covered: number[], cost: number, satisfy: number, locked: boolean}}
  */
-export function buildHouse(members, locked = false) {
+export function buildHouse(members, locked = false, satisfy = DEFAULT_SATISFY) {
   const shared = intersectAll(members.map((m) => m.preferences));
   const unique = uniquePreferences(members);
+  const cover = minCover(members, satisfy);
   return {
     members,
     sharedPreferences: shared,
     score: shared.length,
     uniquePreferences: unique,
-    // "Decoration efficiency": share of the distinct items that please everyone.
-    compatibility: unique.length > 0 ? shared.length / unique.length : 1,
+    // Shopping list: categories to place so that every resident has `satisfy` favorites
+    items: cover.items,
+    covered: cover.covered,
+    cost: cover.cost,
+    satisfy,
     locked,
   };
 }
 
 /**
- * Cost of a house for the optimizer: distinct items to find that do NOT
- * please every resident. Lower is better. Empty houses cost nothing.
+ * Cost of a house for the optimizer: number of item categories to place so
+ * that every resident gets `satisfy` of its favorites. Lower is better.
  *
- * @param {Array<{preferences: string[]}>} members
+ * @param {Array<{name: string, preferences: string[]}>} members
+ * @param {number} [satisfy=DEFAULT_SATISFY]
  * @returns {number}
  */
-export function houseCost(members) {
-  if (members.length === 0) return 0;
-  return uniquePreferences(members).length - houseScore(members);
+export function houseCost(members, satisfy = DEFAULT_SATISFY) {
+  return coverCost(members, satisfy);
 }

@@ -20,7 +20,8 @@ src/
   algorithm/          # Housing optimization logic
     partition.js      #   Step 1: group Pokemon by environment
     scoring.js        #   Preference overlap functions (intersect, buildHouse, houseCost)
-    clustering.js     #   Step 2: greedy clustering within each group (minShared aware)
+    cover.js          #   Exact minimum item cover of a house (shopping list)
+    clustering.js     #   Step 2: greedy clustering within each group
     improve.js        #   Step 3: local search (swaps / moves between houses)
     optimizer.js      #   Orchestrator that ties it all together (locked houses, options)
   core/               # App infrastructure
@@ -55,16 +56,15 @@ The optimizer solves a constrained clustering problem:
 - All Pokemon in a house must share the same environment (Lumineux, Sombre, Chaud, Frais, Humide, Sec)
 
 **Optimization goal:**
-Minimize, per house, the number of distinct items that do not please every resident (`houseCost = |union| - |intersection|`), and as a tie-breaker maximize the preferences shared by everyone.
+Minimize the total number of item categories to place. The cost of a house is its minimum item cover: the smallest set of categories giving every resident `satisfy` (default 4) of its favorites, computed exactly in `cover.js`. Tie-breaker: more preferences shared by everyone.
 
 **Current approach: greedy clustering + local search**
 
 1. Partition all Pokemon by environment (6 independent subproblems)
-2. Within each group, seed houses with the hardest-to-place Pokemon first and greedily add the candidate that adds the fewest new preferences (`clustering.js`)
+2. Within each group, seed houses with the hardest-to-place Pokemon first and greedily add the candidate that adds the fewest items (`clustering.js`)
 3. Refine with swaps and moves between houses while the total cost decreases (`improve.js`)
-4. Optional `minShared`: a candidate may only join if at least N preferences stay shared by all residents
 
-**Current result:** 92 houses for 360 Pokemon, average 2.16 shared preferences (`npm run stats` prints the table for every `minShared` value)
+**Current result:** 92 houses for 360 Pokemon, 535 items to place with `satisfy = 4` (`npm run stats` prints the table for every value)
 
 ### Known Limitations & Improvement Ideas
 

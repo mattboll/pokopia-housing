@@ -101,15 +101,16 @@ export function resultToPlanHouses(result, lockedHouses) {
  *
  * @param {Plan} plan
  * @param {Map<string, {name: string, environment: string, preferences: string[]}>} byName
+ * @param {number} [satisfy] - favorites to satisfy per resident
  * @returns {Record<string, Array>} environment -> houses (with id + locked)
  */
-export function planToEnvironmentHouses(plan, byName) {
+export function planToEnvironmentHouses(plan, byName, satisfy) {
   const groups = {};
   for (const h of plan.houses) {
     const members = h.members.map((n) => byName.get(n)).filter(Boolean);
     if (members.length === 0) continue;
     const env = members[0].environment;
-    const house = buildHouse(members, h.locked);
+    const house = buildHouse(members, h.locked, satisfy);
     house.id = h.id;
     (groups[env] ||= []).push(house);
   }

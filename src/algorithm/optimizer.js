@@ -1,13 +1,15 @@
 import { partitionByEnvironment } from './partition.js';
 import { clusterByPreferences } from './clustering.js';
 import { improveHouses } from './improve.js';
-import { buildHouse } from './scoring.js';
+import { buildHouse, DEFAULT_SATISFY } from './scoring.js';
+import { clearCoverCache } from './cover.js';
 
 /**
  * @typedef {Object} OptimizeOptions
  * @property {number} [maxSize=4] - Maximum residents per house
- * @property {number} [minShared=0] - Every house must keep at least this many
- *   preferences liked by ALL residents (0 = fewest houses, 6 = solo houses)
+ * @property {number} [satisfy=4] - Favorites to satisfy per resident (1..6).
+ *   The cost of a house is the minimum number of item categories giving
+ *   every resident that many favorites.
  * @property {boolean} [improve=true] - Run the local-search refinement pass
  * @property {Array<{members: Array}>} [lockedHouses=[]] - Houses kept as-is;
  *   their members are excluded from the optimization
@@ -22,13 +24,15 @@ import { buildHouse } from './scoring.js';
  *
  * @param {Array<{name: string, environment: string, preferences: string[]}>} pokemonList
  * @param {OptimizeOptions} [options]
- * @returns {{totalHouses: number, totalPokemon: number, averageScore: number, averageCompatibility: number, itemsToFind: number, environmentGroups: Object}}
+ * @returns {{totalHouses: number, totalPokemon: number, averageScore: number, itemsToPlace: number, maxItems: number, satisfy: number, environmentGroups: Object}}
  */
 export function optimize(pokemonList, options = {}) {
   const maxSize = options.maxSize ?? 4;
-  const minShared = options.minShared ?? 0;
+  const satisfy = options.satisfy ?? DEFAULT_SATISFY;
   const improve = options.improve ?? true;
   const lockedHouses = options.lockedHouses ?? [];
+
+  clearCoverCache();
 
   const lockedNames = new Set();
   for (const h of lockedHouses) {
@@ -42,21 +46,21 @@ export function optimize(pokemonList, options = {}) {
   let totalHouses = 0;
   let totalPokemon = 0;
   let totalScore = 0;
-  let totalCompat = 0;
-  let itemsToFind = 0;
+  let itemsToPlace = 0;
+  let maxItems = 0;
 
   const envOrder = Object.keys(groups);
   for (const env of envOrder) {
     const pokemons = groups[env];
     const locked = lockedHouses
       .filter((h) => h.members.length > 0 && h.members[0].environment === env)
-      .map((h) => buildHouse([...h.members], true));
+      .map((h) => buildHouse([...h.members], true, satisfy));
 
     if (pokemons.length === 0 && locked.length === 0) continue;
 
-    let houses = clusterByPreferences(pokemons, { maxSize, minShared });
+    let houses = clusterByPreferences(pokemons, { maxSize, satisfy });
     if (improve && houses.length > 1) {
-      houses = improveHouses(houses, { maxSize, minShared });
+      houses = improveHouses(houses, { maxSize, satisfy });
     }
     houses = [...locked, ...houses];
 
@@ -72,8 +76,8 @@ export function optimize(pokemonList, options = {}) {
     totalPokemon += pokemonCount;
     for (const house of houses) {
       totalScore += house.score;
-      totalCompat += house.compatibility;
-      itemsToFind += house.uniquePreferences.length;
+      itemsToPlace += house.cost;
+      if (house.cost > maxItems) maxItems = house.cost;
     }
   }
 
@@ -81,8 +85,9 @@ export function optimize(pokemonList, options = {}) {
     totalHouses,
     totalPokemon,
     averageScore: totalHouses > 0 ? totalScore / totalHouses : 0,
-    averageCompatibility: totalHouses > 0 ? totalCompat / totalHouses : 0,
-    itemsToFind,
+    itemsToPlace,
+    maxItems,
+    satisfy,
     environmentGroups,
   };
 }

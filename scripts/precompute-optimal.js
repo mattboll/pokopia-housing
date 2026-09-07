@@ -30,19 +30,21 @@ const scenarios = [
 const summary = {};
 for (const { label, list } of scenarios) {
   console.log(`\n=== ${label}: ${list.length} Pokemon ===`);
-  console.log('minShared | houses | avg shared | avg compat | items to find');
+  console.log('satisfy | houses | items to place | items/house | busiest | avg shared | ms');
   summary[label] = [];
-  for (let minShared = 0; minShared <= 6; minShared++) {
-    const r = optimize(list, { minShared });
-    summary[label].push({ minShared, houses: r.totalHouses, averageScore: r.averageScore, averageCompatibility: r.averageCompatibility, itemsToFind: r.itemsToFind });
+  for (let satisfy = 1; satisfy <= 6; satisfy++) {
+    const t0 = Date.now();
+    const r = optimize(list, { satisfy });
+    const ms = Date.now() - t0;
+    summary[label].push({ satisfy, houses: r.totalHouses, itemsToPlace: r.itemsToPlace, maxItems: r.maxItems, averageScore: r.averageScore, ms });
     console.log(
-      `${String(minShared).padStart(9)} | ${String(r.totalHouses).padStart(6)} | ${r.averageScore.toFixed(2).padStart(10)} | ${(r.averageCompatibility * 100).toFixed(0).padStart(9)}% | ${String(r.itemsToFind).padStart(13)}`,
+      `${String(satisfy).padStart(7)} | ${String(r.totalHouses).padStart(6)} | ${String(r.itemsToPlace).padStart(14)} | ${(r.itemsToPlace / r.totalHouses).toFixed(1).padStart(11)} | ${String(r.maxItems).padStart(7)} | ${r.averageScore.toFixed(2).padStart(10)} | ${ms}`,
     );
   }
 }
 
 const full = optimize(all);
-console.log('\nPer environment (everything, minShared 0):');
+console.log('\nPer environment (everything, default satisfy):');
 for (const [env, group] of Object.entries(full.environmentGroups)) {
   console.log(`  ${env}: ${group.pokemonCount} Pokemon -> ${group.houseCount} houses`);
 }

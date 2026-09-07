@@ -845,7 +845,7 @@ html[data-theme="dark"] .planner-selector__pokemon-item[aria-selected="true"] {
 }
 
 /* -------------------------------------------------------------------
-   House card: compatibility, editing, drag & drop
+   House card: items count, editing, drag & drop
    ------------------------------------------------------------------- */
 .house-card-compat {
   margin-left: auto;
@@ -1108,4 +1108,53 @@ html[data-theme="dark"] .new-house-zone--active {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-full);
   color: var(--color-text-secondary);
+}
+
+/* -------------------------------------------------------------------
+   Shopping list & coverage
+   ------------------------------------------------------------------- */
+.house-card-shopping .house-card-pills {
+  margin-top: var(--space-1);
+}
+
+.house-card-pill--item {
+  background-color: var(--color-success-light);
+  border: 1px solid var(--color-success);
+  color: var(--color-text);
+}
+
+html[data-theme="dark"] .house-card-pill--item {
+  background-color: rgba(39, 174, 96, 0.2);
+}
+
+.house-card-pill__count {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+}
+
+.house-card-pill--chosen {
+  font-weight: var(--font-weight-bold);
+}
+
+.house-card-covered {
+  font-size: var(--text-xs);
+  color: var(--color-warning);
+  font-weight: var(--font-weight-semibold);
+}
+
+.house-card-covered--ok {
+  color: var(--color-success);
+}
+
+details.house-card-prefs > summary {
+  cursor: pointer;
+  list-style: revert;
+}
+
+.stat-card--primary .stat-value {
+  color: var(--color-primary);
+}
+
+.stat-card--muted {
+  opacity: 0.75;
 }

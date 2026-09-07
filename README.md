@@ -10,8 +10,9 @@ Optimize Pokemon housing in **Pokemon Pokopia** by grouping Pokemon with shared 
 
 - **Optimal Housing**: grouping of every Pokemon in the game, computed in your browser
   - toggle the **Bubbly Basin DLC** and **event Pokemon** on/off
-  - **minimum shared preferences** slider: trade a few more houses for houses where every item pleases all residents
+  - **favorites to satisfy per Pokemon** slider (default 4 of 6): the site computes the smallest set of items that gives every resident that many favorites
 - **Custom Planner / my village**: select the Pokemon you own and get personalized houses
+  - **shopping list per house**: the exact item categories to place, and how many favorites each resident gets
   - **edit the result**: drag & drop residents between houses, move menu, create a house
   - **lock** houses you have already built, then re-optimize the rest
   - saved in your browser, **share link**, JSON export / import
@@ -27,25 +28,25 @@ In Pokopia, each Pokemon has:
 - An **ideal habitat**: Bright, Dark, Warm, Cool, Humid, or Dry
 - **6 favorites**: 5 item categories (wooden stuff, round stuff, electronics, ...) and 1 flavor
 
-Houses can hold up to 4 Pokemon, but they must all share the **same environment**. Items placed in a house benefit **all residents**, so grouping Pokemon with overlapping preferences means fewer items to craft, and items from a category liked by everyone raise everybody's comfy level at once.
+Houses can hold up to 4 Pokemon, but they must all share the **same environment**. Items placed in a house benefit **all residents**, and a resident does not need all six of its favorites to be happy. So the cost of a house is the **smallest number of item categories that gives every resident k of its favorites** (k = "favorites to satisfy", 4 by default). One item liked by several residents counts for all of them.
 
 ### The Algorithm
 
 1. **Partition** Pokemon by environment (hard constraint)
-2. **Greedy clustering** of each group: seed a house with the hardest-to-place Pokemon, then add the candidate that brings the fewest new preferences (4 per house max)
-3. **Local search**: swap or move Pokemon between houses while it lowers the number of items that do not please everyone
-4. Optional **minimum shared preferences**: a candidate only joins a house if at least N preferences stay liked by all residents (N = 0 gives the fewest houses, N = 6 gives one Pokemon per house)
+2. **Exact house cost**: a small dynamic program (`src/algorithm/cover.js`) computes the minimum item cover of a house and the shopping list that achieves it
+3. **Greedy clustering** of each group: seed a house with the hardest-to-place Pokemon, then add the candidate that adds the fewest items (4 per house max)
+4. **Local search**: swap or move Pokemon between houses while it lowers the total number of items
 
-Results for the full dataset (`npm run stats`):
+Results for the full dataset (`npm run stats`), 92 houses in every case:
 
-| min shared | houses | avg shared prefs | avg compatibility |
-|-----------:|-------:|-----------------:|------------------:|
-| 0 | 92 | 2.16 | 21% |
-| 2 | 101 | 2.63 | 27% |
-| 3 | 140 | 3.97 | 51% |
-| 4 | 207 | 5.11 | 76% |
+| favorites to satisfy | items to place | items per house | busiest house |
+|---------------------:|---------------:|----------------:|--------------:|
+| 3 | 354 | 3.8 | 6 |
+| 4 | 535 | 5.8 | 8 |
+| 5 | 770 | 8.4 | 12 |
+| 6 (everything) | 1074 | 11.7 | 17 |
 
-Compatibility = share of the distinct items needed by a house that please every resident.
+The number of favorites needed for the top comfy level is not documented; 4 is a guess, adjust the slider to your experience.
 
 There is still room for improvement (simulated annealing, ILP, ...). See [CONTRIBUTING.md](CONTRIBUTING.md).
 

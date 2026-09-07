@@ -91,6 +91,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Data, locales, icons, manifest: stale-while-revalidate
-  event.respondWith(staleWhileRevalidate(request, SHELL_CACHE));
+  // Data, locales, icons, manifest: network first (small files, and a new
+  // deploy must not show stale translations), cache when offline
+  event.respondWith(networkFirst(request, SHELL_CACHE));
 });

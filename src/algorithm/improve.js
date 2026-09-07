@@ -1,8 +1,8 @@
-import { buildHouse, houseCost, houseScore } from './scoring.js';
+import { buildHouse, houseCost, houseScore, DEFAULT_SATISFY } from './scoring.js';
 
 /**
  * Compares two (cost, shared) evaluations. Negative = `a` is better.
- * Primary: fewer items to find that don't please everyone.
+ * Primary: fewer items to place.
  * Secondary: more preferences shared by everyone.
  */
 function better(costA, sharedA, costB, sharedB) {
@@ -19,16 +19,16 @@ function better(costA, sharedA, costB, sharedB) {
  * All houses must belong to the same environment.
  *
  * @param {Array<{members: Array}>} houses
- * @param {{maxSize?: number, minShared?: number, maxPasses?: number}} [options]
+ * @param {{maxSize?: number, satisfy?: number, maxPasses?: number}} [options]
  * @returns {Array<ReturnType<typeof buildHouse>>}
  */
 export function improveHouses(houses, options = {}) {
   const maxSize = options.maxSize ?? 4;
-  const minShared = options.minShared ?? 0;
+  const satisfy = options.satisfy ?? DEFAULT_SATISFY;
   const maxPasses = options.maxPasses ?? 30;
+  const cost = (members) => houseCost(members, satisfy);
 
   const groups = houses.map((h) => [...h.members]);
-  const valid = (members) => members.length === 0 || houseScore(members) >= minShared;
 
   for (let pass = 0; pass < maxPasses; pass++) {
     let improved = false;
@@ -37,7 +37,7 @@ export function improveHouses(houses, options = {}) {
       for (let j = i + 1; j < groups.length; j++) {
         const A = groups[i];
         const B = groups[j];
-        const baseCost = houseCost(A) + houseCost(B);
+        const baseCost = cost(A) + cost(B);
         const baseShared = houseScore(A) + houseScore(B);
 
         let bestMove = null;
@@ -55,16 +55,15 @@ export function improveHouses(houses, options = {}) {
             if (ai >= 0) newB.push(A[ai]);
 
             if (newA.length > maxSize || newB.length > maxSize) continue;
-            if (!valid(newA) || !valid(newB)) continue;
 
-            const cost = houseCost(newA) + houseCost(newB);
+            const c = cost(newA) + cost(newB);
             const shared = houseScore(newA) + houseScore(newB);
             // Emptying a house is always worth it at equal cost
             const emptiesOne = (newA.length === 0 || newB.length === 0) && A.length > 0 && B.length > 0;
 
-            if (better(cost, shared, bestCost, bestShared) < 0 || (emptiesOne && cost <= bestCost)) {
+            if (better(c, shared, bestCost, bestShared) < 0 || (emptiesOne && c <= bestCost)) {
               bestMove = { newA, newB };
-              bestCost = cost;
+              bestCost = c;
               bestShared = shared;
             }
           }
@@ -86,5 +85,5 @@ export function improveHouses(houses, options = {}) {
     if (!improved) break;
   }
 
-  return groups.map((members) => buildHouse(members));
+  return groups.map((members) => buildHouse(members, false, satisfy));
 }

@@ -5,7 +5,7 @@ import { getHashQuery, clearHashQuery } from '../core/router.js';
 import { createPokemonSelector, saveSelection } from '../components/pokemon-selector.js';
 import { createHouseCard, getDragging } from '../components/house-card.js';
 import { showMenuPopover } from '../components/pokemon-popover.js';
-import { createOptionsPanel, loadOptions } from '../components/optimize-options.js';
+import { createOptionsPanel, loadOptions, clampSatisfy } from '../components/optimize-options.js';
 import { createStatsSummary } from '../components/stats-summary.js';
 import { optimize } from '../algorithm/optimizer.js';
 import {
@@ -51,7 +51,7 @@ export function renderPlannerPage() {
   // ---- Left panel: selector + options + optimize button
   const leftPanel = el('div', { className: 'planner-panel planner-panel-left' });
   leftPanel.appendChild(createPokemonSelector(allPokemon, store));
-  leftPanel.appendChild(createOptionsPanel(options, () => {}, { showSources: false }));
+  leftPanel.appendChild(createOptionsPanel(options, () => render(), { showSources: false }));
 
   const optimizeBtn = el('button', {
     type: 'button',
@@ -116,7 +116,7 @@ export function renderPlannerPage() {
       saveSelection(set);
     }
     if (newPlan) plan = newPlan;
-    if (newOptions && typeof newOptions.minShared === 'number') options.minShared = newOptions.minShared;
+    if (newOptions && newOptions.satisfy !== undefined) options.satisfy = clampSatisfy(newOptions.satisfy);
     persist();
   }
 
@@ -164,7 +164,7 @@ export function renderPlannerPage() {
 
     setTimeout(() => {
       const list = names.map((n) => byName.get(n));
-      const result = optimize(list, { minShared: options.minShared, lockedHouses });
+      const result = optimize(list, { satisfy: options.satisfy, lockedHouses });
       plan.houses = resultToPlanHouses(result, lockedPlanHouses);
       optimizeBtn.disabled = false;
       persist();
@@ -213,7 +213,7 @@ export function renderPlannerPage() {
 
   // ---- Share / export / reset
   async function shareLink() {
-    const token = await encodeShare({ selected: selectedNames(), plan, options: { minShared: options.minShared } });
+    const token = await encodeShare({ selected: selectedNames(), plan, options: { satisfy: options.satisfy } });
     const url = `${location.origin}${location.pathname}#/planner?p=${token}`;
     try {
       await navigator.clipboard.writeText(url);
@@ -224,7 +224,7 @@ export function renderPlannerPage() {
   }
 
   function exportJson() {
-    const data = { version: 1, exportedAt: new Date().toISOString(), selected: selectedNames(), plan, options: { minShared: options.minShared } };
+    const data = { version: 1, exportedAt: new Date().toISOString(), selected: selectedNames(), plan, options: { satisfy: options.satisfy } };
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const a = el('a', { href: URL.createObjectURL(blob), download: 'pokopia-village.json' });
     document.body.appendChild(a);
@@ -285,7 +285,7 @@ export function renderPlannerPage() {
       notice.hidden = true;
     }
 
-    const groups = planToEnvironmentHouses(plan, byName);
+    const groups = planToEnvironmentHouses(plan, byName, options.satisfy);
     const summary = summarize(groups);
     statsSlot.appendChild(createStatsSummary(summary));
     statsSlot.appendChild(el('p', { className: 'village-hint' }, `✋ ${t('planner.dragHint')}`));
@@ -342,21 +342,22 @@ export function renderPlannerPage() {
   }
 
   function summarize(groups) {
-    let totalHouses = 0, totalPokemon = 0, score = 0, compat = 0, items = 0;
+    let totalHouses = 0, totalPokemon = 0, score = 0, items = 0, maxItems = 0;
     for (const houses of Object.values(groups)) {
       for (const h of houses) {
         totalHouses++;
         totalPokemon += h.members.length;
         score += h.score;
-        compat += h.compatibility;
-        items += h.uniquePreferences.length;
+        items += h.cost;
+        if (h.cost > maxItems) maxItems = h.cost;
       }
     }
     return {
       totalHouses, totalPokemon,
       averageScore: totalHouses ? score / totalHouses : 0,
-      averageCompatibility: totalHouses ? compat / totalHouses : 0,
-      itemsToFind: items,
+      itemsToPlace: items,
+      maxItems,
+      satisfy: options.satisfy,
     };
   }
 

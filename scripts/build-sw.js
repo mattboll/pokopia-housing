@@ -25,13 +25,13 @@ const files = walk(dist)
   .map((f) => relative(dist, f).split('\\').join('/'))
   .filter((f) => !['sw.js', 'robots.txt', 'sitemap.xml'].includes(f) && !f.endsWith('.map'));
 
-const hash = createHash('sha256');
+const template = readFileSync(join(__dirname, 'sw.template.js'), 'utf-8');
+
+const hash = createHash('sha256').update(template);
 for (const f of files.sort()) hash.update(f).update(readFileSync(join(dist, f)));
 const version = hash.digest('hex').slice(0, 12);
 
 const precache = [BASE, ...files.filter((f) => f !== 'index.html').map((f) => BASE + f)];
-
-const template = readFileSync(join(__dirname, 'sw.template.js'), 'utf-8');
 const sw = template
   .replace('__VERSION__', version)
   .replace('__BASE__', BASE)

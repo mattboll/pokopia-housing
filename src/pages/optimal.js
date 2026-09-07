@@ -76,7 +76,7 @@ export function renderOptimalPage() {
     // Let the spinner paint before the (synchronous) computation
     setTimeout(() => {
       const list = applySourceFilter(allPokemon, options);
-      currentResult = optimize(list, { minShared: options.minShared });
+      currentResult = optimize(list, { satisfy: options.satisfy });
       statsSlot.innerHTML = '';
       statsSlot.appendChild(createStatsSummary(currentResult));
       renderEnvironmentSections(currentResult.environmentGroups, selectedEnvs, resultsContainer);

@@ -1,11 +1,18 @@
 import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
+import { DEFAULT_SATISFY } from '../algorithm/scoring.js';
 
 const STORAGE_KEY = 'pokopia-housing-options';
 
-/** @typedef {{includeDlc: boolean, includeEvent: boolean, minShared: number}} OptimizeUiOptions */
+/** @typedef {{includeDlc: boolean, includeEvent: boolean, satisfy: number}} OptimizeUiOptions */
 
-const DEFAULTS = { includeDlc: true, includeEvent: true, minShared: 0 };
+const DEFAULTS = { includeDlc: true, includeEvent: true, satisfy: DEFAULT_SATISFY };
+
+/** Clamps a "favorites to satisfy" value to 1..6. */
+export function clampSatisfy(value) {
+  const n = Number(value);
+  return Number.isFinite(n) ? Math.min(6, Math.max(1, Math.round(n))) : DEFAULT_SATISFY;
+}
 
 /**
  * Loads the persisted optimization options.
@@ -19,7 +26,7 @@ export function loadOptions() {
       return {
         includeDlc: parsed.includeDlc !== false,
         includeEvent: parsed.includeEvent !== false,
-        minShared: Math.min(6, Math.max(0, Number(parsed.minShared) || 0)),
+        satisfy: parsed.satisfy === undefined ? DEFAULT_SATISFY : clampSatisfy(parsed.satisfy),
       };
     }
   } catch { /* ignore */ }
@@ -49,8 +56,8 @@ export function applySourceFilter(list, options) {
 }
 
 /**
- * Creates the options panel: DLC / event toggles + "minimum shared
- * preferences" slider. Calls `onChange(options)` on every change.
+ * Creates the options panel: DLC / event toggles + "favorites to satisfy per
+ * Pokemon" slider. Calls `onChange(options)` on every change.
  *
  * @param {OptimizeUiOptions} options - current options (mutated in place)
  * @param {(options: OptimizeUiOptions) => void} onChange
@@ -89,28 +96,28 @@ export function createOptionsPanel(options, onChange, config = {}) {
     panel.appendChild(toggles);
   }
 
-  // Min shared slider
-  const sliderId = `min-shared-${Math.random().toString(36).slice(2, 7)}`;
-  const value = el('output', { className: 'options-panel__value', for: sliderId }, String(options.minShared));
+  // Satisfy slider (1..6)
+  const sliderId = `satisfy-${Math.random().toString(36).slice(2, 7)}`;
+  const value = el('output', { className: 'options-panel__value', for: sliderId }, `${options.satisfy}/6`);
   const slider = el('input', {
-    type: 'range', id: sliderId, min: '0', max: '6', step: '1',
-    value: String(options.minShared),
+    type: 'range', id: sliderId, min: '1', max: '6', step: '1',
+    value: String(options.satisfy),
     className: 'options-panel__slider',
     'aria-describedby': `${sliderId}-hint`,
   });
   slider.addEventListener('input', () => {
-    value.textContent = slider.value;
+    value.textContent = `${slider.value}/6`;
   });
   slider.addEventListener('change', () => {
-    options.minShared = Number(slider.value);
+    options.satisfy = clampSatisfy(slider.value);
     emit();
   });
 
   panel.appendChild(el('div', { className: 'options-panel__slider-row' },
-    el('label', { for: sliderId, className: 'options-panel__label' }, `❤️ ${t('common.minShared')}`),
+    el('label', { for: sliderId, className: 'options-panel__label' }, `❤️ ${t('common.satisfy')}`),
     el('div', { className: 'options-panel__slider-wrap' }, slider, value)
   ));
-  panel.appendChild(el('p', { id: `${sliderId}-hint`, className: 'options-panel__hint' }, t('common.minSharedHint')));
+  panel.appendChild(el('p', { id: `${sliderId}-hint`, className: 'options-panel__hint' }, t('common.satisfyHint')));
 
   return panel;
 }

@@ -21,9 +21,6 @@ const ENV_EMOJI = {
 };
 
 /**
- * Computes a compatibility rating from totalScore.
- */
-/**
  * Counts how many members like each preference.
  * Returns a Map<number, string[]> : count → list of preferences.
  *
@@ -50,35 +47,24 @@ function buildPrefCounts(members) {
 }
 
 /**
- * Rates a house based on what the player actually sees:
- * - How many preferences ALL residents share (fewer unique items needed)
- * - How many different items you need to find in total
- * A house where everyone likes the same things = excellent.
- * A house with many different preferences to cover = lower rating.
+ * Rates a house on the number of items to place, relative to the ideal
+ * (everyone shares the same `satisfy` favorites = `satisfy` items) and the
+ * worst case (nothing shared = `satisfy` items per resident).
  */
 function compatibilityRating(house) {
   const members = house.members.length;
   if (members <= 1) return { stars: 5, key: 'rating.perfect', fallback: 'Parfait', color: '#2ea858' };
 
-  const shared = (house.sharedPreferences || []).length;
-  const uniqueAll = (house.uniquePreferences || []).length;
-  const toFind = uniqueAll - shared; // items to find beyond shared ones
+  const k = house.satisfy || 4;
+  const cost = typeof house.cost === 'number' ? house.cost : (house.uniquePreferences || []).length;
+  const ideal = k;
+  const worst = k * members;
+  const ratio = worst > ideal ? (cost - ideal) / (worst - ideal) : 0;
 
-  // Ratio: what fraction of all preferences are shared by everyone?
-  // Higher = residents are more aligned = less furniture work
-  const ratio = uniqueAll > 0 ? shared / uniqueAll : 0;
-
-  // Also factor in absolute count of items to find (fewer = better)
-  // A house with 3 shared + 2 to find is better than 3 shared + 15 to find
-  const efficiency = toFind <= 4 ? 2 : toFind <= 8 ? 1 : toFind <= 12 ? 0 : -1;
-
-  const score = ratio * 4 + efficiency;
-
-  // Thresholds calibrated on actual data (median ~-0.5, max ~2.8)
-  if (score >= 2.2) return { stars: 5, key: 'rating.excellent', fallback: 'Excellent', color: '#2ea858' };
-  if (score >= 1.5) return { stars: 4, key: 'rating.veryGood', fallback: 'Tres bien', color: '#6bba4f' };
-  if (score >= 0.5) return { stars: 3, key: 'rating.good', fallback: 'Bien', color: '#f5c518' };
-  if (score >= -0.5) return { stars: 2, key: 'rating.okay', fallback: 'Correct', color: '#e5a419' };
+  if (ratio <= 0.15) return { stars: 5, key: 'rating.excellent', fallback: 'Excellent', color: '#2ea858' };
+  if (ratio <= 0.3) return { stars: 4, key: 'rating.veryGood', fallback: 'Tres bien', color: '#6bba4f' };
+  if (ratio <= 0.5) return { stars: 3, key: 'rating.good', fallback: 'Bien', color: '#f5c518' };
+  if (ratio <= 0.7) return { stars: 2, key: 'rating.okay', fallback: 'Correct', color: '#e5a419' };
   return { stars: 1, key: 'rating.low', fallback: 'Faible', color: '#e74c3c' };
 }
 
@@ -93,7 +79,7 @@ function compatibilityRating(house) {
 /**
  * Creates a house card DOM element.
  *
- * @param {Object} house - { members, sharedPreferences, uniquePreferences, compatibility, locked?, id? }
+ * @param {Object} house - { members, sharedPreferences, uniquePreferences, items, covered, cost, satisfy, locked?, id? }
  * @param {number} index - display number
  * @param {HouseCardOptions} [opts]
  */
@@ -132,25 +118,31 @@ export function createHouseCard(house, index, opts = {}) {
   }
 
   // Compatibility rating
-  const compat = typeof house.compatibility === 'number'
-    ? house.compatibility
-    : ((house.uniquePreferences || []).length > 0
-      ? (house.sharedPreferences || []).length / house.uniquePreferences.length : 1);
+  const itemCount = typeof house.cost === 'number' ? house.cost : (house.uniquePreferences || []).length;
   const ratingSection = el('div', { className: 'house-card-rating' },
     el('div', { className: 'house-card-rating-stars', style: `color: ${rating.color}` }, starsStr),
     el('span', { className: 'house-card-rating-label', style: `color: ${rating.color}` }, ratingLabel),
     el('span', {
       className: 'house-card-compat',
-      title: t('common.compatibility'),
-      'aria-label': `${t('common.compatibility')} ${Math.round(compat * 100)}%`,
-    }, `🤝 ${Math.round(compat * 100)}%`)
+      title: t('common.itemsToPlace'),
+      'aria-label': `${t('common.itemsToPlace')}: ${itemCount}`,
+    }, `🛋️ ${itemCount}`)
   );
 
   // Residents (clickable)
   const residentsList = el('div', { className: 'house-card-residents' });
+  const itemSet = new Set(house.items || []);
   house.members.forEach((member, i) => {
     if (i > 0) residentsList.appendChild(el('span', { className: 'house-card-sep' }, ', '));
-    const nameBtn = createPokemonNameButton(member, house.sharedPreferences);
+    const nameBtn = createPokemonNameButton(member, house.items || house.sharedPreferences);
+    if (house.covered) {
+      const k = Math.min(house.satisfy || 4, member.preferences.length);
+      const c = house.covered[i];
+      nameBtn.appendChild(el('span', {
+        className: 'house-card-covered' + (c >= k ? ' house-card-covered--ok' : ''),
+        title: `${c}/${member.preferences.length} ${t('common.coveredPrefs')}`,
+      }, ` ${c}/${member.preferences.length}`));
+    }
     if (!editable) {
       residentsList.appendChild(nameBtn);
       return;
@@ -185,9 +177,31 @@ export function createHouseCard(house, index, opts = {}) {
     residentsList
   );
 
+  // Shopping list: categories to place (minimum cover)
+  let shoppingSection = null;
+  if (house.items && house.items.length > 0) {
+    const pills = el('div', { className: 'house-card-pills' });
+    const likedBy = (pref) => house.members.filter((m) => m.preferences.includes(pref)).length;
+    const sortedItems = [...house.items].sort((a, b) => likedBy(b) - likedBy(a));
+    for (const pref of sortedItems) {
+      const translated = t(`preferences.${pref}`) !== `preferences.${pref}` ? t(`preferences.${pref}`) : pref;
+      const n = likedBy(pref);
+      pills.appendChild(el('span', {
+        className: 'house-card-pill house-card-pill--item',
+        title: `${n}/${house.members.length}`,
+      }, `${translated} `, el('span', { className: 'house-card-pill__count' }, `×${n}`)));
+    }
+    shoppingSection = el('div', { className: 'house-card-section house-card-shopping' },
+      el('h4', { className: 'house-card-section-title' }, `🛒 ${t('common.shoppingList')} (${house.items.length})`),
+      pills
+    );
+  }
+
   // Preferences grouped by how many residents like them
   const prefCounts = buildPrefCounts(house.members);
-  const prefsSection = el('div', { className: 'house-card-section house-card-prefs' });
+  const prefsSection = el('details', { className: 'house-card-section house-card-prefs' },
+    el('summary', { className: 'house-card-section-title' }, `🐾 ${t('common.uniquePrefs')} (${(house.uniquePreferences || []).length})`)
+  );
   const memberCount = house.members.length;
 
   // Sort tiers from most residents to fewest
@@ -219,7 +233,8 @@ export function createHouseCard(house, index, opts = {}) {
     for (const pref of prefs) {
       const translated = t(`preferences.${pref}`) !== `preferences.${pref}`
         ? t(`preferences.${pref}`) : pref;
-      pills.appendChild(el('span', { className: `house-card-pill ${pillClass}` }, translated));
+      const chosen = itemSet.has(pref) ? ' house-card-pill--chosen' : '';
+      pills.appendChild(el('span', { className: `house-card-pill ${pillClass}${chosen}` }, (chosen ? '✔ ' : '') + translated));
     }
     tierEl.appendChild(pills);
     prefsSection.appendChild(tierEl);
@@ -234,6 +249,7 @@ export function createHouseCard(house, index, opts = {}) {
   card.appendChild(header);
   card.appendChild(ratingSection);
   card.appendChild(residentsSection);
+  if (shoppingSection) card.appendChild(shoppingSection);
   card.appendChild(prefsSection);
 
   if (editable && opts.onDrop) {

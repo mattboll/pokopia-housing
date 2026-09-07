@@ -1,4 +1,5 @@
-import { buildHouse } from './scoring.js';
+import { buildHouse, DEFAULT_SATISFY } from './scoring.js';
+import { coverCost } from './cover.js';
 
 /**
  * Counts how many NEW preferences a candidate would add to a house.
@@ -14,22 +15,6 @@ function newPrefsCount(existing, candidate) {
     if (!existing.has(p)) added++;
   }
   return added;
-}
-
-/**
- * Number of preferences that would still be shared by everyone if the
- * candidate joined the house.
- *
- * @param {Set<string>} shared - preferences shared by all current members
- * @param {{preferences: string[]}} candidate
- * @returns {number}
- */
-function sharedAfter(shared, candidate) {
-  let count = 0;
-  for (const p of candidate.preferences) {
-    if (shared.has(p)) count++;
-  }
-  return count;
 }
 
 /**
@@ -58,20 +43,19 @@ function averageNewPrefs(pokemon, group) {
 }
 
 /**
- * Greedy agglomerative clustering that minimizes the number of distinct
- * preferences per house (= fewer different items to find), while
- * guaranteeing that every house keeps at least `minShared` preferences
- * liked by ALL its residents.
+ * Greedy agglomerative clustering that minimizes the number of items to
+ * place per house: each resident must get `satisfy` of its favorites, items
+ * benefit everyone, so the cost of a house is its minimum item cover.
  *
  * All Pokemon in the input should share the same environment.
  *
  * @param {Array<{name: string, environment: string, preferences: string[]}>} pokemonGroup
- * @param {{maxSize?: number, minShared?: number}} [options]
+ * @param {{maxSize?: number, satisfy?: number}} [options]
  * @returns {Array<ReturnType<typeof buildHouse>>}
  */
 export function clusterByPreferences(pokemonGroup, options = {}) {
   const maxSize = options.maxSize ?? 4;
-  const minShared = options.minShared ?? 0;
+  const satisfy = options.satisfy ?? DEFAULT_SATISFY;
 
   if (pokemonGroup.length === 0) return [];
 
@@ -89,23 +73,22 @@ export function clusterByPreferences(pokemonGroup, options = {}) {
     const house = [seed];
     assigned.add(seed);
     const existing = new Set(seed.preferences);
-    let shared = new Set(seed.preferences);
+    let currentCost = coverCost(house, satisfy);
 
     while (house.length < maxSize) {
       let bestCandidate = null;
-      let bestNewCount = Infinity;
-      let bestShared = -1;
+      let bestAdded = Infinity;
+      let bestNewPrefs = Infinity;
 
       for (const candidate of sorted) {
         if (assigned.has(candidate)) continue;
 
-        const keptShared = sharedAfter(shared, candidate);
-        if (keptShared < minShared) continue;
-
-        const added = newPrefsCount(existing, candidate);
-        if (added < bestNewCount || (added === bestNewCount && keptShared > bestShared)) {
-          bestNewCount = added;
-          bestShared = keptShared;
+        // Items the candidate forces us to add; tie-break on raw new preferences
+        const added = coverCost([...house, candidate], satisfy) - currentCost;
+        const newPrefs = newPrefsCount(existing, candidate);
+        if (added < bestAdded || (added === bestAdded && newPrefs < bestNewPrefs)) {
+          bestAdded = added;
+          bestNewPrefs = newPrefs;
           bestCandidate = candidate;
         }
       }
@@ -115,10 +98,10 @@ export function clusterByPreferences(pokemonGroup, options = {}) {
       house.push(bestCandidate);
       assigned.add(bestCandidate);
       for (const p of bestCandidate.preferences) existing.add(p);
-      shared = new Set(bestCandidate.preferences.filter((p) => shared.has(p)));
+      currentCost += bestAdded;
     }
 
-    houses.push(buildHouse(house));
+    houses.push(buildHouse(house, false, satisfy));
   }
 
   return houses;
