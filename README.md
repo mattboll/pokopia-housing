@@ -62,13 +62,14 @@ npm run preview     # Preview production build
 npm run stats       # Print optimization statistics for the dataset
 npm run sync        # Sync Pokemon data from Serebii (see below)
 npm run sync-items  # Rebuild the item catalog from Serebii's favorites pages
+npm run sync-item-names-fr  # French item names from pokekalos.fr
 ```
 
 ### Updating the data
 
 `npm run sync -- --dry-run` fetches every Pokemon page of Serebii's Pokopia Pokedex (cached in `.cache/`), compares habitat, favorites, specialties and dive ability with `public/data/pokemon.csv`, and reports differences. Without `--dry-run` it rewrites the CSV and metadata, and adds new Pokemon with names from PokeAPI in the 5 locale files. New alternate forms are reported and must be given a CSV key by hand.
 
-`npm run sync-items` rebuilds `public/data/items.json` (item name, type, favorite categories) from Serebii's 43 favorite-category pages, then merges `public/data/items-overrides.json`. Serebii's catalog is still a work in progress: use the overrides file to add missing items, fix categories, or hide wrong entries. Item names are English only for now; translations can be added under `items` in the locale files (keyed by item slug).
+`npm run sync-items` rebuilds `public/data/items.json` (item name, type, favorite categories) from Serebii's 43 favorite-category pages, then merges `public/data/items-overrides.json`. Serebii's catalog is still a work in progress: use the overrides file to add missing items, fix categories, or hide wrong entries. `npm run sync-item-names-fr` fills the French item names in `fr.json` from pokekalos.fr (706 of 715 matched). Other languages fall back to the English name; translations go under `items` in the locale files (keyed by item slug).
 
 ## Project Structure
 
@@ -88,6 +89,7 @@ scripts/
   precompute-optimal.js  # statistics (npm run stats)
   sync-serebii.js        # Pokemon data sync (npm run sync)
   sync-items.js          # item catalog sync (npm run sync-items)
+  sync-item-names-fr.js  # French item names (npm run sync-item-names-fr)
   build-sw.js            # generates dist/sw.js after vite build
 ```
 

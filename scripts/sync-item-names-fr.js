@@ -60,10 +60,19 @@ async function main() {
   const frPath = join(root, 'public', 'i18n', 'fr.json');
   const fr = JSON.parse(readFileSync(frPath, 'utf-8'));
   fr.items ||= {};
+  // Colour variants ("Beautiful flower (pink)") are listed once on pokekalos, without the colour
+  const COLOURS = { pink: 'rose', purple: 'violet', white: 'blanc', yellow: 'jaune', blue: 'bleu', orange: 'orange', red: 'rouge', green: 'vert', black: 'noir' };
   let matched = 0;
   const unmatched = [];
   for (const [slug, it] of Object.entries(items)) {
-    const name = frByEn.get(norm(it.name));
+    let name = frByEn.get(norm(it.name));
+    if (!name) {
+      const m = it.name.match(/^(.*?)\s*\((\w+)\)$/);
+      if (m && COLOURS[m[2].toLowerCase()]) {
+        const base = frByEn.get(norm(m[1]));
+        if (base) name = `${base} (${COLOURS[m[2].toLowerCase()]})`;
+      }
+    }
     if (name) { fr.items[slug] = name; matched++; } else unmatched.push(it.name);
   }
   // keep pokemon section last

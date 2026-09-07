@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "stats": "node scripts/precompute-optimal.js",
     "sync": "node scripts/sync-serebii.js",
-    "sync-items": "node scripts/sync-items.js"
+    "sync-items": "node scripts/sync-items.js",
+    "sync-item-names-fr": "node scripts/sync-item-names-fr.js"
   },
   "keywords": [
     "pokemon",
