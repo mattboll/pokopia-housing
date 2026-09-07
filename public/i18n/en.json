@@ -37,7 +37,24 @@
     "itemTips": "Furniture tips",
     "lookFor": "An item that is",
     "noDirectButItems": "Compatible through shared furniture!",
-    "itemsToFind": "Items to find"
+    "itemsToFind": "Items to find",
+    "compatibility": "Compatibility",
+    "avgCompatibility": "Average compatibility",
+    "minShared": "Minimum shared preferences per house",
+    "minSharedHint": "0 = fewest houses. Higher values mean every item pleases all residents, at the cost of more houses.",
+    "includeDlc": "Include Bubbly Basin DLC",
+    "includeEvent": "Include event Pokemon",
+    "options": "Options",
+    "computing": "Computing...",
+    "filterByRegion": "Filter by region",
+    "filterBySpecialty": "Specialty",
+    "filterBySource": "Source",
+    "allRegions": "All",
+    "allSpecialties": "All",
+    "underwater": "Can dive",
+    "advancedFilters": "Advanced filters",
+    "region": "Region",
+    "specialty": "Specialty"
   },
   "optimal": {
     "title": "Optimal housing for all Pokemon",
@@ -51,7 +68,27 @@
     "subtitle": "Select your Pokemon to find the best grouping",
     "description": "Choose the Pokemon you own and the optimizer will find how to group them efficiently.",
     "selectPrompt": "Select at least 2 Pokemon to start optimization",
-    "emptyState": "Select Pokemon and click Optimize"
+    "emptyState": "Select Pokemon and click Optimize",
+    "lock": "Lock this house",
+    "unlock": "Unlock this house",
+    "locked": "Locked",
+    "move": "Move",
+    "moveTo": "Move to",
+    "newHouse": "New house",
+    "reoptimize": "Re-optimize unlocked houses",
+    "export": "Export",
+    "import": "Import",
+    "share": "Copy share link",
+    "copied": "Link copied!",
+    "reset": "Reset plan",
+    "resetConfirm": "Clear the plan and the selection?",
+    "dragHint": "Drag a Pokemon to another house of the same environment, or use the Move button.",
+    "planRestored": "Plan loaded from link",
+    "unplaced": "Selected but not placed yet",
+    "full": "Full",
+    "importError": "Invalid file",
+    "myVillage": "My village",
+    "savedLocally": "Saved in this browser"
   },
   "legal": {
     "title": "Legal notice",
@@ -127,6 +164,35 @@
     "Lieux pour jouer": "Play spaces",
     "Moyens de transport": "Rides",
     "Recipients": "Containers"
+  },
+  "rating": {
+    "perfect": "Perfect",
+    "excellent": "Excellent",
+    "veryGood": "Very good",
+    "good": "Good",
+    "okay": "Okay",
+    "low": "Low"
+  },
+  "sources": {
+    "base": "Base game",
+    "basin": "Bubbly Basin DLC",
+    "event": "Event"
+  },
+  "regions": {
+    "withered-wastelands": "Withered Wastelands",
+    "bleak-beach": "Bleak Beach",
+    "rocky-ridges": "Rocky Ridges",
+    "sparkling-skylands": "Sparkling Skylands",
+    "palette-town": "Palette Town",
+    "bubbly-basin": "Bubbly Basin",
+    "dream-island": "Dream Island",
+    "event": "Event"
+  },
+  "pwa": {
+    "install": "Install app",
+    "updateAvailable": "New version available",
+    "reload": "Reload",
+    "offline": "Offline: showing cached data."
   },
   "pokemon": {
     "Bulbizarre": "Bulbasaur",
@@ -489,13 +555,5 @@
     "Delestin": "Veluza",
     "Phione": "Phione",
     "Manaphy": "Manaphy"
-  },
-  "rating": {
-    "perfect": "Perfect",
-    "excellent": "Excellent",
-    "veryGood": "Very good",
-    "good": "Good",
-    "okay": "Okay",
-    "low": "Low"
   }
 }

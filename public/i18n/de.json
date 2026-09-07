@@ -37,7 +37,24 @@
     "itemTips": "Moebel-Tipps",
     "lookFor": "Ein Gegenstand",
     "noDirectButItems": "Kompatibel durch Moebel!",
-    "itemsToFind": "Benoetigte Gegenstaende"
+    "itemsToFind": "Zu findende Gegenstände",
+    "compatibility": "Kompatibilität",
+    "avgCompatibility": "Durchschnittliche Kompatibilität",
+    "minShared": "Mindestens gemeinsame Vorlieben pro Haus",
+    "minSharedHint": "0 = so wenige Häuser wie möglich. Höhere Werte: jeder Gegenstand gefällt allen Bewohnern, aber es werden mehr Häuser benötigt.",
+    "includeDlc": "DLC Bubbly Basin einbeziehen",
+    "includeEvent": "Event-Pokémon einbeziehen",
+    "options": "Optionen",
+    "computing": "Berechnung...",
+    "filterByRegion": "Nach Region filtern",
+    "filterBySpecialty": "Spezialität",
+    "filterBySource": "Herkunft",
+    "allRegions": "Alle",
+    "allSpecialties": "Alle",
+    "underwater": "Kann tauchen",
+    "advancedFilters": "Erweiterte Filter",
+    "region": "Region",
+    "specialty": "Spezialität"
   },
   "optimal": {
     "title": "Optimale Unterbringung fuer alle Pokemon",
@@ -51,7 +68,27 @@
     "subtitle": "Waehlen Sie Ihre Pokemon aus, um die beste Gruppierung zu finden",
     "description": "Waehlen Sie die Pokemon aus, die Sie besitzen, und der Optimierer findet die effizienteste Gruppierung.",
     "selectPrompt": "Waehlen Sie mindestens 2 Pokemon aus, um die Optimierung zu starten",
-    "emptyState": "Waehlen Sie Pokemon aus und klicken Sie auf Optimieren"
+    "emptyState": "Waehlen Sie Pokemon aus und klicken Sie auf Optimieren",
+    "lock": "Dieses Haus sperren",
+    "unlock": "Dieses Haus entsperren",
+    "locked": "Gesperrt",
+    "move": "Verschieben",
+    "moveTo": "Verschieben nach",
+    "newHouse": "Neues Haus",
+    "reoptimize": "Ungesperrte Häuser neu optimieren",
+    "export": "Exportieren",
+    "import": "Importieren",
+    "share": "Teilen-Link kopieren",
+    "copied": "Link kopiert!",
+    "reset": "Plan zurücksetzen",
+    "resetConfirm": "Plan und Auswahl löschen?",
+    "dragHint": "Ziehe ein Pokémon in ein anderes Haus derselben Umgebung oder nutze den Verschieben-Button.",
+    "planRestored": "Plan aus Link geladen",
+    "unplaced": "Ausgewählt, aber noch nicht platziert",
+    "full": "Voll",
+    "importError": "Ungültige Datei",
+    "myVillage": "Mein Dorf",
+    "savedLocally": "In diesem Browser gespeichert"
   },
   "legal": {
     "title": "Rechtliche Hinweise",
@@ -127,6 +164,35 @@
     "Lieux pour jouer": "Etwas zum vergnügt Toben",
     "Moyens de transport": "Fahrzeuge",
     "Recipients": "Etwas Befüllbares"
+  },
+  "rating": {
+    "perfect": "Perfekt",
+    "excellent": "Ausgezeichnet",
+    "veryGood": "Sehr gut",
+    "good": "Gut",
+    "okay": "Okay",
+    "low": "Niedrig"
+  },
+  "sources": {
+    "base": "Hauptspiel",
+    "basin": "DLC Bubbly Basin",
+    "event": "Event"
+  },
+  "regions": {
+    "withered-wastelands": "Withered Wastelands",
+    "bleak-beach": "Bleak Beach",
+    "rocky-ridges": "Rocky Ridges",
+    "sparkling-skylands": "Sparkling Skylands",
+    "palette-town": "Palette Town",
+    "bubbly-basin": "Bubbly Basin",
+    "dream-island": "Dream Island",
+    "event": "Event"
+  },
+  "pwa": {
+    "install": "App installieren",
+    "updateAvailable": "Neue Version verfügbar",
+    "reload": "Neu laden",
+    "offline": "Offline: zwischengespeicherte Daten werden angezeigt."
   },
   "pokemon": {
     "Bulbizarre": "Bisasam",
@@ -489,13 +555,5 @@
     "Delestin": "Agiluza",
     "Phione": "Phione",
     "Manaphy": "Manaphy"
-  },
-  "rating": {
-    "perfect": "Perfekt",
-    "excellent": "Ausgezeichnet",
-    "veryGood": "Sehr gut",
-    "good": "Gut",
-    "okay": "Okay",
-    "low": "Niedrig"
   }
 }

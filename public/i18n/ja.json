@@ -37,7 +37,24 @@
     "itemTips": "家具のヒント",
     "lookFor": "必要なアイテム：",
     "noDirectButItems": "家具で相性が良い！",
-    "itemsToFind": "必要なアイテム"
+    "itemsToFind": "必要なアイテム数",
+    "compatibility": "相性",
+    "avgCompatibility": "平均相性",
+    "minShared": "1軒あたりの共通の好みの最小数",
+    "minSharedHint": "0 = 家の数を最小に。値を上げるほど全員が喜ぶアイテムだけになりますが、家の数は増えます。",
+    "includeDlc": "DLC「バブリーベイスン」を含める",
+    "includeEvent": "イベントポケモンを含める",
+    "options": "オプション",
+    "computing": "計算中...",
+    "filterByRegion": "エリアで絞り込む",
+    "filterBySpecialty": "とくい",
+    "filterBySource": "入手元",
+    "allRegions": "すべて",
+    "allSpecialties": "すべて",
+    "underwater": "潜水できる",
+    "advancedFilters": "詳細フィルター",
+    "region": "エリア",
+    "specialty": "とくい"
   },
   "optimal": {
     "title": "全ポケモンの最適な住居",
@@ -51,7 +68,27 @@
     "subtitle": "ポケモンを選んで最適なグループ分けを見つけましょう",
     "description": "所持しているポケモンを選択すると、オプティマイザーが効率的なグループ分けを見つけます。",
     "selectPrompt": "最適化を開始するには、2体以上のポケモンを選択してください",
-    "emptyState": "ポケモンを選択して「最適化」をクリックしてください"
+    "emptyState": "ポケモンを選択して「最適化」をクリックしてください",
+    "lock": "この家をロック",
+    "unlock": "この家のロックを解除",
+    "locked": "ロック中",
+    "move": "移動",
+    "moveTo": "移動先",
+    "newHouse": "新しい家",
+    "reoptimize": "ロックされていない家を再最適化",
+    "export": "エクスポート",
+    "import": "インポート",
+    "share": "共有リンクをコピー",
+    "copied": "リンクをコピーしました",
+    "reset": "プランをリセット",
+    "resetConfirm": "プランと選択を消去しますか？",
+    "dragHint": "同じ環境の別の家へポケモンをドラッグするか、移動ボタンを使ってください。",
+    "planRestored": "リンクからプランを読み込みました",
+    "unplaced": "選択済みで未配置",
+    "full": "満室",
+    "importError": "無効なファイル",
+    "myVillage": "わたしの村",
+    "savedLocally": "このブラウザーに保存済み"
   },
   "legal": {
     "title": "法的情報",
@@ -127,6 +164,35 @@
     "Lieux pour jouer": "あそびば",
     "Moyens de transport": "乗りもの",
     "Recipients": "いれもの"
+  },
+  "rating": {
+    "perfect": "完璧",
+    "excellent": "最高",
+    "veryGood": "とても良い",
+    "good": "良い",
+    "okay": "まあまあ",
+    "low": "低い"
+  },
+  "sources": {
+    "base": "本編",
+    "basin": "DLC バブリーベイスン",
+    "event": "イベント"
+  },
+  "regions": {
+    "withered-wastelands": "Withered Wastelands",
+    "bleak-beach": "Bleak Beach",
+    "rocky-ridges": "Rocky Ridges",
+    "sparkling-skylands": "Sparkling Skylands",
+    "palette-town": "Palette Town",
+    "bubbly-basin": "Bubbly Basin",
+    "dream-island": "Dream Island",
+    "event": "イベント"
+  },
+  "pwa": {
+    "install": "アプリをインストール",
+    "updateAvailable": "新しいバージョンがあります",
+    "reload": "再読み込み",
+    "offline": "オフライン：キャッシュされたデータを表示しています。"
   },
   "pokemon": {
     "Bulbizarre": "フシギダネ",
@@ -489,13 +555,5 @@
     "Delestin": "ミガルーサ",
     "Phione": "フィオネ",
     "Manaphy": "マナフィ"
-  },
-  "rating": {
-    "perfect": "完璧",
-    "excellent": "最高",
-    "veryGood": "とても良い",
-    "good": "良い",
-    "okay": "まあまあ",
-    "low": "低い"
   }
 }
