@@ -17,6 +17,7 @@ import { renderFooter } from './components/footer.js';
 import { renderOptimalPage } from './pages/optimal.js';
 import { renderPlannerPage } from './pages/planner.js';
 import { renderLegalPage } from './pages/legal.js';
+import { initPwa } from './core/pwa.js';
 
 /**
  * Renders the appropriate page based on the route name.
@@ -82,6 +83,9 @@ async function init() {
 
   // Initialize router (renders initial page)
   initRouter(renderPage);
+
+  // Offline support + install prompt
+  initPwa();
 
   // Expose re-render for language changes
   window.__pokopiaRerender = () => {
