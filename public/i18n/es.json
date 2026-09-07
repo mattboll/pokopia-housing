@@ -72,7 +72,8 @@
     "ownedItemsHint": "Todo está marcado por defecto: desmarca lo que aún no tienes y las sugerencias se adaptan.",
     "searchItem": "Buscar un objeto...",
     "all": "Todos",
-    "none": "Ninguno"
+    "none": "Ninguno",
+    "markUnowned": "No lo tengo"
   },
   "optimal": {
     "title": "Vivienda optima para todos los Pokemon",
@@ -106,7 +107,8 @@
     "full": "Llena",
     "importError": "Archivo no válido",
     "myVillage": "Mi pueblo",
-    "savedLocally": "Guardado en este navegador"
+    "savedLocally": "Guardado en este navegador",
+    "deselect": "Quitar de la selección"
   },
   "legal": {
     "title": "Avisos legales",

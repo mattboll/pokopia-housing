@@ -77,6 +77,8 @@ function compatibilityRating(house) {
  * @property {(memberName: string, fromId: string, house: Object) => void} [onDrop]
  * @property {import('../algorithm/items.js').Item[]} [items] - item catalog for suggestions
  * @property {Set<string> | null} [owned] - owned item slugs (null = everything)
+ * @property {(memberName: string, house: Object) => void} [onRemoveMember] - deselect a Pokemon from the results
+ * @property {(slug: string, owned: boolean) => void} [onToggleOwned] - mark an item as owned / not owned
  */
 
 /**
@@ -152,6 +154,15 @@ export function createHouseCard(house, index, opts = {}) {
       residentsList.appendChild(resident);
       return;
     }
+    if (opts.onRemoveMember) {
+      resident.appendChild(el('button', {
+        type: 'button',
+        className: 'house-card-remove-btn',
+        'aria-label': `${t('planner.deselect')} ${nameBtn.textContent}`,
+        title: t('planner.deselect'),
+        onClick: (e) => { e.stopPropagation(); opts.onRemoveMember(member.name, house); },
+      }, '✕'));
+    }
     resident.setAttribute('draggable', 'true');
     resident.addEventListener('dragstart', (e) => {
       dragging = { name: member.name, fromId: house.id, environment: member.environment };
@@ -208,7 +219,8 @@ export function createHouseCard(house, index, opts = {}) {
         onClick: (e) => {
           e.stopPropagation();
           if (flavor) {
-            showListPopover(pill, `🍽️ ${tp(pref)}`, [{ label: t('common.foodHint'), icon: '🍳' }]);
+            const fans = house.members.filter((m) => m.preferences.includes(pref)).map((m) => tn(m.name));
+            showListPopover(pill, `🍽️ ${tp(pref)}`, [{ label: t('common.foodHint'), icon: '🍳' }], `${t('common.pleases')} ${fans.join(', ')}`);
             return;
           }
           const entries = itemsForCategory(pref, catalog, house.items, owned).slice(0, 40).map((r) => ({
@@ -217,9 +229,10 @@ export function createHouseCard(house, index, opts = {}) {
             muted: !r.owned,
             icon: r.owned ? '🛋️' : '🚫',
           }));
+          const fans = house.members.filter((m) => m.preferences.includes(pref)).map((m) => tn(m.name));
           showListPopover(pill, `${t('common.itemsForCategory')} ${tp(pref)}`,
             entries.length ? entries : [{ label: t('common.noItemKnown'), icon: '❔' }],
-            t('common.itemsSortedHint'));
+            `${t('common.pleases')} ${fans.join(', ')}. ${t('common.itemsSortedHint')}`);
         },
       }, `${flavor ? '🍽️ ' : ''}${tp(pref)} `, el('span', { className: 'house-card-pill__count' }, `×${n}`));
       pills.appendChild(pill);
@@ -245,8 +258,11 @@ export function createHouseCard(house, index, opts = {}) {
           const entries = item.food
             ? [{ label: t('common.foodHint'), icon: '🍳' }]
             : item.categories.map((c) => ({ label: tp(c), icon: covers.includes(c) ? '✅' : '○' }));
+          const actions = (!item.food && opts.onToggleOwned)
+            ? [{ label: `🚫 ${t('common.markUnowned')}`, onSelect: () => opts.onToggleOwned(item.slug, false) }]
+            : [];
           showListPopover(pill, itemLabel(item), entries,
-            `${t('common.pleases')} ${residents.map((i) => tn(house.members[i].name)).join(', ')}`);
+            `${t('common.pleases')} ${residents.map((i) => tn(house.members[i].name)).join(', ')}`, actions);
         },
       }, itemLabel(item), el('span', { className: 'house-card-pill__count' }, ` ×${covers.length}`));
       pills.appendChild(pill);

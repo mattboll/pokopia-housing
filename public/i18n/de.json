@@ -72,7 +72,8 @@
     "ownedItemsHint": "Standardmäßig ist alles angehakt: entferne den Haken bei allem, was du noch nicht hast, die Vorschläge passen sich an.",
     "searchItem": "Gegenstand suchen...",
     "all": "Alle",
-    "none": "Keine"
+    "none": "Keine",
+    "markUnowned": "Habe ich nicht"
   },
   "optimal": {
     "title": "Optimale Unterbringung fuer alle Pokemon",
@@ -106,7 +107,8 @@
     "full": "Voll",
     "importError": "Ungültige Datei",
     "myVillage": "Mein Dorf",
-    "savedLocally": "In diesem Browser gespeichert"
+    "savedLocally": "In diesem Browser gespeichert",
+    "deselect": "Aus der Auswahl entfernen"
   },
   "legal": {
     "title": "Rechtliche Hinweise",

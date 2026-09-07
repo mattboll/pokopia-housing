@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#E3350D"/>
+  <polygon points="12,31 32,13 52,31" fill="#fff"/>
+  <rect x="17" y="29" width="30" height="22" fill="#fff"/>
+  <rect x="28" y="38" width="8" height="13" fill="#E3350D"/>
+  <rect x="20" y="33" width="6" height="6" fill="#FFD036"/>
+  <rect x="38" y="33" width="6" height="6" fill="#FFD036"/>
+</svg>

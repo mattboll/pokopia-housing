@@ -72,7 +72,8 @@
     "ownedItemsHint": "最初はすべてチェック済み。まだ持っていないものを外すと、おすすめが変わります。",
     "searchItem": "アイテムを検索...",
     "all": "すべて",
-    "none": "なし"
+    "none": "なし",
+    "markUnowned": "持っていない"
   },
   "optimal": {
     "title": "全ポケモンの最適な住居",
@@ -106,7 +107,8 @@
     "full": "満室",
     "importError": "無効なファイル",
     "myVillage": "わたしの村",
-    "savedLocally": "このブラウザーに保存済み"
+    "savedLocally": "このブラウザーに保存済み",
+    "deselect": "選択から外す"
   },
   "legal": {
     "title": "法的情報",

@@ -72,7 +72,8 @@
     "ownedItemsHint": "Everything is checked by default: uncheck what you do not have yet, suggestions adapt.",
     "searchItem": "Search an item...",
     "all": "All",
-    "none": "None"
+    "none": "None",
+    "markUnowned": "I don't have it"
   },
   "optimal": {
     "title": "Optimal housing for all Pokemon",
@@ -106,7 +107,8 @@
     "full": "Full",
     "importError": "Invalid file",
     "myVillage": "My village",
-    "savedLocally": "Saved in this browser"
+    "savedLocally": "Saved in this browser",
+    "deselect": "Remove from selection"
   },
   "legal": {
     "title": "Legal notice",

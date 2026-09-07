@@ -1456,3 +1456,27 @@ button.house-card-pill {
   opacity: 0.55;
   text-decoration: line-through;
 }
+
+.house-card-remove-btn {
+  margin-left: 2px;
+  padding: 0 4px;
+  font-size: var(--text-xs);
+  line-height: 1.4;
+  color: var(--color-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+
+.house-card-remove-btn:hover,
+.house-card-remove-btn:focus-visible {
+  color: #fff;
+  background: var(--color-error);
+}
+
+.popover__actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}

@@ -115,5 +115,6 @@ export function createOwnedItemsPanel(items, unowned, onChange) {
   });
 
   updateCount();
+  details.refresh = () => { updateCount(); if (rendered) renderList(); };
   return details;
 }

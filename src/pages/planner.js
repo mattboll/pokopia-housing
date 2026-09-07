@@ -7,7 +7,7 @@ import { createHouseCard, getDragging } from '../components/house-card.js';
 import { showMenuPopover } from '../components/pokemon-popover.js';
 import { createOptionsPanel, loadOptions, clampSatisfy } from '../components/optimize-options.js';
 import { createStatsSummary } from '../components/stats-summary.js';
-import { createOwnedItemsPanel, loadUnowned, ownedFrom } from '../components/owned-items.js';
+import { createOwnedItemsPanel, loadUnowned, ownedFrom, saveUnowned } from '../components/owned-items.js';
 import { optimize } from '../algorithm/optimizer.js';
 import {
   loadPlan, savePlan, clearPlan, emptyPlan, normalizePlan, newHouseId,
@@ -55,7 +55,8 @@ export function renderPlannerPage() {
   const leftPanel = el('div', { className: 'planner-panel planner-panel-left' });
   leftPanel.appendChild(createPokemonSelector(allPokemon, store));
   leftPanel.appendChild(createOptionsPanel(options, () => render(), { showSources: false }));
-  if (catalog.length > 0) leftPanel.appendChild(createOwnedItemsPanel(catalog, unowned, () => render()));
+  const ownedPanel = catalog.length > 0 ? createOwnedItemsPanel(catalog, unowned, () => render()) : null;
+  if (ownedPanel) leftPanel.appendChild(ownedPanel);
 
   const optimizeBtn = el('button', {
     type: 'button',
@@ -337,6 +338,18 @@ export function renderPlannerPage() {
           editable: true,
           items: catalog,
           owned: ownedFrom(catalog, unowned),
+          onRemoveMember: (name) => {
+            const set = new Set(store.getState().selectedPokemon);
+            set.delete(name);
+            store.setState({ selectedPokemon: set });
+            saveSelection(set);
+          },
+          onToggleOwned: (slug, isOwned) => {
+            if (isOwned) unowned.delete(slug); else unowned.add(slug);
+            saveUnowned(unowned);
+            if (ownedPanel) ownedPanel.refresh();
+            render();
+          },
           onToggleLock: toggleLock,
           onMove: openMoveMenu,
           onDrop: (name, fromId, target) => moveMember(name, fromId, target.id),

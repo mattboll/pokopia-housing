@@ -266,8 +266,9 @@ export function showMenuPopover(anchor, title, items) {
  * @param {string} title
  * @param {Array<{label: string, sub?: string, muted?: boolean, icon?: string}>} entries
  * @param {string} [footer]
+ * @param {Array<{label: string, onSelect: () => void}>} [actions] - buttons shown under the list
  */
-export function showListPopover(anchor, title, entries, footer) {
+export function showListPopover(anchor, title, entries, footer, actions = []) {
   closePopover();
 
   const list = el('ul', { className: 'popover__pref-list popover__list' });
@@ -286,10 +287,17 @@ export function showListPopover(anchor, title, entries, footer) {
     onClick: (e) => { e.stopPropagation(); closePopover(); },
   }, '\u2715');
 
+  const actionsEl = actions.length
+    ? el('div', { className: 'popover__actions' }, ...actions.map((a) => el('button', {
+        type: 'button', className: 'btn btn-secondary btn--sm',
+        onClick: (e) => { e.stopPropagation(); closePopover(); a.onSelect(); },
+      }, a.label)))
+    : null;
+
   const popover = el('div', { className: 'popover pokemon-popover popover--wide', role: 'dialog', 'aria-label': title },
     closeBtn,
     el('div', { className: 'popover__header' }, el('span', { className: 'popover__name' }, title)),
-    el('div', { className: 'popover__body' }, list, footer ? el('p', { className: 'popover__legend' }, footer) : null)
+    el('div', { className: 'popover__body' }, list, footer ? el('p', { className: 'popover__legend' }, footer) : null, actionsEl)
   );
 
   positionPopover(popover, anchor);

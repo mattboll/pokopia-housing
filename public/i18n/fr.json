@@ -72,7 +72,8 @@
     "ownedItemsHint": "Tout est coché par défaut : décochez ce que vous n'avez pas encore, les suggestions s'adaptent.",
     "searchItem": "Rechercher un objet...",
     "all": "Tous",
-    "none": "Aucun"
+    "none": "Aucun",
+    "markUnowned": "Je ne l'ai pas"
   },
   "optimal": {
     "title": "Logement optimal pour tous les Pokémon",
@@ -106,7 +107,8 @@
     "full": "Complète",
     "importError": "Fichier invalide",
     "myVillage": "Mon village",
-    "savedLocally": "Sauvegardé dans ce navigateur"
+    "savedLocally": "Sauvegardé dans ce navigateur",
+    "deselect": "Retirer de la sélection"
   },
   "legal": {
     "title": "Mentions légales",
