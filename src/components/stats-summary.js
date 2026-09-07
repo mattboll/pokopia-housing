@@ -21,7 +21,7 @@ export function createStatsSummary(result) {
     card('🐾', String(result.totalPokemon), 'common.totalPokemon'),
     card('🛋️', String(result.itemsToPlace), 'common.itemsToPlace', 'stat-card--primary'),
     card('📦', perHouse.toFixed(1), 'common.itemsPerHouse'),
-    card('🔝', String(result.maxItems), 'common.maxItems'),
+    card('📈', String(result.maxItems), 'common.maxItems'),
     card('⭐', result.averageScore.toFixed(2), 'common.avgShared', 'stat-card--muted'),
   );
 }

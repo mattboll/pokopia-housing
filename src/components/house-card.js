@@ -133,21 +133,23 @@ export function createHouseCard(house, index, opts = {}) {
   const residentsList = el('div', { className: 'house-card-residents' });
   const itemSet = new Set(house.items || []);
   house.members.forEach((member, i) => {
-    if (i > 0) residentsList.appendChild(el('span', { className: 'house-card-sep' }, ', '));
     const nameBtn = createPokemonNameButton(member, house.items || house.sharedPreferences);
+    const resident = el('span', { className: 'house-card-resident' }, nameBtn);
     if (house.covered) {
       const k = Math.min(house.satisfy || 4, member.preferences.length);
       const c = house.covered[i];
-      nameBtn.appendChild(el('span', {
-        className: 'house-card-covered' + (c >= k ? ' house-card-covered--ok' : ''),
+      const ok = c >= k;
+      resident.appendChild(el('span', {
+        className: 'house-card-covered' + (ok ? ' house-card-covered--ok' : ' house-card-covered--low'),
         title: `${c}/${member.preferences.length} ${t('common.coveredPrefs')}`,
-      }, ` ${c}/${member.preferences.length}`));
+        'aria-label': `${c}/${member.preferences.length} ${t('common.coveredPrefs')}`,
+      }, ok ? '✓' : `${c}/${k}`));
     }
     if (!editable) {
-      residentsList.appendChild(nameBtn);
+      residentsList.appendChild(resident);
       return;
     }
-    const resident = el('span', { className: 'house-card-resident', draggable: 'true' }, nameBtn);
+    resident.setAttribute('draggable', 'true');
     resident.addEventListener('dragstart', (e) => {
       dragging = { name: member.name, fromId: house.id, environment: member.environment };
       resident.classList.add('house-card-resident--dragging');

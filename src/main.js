@@ -49,7 +49,7 @@ function renderPage(page) {
   // Focus main content for accessibility
   if (main) {
     main.setAttribute('tabindex', '-1');
-    main.focus();
+    main.focus({ preventScroll: true });
   }
 
   // Announce page change for screen readers

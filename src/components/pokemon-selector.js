@@ -136,8 +136,14 @@ export function createPokemonSelector(allPokemon, store) {
     selectAllBtn, clearBtn, countDisplay
   );
 
-  // Grid container — Pokedex style
+  // Grid container — Pokedex style, inside a wrapper that shows a scroll cue
   const grid = el('div', { className: 'dex-grid', role: 'grid', 'aria-label': 'Pokemon selector' });
+  const gridWrap = el('div', { className: 'dex-grid-wrap' }, grid);
+  const updateScrollCue = () => {
+    const atEnd = grid.scrollTop + grid.clientHeight >= grid.scrollHeight - 4;
+    gridWrap.classList.toggle('dex-grid-wrap--more', !atEnd && grid.scrollHeight > grid.clientHeight);
+  };
+  grid.addEventListener('scroll', updateScrollCue, { passive: true });
 
   function getVisiblePokemon() {
     const normalizedQuery = normalize(searchQuery);
@@ -223,6 +229,16 @@ export function createPokemonSelector(allPokemon, store) {
     grid.innerHTML = '';
     const visible = getVisiblePokemon();
     const selected = store.getState().selectedPokemon;
+    searchBar.setCount(visible.length, allPokemon.length);
+
+    if (visible.length === 0) {
+      grid.appendChild(el('div', { className: 'dex-grid__empty' },
+        el('span', { className: 'dex-grid__empty-icon', 'aria-hidden': 'true' }, '🫥'),
+        el('span', null, t('common.noResults'))
+      ));
+      requestAnimationFrame(updateScrollCue);
+      return;
+    }
 
     for (const pokemon of visible) {
       const isChecked = selected instanceof Set ? selected.has(pokemon.name) : false;
@@ -277,6 +293,7 @@ export function createPokemonSelector(allPokemon, store) {
 
       grid.appendChild(cell);
     }
+    requestAnimationFrame(updateScrollCue);
   }
 
   // Assemble
@@ -284,7 +301,7 @@ export function createPokemonSelector(allPokemon, store) {
   section.appendChild(envFilterEl);
   section.appendChild(createAdvancedFilters());
   section.appendChild(actions);
-  section.appendChild(grid);
+  section.appendChild(gridWrap);
 
   // Keep cells in sync when the selection is changed elsewhere (share link, import, reset)
   store.subscribe('selectedPokemon', (selected) => {

@@ -71,6 +71,25 @@ export function renderPlannerPage() {
   layout.append(leftPanel, rightPanel);
   main.appendChild(layout);
 
+  // Desktop: the left panel is sticky and scrolls internally. Size it to the
+  // space actually left under its current top edge so the Optimize button
+  // (sticky at the panel's bottom) is always on screen.
+  const desktop = window.matchMedia('(min-width: 768px)');
+  function fitLeftPanel() {
+    if (!document.body.contains(leftPanel)) {
+      window.removeEventListener('scroll', fitLeftPanel);
+      window.removeEventListener('resize', fitLeftPanel);
+      return;
+    }
+    if (!desktop.matches) { leftPanel.style.maxHeight = ''; return; }
+    const stickyTop = parseFloat(getComputedStyle(leftPanel).top) || 80;
+    const top = Math.max(stickyTop, leftPanel.getBoundingClientRect().top);
+    leftPanel.style.maxHeight = `${Math.max(320, window.innerHeight - top - 16)}px`;
+  }
+  window.addEventListener('scroll', fitLeftPanel, { passive: true });
+  window.addEventListener('resize', fitLeftPanel);
+  requestAnimationFrame(fitLeftPanel);
+
   // ---- Toolbar actions
   const fileInput = el('input', { type: 'file', accept: 'application/json,.json', className: 'sr-only', tabindex: '-1' });
   fileInput.addEventListener('change', async () => {
@@ -169,6 +188,10 @@ export function renderPlannerPage() {
       optimizeBtn.disabled = false;
       persist();
       announce(t('a11y.resultsUpdated').replace('{count}', String(result.totalHouses)));
+      // On narrow screens the results are below the selector: bring them into view
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        rightPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }, 30);
   }
 
@@ -288,7 +311,7 @@ export function renderPlannerPage() {
     const groups = planToEnvironmentHouses(plan, byName, options.satisfy);
     const summary = summarize(groups);
     statsSlot.appendChild(createStatsSummary(summary));
-    statsSlot.appendChild(el('p', { className: 'village-hint' }, `✋ ${t('planner.dragHint')}`));
+    statsSlot.appendChild(el('p', { className: 'village-hint' }, `💡 ${t('planner.dragHint')}`));
 
     let index = 1;
     for (const [envName, houses] of Object.entries(groups)) {
