@@ -4,6 +4,7 @@ import './styles/theme.css';
 import './styles/layout.css';
 import './styles/components.css';
 import './styles/pages.css';
+import './styles/village.css';
 
 import { $ } from './utils/dom.js';
 import { initTheme } from './core/theme.js';
@@ -12,6 +13,8 @@ import { initRouter } from './core/router.js';
 import { store } from './core/store.js';
 import { loadPokemonData, loadPokemonMeta, loadItems } from './core/data-loader.js';
 import { prepareItems } from './algorithm/items.js';
+import { loadPokemonIds } from './core/sprites.js';
+import { renderHelpPage } from './pages/help.js';
 import { announce } from './utils/a11y.js';
 import { renderHeader } from './components/header.js';
 import { renderFooter } from './components/footer.js';
@@ -43,6 +46,9 @@ function renderPage(page) {
     case 'legal':
       renderLegalPage();
       break;
+    case 'help':
+      renderHelpPage();
+      break;
     default:
       renderOptimalPage();
   }
@@ -71,7 +77,7 @@ async function init() {
 
   // Load Pokemon data
   try {
-    const [allPokemon, pokemonMeta, itemsJson] = await Promise.all([loadPokemonData(), loadPokemonMeta(), loadItems()]);
+    const [allPokemon, pokemonMeta, itemsJson] = await Promise.all([loadPokemonData(), loadPokemonMeta(), loadItems(), loadPokemonIds()]);
     store.setState({ allPokemon, pokemonMeta, items: prepareItems(itemsJson) });
   } catch (err) {
     console.error('Failed to load Pokemon data:', err);

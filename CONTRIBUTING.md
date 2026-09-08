@@ -33,8 +33,8 @@ src/
     router.js         #   Hash-based SPA routing
     store.js          #   Reactive state management (pub/sub)
     theme.js          #   Dark/light mode toggle
-  components/         # Reusable UI components
-  pages/              # Page renderers (optimal, planner, legal)
+  components/         # Reusable UI components (house-tile, house-detail, detail-panel, drawer, selector, ...)
+  pages/              # Page renderers (optimal, planner = my village, help, legal)
   styles/             # CSS (tokens, theme, layout, components, pages)
   utils/              # Small helpers (DOM, debounce, a11y, CSV parser)
 public/

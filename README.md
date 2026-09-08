@@ -8,6 +8,7 @@ Optimize Pokemon housing in **Pokemon Pokopia** by grouping Pokemon with shared 
 
 ## Features
 
+- **Mobile first**: houses are tiles (environment band, residents' sprites, stars, items to place); tap one for its detail in a bottom sheet (side panel on desktop)
 - **Optimal Housing**: grouping of every Pokemon in the game, computed in your browser
   - toggle the **Bubbly Basin DLC** and **event Pokemon** on/off
   - **favorites to satisfy per Pokemon** slider (default 4 of 6): the site computes the smallest set of items that gives every resident that many favorites
@@ -18,7 +19,8 @@ Optimize Pokemon housing in **Pokemon Pokopia** by grouping Pokemon with shared 
   - **lock** houses you have already built, then re-optimize the rest
   - **owned items**: uncheck what you do not have yet, suggestions adapt
   - saved in your browser, **share link**, JSON export / import
-- **Filters**: environment, region, specialty, DLC / event, can dive
+- **Filters**: environment, region, specialty, DLC / event, can dive; find which house a Pokemon lives in
+- **Help page** and a first-visit banner explaining the game rules and what the tool optimizes
 - **Installable (PWA)** and works offline once loaded
 - **5 Languages**: Japanese, English, French, German, Spanish (auto-detected)
 - **Accessible**: WCAG 2.1 AA, keyboard navigation, screen reader support

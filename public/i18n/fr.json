@@ -8,7 +8,9 @@
   "nav": {
     "optimal": "Logement optimal",
     "planner": "Planificateur",
-    "legal": "Mentions légales"
+    "legal": "Mentions légales",
+    "village": "Mon village",
+    "help": "Aide"
   },
   "common": {
     "search": "Rechercher un Pokémon...",
@@ -76,11 +78,14 @@
     "markUnowned": "Je ne l'ai pas"
   },
   "optimal": {
-    "title": "Logement optimal pour tous les Pokémon",
+    "title": "Logement optimal",
     "subtitle": "Configuration minimale pour loger tous les Pokémon du jeu",
     "description": "Cet outil regroupe les Pokémon par environnement et par préférences pour poser le moins d'objets possible. Chaque maison affiche sa liste d'objets à poser.",
     "ctaTitle": "Vous n'avez pas tous les Pokémon ?",
-    "ctaDescription": "Utilisez le planificateur pour optimiser uniquement ceux que vous possédez."
+    "ctaDescription": "Utilisez le planificateur pour optimiser uniquement ceux que vous possédez.",
+    "tagline": "Tous les Pokémon du jeu, regroupés par maison pour poser le moins d'objets possible.",
+    "makeVillage": "Fais ton village",
+    "notAll": "Tu n'as pas tout le Pokédex ?"
   },
   "planner": {
     "title": "Planificateur personnalisé",
@@ -921,6 +926,72 @@
     "wildflowers(orange)": "Fleurs sauvages (orange)",
     "wildflowers(purple)": "Fleurs sauvages (violet)",
     "wildflowers(red)": "Fleurs sauvages (rouge)"
+  },
+  "village": {
+    "title": "Mon village",
+    "summary": "{p} Pokémon logés dans {h} maisons. Il te reste {i} objets à poser.",
+    "emptyTitle": "Ton village est vide",
+    "emptyText": "Ajoute les Pokémon que tu as recrutés, on les regroupe et on te dit quoi fabriquer.",
+    "addPokemon": "Ajouter des Pokémon",
+    "pokemonAndSettings": "Pokémon et réglages",
+    "tileHint": "Touche une maison pour voir sa liste de courses.",
+    "findPokemon": "Trouver un Pokémon…",
+    "unplacedShort": "{n} sélectionnés pas encore placés",
+    "optimizeNow": "Optimiser maintenant",
+    "saved": "Sauvegardé dans ce navigateur",
+    "tools": "Partage et sauvegarde"
+  },
+  "detail": {
+    "residents": "Résidents",
+    "toPlace": "À poser",
+    "itemsAndDishes": "{i} objets + {f} plat",
+    "itemsAndDishesPlural": "{i} objets + {f} plats",
+    "itemsOnly": "{i} objets",
+    "tapItem": "Touche un objet pour voir les alternatives.",
+    "allPrefs": "Toutes les préférences",
+    "move": "Déplacer",
+    "moveWho": "Quel résident déplacer ?",
+    "close": "Fermer",
+    "covers": "couvre",
+    "forEveryone": "pour tous",
+    "of": "sur"
+  },
+  "stats": {
+    "houses": "maisons pour {n} Pokémon",
+    "items": "objets à poser, {avg} par maison",
+    "busiest": "objets pour la maison la plus chargée",
+    "housesShort": "maisons",
+    "itemsShort": "objets"
+  },
+  "settings": {
+    "summaryDlc": "DLC inclus",
+    "summaryNoDlc": "sans DLC",
+    "summaryEvent": "événements inclus",
+    "summaryNoEvent": "sans événements",
+    "summarySatisfy": "{n} préférences par Pokémon",
+    "modify": "Modifier",
+    "title": "Réglages"
+  },
+  "firstVisit": {
+    "title": "Première visite ?",
+    "optimal": "Chaque carte est une maison. Le compteur rouge dit combien d'objets fabriquer. Touche une maison pour voir lesquels, et pourquoi ces Pokémon vont ensemble.",
+    "village": "Ajoute tes Pokémon, on les regroupe quatre par maison. Touche une maison pour sa liste de courses, verrouille celles que tu as déjà construites.",
+    "close": "Compris"
+  },
+  "help": {
+    "title": "Comment ça marche",
+    "rulesTitle": "Les règles du jeu",
+    "rules": "Une maison accueille jusqu'à 4 Pokémon du même environnement (Lumineux, Sombre, Chaud, Frais, Humide, Sec). Chaque Pokémon a 6 préférences : 5 catégories d'objets et 1 goût. Un objet posé dans la maison compte pour tous les résidents qui l'aiment, et un même objet porte souvent plusieurs catégories : une table en bois ronde plaît aux amateurs de bois et de rond.",
+    "goalTitle": "Ce que l'outil optimise",
+    "goal": "On regroupe les Pokémon pour que chaque maison demande le moins d'objets possible, en partant du principe qu'un Pokémon est content avec 4 de ses 6 préférences (réglable). Ensuite on choisit des objets réels qui couvrent plusieurs préférences à la fois.",
+    "starsTitle": "Les étoiles",
+    "starsText": "Cinq étoiles : la maison se meuble avec presque autant d'objets qu'un Pokémon seul. Une étoile : chaque résident a besoin de ses propres objets.",
+    "dishTitle": "Les plats",
+    "dishText": "Les goûts (sucré, épicé, amer, âcre, acidulé) ne se posent pas : c'est de la nourriture à cuisiner ou à offrir au Pokémon.",
+    "dataTitle": "D'où viennent les données",
+    "dataText": "Préférences des Pokémon et catégories des objets depuis Serebii, noms français des objets depuis Pokekalos. Le catalogue d'objets est encore incomplet, les corrections sont bienvenues sur GitHub.",
+    "privacyTitle": "Tes données",
+    "privacyText": "Ton village, ta sélection et tes objets restent dans ton navigateur. Rien n'est envoyé nulle part. Le lien de partage contient tout ce qu'il faut pour le recréer ailleurs."
   },
   "pokemon": {
     "Bulbizarre": "Bulbizarre",

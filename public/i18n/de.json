@@ -8,7 +8,9 @@
   "nav": {
     "optimal": "Optimale Unterbringung",
     "planner": "Planer",
-    "legal": "Rechtliches"
+    "legal": "Rechtliches",
+    "village": "Mein Dorf",
+    "help": "Hilfe"
   },
   "common": {
     "search": "Pokemon suchen...",
@@ -76,11 +78,14 @@
     "markUnowned": "Habe ich nicht"
   },
   "optimal": {
-    "title": "Optimale Unterbringung fuer alle Pokemon",
+    "title": "Optimale Unterbringung",
     "subtitle": "Minimale Konfiguration zur Unterbringung aller 314 Pokemon im Spiel",
     "description": "Dieses Tool gruppiert Pokémon nach Umgebung und Vorlieben, um so wenige Gegenstände wie möglich zu platzieren. Jedes Haus zeigt seine Liste der zu platzierenden Gegenstände.",
     "ctaTitle": "Hast du nicht alle Pokemon?",
-    "ctaDescription": "Nutze den Planer, um nur die zu optimieren, die du besitzt."
+    "ctaDescription": "Nutze den Planer, um nur die zu optimieren, die du besitzt.",
+    "tagline": "Alle Pokémon des Spiels, nach Haus gruppiert, um so wenige Gegenstände wie möglich zu platzieren.",
+    "makeVillage": "Dein Dorf planen",
+    "notAll": "Du hast nicht den ganzen Pokédex?"
   },
   "planner": {
     "title": "Benutzerdefinierter Planer",
@@ -215,6 +220,72 @@
     "offline": "Offline: zwischengespeicherte Daten werden angezeigt."
   },
   "items": {},
+  "village": {
+    "title": "Mein Dorf",
+    "summary": "{p} Pokémon in {h} Häusern. Noch {i} Gegenstände zu platzieren.",
+    "emptyTitle": "Dein Dorf ist leer",
+    "emptyText": "Füge die Pokémon hinzu, die du rekrutiert hast. Wir gruppieren sie und sagen dir, was du bauen musst.",
+    "addPokemon": "Pokémon hinzufügen",
+    "pokemonAndSettings": "Pokémon und Einstellungen",
+    "tileHint": "Tippe auf ein Haus, um seine Einkaufsliste zu sehen.",
+    "findPokemon": "Pokémon finden…",
+    "unplacedShort": "{n} ausgewählt, noch nicht platziert",
+    "optimizeNow": "Jetzt optimieren",
+    "saved": "In diesem Browser gespeichert",
+    "tools": "Teilen und Sicherung"
+  },
+  "detail": {
+    "residents": "Bewohner",
+    "toPlace": "Zu platzieren",
+    "itemsAndDishes": "{i} Gegenstände + {f} Gericht",
+    "itemsAndDishesPlural": "{i} Gegenstände + {f} Gerichte",
+    "itemsOnly": "{i} Gegenstände",
+    "tapItem": "Tippe auf einen Gegenstand für Alternativen.",
+    "allPrefs": "Alle Vorlieben",
+    "move": "Verschieben",
+    "moveWho": "Welchen Bewohner verschieben?",
+    "close": "Schließen",
+    "covers": "deckt ab",
+    "forEveryone": "für alle",
+    "of": "von"
+  },
+  "stats": {
+    "houses": "Häuser für {n} Pokémon",
+    "items": "Gegenstände zu platzieren, {avg} pro Haus",
+    "busiest": "Gegenstände im vollsten Haus",
+    "housesShort": "Häuser",
+    "itemsShort": "Gegenstände"
+  },
+  "settings": {
+    "summaryDlc": "DLC enthalten",
+    "summaryNoDlc": "ohne DLC",
+    "summaryEvent": "Events enthalten",
+    "summaryNoEvent": "ohne Events",
+    "summarySatisfy": "{n} Vorlieben pro Pokémon",
+    "modify": "Ändern",
+    "title": "Einstellungen"
+  },
+  "firstVisit": {
+    "title": "Zum ersten Mal hier?",
+    "optimal": "Jede Karte ist ein Haus. Der rote Zähler sagt, wie viele Gegenstände zu bauen sind. Tippe auf ein Haus, um zu sehen welche, und warum diese Pokémon zusammenpassen.",
+    "village": "Füge deine Pokémon hinzu, wir gruppieren sie zu viert pro Haus. Tippe auf ein Haus für seine Einkaufsliste, sperre die, die du schon gebaut hast.",
+    "close": "Verstanden"
+  },
+  "help": {
+    "title": "So funktioniert es",
+    "rulesTitle": "Die Spielregeln",
+    "rules": "Ein Haus beherbergt bis zu 4 Pokémon derselben Umgebung (Hell, Dunkel, Warm, Kühl, Feucht, Trocken). Jedes Pokémon hat 6 Vorlieben: 5 Gegenstandskategorien und 1 Geschmack. Ein platzierter Gegenstand zählt für jeden Bewohner, der ihn mag, und ein Gegenstand trägt oft mehrere Kategorien: ein runder Holztisch gefällt Fans von Holz und von Rundem.",
+    "goalTitle": "Was das Tool optimiert",
+    "goal": "Pokémon werden so gruppiert, dass jedes Haus möglichst wenige Gegenstände braucht, unter der Annahme, dass ein Pokémon mit 4 seiner 6 Vorlieben zufrieden ist (einstellbar). Dann werden echte Gegenstände gewählt, die mehrere Vorlieben auf einmal abdecken.",
+    "starsTitle": "Die Sterne",
+    "starsText": "Fünf Sterne: das Haus braucht etwa so viele Gegenstände wie ein einzelnes Pokémon. Ein Stern: jeder Bewohner braucht eigene Gegenstände.",
+    "dishTitle": "Gerichte",
+    "dishText": "Geschmäcker (süß, scharf, bitter, herb, sauer) sind keine Deko: es ist Essen zum Kochen oder Verschenken.",
+    "dataTitle": "Woher die Daten kommen",
+    "dataText": "Vorlieben der Pokémon und Kategorien der Gegenstände von Serebii, französische Gegenstandsnamen von Pokekalos. Der Katalog ist noch unvollständig, Korrekturen sind auf GitHub willkommen.",
+    "privacyTitle": "Deine Daten",
+    "privacyText": "Dein Dorf, deine Auswahl und deine Gegenstände bleiben in deinem Browser. Nichts wird irgendwohin gesendet. Der Teilen-Link enthält alles, um es anderswo wiederherzustellen."
+  },
   "pokemon": {
     "Bulbizarre": "Bisasam",
     "Herbizarre": "Bisaknosp",

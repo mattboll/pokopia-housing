@@ -1,4 +1,4 @@
-const ROUTES = ['optimal', 'planner', 'legal'];
+const ROUTES = ['optimal', 'planner', 'help', 'legal'];
 const DEFAULT_ROUTE = 'optimal';
 
 let renderCallback = null;

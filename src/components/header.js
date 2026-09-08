@@ -12,7 +12,7 @@ export function renderHeader() {
 
   container.innerHTML = '';
 
-  const currentPage = (location.hash.replace('#/', '') || 'optimal');
+  const currentPage = (location.hash.replace('#/', '').split('?')[0] || 'optimal');
 
   // Logo
   const logo = el('a', { href: '#/optimal', className: 'header-logo' },
@@ -23,8 +23,8 @@ export function renderHeader() {
   // Nav links with active state
   const navLinks = [
     { page: 'optimal', key: 'nav.optimal', icon: '\u2600\uFE0F' },
-    { page: 'planner', key: 'nav.planner', icon: '\uD83D\uDDD3\uFE0F' },
-    { page: 'legal', key: 'nav.legal', icon: '\u2696\uFE0F' },
+    { page: 'planner', key: 'nav.village', icon: '\uD83C\uDFE1' },
+    { page: 'help', key: 'nav.help', icon: '\u2753' },
   ];
 
   const nav = el('nav', { className: 'header-nav', 'aria-label': 'Main navigation' });

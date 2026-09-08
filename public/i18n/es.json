@@ -8,7 +8,9 @@
   "nav": {
     "optimal": "Vivienda optima",
     "planner": "Planificador",
-    "legal": "Avisos legales"
+    "legal": "Avisos legales",
+    "village": "Mi pueblo",
+    "help": "Ayuda"
   },
   "common": {
     "search": "Buscar un Pokemon...",
@@ -76,11 +78,14 @@
     "markUnowned": "No lo tengo"
   },
   "optimal": {
-    "title": "Vivienda optima para todos los Pokemon",
+    "title": "Alojamiento óptimo",
     "subtitle": "Configuracion minima para alojar a los 314 Pokemon del juego",
     "description": "Esta herramienta agrupa los Pokémon por entorno y preferencias para colocar el menor número de objetos posible. Cada casa muestra su lista de objetos por colocar.",
     "ctaTitle": "No tienes todos los Pokemon?",
-    "ctaDescription": "Usa el planificador para optimizar solo los que tienes."
+    "ctaDescription": "Usa el planificador para optimizar solo los que tienes.",
+    "tagline": "Todos los Pokémon del juego, agrupados por casa para colocar el menor número de objetos posible.",
+    "makeVillage": "Crea tu pueblo",
+    "notAll": "¿No tienes toda la Pokédex?"
   },
   "planner": {
     "title": "Planificador personalizado",
@@ -215,6 +220,72 @@
     "offline": "Sin conexión: se muestran los datos en caché."
   },
   "items": {},
+  "village": {
+    "title": "Mi pueblo",
+    "summary": "{p} Pokémon alojados en {h} casas. Te quedan {i} objetos por colocar.",
+    "emptyTitle": "Tu pueblo está vacío",
+    "emptyText": "Añade los Pokémon que has reclutado, los agrupamos y te decimos qué fabricar.",
+    "addPokemon": "Añadir Pokémon",
+    "pokemonAndSettings": "Pokémon y ajustes",
+    "tileHint": "Toca una casa para ver su lista de la compra.",
+    "findPokemon": "Buscar un Pokémon…",
+    "unplacedShort": "{n} seleccionados sin colocar",
+    "optimizeNow": "Optimizar ahora",
+    "saved": "Guardado en este navegador",
+    "tools": "Compartir y copia"
+  },
+  "detail": {
+    "residents": "Residentes",
+    "toPlace": "Por colocar",
+    "itemsAndDishes": "{i} objetos + {f} plato",
+    "itemsAndDishesPlural": "{i} objetos + {f} platos",
+    "itemsOnly": "{i} objetos",
+    "tapItem": "Toca un objeto para ver alternativas.",
+    "allPrefs": "Todas las preferencias",
+    "move": "Mover",
+    "moveWho": "¿Qué residente mover?",
+    "close": "Cerrar",
+    "covers": "cubre",
+    "forEveryone": "para todos",
+    "of": "de"
+  },
+  "stats": {
+    "houses": "casas para {n} Pokémon",
+    "items": "objetos por colocar, {avg} por casa",
+    "busiest": "objetos en la casa más cargada",
+    "housesShort": "casas",
+    "itemsShort": "objetos"
+  },
+  "settings": {
+    "summaryDlc": "DLC incluido",
+    "summaryNoDlc": "sin DLC",
+    "summaryEvent": "eventos incluidos",
+    "summaryNoEvent": "sin eventos",
+    "summarySatisfy": "{n} preferencias por Pokémon",
+    "modify": "Cambiar",
+    "title": "Ajustes"
+  },
+  "firstVisit": {
+    "title": "¿Primera visita?",
+    "optimal": "Cada tarjeta es una casa. El contador rojo dice cuántos objetos fabricar. Toca una casa para ver cuáles, y por qué esos Pokémon van juntos.",
+    "village": "Añade tus Pokémon, los agrupamos de cuatro en cuatro. Toca una casa para su lista de la compra, bloquea las que ya construiste.",
+    "close": "Entendido"
+  },
+  "help": {
+    "title": "Cómo funciona",
+    "rulesTitle": "Las reglas del juego",
+    "rules": "Una casa aloja hasta 4 Pokémon del mismo entorno (Luminoso, Oscuro, Cálido, Fresco, Húmedo, Seco). Cada Pokémon tiene 6 preferencias: 5 categorías de objetos y 1 sabor. Un objeto colocado cuenta para todos los residentes a los que les gusta, y un mismo objeto suele tener varias categorías: una mesa redonda de madera gusta a los fans de la madera y de lo redondo.",
+    "goalTitle": "Qué optimiza la herramienta",
+    "goal": "Los Pokémon se agrupan para que cada casa necesite el menor número de objetos, suponiendo que un Pokémon está contento con 4 de sus 6 preferencias (ajustable). Luego se eligen objetos reales que cubren varias preferencias a la vez.",
+    "starsTitle": "Las estrellas",
+    "starsText": "Cinco estrellas: la casa necesita casi tantos objetos como un solo Pokémon. Una estrella: cada residente necesita sus propios objetos.",
+    "dishTitle": "Los platos",
+    "dishText": "Los sabores (dulce, picante, amargo, seco, ácido) no se colocan: es comida para cocinar o regalar al Pokémon.",
+    "dataTitle": "De dónde vienen los datos",
+    "dataText": "Preferencias de los Pokémon y categorías de objetos de Serebii, nombres franceses de objetos de Pokekalos. El catálogo aún está incompleto, las correcciones son bienvenidas en GitHub.",
+    "privacyTitle": "Tus datos",
+    "privacyText": "Tu pueblo, tu selección y tus objetos se quedan en tu navegador. No se envía nada a ningún sitio. El enlace para compartir contiene todo lo necesario para recrearlo en otro lugar."
+  },
   "pokemon": {
     "Bulbizarre": "Bulbasaur",
     "Herbizarre": "Ivysaur",

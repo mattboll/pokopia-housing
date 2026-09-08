@@ -8,7 +8,9 @@
   "nav": {
     "optimal": "Optimal housing",
     "planner": "Planner",
-    "legal": "Legal notice"
+    "legal": "Legal notice",
+    "village": "My village",
+    "help": "Help"
   },
   "common": {
     "search": "Search a Pokemon...",
@@ -76,11 +78,14 @@
     "markUnowned": "I don't have it"
   },
   "optimal": {
-    "title": "Optimal housing for all Pokemon",
+    "title": "Optimal housing",
     "subtitle": "Minimum configuration to house all 314 Pokemon in the game",
     "description": "This tool groups Pokemon by environment and preferences to place as few items as possible. Each house shows its list of items to place.",
     "ctaTitle": "Don't have all the Pokemon?",
-    "ctaDescription": "Use the planner to optimize only the ones you own."
+    "ctaDescription": "Use the planner to optimize only the ones you own.",
+    "tagline": "Every Pokemon in the game, grouped by house to place as few items as possible.",
+    "makeVillage": "Build your village",
+    "notAll": "Don't have the whole Pokedex?"
   },
   "planner": {
     "title": "Custom planner",
@@ -215,6 +220,72 @@
     "offline": "Offline: showing cached data."
   },
   "items": {},
+  "village": {
+    "title": "My village",
+    "summary": "{p} Pokemon housed in {h} houses. {i} items left to place.",
+    "emptyTitle": "Your village is empty",
+    "emptyText": "Add the Pokemon you recruited, we group them and tell you what to craft.",
+    "addPokemon": "Add Pokemon",
+    "pokemonAndSettings": "Pokemon and settings",
+    "tileHint": "Tap a house to see its shopping list.",
+    "findPokemon": "Find a Pokemon…",
+    "unplacedShort": "{n} selected not placed yet",
+    "optimizeNow": "Optimize now",
+    "saved": "Saved in this browser",
+    "tools": "Share and backup"
+  },
+  "detail": {
+    "residents": "Residents",
+    "toPlace": "To place",
+    "itemsAndDishes": "{i} items + {f} dish",
+    "itemsAndDishesPlural": "{i} items + {f} dishes",
+    "itemsOnly": "{i} items",
+    "tapItem": "Tap an item to see alternatives.",
+    "allPrefs": "All preferences",
+    "move": "Move",
+    "moveWho": "Which resident to move?",
+    "close": "Close",
+    "covers": "covers",
+    "forEveryone": "for everyone",
+    "of": "of"
+  },
+  "stats": {
+    "houses": "houses for {n} Pokemon",
+    "items": "items to place, {avg} per house",
+    "busiest": "items for the busiest house",
+    "housesShort": "houses",
+    "itemsShort": "items"
+  },
+  "settings": {
+    "summaryDlc": "DLC included",
+    "summaryNoDlc": "no DLC",
+    "summaryEvent": "events included",
+    "summaryNoEvent": "no events",
+    "summarySatisfy": "{n} favorites per Pokemon",
+    "modify": "Change",
+    "title": "Settings"
+  },
+  "firstVisit": {
+    "title": "First visit?",
+    "optimal": "Each card is a house. The red counter says how many items to craft. Tap a house to see which ones, and why these Pokemon go together.",
+    "village": "Add your Pokemon, we group them four per house. Tap a house for its shopping list, lock the ones you already built.",
+    "close": "Got it"
+  },
+  "help": {
+    "title": "How it works",
+    "rulesTitle": "The game rules",
+    "rules": "A house holds up to 4 Pokemon of the same environment (Bright, Dark, Warm, Cool, Humid, Dry). Each Pokemon has 6 favorites: 5 item categories and 1 flavor. An item placed in the house counts for every resident who likes it, and one item often carries several categories: a round wooden table pleases fans of wood and of round things.",
+    "goalTitle": "What the tool optimizes",
+    "goal": "Pokemon are grouped so that each house needs as few items as possible, assuming a Pokemon is happy with 4 of its 6 favorites (adjustable). Then real items covering several favorites at once are picked.",
+    "starsTitle": "The stars",
+    "starsText": "Five stars: the house needs about as many items as a single Pokemon would. One star: every resident needs its own items.",
+    "dishTitle": "Dishes",
+    "dishText": "Flavors (sweet, spicy, bitter, dry, sour) are not decorations: they are food to cook or gift to the Pokemon.",
+    "dataTitle": "Where the data comes from",
+    "dataText": "Pokemon favorites and item categories from Serebii, French item names from Pokekalos. The item catalog is still incomplete, corrections are welcome on GitHub.",
+    "privacyTitle": "Your data",
+    "privacyText": "Your village, selection and items stay in your browser. Nothing is sent anywhere. The share link carries everything needed to rebuild it elsewhere."
+  },
   "pokemon": {
     "Bulbizarre": "Bulbasaur",
     "Herbizarre": "Ivysaur",

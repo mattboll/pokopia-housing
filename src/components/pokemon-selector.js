@@ -2,41 +2,14 @@ import { el } from '../utils/dom.js';
 import { t } from '../core/i18n.js';
 import { createSearchBar } from './search-bar.js';
 import { createEnvironmentFilter } from './environment-filter.js';
+import { loadPokemonIds, spriteUrl } from '../core/sprites.js';
 
 const ENV_COLORS = {
   Lumineux: '#f5c518', Sombre: '#6b3fa0', Chaud: '#e85d3a',
   Frais: '#5cc5e8', Humide: '#3b82d6', Sec: '#c2956a',
 };
 
-const SPRITE_BASE = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 const STORAGE_KEY = 'pokopia-housing-selected';
-
-/** @type {Record<string, number> | null} */
-let pokemonIds = null;
-
-/**
- * Loads the pokemon name → national dex ID mapping.
- */
-async function loadPokemonIds() {
-  if (pokemonIds) return;
-  try {
-    const base = import.meta.env.BASE_URL ?? '/pokopia-housing/';
-    const resp = await fetch(`${base}data/pokemon-ids.json`);
-    pokemonIds = await resp.json();
-  } catch (e) {
-    console.warn('Could not load pokemon IDs for sprites', e);
-    pokemonIds = {};
-  }
-}
-
-/**
- * Returns the sprite URL for a pokemon name.
- */
-function spriteUrl(name) {
-  const id = pokemonIds?.[name];
-  if (!id) return null;
-  return `${SPRITE_BASE}${id}.png`;
-}
 
 /**
  * Loads saved selection from localStorage.
